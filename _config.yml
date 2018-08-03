@@ -1,0 +1,51 @@
+name: CCSB @ PVAMU
+description: The Center for Computational Systems Biology at The Prairie View A&M University
+url: ""
+baseurl: ""
+
+markdown: redcarpet
+permalink: /:categories/:title/
+future: true
+
+redcarpet:
+  extensions:
+   - tables
+   - no_intra_emphasis
+   - autolink
+   - superscript
+   - strikethrough
+
+exclude:
+  - "*.class"
+  - "*.cpp"
+  - "*.h"
+  - "*.hh"
+  - "*.ipynb"
+  - "*.jar"
+  - "*.java"
+  - "*.nb"
+  - "*.py"
+  - "*.R"
+  - "*.rb"
+  - "*.Rmd"
+  - "*.branches"
+  - "*.csv"
+  - "*.fasta"
+  - "*.kml"
+  - "*.log"
+  - "*.mcc"
+  - "*.newick"
+  - "*.nex"
+  - "*.tsv"
+  - "*.tips"
+  - "*.trees"
+  - "*.txt"
+  - "*.zip"
+  - "*.gz"
+  - "*.tiff"
+  - "*.xml"
+  - "Gemfile"
+  - "Gemfile.lock"
+
+projects:
+

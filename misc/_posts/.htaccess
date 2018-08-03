@@ -1,0 +1,4 @@
+AuthName "Seungchan Kim"
+AuthUserFile ./.htpasswd
+AuthType Basic
+require valid-user

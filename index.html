@@ -1,0 +1,236 @@
+---
+layout: default
+title: CCSB @ PVAMU
+categories:
+ - home
+---
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<div class="row">
+	<div class="col-md-12">
+		<object class="pull-left biglogo" data="{{ '/images/ccsb-logo.svg' | prepend:site.baseurl }}"  type="image/svg+xml"></object>
+		<div class="bigtitle logobox">
+			<span style="font-weight:bold"> CCSB @ PVAMU</span>
+		</div>
+	</div>
+</div>
+
+
+<div class="w3-dropdown-hover w3-right">
+	<img src="{{ '/images/twitter_ccsb_pvamu.svg' | prepend:site.baseurl }}" 
+	alt="Tweets by CCSB@PVAMU" style="width:135px; border:1px solid purple; vertical-align:middle" />
+	<div class="w3-dropdown-content w3-bar-block w3-border" style="right:0; width:300px">
+		<a class="twitter-timeline" data-width="300" data-height="500" data-tweet-limit="10" href="https://twitter.com/CCSB_PVAMU?ref_src=twsrc%5Etfw">Tweets by CCSB@PVAMU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</div>
+<div class="w3-clear"></div>
+
+<div class="smallspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="smallhead">
+	    	<p>
+      		<a href="https://goo.gl/maps/2te7tnpw8tT2"><img src="{{ '/images/ELEN-BLDG.jpg' | prepend:site.baseurl }}" alt="ELEN building at PVAMU" style="float:right; width:400px; border:3px solid purple"></a>
+        	The Center for Computational Systems Biology at the <a href="https://www.pvamu.edu">Prairie View A&M University</a> (CCSB@PVAMU) was established by a funding from
+         	<a href="https://www.tamus.edu">Texas A&M University Systems</a>' <a href="https://news.tamus.edu/tamus-chancellor-john-sharp-to-announces-100-million-research-initiative/">Chancellor’s Research Initiative (CRI)</a> 
+    		to become a nationally recognized computational systems biology research 
+    		center.
+    		</p>
+      		<p>
+        	The center aims to achieve:
+        	<ul>
+        		<li>Efficient and effective recruitment of high-quality faculty and
+        	research scientists for rapid establishment and growth of the center</li>
+        	
+        		<li>Development of active collaboration with leading biomedical
+        	research institutes as well as bioinformatics research centers</li>
+        	
+        		<li>Development of training programs for bioinformatics and
+        	computational systems biology at both the undergraduate and the graduate
+        	levels.</li>
+	        </ul>
+	  		</p>
+	  		<p>
+	  		As a newly established center, we are also rapidly developing 
+    		collaboration with leading biomedical research institutes/centers to study
+    		biomedical questions of high translational significance and impact, 
+    		utilizing various computational tools.
+    		</p>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="head">
+			<a class="off" href="{{ '/blog/' | prepend:site.baseurl }}">Recent posts</a>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">
+	{% for post in site.categories.blog limit:4 %}
+
+	{% for member in site.categories.team %}
+		{% if member.title == post.author %}
+			{% assign author = member %}
+		{% endif %}
+	{% endfor %}
+
+	<div class="col-md-3 reduced-gutter">
+		<div class="pad-left">
+			<div class="note">
+				<i class="fa fa-comment-o fa-fw"></i>
+				<a class="off" href="{{ post.url | prepend:site.baseurl }}">
+				{{ post.title }}
+				</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Posted
+				{{ post.date | date: "%-d %b %Y" }}
+        {% if post.author %}
+        by <a class="off" href="
+          {% for member in site.categories.team %}
+            {% if member.name == post.author %}
+              {{ member.url | prepend:site.baseurl }}
+            {% endif %}
+          {% endfor %}
+        ">
+        {{ post.author }}
+        </a>
+        {% endif %}
+        {% if post.authors %}
+        by
+        <a class="off" href="
+          {% for member in site.categories.team %}
+            {% if member.name == post.authors.first %}
+              {{ member.url | prepend:site.baseurl }}
+            {% endif %}
+          {% endfor %}
+        ">
+        {{ post.authors.first }}
+        </a>
+        and
+        <a class="off" href="
+          {% for member in site.categories.team %}
+            {% if member.name == post.authors.last %}
+              {{ member.url | prepend:site.baseurl }}
+            {% endif %}
+          {% endfor %}
+        ">
+        {{ post.authors.last }}
+        </a>
+        {% endif %}
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="spacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="head">
+			<a class="off" href="{{ '/papers/' | prepend:site.baseurl }}">Recent papers</a>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">
+	{% for paper in site.categories.papers limit:4 %}
+	<div class="col-md-3 reduced-gutter">
+		<div class="pad-left">
+			<div class="note">
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="{{ paper.url | prepend:site.baseurl }}">
+				{{ paper.title }}
+				</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Posted
+				{{ paper.date | date: "%-d %b %Y" }}
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="spacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="head">
+			<a class="off" href="{{ '/projects/' | prepend:site.baseurl }}">Active projects</a>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">
+	{% for project in site.data.projects limit:4 %}
+	<div class="col-md-3 reduced-gutter">
+		<div class="pad-left">
+			<div class="note">
+				<i class="fa fa-edit fa-fw"></i>
+				<a class="off" href="{{ project.url | prepend:site.baseurl }}">
+				{{ project.title }} - {{ project.description }}
+				</a>
+			</div>
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				Updated
+				<a class="off" href="{{ project.commits.first.url }}">
+				{{ project.commits.first.date | date: "%-d %b %Y" }}
+				</a>
+				by
+				<a class="off" href="{{ project.commits.first.author_url }}">
+				{{ project.commits.first.author_login }}
+				</a>
+			</div>
+			<div class="bigspacer"></div>
+		</div>
+	</div>
+	{% endfor %}
+</div>
+
+<div class="spacer"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="head">
+			Misc
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12 reduced-gutter">
+		<div class="pad-left">
+			<ul class="list-inline">
+				{% for page in site.categories.misc %}
+				<li class="footernav">
+					<i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url | prepend:site.baseurl }}">{{ page.title }}</a>
+				</li>
+				{% endfor %}
+				<li class="footernav">
+					<i class="fa fa-angle-right"></i> <a class="off" href="http://www.pvamu.edu/">PVAMU</a>
+				</li>
+			</ul>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</div>
+
