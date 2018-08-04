@@ -1,1 +1,1 @@
-*** How to add blog posts
+** How to add blog posts
