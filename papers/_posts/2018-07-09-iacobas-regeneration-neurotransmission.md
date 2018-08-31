@@ -6,11 +6,11 @@ authors: Iacobas DA, Velisek L.
 year: 2018
 ref: Iacobas and Velisek. 2018. Neural Regeneration Research (accepted)
 journal: "Neural Regeneration Research"
-doi: 
+doi: 10.4103/1673-5374.238607
 github:
-pdf:
+pdf: /pdfs/papers/2018-07-09-iacobas-regeneration-neurotransmission.pdf
 keywords: ACTH, autism, cholinergic transmission, hypothalamus, infantile spasms, microarrays, PMX53, sex differences
-PMID: 
+PMID: 30136682
 PMCID: 
 ---
 

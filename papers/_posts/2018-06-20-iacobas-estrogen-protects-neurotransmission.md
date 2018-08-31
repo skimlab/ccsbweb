@@ -10,8 +10,8 @@ doi: 10.3389/fnins.2018.00332
 github:
 pdf: /pdfs/papers/2018-06-20-iacobas-estrogen-protects-neurotransmission.pdf
 keywords: recurrent neural network, multitask learning, word embedding, parts-of-speech tagging, named entity recognition, electronic medical records
-PMID: 
-PMCID: 
+PMID: 29973860
+PMCID: PMC6019481
 ---
 
 # Abstract
