@@ -8,7 +8,7 @@ ref: Kobets et al. 2018. Toxicological Sciences (accepted)
 journal: "Toxicological Sciences"
 doi: 10.1093/toxsci/kfy197
 github:
-pdf:
+pdf: /pdfs/papers/2018-08-09-Kobets-Expression-of-Genes.pdf
 keywords: Chicken Egg Genotoxicity Assay, Gene expression profile, Genes involved in xenobiotic metabolism, Microarray, Nitrosamines
 PMID: 
 PMCID: 

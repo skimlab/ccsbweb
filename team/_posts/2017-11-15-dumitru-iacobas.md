@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Dumitru Iacobas
-title: Post-doctoral fellow
+title: Research Scientist
 affiliation: CCSB
 handle: daiacobas
 email: daiacobas@pvamu.edu
