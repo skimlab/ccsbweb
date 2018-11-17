@@ -102,7 +102,13 @@
 						{% else %}
 						<li>
 						{% endif %}
-						<a href="{{ '/team/' | prepend:site.baseurl }}">team</a></li>	  	  
+						<a href="{{ '/team/' | prepend:site.baseurl }}">team</a></li>
+						{% if page.categories.first == 'team' %}
+						<li class="active">
+						{% else %}
+						<li>
+						{% endif %}
+						<a href="{{ '/lab/' | prepend:site.baseurl }}">lab</a></li>	  	  
 					</ul>
 				</div>
 			</div>

@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Dumitru Iacobas
-title: Research Scientist
+title: Research Professor
 affiliation: CCSB
 handle: daiacobas
 email: daiacobas@pvamu.edu
