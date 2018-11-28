@@ -1,6 +1,6 @@
 ---
 layout: default
-title: CCSB@PVAMU / lab
+title: CCSB@PVAMU / labs
 categories: 
  - lab
 ---
@@ -10,20 +10,20 @@ categories:
     {% cycle 'add rows': '<div class="row">', nil, nil %}
 		<div class="col-md-4 projectbox">
 			<div class="head">
-				<a href="{{ lab.url }}" class="off">{{ tool.title }}</a>
+				<a href="{{ labs.url }}" class="off">{{ tool.title }}</a>
 			</div>	
 			<div class="smallspacer"></div>
 			<div class="note">
-				<a href="{{ lab.url }}" class="off">{{ tool.description }}</a>
+				<a href="{{ labs.url }}" class="off">{{ tool.description }}</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">
 				Updated
-				<a class="off" href="{{ lab.commits.first.url }}">
+				<a class="off" href="{{ labs.commits.first.url }}">
 				{{ tool.commits.first.date | date: "%-d %b %Y" }}
 				</a>
 				by
-				<a class="off" href="{{ lab.commits.first.author_url }}">				
+				<a class="off" href="{{ labs.commits.first.author_url }}">				
 				{{ tool.commits.first.author_login }}
 				</a>
 			</div>

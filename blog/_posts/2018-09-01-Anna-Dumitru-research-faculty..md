@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drs Anna Joy and Dumitru Iacobas have being promoted to research faculty
+title: Drs Anna Joy and Dumitru Iacobas have been promoted to research faculty
 author: Xishuang Dong
 image: 
 ---
