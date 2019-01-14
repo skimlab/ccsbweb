@@ -1,5 +1,3 @@
----
-layout: misc
-title: Collaboration
----
 
+
+redirect_to: http://www.github.com

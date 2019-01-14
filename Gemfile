@@ -11,6 +11,7 @@ gem 'less'
 
 # minifying
 gem 'jekyll-press'
+gem 'jekyll-redirect-from'
 
 # octokit
 gem 'octokit'
