@@ -1,6 +1,6 @@
 ---
 layout: post
-title: CCSB became one part of Half-Million Dollar Grant
+title: CCSB became a part of Half-Million Dollar Grant
 author: Xishuang Dong
 image: 
 ---
