@@ -13,9 +13,7 @@ This presentation will discuss our recent collaboration with University of Pitts
 
 Pulmonary hypertension (PH) is a fatal and incurable vascular disease. Chemotherapies are being considered for PH treatment, but there is no method for effective screening of these drugs for this disease.  In this study, we leverage the molecular parallels between cancer and PH to define novel pathogenic mechanisms and facilitate effective computational repurposing of chemotherapies for PH. 
 
-We used a computational algorithm EDDY (Evaluation of Differential DependencY) to identify chemotherapeutics that depend upon differentially rewired PH-related gene clusters. EDDY identified I-BET151/762, bromodomain protein inhibitors, and momelotinib, a JAK inhibitor, to control multiple PH gene clusters related to both drugs. EDDY also predicted galectin-8 (LGALS8) as a PH regulator relevant to these drugs. LGALS8 was increased in interleukin-1beta (IL-1beta)-exposed PAECs and was decreased by I-BET762 and momelotinib. I-BET762 controlled LGALS8 via targeting BRD2/4, and momelotinib controlled LGALS8 signaling via STAT1 modulation. In vitro, these drugs depended upon LGALS8 for reversing IL-1beta-induced apoptosis in PAECs. In vivo, these drugs reduced PH in hypoxic mice and phenocopied the amelioration of hypoxia-induced PH in Lgals8-/- knockout mice.  
-
-The results establish the validity for a pipeline of computational predictions of therapeutic benefit and toxicity for chemotherapies not yet been possible in PH.
+We used a computational algorithm EDDY (Evaluation of Differential DependencY) to identify chemotherapeutics that depend upon differentially rewired PH-related gene clusters. Computational findings wer validdated through in vitro and in vivo experiments.  The results establish the validity for a pipeline of computational predictions of therapeutic benefit and toxicity for chemotherapies not yet been possible in PH.
 
 
 # Speaker
