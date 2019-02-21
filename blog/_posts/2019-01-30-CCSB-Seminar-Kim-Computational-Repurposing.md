@@ -7,6 +7,10 @@ categories: [blog, talk]
 tags: [ccsb-seminar]
 ---
 
+# Time & Date: 12:00pm, Wed., Jan 30, 2019
+# Room: ELEN 231
+
+
 # Abstract
 
 This presentation will discuss our recent collaboration with University of Pittsburgh Medical Center where we deployed a computational analysis of big cancer and drug data aided by pulmonary hypertension specific knowledge to explore repurposing of cancer drugs for pulmonary hypertension.

@@ -7,6 +7,10 @@ categories: [blog, talk]
 tags: [ccsb-seminar]
 ---
 
+# Time & Date: 2:00pm, Wed., Feb. 27, 2019
+# Room: ELEN 231
+
+
 # Abstract
 
 Many cancers are preceded by mutations or changes in normal functioning genes which are important for maintaining a balance within the body. Some of these mutations are inherited and have been shown to correlate with an increased risk of developing certain types of cancers.
