@@ -7,7 +7,7 @@ categories: [blog, talk]
 tags: [ccsb-seminar]
 ---
 
-# Time & Date: 12:00pm, Wed., Mar. 13, 2019
+# Time & Date: 12:00pm, Wed., April. 10, 2019
 # Room: ELEN 231
 
 
@@ -17,9 +17,10 @@ The major challenge to analyze genetic data, with high dimension, low sample siz
 
 
 
+
 # Speaker
 
-<img class="offset" src="/images/blog/2019-03-13-CCSB-Seminar-Dong-Neural-Network-Based-Feature-Selection/xdong.png" style="width:125px;float:left;border:3px solid black;margin:10px 10px;">
+<img class="offset" src="/images/blog/2019-04-10-CCSB-Seminar-Dong-Neural-Network-Based-Feature-Selection/xdong.jpg" style="width:125px;float:left;border:3px solid black;margin:10px 10px;">
 [Dr. Xishuang Dong]({% post_url 2018-03-01-xishuang-dong %}) is an Assistant Professor of CRI Center for Computational Systems Biology at Department of Electrical and Computer Engineering at Prairie View A&M University (PVAMU). Dr. Dong received B.S. degree in computer science and technique (sub-field of computer engineering) at Harbin University of Science and Technology, M.S. degree in computer software and theory (sub-field of computer engineering) at Harbin Engineering University, and Ph.D. in computer application (sub-field of computer engineering) at Harbin Institute of Technology.
 
 His research interests include: 1) machine learning based computational systems biology; (2) biomedical information processing; (3) deep learning for big data analysis; (4) natural language processing.
