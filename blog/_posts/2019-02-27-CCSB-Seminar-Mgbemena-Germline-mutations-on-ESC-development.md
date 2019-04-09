@@ -23,7 +23,7 @@ Our program will use recombinant DNA to express variants in cervical cancer cell
 
 # Speaker
 
-<img class="offset" src="/images/blog/2019-02-27-CCSB-Seminar-Mgbemena-Germline-mutations-on-ESC-development/VMgbemena.png" style="width:125px;float:left;border:3px solid black;margin:10px 10px;">
+<img class="offset" src="/images/talks/speakers/VMgbemena.png" style="width:125px;float:left;border:3px solid black;margin:10px 10px;">
 Dr. Victoria Mgbemena received her Ph.D. in Microbiology &Immunology in 2013 from the University of Texas Health Science Center in San Antonio.  After completing her training at The University of Texas Southwestern Medical School, in 2018, she joined Prairie View’s Biology Department.  Her specialties span two major fields in the biological sciences: microbiology & immunology and cancer biology (oncology).  Currently, her specific interests include cancer genetics, cancer immunology, and emerging cancer immunotherapies.  As a guest lecturer, postdoc and faculty, Mgbemena has worked with high school students, undergraduates, technicians, graduate students and postdocs in research and career development programs.  She has a strong commitment to fostering healthy learning environments for young women and underrepresented minority students who are interested in research and health professions.
 
 

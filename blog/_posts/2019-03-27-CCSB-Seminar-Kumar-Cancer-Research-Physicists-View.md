@@ -18,7 +18,7 @@ Research on cancer initiation, progression and the associated issues of therapy 
 
 # Speaker
 
-<img class="offset" src="/images/blog/2019-03-27-CCSB-Seminar-Kumar-Cancer-Research/kumar.png" style="width:125px;float:left;border:3px solid black;margin:10px 10px;">
+<img class="offset" src="/images/talks/speakers/kumar.png" style="width:125px;float:left;border:3px solid black;margin:10px 10px;">
 Dr. Kumar is a Professor of Electrical and Computer Engineering. After receiving his Ph.D. in Theoretical Physics in 1978 from The Indian Institute of Science, Bangalore, he worked in England, Belgium, Canada and the U.S. His research spanned multiple disciplines – disordered systems, solid state electronics, mathematical approaches to various solid state and liquid state systems, superfluid 3He and spin glasses. More recently he has been studying mathematical modeling of cancer. Over the past fifteen years, he has also been involved in enhancing the STEM curriculum in middle and high schools.
 
 
