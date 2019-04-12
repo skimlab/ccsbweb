@@ -1,0 +1,68 @@
+/*!
+ * Start Bootstrap - Busines Frontpage (https://startbootstrap.com/template-overviews/business-frontpage)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+    padding-bottom: 50px;
+
+    
+  }
+}
+
+.business-header {
+  height: 50vh;
+  min-height: 300px;
+  background: url('../images/dna2.jpg') center center no-repeat scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  opacity: 1;
+}
+
+.card {
+  height: 100%;
+}
+
+.centered {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.pagination {
+  margin-bottom: 15px;
+}
+
+header {
+    padding: 154px 0 100px;
+}
+
+@media (min-width: 992px) {
+    header {
+        padding: 156px 0 100px;
+    }
+}
+
+section {
+    padding: 150px 0;
+}
+
+.footerlocation {
+    position: absolute;
+    bottom: 0;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}

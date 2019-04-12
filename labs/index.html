@@ -3,33 +3,106 @@ layout: default
 title: CCSB@PVAMU / labs
 categories: 
  - labs
+category: labs
 ---
 
-{% for lab in site.data.labs %}
 
-    {% cycle 'add rows': '<div class="row">', nil, nil %}
-		<div class="col-md-4 labbox">
-			<div class="head">
-				<a href="{{ labs.url | prepend:site.baseurl }}" class="off">{{ lab.title }}</a>
-			</div>	
-			<div class="smallspacer"></div>
-			<div class="note">
-				<a href="{{ labs.url | prepend:site.baseurl }}" class="off">{{ lab.description }}</a>
-			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				Updated
-				<a class="off" href="{{ project.commits.first.url }}">
-				{{ lab.commits.first.date | date: "%-d %b %Y" }}
-				</a>
-				by
-				<a class="off" href="{{ lab.commits.first.author_url }}">				
-				{{ lab.commits.first.author_login }}
-				</a>
-			</div>
-			<div class="bigspacer"></div>
-			<div class="spacer"></div>
-		</div>
-    {% cycle 'close rows': nil, nil, '</div>' %}
-{% endfor %}
-{% cycle 'close rows': nil, '</div>', '</div>' %}	
+
+<div class="post-list">
+    
+    {% for post in site.categories.labs limit: 8 %}
+    
+    <div class="blog-post">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <div class="media">
+                    <div class="media-body">
+                        {% if post.link %}
+                        <div class="title media-heading">
+                            <a href="{{ post.link}}" class="off">{{ post.title }}</a>
+                        </div>
+                        {% else %}
+                        <div class="title media-heading">{{ post.title }}
+                        </div>
+                         {% endif %}
+                        <p>
+                        <div class="smallhead">
+                            {% if post.author %}
+                            Principal Investigator:  <a class="off" href="
+                                {% for member in site.categories.team %}
+                                {% if member.name == post.author %}
+                                {{ member.url | prepend:site.baseurl }}
+                                {% endif %}
+                                {% endfor %}
+                                ">
+                                {{ post.author }}
+                            </a>
+                            {% endif %}
+                            {% if post.authors %}
+                            by
+                            <a class="off" href="
+                                {% for member in site.categories.team %}
+                                {% if member.name == post.authors.first %}
+                                {{ member.url | prepend:site.baseurl }}
+                                {% endif %}
+                                {% endfor %}
+                                ">
+                                {{ post.authors.first }}
+                            </a>
+                            and
+                            <a class="off" href="
+                                {% for member in site.categories.team %}
+                                {% if member.name == post.authors.last %}
+                                {{ member.url | prepend:site.baseurl }}
+                                {% endif %}
+                                {% endfor %}
+                                ">
+                                {{ post.authors.last }}
+                            </a>
+                            {% endif %}
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+
+        
+        <div class="spacer"></div>
+        
+    
+    
+    
+
+    
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            {% if post.image %}
+            {% if post.link %}
+            <a href="{{ post.link }}">
+                <img class="offset" src="{{ post.image | prepend:site.baseurl }}">
+                    </a>
+            {% else %}
+            <img class="offset" src="{{ post.image | prepend:site.baseurl }}">
+                {% endif %}
+                {% endif %}
+                <div class="post">
+                    <font size="4">
+                    {{ post.content }}
+                    </font>
+                </div>
+                </div>
+        <div class="col-md-1"></div>
+    </div>
+    
+    <div class="bigspacer"></div>
+    <div class="spacer"></div>
+    </div>
+    
+    
+    {% endfor %}
+    <div class="title media-heading">
+
