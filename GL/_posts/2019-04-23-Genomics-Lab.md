@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Genomics Lab
+author: Anna Joy
 
 ---
 
@@ -18,3 +19,5 @@ title: Genomics Lab
 - Agilent 2100 Bioanalyzer to analyze the quality of protein, DNA and RNA.
 - Nanodrop and Qubit 4 to determine the concentration of nucleic acids.
 - Real Time PCR for superior accuracy of library quantification
+
+**Contact: Anna Joy ([anjoy@pvamu.edu](anjoy@pvamu.edu))**
