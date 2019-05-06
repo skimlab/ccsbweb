@@ -21,4 +21,4 @@ gem 'netrc'
 gem 'jekyll-twitter-plugin'
 
 # SassC
-gem 'sassc'
+#gem 'sassc'
