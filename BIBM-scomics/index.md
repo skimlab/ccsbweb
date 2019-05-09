@@ -1,0 +1,48 @@
+---
+title: "2019 IEEE BIBM Workshop: Single Cell -Omics: Challenges and Opportunities"
+---
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body{margin: 25px}
+</style>
+
+### [2019 IEEE BIBM Workshop](http://ieeebibm.org/BIBM2019/)
+## Single Cell -Omics: Challenges and Opportunities (BIBM-SCOMICS)
+
+Single cell -omics recently have made significant advancement, allowing genomic, transcriptomic and proteomic profiling of diverse cell populations in biological specimen including peripheral blood mononuclear cells (PBMCs) and tumor tissue.  Methods to analyze cellular arrangements and cell-cell interactions are also emerging and are key to several major private and government-funded initiatives including Human Cell Atlas, Human Tumor Atlas and Human Biomolecular Atlas. Inherently, these data sets are large, highly complex and pose many challenges in acquiring, modeling and interpreting these data.  In this workshop, we will bring various expertise, including enabling technologies and computational methods utilizing such technologies to empowering biomedical studies. We will place special emphasis on multi-model data acquisition, image analytics, particularly spatial analyses and computational challenges with this large-scale data.  Possible topics include:
+
+* Single cell -omics platforms: genomic, transcriptomic, epigenetic, and proteomic analysis
+* Single cell spatial -omics platforms:  transcriptomic and proteomic analysis 
+* Integration of multi-omic data with each other and lower resolution modalities for multi-scale modeling
+* Use cases in study of human biology and disease
+
+### Important Dates:
+
+1. **Sept 20, 2019**	Due date for full workshop papers submission
+2. **Oct. 15, 2019**	Notification of paper acceptance to authors
+3. **Nov. 1, 2019**	Camera-ready of accepted papers
+4. **Nov. 18-21, 2019**	Workshops
+
+### Program co-chairs
+| Co-chair | | Affiliation |
+|:--------------|-|:-------------------------------:|
+| Seungchan Kim | | Center for Computational Systems Biology, Prairie View A&M University (sekim@pvamu.edu)|
+| Harshil Dhruv | | Translational Genomics Research Institute (hdhruv@tgen.org)|
+| Anup Sood     | | GE Global Research, US (anup.sood@ge.com)|
+
+### Program committee members
+| PC member | | Affiliation |
+|:--------------|-|:-------------------------------:|
+| Xishuang Dong	| | Prairie View A&M University (xidong@pvamu.edu) |
+| Chloe Kim	| | Advanced Technology Group, Office of CTO, Applied Materials (chloe_kim@amat.com) |
+| Parag Mallick	| | Stanford University (paragm@stanford.edu) |
+| Ignazio Piras	| | Translational Genomics Research Institute (ipiras@tgen.org) |
+| Jens Rittscher | | University of Oxford (jens.rittscher@eng.ox.ac.uk) |
+| Alberto Santamaria-Pang | | GE Global Research, US (santamar@ge.com) |
+| Lin Wei | | Baylor Scott & White Research Institute (weilin.baylor@gmail.com) |
+| Yiyi Yan | | Mayo Clinic (yan.yiyi@mayo.edu) |
+
+
+### Invited Speakr(s)
+**TBD**
