@@ -3,8 +3,11 @@ layout: post
 title: "[CCSB Seminar Series] Differential, tissue-specific effects of germline mutations on epithelial stem cell development"
 author: Seungchan Kim
 image: 
-categories: [blog, talk]
+categories: [blog, talks]
 tags: [ccsb-seminar]
+venue: ELEN231
+event: CCSB-Seminar
+speaker: Victoria Mgbemena
 ---
 
 # Time & Date: 2:00pm, Wed., Feb. 27, 2019

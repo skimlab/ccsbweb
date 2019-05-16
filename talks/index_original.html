@@ -19,8 +19,8 @@ categories:
 {% unless talk.draft %}
 
 	{% for member in site.categories.team %}
-		{% if member.title == talk.speaker %}
-			{% assign speaker = member %}
+		{% if member.title == talk.author %}
+			{% assign author = member %}
 		{% endif %}
 	{% endfor %}
 
@@ -42,7 +42,7 @@ categories:
 			<div class="smallspacer"></div>
 			<div class="smallnote">
 				{{ talk.date | date: "%-d %b %Y" }}
-				by <a class="off" href="{{ speaker.url | prepend:site.baseurl }}">{{ talk.speaker }}</a>
+				by <a class="off" href="{{ author.url | prepend:site.baseurl }}">{{ author.handle }}</a>
 			</div>
 			<div class="bigspacer"></div>
 			<div class="spacer"></div>

@@ -3,8 +3,11 @@ layout: post
 title: "[CCSB Seminar Series] Neural Networks Based Feature Selection for Genetic Data Analysis"
 author: Seungchan Kim
 image: 
-categories: [blog, talk]
+categories: [blog, talks]
 tags: [ccsb-seminar]
+venue: ELEN231
+event: CCSB-Seminar
+speaker: Xishuang Dong
 ---
 
 # Time & Date: 12:00pm, Wed., April. 10, 2019

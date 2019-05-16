@@ -3,8 +3,11 @@ layout: post
 title: "[CCSB Seminar Series] Cancer Research - A Physicist's View"
 author: Seungchan Kim
 image: 
-categories: [blog, talk]
+categories: [blog, talks]
 tags: [ccsb-seminar]
+venue: ELEN231
+event: CCSB-Seminar
+speaker: A. Anil Kumar
 ---
 
 # Time & Date: 12:00pm, Wed., Mar. 27, 2019

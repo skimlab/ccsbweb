@@ -85,20 +85,28 @@
 						{% endif %}
 						<a href="{{ '/papers/' | prepend:site.baseurl }}">papers</a>
 						</li>
+					<!--
 						{% if page.categories.first == 'projects' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-					<!--
 						<a href="{{ '/projects/' | prepend:site.baseurl }}">projects</a></li>	  
+					-->
+					<!--
 						{% if page.categories.first == 'tools' %}
 						<li class="active">
 						{% else %}
 						<li>
 						{% endif %}
-					-->
 						<a href="{{ '/tools/' | prepend:site.baseurl }}">tools</a></li>	  
+					-->
+						{% if page.categories.first == 'talks' %}
+						<li class="active">
+						{% else %}
+						<li>
+						{% endif %}
+						<a href="{{ '/talks/' | prepend:site.baseurl }}">talks</a></li>	  
 						{% if page.categories.first == 'team' %}
 						<li class="active">
 						{% else %}

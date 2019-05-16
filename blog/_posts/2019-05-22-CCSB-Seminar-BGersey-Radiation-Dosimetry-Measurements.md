@@ -3,8 +3,11 @@ layout: post
 title: "[CCSB Seminar Series] Radiation Dosimetry Measurements Onboard Air and Space Craft for Human Safety Programs and Cancer Epidemiology Studies"
 author: Seungchan Kim
 image: 
-categories: [blog, talk]
+categories: [blog, talks]
 tags: [ccsb-seminar]
+venue: ELEN231
+event: CCSB-Seminar
+speaker: Brad "Buddy" Gersey
 ---
 
 # Speaker: Brad "Buddy" Gersey, Ph.D.

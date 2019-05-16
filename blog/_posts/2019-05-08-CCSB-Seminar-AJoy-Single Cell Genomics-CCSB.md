@@ -3,8 +3,11 @@ layout: post
 title: "[CCSB Seminar Series] Single Cell Genomics at the Center for Computational Systems Biology"
 author: Seungchan Kim
 image: 
-categories: [blog, talk]
+categories: [blog, talks]
 tags: [ccsb-seminar]
+venue: ELEN231
+event: CCSB-Seminar
+speaker: Anna Joy
 ---
 
 # Speaker: Anna Joy, Ph.D.

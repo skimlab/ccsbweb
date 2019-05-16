@@ -3,8 +3,11 @@ layout: post
 title: "[CCSB Seminar Series] Gene Expression in Developing Goat Testes: Identification of a Caprine Spermatogenesis Transcriptome"
 author: Seungchan Kim
 image: 
-categories: [blog, talk]
+categories: [blog, talks]
 tags: [ccsb-seminar]
+venue: ELEN231
+event: CCSB-Seminar
+speaker: Shay Lewis
 ---
 
 # Time & Date: 12:00pm, Wed., April. 24, 2019

@@ -3,8 +3,11 @@ layout: post
 title: "[CCSB Seminar Series] Computational Repurposing of Cancer Drugs: Big Data, Computational Analysis and Knowledge Fusion"
 author: Seungchan Kim
 image: 
-categories: [blog, talk]
+categories: [blog, talks]
 tags: [ccsb-seminar]
+venue: ELEN231
+event: CCSB-Seminar
+speaker: Seungchan Kim
 ---
 
 # Time & Date: 12:00pm, Wed., Jan 30, 2019

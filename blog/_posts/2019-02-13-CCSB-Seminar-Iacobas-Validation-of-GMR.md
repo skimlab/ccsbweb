@@ -3,8 +3,11 @@ layout: post
 title: "[CCSB Seminar Series] Validation of the Gene Master Regulators Theory for Cancer Gene Therapy"
 author: Seungchan Kim
 image: 
-categories: [blog, talk]
+categories: [blog, talks]
 tags: [ccsb-seminar]
+venue: ELEN231
+event: CCSB-Seminar
+speaker: Dumitru Iacobas
 ---
 
 # Time & Date: 12:00pm, Wed., Feb. 13, 2019
