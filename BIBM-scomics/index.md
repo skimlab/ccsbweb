@@ -1,11 +1,17 @@
 ---
 title: "2019 IEEE BIBM Workshop: Single Cell -Omics: Challenges and Opportunities"
+featured-img: /images/banner.jpg
 ---
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
 body{margin: 25px}
 </style>
+
+<div class="FeaturedImgBanner" {% if page.featured-img %} style="background-image: url('{{ page.featured-img }}');" {% endif %}>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <br/><br/><br/> <br/><br/><br/>
+</div>
 
 ### [2019 IEEE BIBM Workshop](http://ieeebibm.org/BIBM2019/)
 ## Single Cell -Omics: Challenges and Opportunities (BIBM-SCOMICS)

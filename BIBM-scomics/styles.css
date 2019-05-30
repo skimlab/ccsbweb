@@ -1,3 +1,10 @@
+.TitleBanner {
+  color: white; 
+
+  background-size: cover;
+  background-position: center;
+  background-image: url(/images/Slide1.jpg);
+}
 html,body{margin:0;padding:0}
 body{font: 76% arial,sans-serif;text-align:center}
 p{margin:0 10px 10px}
@@ -18,3 +25,4 @@ div#content{margin: 0 150px}
 div#navigation{float:left;width:150px;margin-left:-700px}
 div#extra{float:left;width:150px;margin-left:-150px}
 div#footer{clear:left;width:100%}
+
