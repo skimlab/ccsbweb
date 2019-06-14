@@ -34,7 +34,7 @@ Single cell -omics recently have made significant advancement, allowing genomic,
 | Co-chair | | Affiliation |
 |:--------------|-|:-------------------------------:|
 | Seungchan Kim | | Center for Computational Systems Biology, Prairie View A&M University (sekim@pvamu.edu)|
-| Harshil Dhruv | | Translational Genomics Research Institute (hdhruv@tgen.org)|
+| Harshil Dhruv | | Translational Genomics Research Institute (hddhruv@gmail.com)|
 | Anup Sood     | | GE Global Research, US (anup.sood@ge.com)|
 
 ### Program committee members
@@ -52,3 +52,9 @@ Single cell -omics recently have made significant advancement, allowing genomic,
 
 ### Invited Speakr(s)
 **TBD**
+
+### Paper Submission
+
+The submission site is now available at 
+
+https://wi-lab.com/cyberchair/2019/bibm19/scripts/ws_submit.php
