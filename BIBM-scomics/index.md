@@ -9,8 +9,8 @@ body{margin: 25px}
 </style>
 
 <div class="FeaturedImgBanner" {% if page.featured-img %} style="background-image: url('{{ page.featured-img }}');" {% endif %}>
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    <br/><br/><br/> <br/><br/><br/>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    
 </div>
 
 ### [2019 IEEE BIBM Workshop](http://ieeebibm.org/BIBM2019/)
@@ -49,12 +49,27 @@ Single cell -omics recently have made significant advancement, allowing genomic,
 | Lin Wei | | Baylor Scott & White Research Institute (weilin.baylor@gmail.com) |
 | Yiyi Yan | | Mayo Clinic (yan.yiyi@mayo.edu) |
 
+### Program
+
+**TBD**
+
 
 ### Invited Speakr(s)
+
 **TBD**
 
 ### Paper Submission
 
+Please submit a full-length paper (up to 8 page IEEE 2-column format) through the online submission system. Electronic submissions in pdf format are required.
+
 The submission site is now available at 
 
 https://wi-lab.com/cyberchair/2019/bibm19/scripts/ws_submit.php
+
+### Registration
+
+**TBD**
+
+### Contact
+
+For general inquiries, please contact Dr. Xishuang Dong at xidong@pvamu.edu or Prof. Seungchan Kim at sekim@pvamu.edu.
