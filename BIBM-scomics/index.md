@@ -14,7 +14,7 @@ body{margin: 25px}
 </div>
 
 ### [2019 IEEE BIBM Workshop](http://ieeebibm.org/BIBM2019/)
-## Single Cell -Omics: Challenges and Opportunities (BIBM-SCOMICS)
+## Single Cell -Omics: Challenges and Opportunities (BIBM-SCOMICS) <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Single cell -omics recently have made significant advancement, allowing genomic, transcriptomic and proteomic profiling of diverse cell populations in biological specimen including peripheral blood mononuclear cells (PBMCs) and tumor tissue.  Methods to analyze cellular arrangements and cell-cell interactions are also emerging and are key to several major private and government-funded initiatives including Human Cell Atlas, Human Tumor Atlas and Human Biomolecular Atlas. Inherently, these data sets are large, highly complex and pose many challenges in acquiring, modeling and interpreting these data.  In this workshop, we will bring various expertise, including enabling technologies and computational methods utilizing such technologies to empowering biomedical studies. We will place special emphasis on multi-model data acquisition, image analytics, particularly spatial analyses and computational challenges with this large-scale data.  Possible topics include:
 
@@ -25,21 +25,25 @@ Single cell -omics recently have made significant advancement, allowing genomic,
 
 ### Important Dates:
 
-1. **Sept 20, 2019**	Due date for full workshop papers submission
-2. **Oct. 15, 2019**	Notification of paper acceptance to authors
-3. **Nov. 1, 2019**	Camera-ready of accepted papers
-4. **Nov. 18-21, 2019**	Workshops
+| Date | &nbsp; &nbsp; | |
+|:--------------|---|:-------------------------------|
+| 1. **Sept 20, 2019** | | Due date for full workshop papers submission |
+| 2. **Oct. 15, 2019** | | Notification of paper acceptance to authors |
+| 3. **Nov. 1, 2019** | | Camera-ready of accepted papers |
+| 4. **Nov. 18-21, 2019** | | Workshops |
+
+
 
 ### Program co-chairs
-| Co-chair | | Affiliation |
-|:--------------|-|:-------------------------------:|
+| Co-chair | &nbsp; &nbsp; | |
+|:--------------|---|:-------------------------------|
 | Seungchan Kim | | Center for Computational Systems Biology, Prairie View A&M University (sekim@pvamu.edu)|
 | Harshil Dhruv | | Translational Genomics Research Institute (hddhruv@gmail.com)|
 | Anup Sood     | | GE Global Research, US (anup.sood@ge.com)|
 
 ### Program committee members
-| PC member | | Affiliation |
-|:--------------|-|:-------------------------------:|
+| PC member | &nbsp; &nbsp; | |
+|:--------------|---|:-------------------------------|
 | Xishuang Dong	| | Prairie View A&M University (xidong@pvamu.edu) |
 | Chloe Kim	| | Advanced Technology Group, Office of CTO, Applied Materials (chloe_kim@amat.com) |
 | Parag Mallick	| | Stanford University (paragm@stanford.edu) |
@@ -62,9 +66,7 @@ Single cell -omics recently have made significant advancement, allowing genomic,
 
 Please submit a full-length paper (up to 8 page IEEE 2-column format) through the online submission system. Electronic submissions in pdf format are required.
 
-The submission site is now available at 
-
-https://wi-lab.com/cyberchair/2019/bibm19/scripts/ws_submit.php
+[[submit](https://wi-lab.com/cyberchair/2019/bibm19/scripts/submit.php?subarea=S23&undisplay_detail=1&wh=/cyberchair/2019/bibm19/scripts/ws_submit.php)] 
 
 ### Registration
 
@@ -73,3 +75,7 @@ https://wi-lab.com/cyberchair/2019/bibm19/scripts/ws_submit.php
 ### Contact
 
 For general inquiries, please contact Dr. Xishuang Dong at xidong@pvamu.edu or Prof. Seungchan Kim at sekim@pvamu.edu.
+
+### Acknowledgement
+
+This workshop is partly funded by Texas A&M University Systems' Chancellor’s Research Initiative (CRI) Award for the [Center for Computational Systems Biology at the Prairie View A&M University] (https://ccsb.pvamu.edu) (Seungchan Kim and Xishuang Dong) and NSF HBCU-RISE: Bridging Quantitative Science with Biological Research: Jumpstarting Computational Systems Biology Research at PVAMU (Seungchan KimK).
