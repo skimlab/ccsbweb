@@ -1,0 +1,25 @@
+---
+layout: post
+title: "[DOD-CDMRP Translational Team Science Award] Development of Classifiers for Novel Bladder Cancer Subtypes"
+author: Seungchan Kim
+image: 
+categories: [blog]
+tags: [grant]
+---
+
+[Dr. Seungchan Kim]({% post_url 2016-12-15-seungchan-kim %}) has been awarded a Translational Team Sceince Award (DoD-USAMRMC-CDMRP-TTSA), "Development of Classifiers for Novel Bladder Cancer Subtypes", in collaboration with Dr. Woonyoung Choi at Johns Hopkins Medicine.  The total award is more than $1.5M with ~$700k for CCSB@PVAMU and ~$800k for JHMI for four years (July 2019 - June 2023), and each site will be gvien a separate award.  This is the very first CDMRP award to the [Prairie View A&M University](https://www.pvamu.edu).
+
+This collaborative project will investigate the biological significance and clinical implications of novel basal immune subtypes and identify subtype-specific therapeutic targets using a pathway-guided, network-based algorithm on whole-transcriptome data.  We will leverage recent novel molecular subtypes of muscle-invasive bladder cancer (MIBC) and utilize computational and statistical approaches to systematically characterize molecular subtypes and biomarkers and develop clinical assays.
+
+The project will utilize [newly established sequencing facilities](/GL/) at CCSB@PVAMU, led by [Dr. Anna Joy]({% post_url 2017-11-01-anna-joy %}), to sequence 250 bladder cancer patient samples.  CCSB@PVAMU will be also responsible for computational analysis for the identification of novel subtypes of bladder cancer and the development of classifiers for those subtypes.  Dr. Choi at JHU will be responsible for acquisition of patient samples, validation and characterization of novel molecular subtypes of muscle-invasive bladder cancer (MIBC), specifically, basal immune-enriched (BIE) and basal immune-suppressed (BIS), within basal tumors, and identification of therapeutic strategies for these subtypes.
+
+In recognition of this award, Dr. Kim was recently invited to speak at [2019 BCAN THINK TANK - ADVANCING BLADDER CANCER RESEARCH] (https://www.bcan.org/2019-bladder-cancer-think-tank/), the premier annual bladder cancer-specific medical meeting in North America and BCAN’s essential vehicle for advancing collaborative bladder cancer research efforts.
+
+# Abstract
+Muscle invasive bladder cancer (MIBC) is a heterogeneous disease with various response to therapeutics. Current treatment options for MIBC are neoadjuvant cisplatin-based combination chemotherapy (NAC) followed by radical cystectomy or immunotherapy that are recently approved in US. However, there is no patient selection tools to predict who will benefit from chemotherapy, immunotherapy, or investigational drugs in bladder cancer. We and other investigators have identified molecular subtypes of MIBC, enriched with clinically actionable features such as specific mutations, copy number aberrations (CNAs), or molecular markers. Within our identified subtypes (MDA subtype), the p53-like subtype is characterized by fibroblast infiltration and chemo-resistance, while the luminal subtype includes papillary tumors enriched with activating FGFR3 mutations that may benefit from FGFR3 inhibitor treatment. The basal subtype is associated with the advanced stage and short survival in the absence of NAC – however, it showed the most survival benefit from NAC amongst all of the subtypes, despite the fact that the response rate to NAC in basal tumors still remains at only about 50%.
+
+Our more recent analysis has identified two novel immune subtypes within basal MIBC – basal immune enriched (BIE) and basal immune suppressed (BIS) showing important clinical implications. The BIE subtype, featuring the enrichment of tumor infiltrating lymphocytes (TILs) and IFN signature, had significantly improved survival outcomes with or without NAC, and a significant chemotherapeutic response rate (≤pT1 at cystectomy; 80%, p<0.001). Conversely, the BIS subtype with a low TILs signature had the worst survival outcomes in the absence of NAC and demonstrated uncoupling of survival benefit and low pathologic response to chemotherapy (≤pT1 at cystectomy; 24%, p<0.001). Interestingly, the pan-cancer predictive biomarker for immunotherapy was enriched in BIE subtype. Thus, in this study we propose to characterize our novel immune subtypes (BIE and BIS), define signaling pathways that are differentially activated between subtypes and are candidate therapeutic targets, and identify subtype-specific therapeutic strategies including chemotherapy and/or immunotherapy. We will also discover subtype-specific biomarkers with optimal number (< 25 per each subtype) to develop cost-effective clinical assay. 
+
+Together, a multidisciplinary team of computational scientists and molecular biologists, and oncologists will leverage recent novel molecular subtypes of MIBC and utilize rigorous computational and statistical approaches to systematically characterize molecular subtypes and biomarkers and develop clinical assays.  If successful, we will have systemic patient selection tools for therapeutic options in bladder cancer management.
+
+
