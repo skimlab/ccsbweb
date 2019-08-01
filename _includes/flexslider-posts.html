@@ -1,0 +1,14 @@
+<div>
+	<div class="flexslider" style="text-align: center; vertical-align: middle">
+		<ul class="slides">
+	  		{% for page in site.categories.papers limit:5 %}
+	  		<li>
+	  			<a href="{{ site.url }}{{ page.url }}">
+		    		<img src="{{ page.image }}" style="width: 400px; margin:0 auto">
+		    		<p class="flex-caption">{{ page.ref }}</p>
+		    	</a>
+	 		</li>
+	  		{% endfor %}
+		</ul>
+	</div>
+</div>

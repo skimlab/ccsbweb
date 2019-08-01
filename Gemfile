@@ -17,8 +17,11 @@ gem 'jekyll-redirect-from'
 gem 'octokit'
 gem 'netrc'
 
+# bootstrap
+gem 'bootstrap', '~> 4.3.1'
+
 # twitter plug-in
 gem 'jekyll-twitter-plugin'
 
 # SassC
-#gem 'sassc'
+gem 'sassc'
