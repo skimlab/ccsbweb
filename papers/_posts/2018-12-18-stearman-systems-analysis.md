@@ -1,17 +1,17 @@
 ---
 layout: paper
 title: "Systems Analysis of the Human Pulmonary Arterial Hypertension Lung Transcriptome"
-image: 
+image: /images/papers/2018-12-18-stearman-systems-analysis.png
 authors: Stearman RS, Bui QM, Speyer G, Handen A, Cornelius AR, Graham B, Kim S, Mickler EA, Tuder RM, Chan SY, Geraci MW
 year: 2019
-ref: Stearman et al. 2019. American Journal of Respiratory Cell and Molecular Biology (in press)
+ref: Stearman et al. 2019. Am J Respir Cell Mol Biol. 2019 Jun;60(6):637-649
 journal: "American Journal of Respiratory Cell and Molecular Biology"
 doi: 10.1165/rcmb.2018-0368OC
 github:
-pdf: 
+pdf: /pdfs/papers/2018-12-18-stearman-systems-analysis.pdf
 keywords: Pulmonary Arterial Hypertension; Lung Transcriptomics; Bioinformatics
 PMID: 30562042
-PMCID: 
+PMCID: PMC6543748 
 ---
 
 # Abstract

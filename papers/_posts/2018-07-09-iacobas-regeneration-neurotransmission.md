@@ -4,14 +4,14 @@ title: "Regeneration of Neurotransmission Transcriptome in a Model of Epileptic 
 image: /images/papers/2018-07-09-iacobas-regeneration-neurotransmission.jpg
 authors: Iacobas DA, Velisek L.
 year: 2018
-ref: Iacobas and Velisek. 2018. Neural Regeneration Research (accepted)
+ref: Iacobas and Velisek. 2018. Neural Regen Res. 2018 Oct;13(10):1715-1718
 journal: "Neural Regeneration Research"
 doi: 10.4103/1673-5374.238607
 github:
 pdf: /pdfs/papers/2018-07-09-iacobas-regeneration-neurotransmission.pdf
 keywords: ACTH, autism, cholinergic transmission, hypothalamus, infantile spasms, microarrays, PMX53, sex differences
 PMID: 30136682
-PMCID: 
+PMCID: PMC6128045 
 ---
 
 # Abstract

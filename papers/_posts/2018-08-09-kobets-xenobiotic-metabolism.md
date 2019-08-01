@@ -4,13 +4,13 @@ title: "Expression of Genes Encoding for Xenobiotic Metabolism after Exposure to
 image: /images/papers/2018-08-09-iacobas-xenobiotic-metabolism.png
 authors: Kobets T, Iatropoulos MJ, Duan JD, Brunnemann KD, Iacobas DA, Iacobas S, Vock E, Deschl U, Williams, GM
 year: 2018
-ref: Kobets et al. 2018. Toxicological Sciences (accepted)
+ref: Kobets et al. 2018. Toxicol Sci. 2018 Nov 1;166(1):82-96
 journal: "Toxicological Sciences"
 doi: 10.1093/toxsci/kfy197
 github:
 pdf: /pdfs/papers/2018-08-09-Kobets-Expression-of-Genes.pdf
 keywords: Chicken Egg Genotoxicity Assay, Gene expression profile, Genes involved in xenobiotic metabolism, Microarray, Nitrosamines
-PMID: 
+PMID: 30102407
 PMCID: 
 ---
 

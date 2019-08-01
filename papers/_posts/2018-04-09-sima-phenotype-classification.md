@@ -4,7 +4,7 @@ title: "Phenotype Classification Using Moment Features of Single-Cell Data"
 image: /images/papers/2018-04-09-sima-phenotype-classification.jpg
 authors: Sima C, Hua J, Bittner ML, Kim S, Dougherty ER.
 year: 2018
-ref: Sima et al. 2018. Cancer Inform. (accepted)
+ref: Sima et al. 2018. Cancer Inform. 
 journal: "Cancer Informatics"
 doi: 10.1177/1176935118771701
 github:
