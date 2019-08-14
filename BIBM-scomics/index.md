@@ -25,7 +25,7 @@ Single cell -omics recently have made significant advancement, allowing genomic,
 
 ### Important Dates:
 
-| Date | &nbsp; &nbsp; | |
+| Date |     | |
 |:--------------|---|:-------------------------------|
 | 1. **Sept 20, 2019** | | Due date for full workshop papers submission |
 | 2. **Oct. 15, 2019** | | Notification of paper acceptance to authors |
@@ -35,14 +35,14 @@ Single cell -omics recently have made significant advancement, allowing genomic,
 
 
 ### Program co-chairs
-| Co-chair | &nbsp; &nbsp; | |
+| Co-chair |    | |
 |:--------------|---|:-------------------------------|
 | Seungchan Kim | | Center for Computational Systems Biology, Prairie View A&M University (sekim@pvamu.edu)|
 | Harshil Dhruv | | Translational Genomics Research Institute (hddhruv@gmail.com)|
 | Anup Sood     | | GE Global Research, US (anup.sood@ge.com)|
 
 ### Program committee members
-| PC member | &nbsp; &nbsp; | |
+| PC member |   | |
 |:--------------|---|:-------------------------------|
 | Xishuang Dong	| | Prairie View A&M University (xidong@pvamu.edu) |
 | Chloe Kim	| | Advanced Technology Group, Office of CTO, Applied Materials (chloe_kim@amat.com) |
@@ -70,7 +70,7 @@ Please submit a full-length paper (up to 8 page IEEE 2-column format) through th
 
 ### Registration
 
-**TBD**
+[BIBM 2019 registration](https://ieeebibm.org/BIBM2019/Registration.html)
 
 ### Contact
 
