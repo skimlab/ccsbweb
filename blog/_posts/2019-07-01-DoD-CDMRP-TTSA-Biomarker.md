@@ -7,7 +7,7 @@ categories: [blog]
 tags: [grant]
 ---
 
-[Dr. Seungchan Kim]({% post_url 2016-12-15-seungchan-kim %}) has been awarded a Translational Team Science Award (DoD-USAMRMC-CDMRP-TTSA), "Development of Classifiers for Novel Bladder Cancer Subtypes", in collaboration with Dr. Woonyoung Choi at Johns Hopkins Medicine.  The total award is more than $1.5M with ~$700k for CCSB@PVAMU and ~$800k for JHMI for four years (July 2019 - June 2023), and each site will be gvien a separate award.  This is the very first CDMRP award to the [Prairie View A&M University](https://www.pvamu.edu).
+[Dr. Seungchan Kim]({% post_url 2016-12-15-seungchan-kim %}) has been awarded a Translational Team Science Award (DoD-USAMRMC-CDMRP-TTSA), "Development of Classifiers for Novel Bladder Cancer Subtypes" (W81XWH-19-1-0149), in collaboration with Dr. Woonyoung Choi at Johns Hopkins Medicine.  The total award is more than $1.5M with ~$700k for CCSB@PVAMU and ~$800k for JHMI for four years (July 2019 - June 2023), and each site will be gvien a separate award.  This is the very first CDMRP award to the [Prairie View A&M University](https://www.pvamu.edu).
 
 This collaborative project will investigate the biological significance and clinical implications of novel basal immune subtypes and identify subtype-specific therapeutic targets using a pathway-guided, network-based algorithm on whole-transcriptome data.  We will leverage recent novel molecular subtypes of muscle-invasive bladder cancer (MIBC) and utilize computational and statistical approaches to systematically characterize molecular subtypes and biomarkers and develop clinical assays.
 
