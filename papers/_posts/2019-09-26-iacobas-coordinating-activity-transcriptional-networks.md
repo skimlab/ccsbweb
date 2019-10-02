@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Coordinated Activity of Transcriptional Networks Responding to the Pattern of Action Potential Firing in Neurons"
-image: /images/papers/2019-09-26-coordinating-activity-transcriptional-networks.png
+image: /images/papers/2019-09-26-coordinating-activity-transcriptional-networks.jpg
 authors: Iacobas DA, Iacobas S, Lee PR, Cohen JE, Fields RD
 year: 2019
 ref: Iacobas et al. 26 September 2019. Genes 10(10):754.
