@@ -26,7 +26,7 @@ Another barrier to therapeutic discovery is the enormous chemical and proteomic 
 
 # Speaker Bio
 
-<img class="offset" src="/images/talks/speakers/yang-shen" style="width:125px;float:left;border:3px solid black;margin:10px 10px;">
+<img class="offset" src="/images/talks/speakers/yang-shen.png" style="width:125px;float:left;border:3px solid black;margin:10px 10px;">
 [Dr. Yang Shen](https://engineering.tamu.edu/electrical/profiles/shen-yang.html) is an Assistant Professor in the Department of Electrical and Computer Engineering at Texas A&M University. He received his B.E. from the University of Science and Technology of China, Ph.D. in Systems Engineering from Boston University, and postdoctoral training in Biological Engineering and Computer Science at the Massachusetts Institute of Technology. Prior to joining TAMU, he had been a research assistant professor at Toyota Technological Institute at Chicago. Dr. Shen’s research interests are in optimization and learning algorithms for modeling biological molecules, systems, and data. In particular, ongoing projects include prediction and design of protein interactions, mechanistic prediction of protein mutational effects, and resistance-overcoming drug design.
 
 
