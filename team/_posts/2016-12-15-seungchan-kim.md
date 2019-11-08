@@ -1,8 +1,8 @@
 ---
 layout: member
 name: Seungchan Kim
-title: Director (CCSB), Chief Scientist and Executive Professor
-affiliation: CCSB & ECE
+title: Chief Scientist and Executive Professor & Director (CCSB)
+affiliation: ECE & CCSB
 handle: sekim
 email: sekim@pvamu.edu
 twitter: skim_lab

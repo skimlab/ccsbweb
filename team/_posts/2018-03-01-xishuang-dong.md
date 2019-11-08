@@ -2,7 +2,7 @@
 layout: member
 name: Xishuang Dong
 title: Assistant Professor
-affiliation: CCSB, CREDIT & ECE
+affiliation: ECE, CCSB & CREDIT
 handle: dongxishuang
 email: xidong@pvamu.edu
 twitter: 

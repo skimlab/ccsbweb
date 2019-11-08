@@ -1,8 +1,8 @@
 ---
 layout: member
 name: Xiangfang Li
-title: Assistant Professor
-affiliation: CCSB, CREDIT & ECE
+title: Associate Professor
+affiliation: ECE, CREDIT & CCSB
 handle: xili
 email: xili@pvamu.edu
 twitter: 

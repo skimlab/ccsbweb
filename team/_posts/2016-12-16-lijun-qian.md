@@ -1,8 +1,8 @@
 ---
 layout: member
 name: Lijun Qian
-title: Director (CREDIT) & AT&T Endowed Professor
-affiliation: CCSB, CREDIT & ECE
+title: Regents Professor, AT&T Endowed Professor & Director (CREDIT)
+affiliation: ECE, CREDIT & CCSB
 handle: liqian
 email: liqian@pvamu.edu
 twitter: 
