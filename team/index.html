@@ -37,6 +37,7 @@ categories:
 {% endfor %}
 {% cycle 'close rows': nil, '</div>', '</div>' %}
 
+<!-- HIDDEN FOR NOW 
 
 <div class="row">
 	<div class="col-md-12">
@@ -63,12 +64,14 @@ categories:
   				</div>
 			</div>
 			<div class="bigspacer"></div>
+			<div class="bigspacer"></div>
         </div>
     {% cycle 'close rows 2': nil, nil, '</div>' %}
     {% endif %}
 {% endfor %}
 {% cycle 'close rows 2': nil, '</div>', '</div>' %}
 
+-->
 
 <div class="row">
 	<div class="col-md-12">
@@ -85,17 +88,16 @@ categories:
     {% cycle 'add rows 2': '<div class="row">', nil, nil %}
 		<div class="col-md-4 memberbox">
 			<div class="media">
-  				<!--
   				<a class="pull-left" href="{{ member.url | prepend:site.baseurl }}">
     				<img width=160 class="media-object" src="{{ member.image | prepend:site.baseurl }}">
   				</a>
-  				-->
  			 	<div class="media-body">
     				<div class="head media-heading"><a href="{{ member.url | prepend:site.baseurl }}" class="off">{{ member.name }}</a></div>
     				<p class="note">{{ member.title }}</p>
     				<p class="note">{{ member.affiliation }}</p>
   				</div>
 			</div>
+			<div class="bigspacer"></div>
 			<div class="bigspacer"></div>
         </div>
     {% cycle 'close rows 2': nil, nil, '</div>' %}
