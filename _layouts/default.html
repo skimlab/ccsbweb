@@ -65,8 +65,8 @@
 						<span class="icon-bar"></span>
 					</button>
 					{% if page.categories.first != 'home' %}					
-					<object class="logo navbar-brand" data="{{ '/images/ccsb-logo.svg' | prepend:site.baseurl }}" type="image/svg+xml"></object>
-					<a class="navbar-brand" href="{{ '/' | prepend:site.baseurl }}">CCSB@PVAMU</a>
+					<a class="navbar-brand" href="{{ '/' | prepend:site.baseurl }}">
+					<img src="{{ '/images/ccsb-pvamu-logo.png' | prepend:site.baseurl }}" style="height:40px" title="CCSB@PVAMU" alt="CCSB@PVAMU" align="left"></a>
 					{% else %}
 					<a class="navbar-brand" href="http://www.pvamu.edu">
 					<img src="{{ '/images/pvamu-logo.svg' | prepend:site.baseurl }}" style="height:32px" title="The Prairie View A&M University" alt="PVAMU"></a>
