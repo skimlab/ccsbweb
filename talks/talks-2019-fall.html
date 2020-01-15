@@ -1,0 +1,167 @@
+---
+layout: default
+title: CCSB@PVAMU / talks
+categories: 
+ - talks
+---
+
+
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="title">
+			CCSB Biweekly Seminar Series
+		</div>
+		<div class="smallspacer"></div>
+		<div class="smallspacer"></div>
+		<div class="smallhead">
+			CCSB Biweekly Seminar Series is to promote interdisciplinary research across PVAMU campus and beyond, hosted by CRI <a href="https://ccsb.pvamu.edu">Center for Computational Systems Biology</a>.   We alternate between CCSB researchers and external speakers. We meet in CCSB Conference Room (ELEN 231).  <a href="https://ccsb.pvamu.edu/team/dumitru-iacobas/">Dr. Dumitru Iacobas</a> is the organizer for the seminar series.  Please contact him if you have any suggestion, including speakers.
+		</div>	
+
+		<div class="spacer"></div>
+
+		<div class="head">
+			Fall 2019 Speakers
+		</div>
+
+		<div>
+
+		<table style="width:90%">
+		<tr>
+			<th>Date</th>
+			<th>Speaker</th> 
+			<th>Title</th>
+		</tr>
+
+		<tr>
+			<td>Wed., Sept. 11, 2019</td>
+
+			<td><a href="https://ccsb.pvamu.edu/team/tesfamichael-kebrom/">Tesfamichael Kebrom</a>, Ph.D., Research Scientist, Prairie View A&M University</td> 
+
+			<td><a href="/blog/talks/CCSB-Seminar-TKebrom-Feeding-the-Ten-Billion/"><em>Feeding the ten billion: from green revolution to gene revolution</em></a></td>
+		</tr>
+
+		<tr>
+			<td>Wed., Sept. 25, 2019</td>
+
+			<td><a href="https://faculty.mdanderson.org/profiles/bisrat_debeb.html">Bisrat G Debeb</a>, DVM, Ph.D., Assistant Professor, M.D. Anderson Cancer Center</td> 
+
+			<td><a href="/blog/talks/CCSB-Seminar-BDebeb-Molecular-Insight/"><em>Molecular insights into inflammatory breast cancer (IBC) aggressiveness and metastasis</em></a></td>
+		</tr>
+
+		<tr>
+			<td>Wed., Oct. 9, 2019</td>
+
+			<td><a href="https://ccsb.pvamu.edu/team/dumitru-iacobas/">Dumitru Iacobas</a>, Ph.D., Research Professor, Prairie View A&M University</td> 
+
+			<td><em><a href="/blog/talks/CCSB-Seminar-DIacobas-Brain_Sex_Synapses/">Brain, sex, synapses and neurological diseases - a transcriptomic story</em></a></td>
+
+		</tr>
+
+		<tr>
+			<td>Wed., Oct. 23, 2019</td>
+
+			<td><a href="https://urology.jhu.edu/woonyoungchoi/">Woonyoung Choi</a>, Ph.D., Assistant Professor, Johns Hopkins University</td> 
+
+			<td><em><a href="/blog/talks/CCSB-Seminar-Choi-Molecular_Subtype_MIBC/">Molecular Subtypes in Muscle Invasive Bladder Cancer</em></a></td>
+
+		</tr>
+
+		<tr>
+			<td>Thur., Nov. 7, 2019</td>
+
+			<td><a href="https://engineering.tamu.edu/electrical/profiles/shen-yang.html">Yang Shen</a>, Ph.D., Assistant Professor, Texas A&M University</td> 
+
+			<td><em><a href="/blog/talks/CCSB-Seminar-Shen-Protein_Modeling/">Mechanistic Protein Modeling for Rational Drug Discovery</a></em></td>
+
+		</tr>
+
+		<tr>
+			<td>Wed., Nov. 13, 2019</td>
+
+			<td><a href="http://www.pvamu.edu/cecstr/researchers-2/">Mohamed F. Chouikha</a>, Ph.D., Chief Scientist and Executive Professor, Prairie View A&M University</td> 
+
+			<td><em><a href="/blog/talks/CCSB-Seminar-Chouikha-Cybersecurity-Science/">Cybersecurity present and future: is there a need for a Science of Cybersecurity</a></em></td>
+		</tr>
+
+		<tr>
+			<td>Wed., Dec. 4, 2019</td>
+
+			<td><a href="https://www.pvamu.edu/cresse/cresse-researchers/richard-wilkins/">Richard Wilkins</a>, Ph.D., Professor, Prairie View A&M University</td> 
+
+			<td><em><a href="/blog/talks/CCSB-Seminar-Wilkins-Radiation-Shielding/">Shielding studies for aerospace radiation applications</a></em></td>
+		</tr>
+
+		<tr>
+			<td>Wed., Dec. 11, 2019</td>
+
+			<td><a href="https://ccsb.pvamu.edu/team/anna-joy/">Anna Joy</a>, Ph.D., Research Associate Professor, Prairie View A&M University</td> 
+
+			<td><em><a href="/blog/talks/CCSB-Seminar-Joy-GBM-Immune-Subtypes/">Discovery of Glioblastoma immune subtypes to improve immunotherapy</a></em></td>
+		</tr>
+		</table>
+
+		</div>
+
+		<div class="smallspacer"></div>
+
+		<div class="smallspacer"></div>
+
+		<div class="smallhead">
+Note: This seminar series is partially sponsored by <em>Texas A&M University Chancellor's Research Initiative (CRI) grant</em> and <em>Wesley Lecture Series of Department of Electrical and Computer Engineering at the Prairie View A&M University</em>.
+		</div>
+	</div>
+</div>	
+
+
+<div class="bigspacer"></div>
+
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="title">
+			Recent Talks
+		</div>	
+	</div>
+</div>	
+
+<div class="bigspacer"></div>
+
+{% for talk in site.categories.talks %}
+{% unless talk.draft %}
+
+	{% for member in site.categories.team %}
+		{% if member.title == talk.speaker %}
+			{% assign speaker = member %}
+		{% endif %}
+	{% endfor %}
+
+    {% cycle 'add rows': '<div class="row">', nil, nil %}
+		<div class="col-md-4 talkbox">
+			<div class="smallhead">
+				<a href="{{ talk.url | prepend:site.baseurl }}" class="off">{{ talk.title }}</a>
+			</div>
+			<div class="smallspacer"></div>
+      {% if talk.venue %}
+			<div class="note">
+				{{ talk.event }} at {{ talk.venue }}
+			</div>
+      {% else %}
+      <div class="note">
+				{{ talk.event }}
+			</div>
+      {% endif %}
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				{{ talk.date | date: "%-d %b %Y" }}
+				by <a class="off" href="{{ speaker.url | prepend:site.baseurl }}">{{ talk.speaker }}</a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+        </div>
+    {% cycle 'close rows': nil, nil, '</div>' %}
+{% endunless %}
+{% endfor %}
+{% cycle 'close rows': nil, '</div>', '</div>' %}
+
+
