@@ -1,14 +1,14 @@
 ---
 layout: paper
 title: "Coordinated Activity of Transcriptional Networks Responding to the Pattern of Action Potential Firing in Neurons"
-image: /images/papers/2019-09-26-coordinating-activity-transcriptional-networks.jpg
+image: /images/papers/2019-09-26-iacobas-coordinating-activity-transcriptional-networks.jpg
 authors: Iacobas DA, Iacobas S, Lee PR, Cohen JE, Fields RD
 year: 2019
 ref: Iacobas et al. 26 September 2019. Genes 10(10):754.
 journal: "Genes"
 doi: 10.3390/genes10100754
 github:
-pdf: /pdfs/papers/2019-09-26-coordinating-activity-transcriptional-networks.pdf
+pdf: /pdfs/papers/2019-09-26-iacobas-coordinating-activity-transcriptional-networks.pdf
 keywords: calcium voltage-dependent channels; calcium signaling; covariance analysis; DRG neurons; gene expression variability; potassium voltage-gated channels; sodium voltage-gated channels; transcription factors
 PMID: 
 PMCID: 

@@ -1,14 +1,14 @@
 ---
 layout: paper
 title: "The Gene Master Regulators (GMR) Approach Provides Legitimate Targets for Personalized, Time-Sensitive Cancer Gene Therapy"
-image: /images/papers/2019-07-25-gene-master-regulators.png
+image: /images/papers/2019-07-25-iacobas-gene-master-regulators.png
 authors: Iacobas, S, Ede N, Iacobas DA
 year: 2019
 ref: Iacobas et al. 25 July 2019. Genes 10(8):560.
 journal: "Genes"
 doi: 10.3390/genes10080560
 github:
-pdf: /pdfs/papers/2019-07-25-gene-master-regulators.pdf
+pdf: /pdfs/papers/2019-07-25-iacobas-gene-master-regulators.pdf
 keywords: papillary thyroid cancer; BCPAP cells; 8505C cells; prostate cancer; LNCaP cells; DU145 cells; kidney cancer; HL-60 cells; cancer gene software
 PMID: 31349573
 PMCID: 
