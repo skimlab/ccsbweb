@@ -3,8 +3,8 @@
 		<ul class="slides">
 	  		{% for page in site.categories.papers limit:5 %}
 	  		<li>
-	  			<a href="{{ site.url }}{{ page.url }}">
-		    		<img src="{{ page.image }}" style="width: 400px; margin:0 auto">
+	  			<a href="{{ site.baseurl }}{{ page.url }}">
+		    		<img src="{{ page.image | relative_url }}" style="width: 400px; margin:0 auto">
 		    		<p class="flex-caption">{{ page.ref }}</p>
 		    	</a>
 	 		</li>

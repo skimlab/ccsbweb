@@ -9,6 +9,6 @@ Today, Dr. Anna Joy submitted our first sequencing using a training kit (PhiX) i
 Here are some pictures.
 
 
-<img style="width:256px;" src="{{ '/images/blog/2018-04-06-first-sequencing/ccsb_firstseq1.jpg' | prepend:site.baseurl }}"/> | <img style="width:256px;" src="{{ '/images/blog/2018-04-06-first-sequencing/ccsb_firstseq2.jpg' | prepend:site.baseurl }}"/>
+<img style="width:256px;" src="{{ '/images/blog/2018-04-06-first-sequencing/ccsb_firstseq1.jpg' | relative_url }}"/> | <img style="width:256px;" src="{{ '/images/blog/2018-04-06-first-sequencing/ccsb_firstseq2.jpg' | relative_url }}"/>
 ---|---
-<img style="width:256px;" src="{{ '/images/blog/2018-04-06-first-sequencing/ccsb_firstseq3.jpg' | prepend:site.baseurl }}"/> | <img style="width:256px;" src="{{ '/images/blog/2018-04-06-first-sequencing/ccsb_firstseq4.jpg' | prepend:site.baseurl }}"/>
+<img style="width:256px;" src="{{ '/images/blog/2018-04-06-first-sequencing/ccsb_firstseq3.jpg' | relative_url }}"/> | <img style="width:256px;" src="{{ '/images/blog/2018-04-06-first-sequencing/ccsb_firstseq4.jpg' | relative_url }}"/>

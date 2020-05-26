@@ -10,12 +10,12 @@ categories:
 		<div class="centered-pills">
 			<ul class="nav nav-pills note">
 				<li role="presentation">
-					<a class="off" href="{{ '/blog/' | prepend:site.baseurl }}">
+					<a class="off" href="{{ '/blog/' | relative_url }}">
 						<i class="fa fa-refresh fa-fw"></i> Timeline
 					</a>
 				</li>
 				<li role="presentation" class="active">
-					<a class="off" href="{{ '/blog/archive/' | prepend:site.baseurl }}">
+					<a class="off" href="{{ '/blog/archive/' | relative_url }}">
 						<i class="fa fa-list-ul fa-fw"></i> Index
 					</a>
 				</li>
@@ -27,10 +27,10 @@ categories:
 
 {% for post in site.categories.blog %}
 
-    {% cycle 'add rows': '<div class="row">', nil, nil %}
+    {% cycle 'add rows': '<div class="row">', '', '' %}
 		<div class="col-md-4 postbox">
 			<div class="smallhead">
-				<a href="{{ post.url | prepend:site.baseurl }}" class="off">{{ post.title }}</a>
+				<a href="{{ post.url | relative_url }}" class="off">{{ post.title }}</a>
 			</div>
 			<div class="smallspacer"></div>
 			<div class="smallnote">
@@ -39,7 +39,7 @@ categories:
         by <a class="off" href="
           {% for member in site.categories.team %}
             {% if member.name == post.author %}
-              {{ member.url | prepend:site.baseurl }}
+              {{ member.url | relative_url }}
             {% endif %}
           {% endfor %}
         ">
@@ -51,7 +51,7 @@ categories:
         <a class="off" href="
           {% for member in site.categories.team %}
             {% if member.name == post.authors.first %}
-              {{ member.url | prepend:site.baseurl }}
+              {{ member.url | relative_url }}
             {% endif %}
           {% endfor %}
         ">
@@ -61,7 +61,7 @@ categories:
         <a class="off" href="
           {% for member in site.categories.team %}
             {% if member.name == post.authors.last %}
-              {{ member.url | prepend:site.baseurl }}
+              {{ member.url | relative_url }}
             {% endif %}
           {% endfor %}
         ">
@@ -72,6 +72,6 @@ categories:
 			<div class="bigspacer"></div>
 			<div class="spacer"></div>
         </div>
-    {% cycle 'close rows': nil, nil, '</div>' %}
+    {% cycle 'close rows': '', '', '</div>' %}
 {% endfor %}
-{% cycle 'close rows': nil, '</div>', '</div>' %}
+{% cycle 'close rows': '', '</div>', '</div>' %}

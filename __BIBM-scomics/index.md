@@ -8,7 +8,7 @@ featured-img: /images/banner.jpg
 body{margin: 25px}
 </style>
 
-<div class="FeaturedImgBanner" {% if page.featured-img %} style="background-image: url('{{ page.featured-img }}');" {% endif %}>
+<div class="FeaturedImgBanner" {% if page.featured-img %} style="background-image: url('{{ page.featured-img | relative_url }}');" {% endif %}>
     <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
     
 </div>
@@ -35,13 +35,16 @@ Single cell -omics recently have made significant advancement, allowing genomic,
 
 
 ### Program co-chairs
+
 | Co-chair |    | |
 |:--------------|---|:-------------------------------|
-| Seungchan Kim | | Center for Computational Systems Biology, Prairie View A&M University (sekim@pvamu.edu)|
-| Harshil Dhruv | | Translational Genomics Research Institute (hddhruv@gmail.com)|
-| Anup Sood     | | GE Global Research, US (anup.sood@ge.com)|
+| Seungchan Kim | | Center for Computational Systems Biology, Prairie View A&M University (sekim@pvamu.edu) |
+| Harshil Dhruv | | Translational Genomics Research Institute (hddhruv@gmail.com) |
+| Anup Sood     | | GE Global Research, US (anup.sood@ge.com) |
+
 
 ### Program committee members
+
 | PC member |   | |
 |:--------------|---|:-------------------------------|
 | Xishuang Dong	| | Prairie View A&M University (xidong@pvamu.edu) |
@@ -52,6 +55,7 @@ Single cell -omics recently have made significant advancement, allowing genomic,
 | Alberto Santamaria-Pang | | GE Global Research, US (santamar@ge.com) |
 | Lin Wei | | Baylor Scott & White Research Institute (weilin.baylor@gmail.com) |
 | Yiyi Yan | | Mayo Clinic (yan.yiyi@mayo.edu) |
+
 
 ### Program
 

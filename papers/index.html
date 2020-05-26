@@ -6,20 +6,20 @@ categories:
 ---
 
 {% for paper in site.categories.papers %}
-    {% cycle 'add rows': '<div class="row">', nil, nil %}
+    {% cycle 'add rows': '<div class="row">', '', '' %}
 		<div class="col-md-4 paperbox">
 			<div class="media">
-  				<a class="pull-right" href="{{ paper.url | prepend:site.baseurl }}">
-    				<img width=100 class="media-object" src="{{ paper.image | prepend:site.baseurl }}">
+  				<a class="pull-right" href="{{ paper.url | relative_url }}">
+    				<img width=100 class="media-object" src="{{ paper.image | relative_url }}">
   				</a>
  			 	<div class="media-body">
-    				<div class="smallhead media-heading"><a href="{{ paper.url | prepend:site.baseurl }}" class="off">{{ paper.title }}</a></div>
+    				<div class="smallhead media-heading"><a href="{{ paper.url | relative_url }}" class="off">{{ paper.title }}</a></div>
     				<p class="note">{{ paper.ref }}</p>
   				</div>
 			</div>
 			<div class="bigspacer"></div>
 			<div class="spacer"></div>
         </div>
-    {% cycle 'close rows': nil, nil, '</div>' %}
+    {% cycle 'close rows': '', '', '</div>' %}
 {% endfor %}
-{% cycle 'close rows': nil, '</div>', '</div>' %}
+{% cycle 'close rows': '', '</div>', '</div>' %}

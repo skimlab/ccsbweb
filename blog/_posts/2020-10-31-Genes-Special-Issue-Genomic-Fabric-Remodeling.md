@@ -7,5 +7,4 @@ categories: [blog]
 tags: [special issue]
 ---
 
-Genomic fabric remodeling in neurological disorders - a Special Issue of the MDPI Journal Genes will be guest-edited by Drs. [Dumitru A Iacobas]({% post_url 2017-11-15-dumitru-iacobas %}) (CCSB-PVAMU) and [David C Spray](https://einstein.pure.elsevier.com/en/persons/david-c-spray) (Albert Einstein College of Medicine). Details in https://www.mdpi.com/journal/genes/special_issues/Genomic_Fabric
-
+Genomic fabric remodeling in neurological disorders - a Special Issue of the MDPI Journal Genes will be guest-edited by Drs. [Dumitru A Iacobas]({% post_url /team/2017-11-15-dumitru-iacobas %}) (CCSB-PVAMU) and [David C Spray](https://einstein.pure.elsevier.com/en/persons/david-c-spray) (Albert Einstein College of Medicine). Details in [here](https://www.mdpi.com/journal/genes/special_issues/Genomic_Fabric)

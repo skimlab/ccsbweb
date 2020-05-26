@@ -5,4 +5,4 @@ author: Seungchan Kim
 image: 
 ---
 
-On July 17 of 2018, PVAMU CCSB Genomics Lab has been certified for BSL2, thanks for [Dr. Anna Joy]({{ site.baseurl }}{% post_url 2017-11-01-anna-joy %}) and [Ms. Donna Pulkrabek](https://www.pvamu.edu/research/about-us/research-staff/).
+On July 17 of 2018, PVAMU CCSB Genomics Lab has been certified for BSL2, thanks for [Dr. Anna Joy]({% post_url /team/2017-11-01-anna-joy %}) and [Ms. Donna Pulkrabek](https://www.pvamu.edu/research/about-us/research-staff/).

@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<div class="blog-talk">
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="media">
+				<div class="media-body">
+					<div class="title media-heading">
+						<a href="{{ page.url | relative_url }}" class="off">{{ page.title }}</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-7">
+			<div class="media">
+				<div class="media-body">
+					<H3>Speaker: 
+						{% if page.speakerurl %}<a class="off" href="{{ page.speakerurl }}">
+							{{page.speaker}}</a>
+						{% else %}
+							{{page.speaker}}
+						{% endif %}
+					</H3>
+					<H4>When: {{page.time}}, {{ page.date | date: "%b %-d, %Y" }}</H4>
+					{% if page.webinar %}
+						<H4>Where: Webinar [ <a class="off", href="{{ page.webinar }}">Join Meeing</a> ]</H4>
+					{% else %}
+						<H4>Where: {{page.venue}}</H4>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<img class="offset" src="{{ page.photo | relative_url }}", style="width:125px;float:right;border:3px solid black;margin:10px 10px;">
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+			<div class="post">
+				{{ content }}
+			</div>
+		</div>
+		<div class="col-md-1"></div>
+	</div>
+
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>
+
+</div>

@@ -18,7 +18,14 @@ categories:
 		<div class="smallhead">
 	    	<p>
 			The <a href="https://ccsb.pvamu.edu">Center for Computational Systems Biology</a> at the <a href="https://www.pvamu.edu">Prairie View A&M University</a> (CCSB@PVAMU) was established in 2017, by a funding from the <a href="https://www.tamus.edu">Texas A&M University Systems</a> <a href="https://news.tamus.edu/tamus-chancellor-john-sharp-to-announces-100-million-research-initiative/">Chancellor’s Research Initiative (CRI)</a> to become a nationally recognized computational systems biology research center.  </p>
+		</div>
+	</div>
+</div>
 
+<!-- HIDE old content
+<div class="row">
+	<div class="col-md-12">
+		<div class="smallhead">
 			<p>
 			As a newly established center, we are rapidly developing research programs to study 1) biomedical questions of high translational significance and impact and 2) challenging questions in plant and agricultural science, utilizing various genomics and computational tools.  The center aims to achieve:
         	<ul>
@@ -37,14 +44,7 @@ categories:
 		</div>
 	</div>
 </div>
-
-<div class="bigspacer"></div>
-
-<div style="margin: 0 auto; width:450px;">
-	<div id="centered" style="width:500px;">
-	{% include flexslider-posts.html %}
-	</div>
-</div>
+-->
 
 
 <div class="bigspacer"></div>
@@ -52,7 +52,7 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
-			<a class="off" href="{{ '/blog/' | prepend:site.baseurl }}">Recent posts</a>
+			<a class="off" href="{{ '/blog/' | relative_url }}">Recent posts</a>
 		</div>
 		<div class="spacer"></div>
 	</div>
@@ -61,61 +61,61 @@ categories:
 <div class="row">
 	{% for post in site.categories.blog limit:4 %}
 
-	{% for member in site.categories.team %}
-		{% if member.title == post.author %}
-			{% assign author = member %}
-		{% endif %}
-	{% endfor %}
+		{% for member in site.categories.team %}
+			{% if member.title == post.author %}
+				{% assign author = member %}
+			{% endif %}
+		{% endfor %}
 
-	<div class="col-md-3 reduced-gutter">
-		<div class="pad-left">
-			<div class="note">
-				<i class="fa fa-comment-o fa-fw"></i>
-				<a class="off" href="{{ post.url | prepend:site.baseurl }}">
-				{{ post.title }}
-				</a>
+		<div class="col-md-3 reduced-gutter">
+			<div class="pad-left">
+				<div class="note">
+					<i class="fa fa-comment-o fa-fw"></i>
+					<a class="off" href="{{ post.url | relative_url }}">
+					{{ post.title }}
+					</a>
+				</div>
+				<div class="smallspacer"></div>
+				<div class="smallnote">
+					Posted
+					{{ post.date | date: "%-d %b %Y" }}
+	        {% if post.author %}
+	        by <a class="off" href="
+	          {% for member in site.categories.team %}
+	            {% if member.name == post.author %}
+	              {{ member.url | relative_url }}
+	            {% endif %}
+	          {% endfor %}
+	        ">
+	        {{ post.author }}
+	        </a>
+	        {% endif %}
+	        {% if post.authors %}
+	        by
+	        <a class="off" href="
+	          {% for member in site.categories.team %}
+	            {% if member.name == post.authors.first %}
+	              {{ member.url | relative_url }}
+	            {% endif %}
+	          {% endfor %}
+	        ">
+	        {{ post.authors.first }}
+	        </a>
+	        and
+	        <a class="off" href="
+	          {% for member in site.categories.team %}
+	            {% if member.name == post.authors.last %}
+	              {{ member.url | relative_url }}
+	            {% endif %}
+	          {% endfor %}
+	        ">
+	        {{ post.authors.last }}
+	        </a>
+	        {% endif %}
+				</div>
+				<div class="bigspacer"></div>
 			</div>
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				Posted
-				{{ post.date | date: "%-d %b %Y" }}
-        {% if post.author %}
-        by <a class="off" href="
-          {% for member in site.categories.team %}
-            {% if member.name == post.author %}
-              {{ member.url | prepend:site.baseurl }}
-            {% endif %}
-          {% endfor %}
-        ">
-        {{ post.author }}
-        </a>
-        {% endif %}
-        {% if post.authors %}
-        by
-        <a class="off" href="
-          {% for member in site.categories.team %}
-            {% if member.name == post.authors.first %}
-              {{ member.url | prepend:site.baseurl }}
-            {% endif %}
-          {% endfor %}
-        ">
-        {{ post.authors.first }}
-        </a>
-        and
-        <a class="off" href="
-          {% for member in site.categories.team %}
-            {% if member.name == post.authors.last %}
-              {{ member.url | prepend:site.baseurl }}
-            {% endif %}
-          {% endfor %}
-        ">
-        {{ post.authors.last }}
-        </a>
-        {% endif %}
-			</div>
-			<div class="bigspacer"></div>
 		</div>
-	</div>
 	{% endfor %}
 </div>
 
@@ -124,7 +124,7 @@ categories:
 <div class="row">
 	<div class="col-md-12">
 		<div class="head">
-			<a class="off" href="{{ '/papers/' | prepend:site.baseurl }}">Recent papers</a>
+			<a class="off" href="{{ '/papers/' | relative_url }}">Recent papers</a>
 		</div>
 		<div class="spacer"></div>
 	</div>
@@ -136,7 +136,7 @@ categories:
 		<div class="pad-left">
 			<div class="note">
 				<i class="fa fa-file-text-o fa-fw"></i>
-				<a class="off" href="{{ paper.url | prepend:site.baseurl }}">
+				<a class="off" href="{{ paper.url | relative_url }}">
 				{{ paper.title }}
 				</a>
 			</div>
@@ -152,6 +152,16 @@ categories:
 </div>
 
 <div class="spacer"></div>
+
+<div class="bigspacer"></div>
+
+<div style="margin: 0 auto; width:450px;">
+	<div id="centered" style="width:500px;">
+	{% include flexslider-posts.html %}
+	</div>
+</div>
+
+
 
 <!-- ### DISABLE PROJECTS page for now ###
 
@@ -210,7 +220,7 @@ categories:
 			<ul class="list-inline">
 				{% for page in site.categories.misc %}
 				<li class="footernav">
-					<i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url | prepend:site.baseurl }}">{{ page.title }}</a>
+					<i class="fa fa-angle-right"></i> <a class="off" href="{{ page.url | relative_url }}">{{ page.title }}</a>
 				</li>
 				{% endfor %}
 				<li class="footernav">

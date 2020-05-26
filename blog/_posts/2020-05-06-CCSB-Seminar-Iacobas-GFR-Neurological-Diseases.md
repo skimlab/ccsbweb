@@ -1,8 +1,13 @@
 ---
-layout: post
+layout: ccsbtalk
 title: "[CCSB Seminar Series] Genomic fabric remodeling in neurological diseases"
-author: Seungchan Kim
-image: 
+speaker: Dumtru Iacobas, Ph.D.
+speakerurl: https://ccsb.pvamu.edu/team/dumitru-iacobas.png/
+photo: /images/talks/speakers/dumitru-iacobas.png
+date: 2020-05-06
+time: 12:00pm
+venue: ELEN231
+webinar: https://pvpanther.zoom.us/j/98430599708?pwd=cHR0VW81U0lJK0tSS3lkWDF0azJSUT09
 categories: [blog, talks]
 tags: [ccsb-seminar]
 venue: Webinar
@@ -10,16 +15,9 @@ event: CCSB-Seminar
 speaker: Dumitru Iacobas, Ph.D.
 ---
 
-## Speaker: Dumtru Iacobas, Ph.D.
-## Time & Date: 12:00pm, Wed., May 6, 2020
-## Webinar: [Join Meeting](https://pvpanther.zoom.us/j/98430599708?pwd=cHR0VW81U0lJK0tSS3lkWDF0azJSUT09)
-	URL: https://pvpanther.zoom.us/join
-	Meeting number (access code): 984-3059-9708
-	Meeting password: ccsb
-
 ### Watch the talk -- coming soon
 
-# Abstract
+## Abstract
 
 The seminar will present the purpose, content and some notable results from the MDPI Genes Special Issue ?Genomic Fabric Remodeling in Neurological Diseases? guest-edited by Drs. DC Spray (Albert Einstein College of Medicine) and DA Iacobas (PVAMU). 
 
@@ -39,7 +37,7 @@ The seminar will present the most recent speaker?s results included in the recen
 - Victorino PH, Marra C, Iacobas DA, Iacobas S, Spray DC, Linden R, Adesse D, Petrs-Silva H (2020 in press). Optic nerve crush activates the genomic fabrics of the Complement cascade and Delta-Notch signaling.  Genes
 
 
-# Speaker Bio
-<img class="offset" src="/images/talks/speakers/dumitru-iacobas.png" style="width:125px;float:left;border:3px solid black;margin:10px 10px;"> [Dr. Dumtru Iacobas]({% post_url 2017-11-15-dumitru-iacobas %}), Research Professor and Director of the CCSB Personalized Genomics Laboratory from 2018, is an expert of both experimental and computational genomics. Trained as a biophysicist (PhD of the University of Bucharest, Romania), he was on faculty positions at medical schools from Romania (1981-2001) and NY (Albert Einstein College of Medicine-Neuroscience 2001-2013, New York Medical College-Pathology 2013-2017). At NYMC he founded and directed the Systems Biology Core and at Einstein he was the Associate Director of the Neurogenomics Core and Biometry Core.
+## Speaker Bio
+Dr. Dumtru Iacobas, Research Professor and Director of the CCSB Personalized Genomics Laboratory from 2018, is an expert of both experimental and computational genomics. Trained as a biophysicist (PhD of the University of Bucharest, Romania), he was on faculty positions at medical schools from Romania (1981-2001) and NY (Albert Einstein College of Medicine-Neuroscience 2001-2013, New York Medical College-Pathology 2013-2017). At NYMC he founded and directed the Systems Biology Core and at Einstein he was the Associate Director of the Neurogenomics Core and Biometry Core.
 
 Out of his 240 scholar publications, 54 are as single author, 115 as first author and 32 as last author. 

@@ -1,13 +1,13 @@
 name: CCSB @ PVAMU
 description: The Center for Computational Systems Biology at The Prairie View A&M University
-url: ""
+url: "https://ccsb.pvamu.edu"
 baseurl: ""
 
-markdown: redcarpet
+markdown: kramdown
 permalink: /:categories/:title/
 future: true
 
-redcarpet:
+kramdown:
   extensions:
    - tables
    - no_intra_emphasis
@@ -44,10 +44,9 @@ exclude:
   - "*.gz"
   - "*.tiff"
   - "*.xml"
+  - "vendor/bundle/*"
   - "Gemfile"
   - "Gemfile.lock"
 
-projects:
-
-gems:
-  - jekyll-redirect-from
+plugins: 
+  - jekyll-twitter-plugin

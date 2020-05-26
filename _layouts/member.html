@@ -8,7 +8,7 @@ layout: default
 	<div class="col-md-12">
 		<div class="media">
 			{% if member.image %}
-			<img class="pull-left pad-right media-object" width=120 src="{{ member.image | prepend:site.baseurl }}">
+			<img class="pull-left pad-right media-object" width=120 src="{{ member.image | relative_url }}">
 			{% endif %}
 			<div class="media-body titlebox">
 				<div class="bigtitle media-heading">
@@ -34,7 +34,7 @@ layout: default
 		<div class="pad-left note">
 			<div class="smallspacer"></div>
 			<i class="fa fa-file-text-o fa-fw"></i>
-			<a class="off" href="{{ member.cv | prepend:site.baseurl }}">{{ member.cv | split: '/' | last }}</a>
+			<a class="off" href="{{ member.cv | relative_url }}">{{ member.cv | split: '/' | last }}</a>
 		</div>
 		<div class="bigspacer"></div>
 		{% endif %}
@@ -116,7 +116,7 @@ layout: default
 		<div class="spacer"></div>
 		{% for paper in site.categories.papers %}
 		{% if paper.authors contains searchstring %}
-		<p><a href="{{ paper.url | prepend:site.baseurl }}" class="off">{{ paper.title }}</a>
+		<p><a href="{{ paper.url | relative_url }}" class="off">{{ paper.title }}</a>
 		{% endif %}
 		{% endfor %}
 		{% endif %}
@@ -141,7 +141,7 @@ layout: default
 				{% endif %}
 			{% endfor %}
 			{% if present == true %}
-				<p><a href="{{ project.url | prepend:site.baseurl }}" class="off">{{ project.title }} - {{ project.description }}</a>
+				<p><a href="{{ project.url | relative_url }}" class="off">{{ project.title }} - {{ project.description }}</a>
 			{% endif %}
 		{% endfor %}
 		{% endif %}
@@ -168,7 +168,7 @@ layout: default
 			{% for post in site.categories.blog %}
 				{% if post.author %}
 					{% if member.name == post.author %}
-						<p><a href="{{ post.url | prepend:site.baseurl }}" class="off">{{ post.title }}</a>
+						<p><a href="{{ post.url | relative_url }}" class="off">{{ post.title }}</a>
 					{% endif %}
 				{% endif %}
 				{% if post.authors %}
@@ -179,7 +179,7 @@ layout: default
 						{% endif %}
 					{% endfor %}
 					{% if found %}
-						<p><a href="{{ post.url | prepend:site.baseurl }}" class="off">{{ post.title }}</a>
+						<p><a href="{{ post.url | relative_url }}" class="off">{{ post.title }}</a>
 					{% endif %}
 				{% endif %}
 			{% endfor %}
