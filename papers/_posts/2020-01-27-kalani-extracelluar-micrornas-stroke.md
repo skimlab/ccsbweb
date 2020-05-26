@@ -10,8 +10,8 @@ doi: 10.1080/20013078.2020.1713540
 github:
 pdf: /pdfs/papers/2020-01-27-kalani-extracellular-micrornas-stroke.pdf
 keywords: Intraparenchymal haemorrhage (IPH); subarachnoid haemorrhage (SAH); ischaemic stroke; large vessel occlusion (LVO); extracellular microRNA (ex-miRNA); biomarker
-PMID: 
-PMCID: 
+PMID: 32128071
+PMCID: PMC7034450
 ---
 
 # Abstract

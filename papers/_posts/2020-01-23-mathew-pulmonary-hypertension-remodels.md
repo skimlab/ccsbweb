@@ -10,8 +10,8 @@ doi: 10.3390/genes11020126
 github:
 pdf: /pdfs/papers/2020-01-23-mathew-pulmonary-hypertension-remodels.pdf
 keywords: aerobic glycolysis; caveolin1; hypoxia; monocrotaline; oxidative phosphorylation; RhoA
-PMID: 
-PMCID: 
+PMID: 31979420
+PMCID: PMC7074533
 ---
 
 # Abstract
