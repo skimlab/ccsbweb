@@ -4,7 +4,7 @@ title: "Extracellular microRNAs in blood differentiate between ischaemic and hae
 image: /images/papers/2020-01-27-kalani-extracellular-micrornas-stroke.png
 authors: Kalani MYS, Alsop E, Meechoovet B, Beecroft T, Agrawal K, Whitsett TG, Huentelman M, Spetzler RF, Nakaji P, Kim S, Keuren-Jensen KV
 year: 2020
-ref: Kalani et al. J. of Extracelluar Vescicles, 9:1, 1713540
+ref: Kalani et al. J. of Extracelluar Vescicles, 2020; 9:1, 1713540
 journal: "Journal of Extracelluar Vescicles"
 doi: 10.1080/20013078.2020.1713540
 github:
