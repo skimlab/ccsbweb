@@ -1,0 +1,132 @@
+---
+layout: default
+title: CCSE@PVAMU / blog
+categories:
+ - blog
+category: blog
+---
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="centered-pills">
+			<ul class="nav nav-pills note">
+				<li role="presentation" class="active">
+					<a class="off" href="{{ '/blog/' | relative_url }}">
+						<i class="fa fa-refresh fa-fw"></i> Timeline
+					</a>
+				</li>
+				<li role="presentation">
+					<a class="off" href="{{ '/blog/archive/' | relative_url }}">
+						<i class="fa fa-list-ul fa-fw"></i> Index
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="bigspacer"></div>
+	</div>
+</div>
+
+<div class="post-list">
+
+{% for post in site.categories.blog limit: 8 %}
+
+	<div class="blog-post">
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<div class="media">
+					<div class="media-body">
+						<div class="title media-heading">
+							<a href="{{ post.url | relative_url }}" class="off">{{ post.title }}</a>
+						</div>
+						<p>
+						<div class="smallhead">
+							{{ post.date | date: "%-d %b %Y" }}
+							{% if post.author %}
+							by <a class="off" href="
+                {% for member in site.categories.team %}
+                  {% if member.name == post.author %}
+                    {{ member.url | relative_url }}
+                  {% endif %}
+                {% endfor %}
+              ">
+              {{ post.author }}
+              </a>
+							{% endif %}
+              {% if post.authors %}
+              by
+              <a class="off" href="
+                {% for member in site.categories.team %}
+                  {% if member.name == post.authors.first %}
+                    {{ member.url | relative_url }}
+                  {% endif %}
+                {% endfor %}
+              ">
+              {{ post.authors.first }}
+              </a>
+              and
+              <a class="off" href="
+                {% for member in site.categories.team %}
+                  {% if member.name == post.authors.last %}
+                    {{ member.url | relative_url }}
+                  {% endif %}
+                {% endfor %}
+              ">
+              {{ post.authors.last }}
+              </a>
+              {% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+
+		<div class="bigspacer"></div>
+
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				{% if post.image %}
+				{% if post.link %}
+				<a href="{{ post.link | relative_url }}">
+					<img class="offset" src="{{ post.image | relative_url }}" style="width:250px;">
+				</a>
+				{% else %}
+				<img class="offset" src="{{ post.image | relative_url }}" style="width:250px;">
+				{% endif %}
+				{% endif %}
+				<div class="post">
+					{{ post.content }}
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+		</div>
+
+		<div class="bigspacer"></div>
+		<div class="spacer"></div>
+
+	</div>
+
+{% endfor %}
+
+</div>
+
+<div class="infinite-spinner"></div>
+
+<div class="row">
+	<div class="col-md-12">
+		<div id="scroll" class="centered-pills">
+			<ul class="nav nav-pills note">
+				<li role="presentation">
+					<a class="off" href="{{ '/blog/' | relative_url }}">
+						<i class="fa fa-chevron-up fa-fw"></i> Back to top
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<!-- Infinite scroll -->
+<script async src="{{ '/js/infinite-scroll.js' | relative_url }}"></script>
