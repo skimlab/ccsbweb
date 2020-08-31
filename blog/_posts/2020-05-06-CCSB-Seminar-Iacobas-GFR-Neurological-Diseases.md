@@ -2,7 +2,7 @@
 layout: ccsbtalk
 title: "[CCSB Seminar Series] Genomic fabric remodeling in neurological diseases"
 speaker: Dumtru Iacobas, Ph.D.
-speakerurl: https://ccsb.pvamu.edu/team/dumitru-iacobas.png/
+speakerurl: https://ccsb.pvamu.edu/team/dumitru-iacobas/
 photo: /images/talks/speakers/dumitru-iacobas.png
 date: 2020-05-06
 time: 12:00pm
@@ -12,7 +12,6 @@ categories: [blog, talks]
 tags: [ccsb-seminar]
 venue: Webinar
 event: CCSB-Seminar
-speaker: Dumitru Iacobas, Ph.D.
 ---
 
 ### Watch the talk -- coming soon
