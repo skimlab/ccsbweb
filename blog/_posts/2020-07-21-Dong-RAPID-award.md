@@ -2,7 +2,7 @@
 layout: post
 title: "Dr. Dong awarded with RAPID to study COVID-19 with Medical Images"
 author: Seungchan Kim
-image: 
+image: /images/team/xishuang-dong.jpg
 categories: [blog]
 tags: [grant]
 ---
