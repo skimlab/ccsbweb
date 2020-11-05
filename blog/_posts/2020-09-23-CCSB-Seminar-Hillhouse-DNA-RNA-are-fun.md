@@ -7,13 +7,13 @@ photo: /images/talks/speakers/andrew-hillhouse.jpg
 date: 2020-09-23
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
+webinar-past: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
+recording: "https://pvpanther.zoom.us/rec/share/L1qTA34X-FUuY6kO-rCXxCK7_CAUZy8ZnW-eU6TYuLseEK3HIu4GPeT4IsBhHGZo.r37Mi2x9LHnH3qiz"
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
 ---
 
-### Watch the talk -- coming soon
 
 ## Abstract
 

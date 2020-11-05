@@ -6,13 +6,12 @@ authors: Dumitru Andrei Iacobas
 year: 2020
 ref: Iacobas, World Journal of Clinical Oncology 2020; 11(8):0-0
 journal: "World Journal of Clinical Oncology"
-doi: 10.5306/wjco.v11.i8.0000
+doi: 10.5306/wjco.v11.i9.679
 github:
-pdf: https://onlinelibrary.wiley.com/doi/epdf/10.1002/pld3.235
+pdf:  /pdfs/papers/2020-08-24-iacobas-powerful-quantifiers-cancer.pdf
 keywords: Cancer biomarkers; Cancer nodule; Gene therapy; Kidney cancer; Prostate cancer; RNA gene; Thyroid cancer
 PMID: 
 PMCID: 
-published: false
 ---
 
 # Abstract

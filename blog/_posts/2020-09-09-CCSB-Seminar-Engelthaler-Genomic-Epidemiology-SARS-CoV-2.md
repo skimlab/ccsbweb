@@ -8,13 +8,13 @@ date: 2020-09-09
 time: 11:00am
 venue: webinar/Zoom
 webinar-past: https://pvpanther.zoom.us/j/91536484720?pwd=eWNwNXplTFlXRElSZUFualF4ZzlIUT09
+recording: https://pvpanther.zoom.us/rec/share/fsuDP-pYNTYVwQB3iiLHDK02mQaDiRnYV5LFUB4rENzFk32H0armgAOIVmIZpKhg.SjvRcJKsGEG1FfUq
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
 ---
 
-### [Watch the talk](https://pvpanther.zoom.us/rec/share/fsuDP-pYNTYVwQB3iiLHDK02mQaDiRnYV5LFUB4rENzFk32H0armgAOIVmIZpKhg.SjvRcJKsGEG1FfUq)
--- the video is password protected per the speaker's request.  Please contact [Seungchan Kim](mailto:sekim@pvamu.edu) for the password.
+[//]: **Note**: the recorded video is password protected per the speaker's request.  Please contact [Seungchan Kim](mailto:sekim@pvamu.edu) for the password.
 
 [//]: # (Passcode: b2R*+i#W)
 
