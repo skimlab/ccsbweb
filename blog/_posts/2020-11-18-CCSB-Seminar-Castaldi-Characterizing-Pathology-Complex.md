@@ -8,11 +8,17 @@ date: 2020-11-18
 time: 12:00pm
 venue: webinar/Zoom
 webinar-past: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
-recording: https://pvpanther.zoom.us/rec/share/bPm-CCyGeWjlz_YMVpqfDsYYwkc5G0kgdgraQWqjqujz7-6AzOTyjO8ANXgGzFfi.yFfkIPtyrDiJxL0G?startTime=1605722757000
+recording: https://pvpanther.zoom.us/rec/share/yTRzhg72MTizpZT-kMaQvJv1sQqWlmGorezlc73lxmHad9Tjw49-ySsXTMyoMn0h.xaps-pj14fqFKnFU
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
 ---
+
+Topic: CCSB Biweekly Seminar Series
+Start Time : Nov 18, 2020 11:48 AM
+
+Meeting Recording:
+
 
 
 ## Abstract
