@@ -7,8 +7,8 @@ photo: /images/talks/speakers/noushin-ghaffari.jpg
 date: 2020-12-16
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
-recording:
+old-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
+recording: https://pvpanther.zoom.us/rec/share/qY2HNscbQFvehWy-ez93m9DZHHXPY0fE68Z8DnkrB5hrrYCSs2wM9Kly6JSEhR8U.YJr7LWm1juNk_uqV?startTime=1608141892000
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
