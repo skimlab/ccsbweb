@@ -1,7 +1,7 @@
 <div>
 	<div class="flexslider" style="text-align: center; vertical-align: middle">
 		<ul class="slides">
-	  		{% for page in site.categories.papers limit:5 %}
+	  		{% for page in site.categories.papers limit:4 %}
 	  		<li>
 	  			<a href="{{ site.baseurl }}{{ page.url }}">
 		    		<img src="{{ page.image | relative_url }}" style="width: 400px; margin:0 auto">
