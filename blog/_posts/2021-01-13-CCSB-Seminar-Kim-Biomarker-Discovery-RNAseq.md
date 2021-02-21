@@ -7,8 +7,8 @@ photo: /images/talks/speakers/seungchan-kim.png
 date: 2021-01-13
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
-recording:
+past-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
+recording: https://pvpanther.zoom.us/rec/share/yMzUB29C6N_u88_Fc24p7chxd_C38_HmubZeHvWEBU-y4VwYCUXk0jtKqggYZfE_.JiyXIY4X2TjBp2In?startTime=1610561150000
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
