@@ -17,7 +17,8 @@ event: CCSB-Seminar
 
 ## Abstract
 
-TBA
+Society and funding agencies, both State and Private expect realistic outcomes from basic research programs to benefit human life. In the past, there are many instances where basic science knowledge converted to life-changing developments in the livelihood of all of us.  However, the results of these conversions have become limited resulting in just publications and in better understanding of the science.  The area of Translational Research crystalized in the field of medicine during the past few years, because of the urgent need to solutions to human ailments.  In this presentation, Dr. Wijay examines the need to expand this initiative to benefit all aspects of human life and what systems need to be in place to facilitate such research programs so that the benefits to human is achieved much faster.
+
 
 
 
