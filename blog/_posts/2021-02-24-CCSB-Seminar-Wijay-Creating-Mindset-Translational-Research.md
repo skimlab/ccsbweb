@@ -7,8 +7,8 @@ photo: /images/talks/speakers/bandula-wijay.jpg
 date: 2021-02-24
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
-recording: 
+past-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
+recording: https://pvpanther.zoom.us/rec/share/7IW3cWORe4ohhAvpaueKzrI-uqumw0Sgo-VmHXAIdJO3xKj-0sxbTT8HmXExafXM.UHhRr5OXxLbclBrR?startTime=1614189015000
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
