@@ -7,8 +7,8 @@ photo: /images/talks/speakers/lijun-qian.png
 date: 2021-03-10
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
-recording: 
+past-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
+recording: NA
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
