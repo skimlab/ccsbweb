@@ -35,7 +35,11 @@ layout: default
 						<H4>Where: {{page.venue}}</H4>
 					{% endif %}
 					{% if page.recording %}
-						<H4>Recording: [<a class="on", href="{{ page.recording }}">watch</a>]</H4>
+						{% if page.recording == "NA" %}
+							<H4>Recording: <em>Per the speaker's request, the talk was not recorded.</em></H4>
+						{% else %}
+							<H4>Recording: [<a class="on", href="{{ page.recording }}">watch</a>]</H4>
+						{% endif %}
 					{% else %}
 						<H4>Recording: coming soon</H4>
 					{% endif %}
