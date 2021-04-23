@@ -7,8 +7,8 @@ photo: /images/talks/speakers/premkumar-saganti.jpg
 date: 2021-03-24
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
-recording: 
+past-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
+recording: https://pvpanther.zoom.us/rec/share/bDd8LYLgXimW_rAg2ATKrQHsjMCveYb5fkP8NEy5Vr-ETHdvg7oJUJ_o3oFuKNuu.-86GUN7KmD8qeSQo
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
