@@ -7,8 +7,8 @@ photo: /images/talks/speakers/ashani-weeraratna.jpg
 date: 2021-04-21
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
-recording: 
+past-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
+recording: https://pvpanther.zoom.us/rec/share/wZ83mIk3TOxTBG9yU8Sv--npfUDl61nDFg-tnLF1w8T8TVZDi4sxpZIMCoay5hI.1fL5xW5_A2nm5N3J
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
