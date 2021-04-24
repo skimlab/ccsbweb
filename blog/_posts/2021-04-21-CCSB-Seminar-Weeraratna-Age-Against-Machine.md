@@ -2,7 +2,7 @@
 layout: ccsbtalk
 title: "[CCSB Seminar Series] Age against the machine: How aging disrupts the homeostasis of cancer"
 speaker: Ashani Weeraratna, Ph.D.
-speakerurl: https://personal.utdallas.edu/~fxc190007/
+speakerurl: https://www.jhsph.edu/faculty/directory/profile/3918/ashani-t-weeraratna
 photo: /images/talks/speakers/ashani-weeraratna.jpg
 date: 2021-04-21
 time: 12:00pm
