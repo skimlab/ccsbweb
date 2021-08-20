@@ -7,8 +7,8 @@ photo: /images/talks/speakers/anna-joy.png
 date: 2021-05-05
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
-recording: 
+past-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
+recording: https://pvpanther.zoom.us/rec/share/t7Ui5mZPXDgJlDrGhcimAtqiAIpD_ftzvpv0gxVPXjoSJwv-UtH2BfOUUlE3Xrg.05sfjC4iKNcOPLCd
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
