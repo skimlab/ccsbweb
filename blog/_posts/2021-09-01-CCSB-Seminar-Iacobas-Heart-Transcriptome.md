@@ -4,10 +4,10 @@ title: "[CCSB Seminar Series] Up/down and left/right by the heart transcriptome"
 speaker: Dumitru Iacobas
 speakerurl: https://ccsb.pvamu.edu/team/dumitru-iacobas/
 photo: /images/talks/speakers/dumitru-iacobas.png
-date: 2021-02-10
+date: 2021-09-01
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
+webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
 recording:
 categories: [blog, talks]
 tags: [ccsb-seminar]
