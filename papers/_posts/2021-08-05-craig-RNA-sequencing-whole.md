@@ -7,8 +7,8 @@ year: 2021
 ref: Craig et al., Nat Aging 1, 734-747 (2021)
 journal: "Nature Aging"
 doi: 10.1038/s43587-021-00088-6
+pdf: https://www.nature.com/articles/s43587-021-00088-6
 github:
-pdf: 
 keywords: 
 PMID: 
 PMCID: 
