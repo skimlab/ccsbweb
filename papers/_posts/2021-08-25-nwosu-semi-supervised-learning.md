@@ -6,13 +6,13 @@ authors: Nwosu L, Li X, Qian L, Kim S, Dong X
 year: 2021
 ref: Nwosu et al., EAI Endorsed Trans. Bioeng. and Bioinfo. (accepted)
 journal: "EAI Endorsed Transactions on Bioengineering and Bioinformatics"
-doi: 
+doi: 10.4108/eai.25-8-2021.170754
 github:
-pdf: https://arxiv.org/pdf/2103.06140
+pdf: https://eudl.eu/pdf/10.4108/eai.25-8-2021.170754
 keywords:  COVID-19 Image Classification, Semi- supervised Learning, Residual Neural Network, Joint Optimization, Data Imbalance
 PMID: 
 PMCID: 
-published: false
+published: true
 ---
 
 # Abstract
