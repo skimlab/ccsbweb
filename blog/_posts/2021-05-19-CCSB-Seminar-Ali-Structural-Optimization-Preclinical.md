@@ -7,8 +7,8 @@ photo: /images/talks/speakers/hamed-i-ali.jpg
 date: 2021-05-19
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
-recording: 
+past-webinar: https://pvpanther.zoom.us/j/97412787782?pwd=WkRYNEM0eTFBNXFURk95ZEswQXFPUT09
+recording: https://pvpanther.zoom.us/rec/share/GpKCD0CrYVa_CDifNA9FptS4HFMvElbHgmD6_mZYn09DyG9xUfJzcyWz0zC-f-zX.DfLkxI33iiFG3DmG?startTime=1621442978000
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar

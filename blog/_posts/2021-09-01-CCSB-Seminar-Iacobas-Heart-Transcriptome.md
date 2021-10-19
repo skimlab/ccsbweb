@@ -7,8 +7,8 @@ photo: /images/talks/speakers/dumitru-iacobas.png
 date: 2021-09-01
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
-recording:
+past-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
+recording: /pdfs/talks/2021-09-01-CCSB-Seminar-Iacobas-Heart-Transcriptome.pdf
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
@@ -18,6 +18,9 @@ event: CCSB-Seminar
 ## Abstract
 
 Starting with crocodilians, the heart pumps the blood through the pulmonary and systemic circulation by the coordinated rhythmic contractions of its upper left and right atria (LA, RA) and lower left and right ventricles (LV, RV). Each of the four heart chambers has a well-defined role in circulation and the adequate morphology but how their distinct functions and buildups are determined by the gene expression profiles is still not completely understood. Myocardium transcriptomes of LA, RA, LV and RV from four adult male C57Bl/6j mice were profiled in collaboration with Prof. B Amuzescu (University of Bucharest) with Agilent microarrays to identify the differences responsible for the specificities of the four heart chambers. The transcriptome of each chamber was analyzed as a multi-dimensional (200 mil) mathematical object, constrained by a dynamic set of correlations among the overlapping genomic fabrics of functional pathways. The study, just published in the Nature journal Scientific Reports, identified novel transcriptomic mechanisms by which the genes encoding ionic channels and transporters control heart contractions. Moreover, it confirmed that, from the transcriptomic perspective, heart ontogeny recapitulates heart phylogeny.
+
+[Talk slides in PDF](/pdfs/talks/2021-09-01-CCSB-Seminar-Iacobas-Heart-Transcriptome.pdf)
+
 
 ## Speaker Bio
 

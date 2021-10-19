@@ -7,8 +7,8 @@ photo: /images/talks/speakers/orion-ciftja.jpg
 date: 2021-09-15
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
-recording:
+past-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
+recording: https://pvpanther.zoom.us/rec/share/mXKicloItzGQ8ignjVdTGDhGKoRYWyqBCkc9EfLuoQl177RJDZpuwRT_RiyoD7Q.EXIVdkOEQZqFGya3?startTime=1631725407000
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
