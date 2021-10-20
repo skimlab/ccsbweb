@@ -7,8 +7,8 @@ photo: /images/talks/speakers/tesfamichael-kebrom.png
 date: 2021-10-13
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
-recording:
+past-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
+recording: https://pvpanther.zoom.us/rec/share/Y14uzhE3AVqkFyBQVVKGLVU1V_KxKISTCmuMAA9DFVUCD52_V4iJ2IJA4nI_kNG_.4pswZjnDcwe6BWTn
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
