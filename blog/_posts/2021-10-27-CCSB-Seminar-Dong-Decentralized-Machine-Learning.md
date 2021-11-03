@@ -7,8 +7,8 @@ photo: /images/talks/speakers/xishuang-dong.jpg
 date: 2021-10-27
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
-recording:
+past-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
+recording: https://pvpanther.zoom.us/rec/share/QEH5QUceySvpx_AI2DgJEEXGbpF4_8Uk0Q3mp8hNHb0YH2cmBdfVdtioj7xBjFCZ.6Yx0cms_My1xt3my
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
