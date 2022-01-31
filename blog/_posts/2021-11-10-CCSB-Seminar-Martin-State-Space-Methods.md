@@ -7,8 +7,8 @@ photo: /images/talks/speakers/lealon-martin.jpg
 date: 2021-11-10
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
-recording:
+past-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
+recording: https://pvpanther.zoom.us/rec/share/-WN_R1GkGoQkM3BSEHwX03Qw_cmvy21knxIpmLIbcfN6rG1xdSI194iouYeJE_U.Xc78X69HdNGU5XDW
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
