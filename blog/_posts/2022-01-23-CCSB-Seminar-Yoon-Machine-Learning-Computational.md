@@ -7,8 +7,8 @@ photo: /images/talks/speakers/byungjun-yoon.png
 date: 2022-01-26
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
-recording:
+past-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
+recording: https://pvpanther.zoom.us/rec/share/wKyQKBjqQG8pHxoafP5AejDsh-OiXZUq2UIOayZA0L2iZ90JT4PDWOJuL8JKMg.iacfOGPR7OiOptbr
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
