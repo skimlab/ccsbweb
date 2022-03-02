@@ -8,11 +8,15 @@ date: 2022-02-09
 time: 12:00pm
 venue: webinar/Zoom
 webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
-recording:
+recording: https://pvpanther.zoom.us/rec/share/swusGedq3P8hu0rM5yaogDA7R-_sL2CRvQVLSTpl1xoWAkzCG95CO0DY8iymR93f.-YJUMC6XEy3e8Ad9
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
 ---
+
+
+Topic: CCSB Seminar Series
+Start Time: Feb 9, 2022 11:55 AM
 
 
 ## Abstract
