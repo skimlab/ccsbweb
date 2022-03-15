@@ -7,8 +7,8 @@ photo: /images/talks/speakers/anna-joy.png
 date: 2022-03-09
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
-recording:
+past-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
+recording: NA
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
