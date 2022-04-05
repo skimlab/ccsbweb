@@ -4,15 +4,16 @@ title: "Efficient Privacy Preserving Edge Computing Framework for Image Classifi
 image: /images/papers/2021-12-01-fagbohungbe-efficient-privacy-preserving-edge.png
 authors: Fagbohungbe O, Reza SR, Dong X, Qian L
 year: 2021
-ref: Fagbohungbe et al., IEEE Trans. Emerging Topics in Comp. Intelli. (accepted)
-journal: "IEEE Transactions on Emerging Topics in Computational Intelligence"
-doi: 
+ref: Fagbohungbe et al., arXiv:2005.04563v2
+ref-to-come: Fagbohungbe et al., IEEE Trans. Emerging Topics in Comp. Intelli. (accepted)
+journal: "arxiv.org"
+journal-to-come: "IEEE Transactions on Emerging Topics in Computational Intelligence"
+doi: 10.48550/arXiv.2005.04563
 github:
 pdf: https://arxiv.org/pdf/2005.04563
 keywords:  Deep Learning, Edge Computing, Autoencoder, Convolutional Neural Network, Internet of Things
 PMID: 
 PMCID: 
-published: false
 ---
 
 # Abstract

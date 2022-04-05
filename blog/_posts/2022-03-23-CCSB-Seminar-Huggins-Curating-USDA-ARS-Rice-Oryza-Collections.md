@@ -7,8 +7,8 @@ photo: /images/talks/speakers/trevis-huggins.jpg
 date: 2022-03-23
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
-recording:
+past-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
+recording: https://pvpanther.zoom.us/rec/share/8_Ti1UaEn6Fk6Z8nIRAlAIMAREHRbWjdHtgZcoU4gvRlxwg-iw_iiIwQXROBjZFS.3AR41nBu8fgzXMII
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
