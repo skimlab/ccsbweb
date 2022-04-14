@@ -7,8 +7,8 @@ photo: /images/talks/speakers/tesfamichael-kebrom-2022.png
 date: 2022-04-13
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
-recording:
+past-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
+recording: https://pvpanther.zoom.us/rec/share/-rBhIvAvssFuCitd2TUjbLLz4RSCso3JmkJfIpV4O5_dxqJ3PrwYmg3pELb_xch2._V_VtykFFc9yx9_t
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
@@ -23,3 +23,4 @@ Light as an energy source is essential for plants to synthesize their food from 
 
 ## Speaker Bio
 [Dr. Tesfamichael Kebrom](https://ccsb.pvamu.edu/team/tesfamichael-kebrom/) is a research scientist with a joint appointment at the [Center for Computational Systems Biology](https://ccsb.pvamu.edu) (College of Engineering) and the [Cooperative Agricultural Research Center](https://www.pvamu.edu/cahs/carc/) (College of Agriculture and Human Sciences) at Prairie View A&M University (PVAMU). He received B.Sc. in Plant Sciences from the University of Asmara in Eritrea, M.Phil. (Master of Philosophy) in Crop Physiology from the University of Reading in England, and Ph.D. in Molecular & Environmental Plant Sciences from Texas A&M University. His research focuses on identifying molecular pathways and gene regulatory networks controlling shoot elongation and branching in response to environmental and developmental signals using plant systems biology methods. 
+
