@@ -17,7 +17,7 @@ event: CCSB-Seminar
 
 ## Abstract
 
-Microsoft Windows supports over one billion people across 200 countries. In this talk, we will cover how data science and machine learning supports improvements to customer experiences with a focus on an end-to-end example on Windows updates. We will address the complexity of the space, challenges, illustrate techniques used and deployment of the techniques.
+Microsoft Windows supports hundreds of millions of customers across numerous countries. In this talk, we will cover how data science and machine learning supports improvements to customer experiences with a focus on an end-to-end example on Windows updates. We will address the complexity of the space, challenges, illustrate techniques used and deployment of the techniques.
 
 
 
