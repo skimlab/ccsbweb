@@ -7,7 +7,7 @@ photo: /images/talks/speakers/archana-ramesh.png
 date: 2022-04-20
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
+past-webinar: https://pvpanther.zoom.us/j/98165155057?pwd=WTdIbytsWHRhSFpXVXM1T1R1YkpPUT09
 recording:
 categories: [blog, talks]
 tags: [ccsb-seminar]
