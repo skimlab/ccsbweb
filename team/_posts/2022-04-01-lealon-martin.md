@@ -1,7 +1,7 @@
 ---
 layout: member
 name: Lealon L. Martin
-title: Assistant Professor & Associate Dean (interim) of the Roy G. Perry College of Engineering
+title: Associate Professor & Associate Dean (interim) of the Roy G. Perry College of Engineering
 affiliation: CHEN & CCSB
 handle: llmartin
 email: llmartin@PVAMU.EDU
