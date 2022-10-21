@@ -7,8 +7,8 @@ photo: /images/talks/speakers/seungchan-kim.png
 date: 2022-10-05
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/95093843065?pwd=bUprRllBVkRQUjBuNStuVFVNRDBTZz09
-recording:
+past-webinar: https://pvpanther.zoom.us/j/95093843065?pwd=bUprRllBVkRQUjBuNStuVFVNRDBTZz09
+recording: https://pvpanther.zoom.us/rec/share/MqWm3fgNM3xw-NcLGhrou6T1MTGNgcobhMmG-h3rXQpbUc6VWq_TZXYP7uOnzUPE.2TOovAMavsunVKeU
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
