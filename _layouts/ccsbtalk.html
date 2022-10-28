@@ -28,20 +28,18 @@ layout: default
 							{{page.speaker}}
 						{% endif %}
 					</H3>
-					<H4>When: {{page.time}}, {{ page.date | date: "%b %-d, %Y" }}</H4>
-					{% if page.webinar %}
-						<H4>Where: Webinar [ <a class="off", href="{{ page.webinar }}">Join Meeting</a> ]</H4>
-					{% else %}
-						<H4>Where: {{page.venue}}</H4>
-					{% endif %}
+					<H4>When: <strong>{{page.time}}, {{ page.date | date: "%b %-d, %Y" }}</strong></H4>
+					<H4>Where: <strong>{{page.venue}}</strong>
+						{% if page.webinar %}
+						[ <a class="off", href="{{ page.webinar }}">Join Meeting</a> ]
+						{% endif %}
+					</H4>
 					{% if page.recording %}
 						{% if page.recording == "NA" %}
 							<H4>Recording: <em>Per the speaker's request or inadvertently, the talk was not recorded.</em></H4>
 						{% else %}
 							<H4>Recording: [<a class="on", href="{{ page.recording }}">watch</a>]</H4>
 						{% endif %}
-					{% else %}
-						<H4>Recording: coming soon</H4>
 					{% endif %}
 				</div>
 			</div>

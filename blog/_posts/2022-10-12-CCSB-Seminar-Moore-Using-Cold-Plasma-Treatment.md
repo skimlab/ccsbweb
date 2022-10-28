@@ -7,8 +7,8 @@ photo: /images/talks/speakers/janie-moore.jpg
 date: 2022-10-12
 time: 12:00pm
 venue: webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/95093843065?pwd=bUprRllBVkRQUjBuNStuVFVNRDBTZz09
-recording:
+past-webinar: https://pvpanther.zoom.us/j/95093843065?pwd=bUprRllBVkRQUjBuNStuVFVNRDBTZz09
+recording: https://pvpanther.zoom.us/rec/share/yvMiDPPWlvTQfL96WaGxkD_dETZ47x2dTtuOZQk80qdf4AjksyZ6vo8yRWi5H4Jm.jDbGB8-OSLZYSTID
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
