@@ -36,7 +36,12 @@ layout: default
 			<div class="pad-left note">
 				<div class="smallspacer"></div>
 				<i class="fa fa-file-text-o fa-fw"></i>
-				<a class="off" href="{{ page.pdf | prepend:site.baseurl }}">{{ page.pdf | split: '/' | last }}</a>
+				<!-- 
+					<a class="off" href="{{ page.pdf | prepend:site.baseurl }}">{{ page.pdf | split: '/' | last }}</a>
+				-->
+					<a class="off" href="{{ page.pdf | prepend:site.baseurl }}">
+						<i class="fa fa-download"></i>
+					</a>				
 			</div>
 			<div class="bigspacer"></div>
 			{% endif %}
