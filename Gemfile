@@ -21,3 +21,5 @@ gem 'jekyll-twitter-plugin'
 
 # SassC
 # gem 'sassc'
+
+gem "webrick", "~> 1.8"
