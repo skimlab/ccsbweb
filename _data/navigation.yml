@@ -1,0 +1,12 @@
+- name:	home
+  link:	/
+- name: blog
+  link:	/blog/
+- name:	papers
+  link:	/papers/
+- name:	talks
+  link:	/talks/
+- name:	team
+  link:	/team/
+- name:	labs
+  link:	/labs/
