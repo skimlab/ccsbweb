@@ -7,8 +7,8 @@ photo: /images/talks/speakers/victoria-mgbemena.jpg
 date: 2023-02-22
 time: 12:00pm
 venue: Webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/96517985596?pwd=bStrYjZCYS9oQnVFZDRiTDB2ZjZsQT09&from=addon
-recording:
+past-webinar: https://pvpanther.zoom.us/j/96517985596?pwd=bStrYjZCYS9oQnVFZDRiTDB2ZjZsQT09&from=addon
+recording: https://pvpanther.zoom.us/rec/share/fV6Zotl6RFF5-bWa3-wxqNTJEApksUtz7jBQypZGgSGRr19uaIGZ2GEQTgwWZ-PE.FrwkJnsMrfvsy6fW
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar

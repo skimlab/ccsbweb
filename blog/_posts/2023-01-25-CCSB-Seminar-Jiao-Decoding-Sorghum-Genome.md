@@ -7,7 +7,7 @@ photo: /images/talks/speakers/yinping-jiao.jpg
 date: 2023-01-25
 time: 12:00pm
 venue: Webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/96517985596?pwd=bStrYjZCYS9oQnVFZDRiTDB2ZjZsQT09&from=addon
+past-webinar: https://pvpanther.zoom.us/j/96517985596?pwd=bStrYjZCYS9oQnVFZDRiTDB2ZjZsQT09&from=addon
 recording:
 categories: [blog, talks]
 tags: [ccsb-seminar]

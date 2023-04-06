@@ -7,7 +7,7 @@ photo: /images/talks/speakers/stephen-chan.jpg
 date: 2022-11-09
 time: 12:00pm
 venue: ECE Conference Room 315D & Webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/95093843065?pwd=bUprRllBVkRQUjBuNStuVFVNRDBTZz09
+past-webinar: https://pvpanther.zoom.us/j/95093843065?pwd=bUprRllBVkRQUjBuNStuVFVNRDBTZz09
 recording:
 categories: [blog, talks]
 tags: [ccsb-seminar]

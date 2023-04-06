@@ -7,7 +7,7 @@ photo: /images/talks/speakers/kendall_jensen.png
 date: 2023-03-08
 time: 12:00pm
 venue: Webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/96517985596?pwd=bStrYjZCYS9oQnVFZDRiTDB2ZjZsQT09&from=addon
+past-webinar: https://pvpanther.zoom.us/j/96517985596?pwd=bStrYjZCYS9oQnVFZDRiTDB2ZjZsQT09&from=addon
 recording:
 categories: [blog, talks]
 tags: [ccsb-seminar]

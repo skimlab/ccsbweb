@@ -1,0 +1,38 @@
+---
+layout: post
+title: "Dr. Kim awarded a collaborative grant with UPMC team to identify anti-inflammatory and anti-fibrotic effects of Tyvaso in WSPH Group 3 pulmonary hypertension"
+author: Seungchan Kim
+image: /images/blog/2023-03-13-Kim-scRNAseq-EDDY-PH-grant/EDDY-PH-scRNAseq-workflow.png
+categories: [blog]
+tags: [grant, news]
+published: true
+---
+
+
+[Dr. Kim](/team/xishuang-dong) awarded a collaborative grant with his long-time collaborator, [Stephen Chan](https://www.sychanlab.pitt.edu/people-2/dr-chan/), at UPMC to use single cell RNAseq and advanced network analysis identify anti-inflammatory and anti-fibrotic effects of Tyvaso in WSPH Group 3 pulmonary hypertension 
+
+
+
+<br/>
+
+**Project Title:** Single cell RNA sequencing and network analysis to identify anti-inflammatory and anti-fibrotic effects of Tyvaso in WSPH Group 3 pulmonary hypertension 
+
+**Principal Investigator:** Stephen Y. Chan (Primary); Seungchan Kim (PVAMU PI)
+
+**Project Summary**: BACKGROUND: Prostacyclin agonists have historically been viewed as potent pulmonary vasodilators, and their utility in the treatment of pulmonary hypertension has been primarily touted in that perspective. Yet, advancing clinical data from the recent INCREASE trial suggest anti-inflammatory and anti-fibrotic roles for inhaled treprostinil (Tyvaso) in lung tissue and within the pulmonary vasculature in patients suffering from WSPH Group 3 pulmonary hypertension (PH) due to interstitial lung disease (ILD).
+ 
+Although prostacyclin agonists have been studied for decades, our relative lack of insight into these non-canonical roles for these drugs may stem from a historic inability to discern the more subtle and potentially heterogeneous reprogramming events of inflammatory cells and fibroblasts in the blood and lungs during the development of Group 3 PH. Emerging single-cell transcriptomic technology coupled with advanced systems-biology analysis now offers the opportunity to identify any putative inflammatory and fibrotic activity of these drugs.
+ 
+Notably, Dr. Chan's group and collaborators recently published the first detailed study looking at the single-cell transcriptomic landscape across the lung in idiopathic pulmonary arterial hypertension (1). In this initial study, we examined the differential gene expression of cell types implicated in idiopathic pulmonary arterial hypertension from lung explants of patients with idiopathic pulmonary arterial hypertension compared to control lungs. Yet, in this regard, only the most crude analyses of differential gene expression across cell types was employed. Yet, differential gene expression alone underestimates key intergenic relationships and can be inadequate for more complex and heterogenous events, as may be the case for the effects of Tyvaso on inflammation and fibrosis. Molecular network mapping based on gene regulatory dependencies (i.e., connections among genes that represent their tendency to be regulated together) offers a more systems-wide understanding into a given condition, not possible by differential gene expression analysis alone. However, because of the statistical demands for calculating differential dependencies across gene networks, such analytics are often not available across standard RNA sequencing. Importantly, single cell RNA sequencing data offers appropriate statistical power to map such dependencies.
+ 
+To investigate this notion, we sought to design a computational strategy identifying differential dependency networks (DDNs) upon analysis of single cell transcriptomic data in order to more clearly define the Tyvaso-dependent reprogramming of cell type-specific pathways involved in inflammation and fibrosis. Dr. Kim  at Prairie View A&M Unveristy has developed a novel statistical method, EDDY (Evaluation of Differential DependencY, a computation algorithm that defines DDNs based on the rewiring of dependency interactions among genes in a network – for example, comparing before and after Tyvaso therapy.  EDDY has been utilized in the study of various human diseases as well as transcriptomic analyses from human PH lung tissue. Thus, we plan on leveraging single cell transcriptomic technology with traditional differential gene expression analysis alongside EDDY analytics to determine whether Tyvaso carries anti-inflammatory and anti-fibrotic activity in Group 3 PH and whether such activity is reflected in the study of both blood and lung tissue.
+ 
+
+SIGNIFICANCE: The combined use of single cell RNA sequencing and advanced network analysis could offer the first evidence of the postulated heterogeneity of diseased pro-inflammatory monocytes and their relation to lung fibrosis in individuals with WSPH Group 3 PH-IPF as well as the first proof of regulation of these cells by Tyvaso. This work could reveal new biomarkers of treatment efficacy to Tyvaso, based on more easily accessible pro-inflammatory blood monocyte populations. Our findings could also serve as the foundation for future studies in rodent models of WSPH Group 3 PH-IPF as well as in additional human subjects regarding the unique responses to Tyvaso at the individualized and heterogeneous cell level. Specifically, if these pilot studies are successful, this study could offer a window into understanding and personalizing treatment of different WSPH Group 3 PH-IPF patients at various stages of disease.
+
+
+![Seungchan Kim]({{site.url}}/images/blog/2023-03-13-Kim-scRNAseq-EDDY-PH-grant/seungchan-kim.png){: width="200" style="float: left; margin-right: 1em;"}
+
+Dr. Seungchan Kim is a Chief Scientist and Executive Professor at the [Department of Electrical and Computer Engineering](http://www.pvamu.edu/ece/) and the Director of the CRI [Center for Computational Systems Biology]({{site.baseurl}}{{"/"}}) at the [Prairie View A&M University (PVAMU)](http://www.pvamu.edu).  Prior to this appointment, he was the Head of Biocomputing Unit and an Associate Professor at Integrated Cancer Genomics Division of [Translational Genomics Research Institute (TGen)](http://www.tgen.org).  He was one of the founding faculty members of TGen, founded in 2002, by Dr. Trent, then-Scientific Director of the [National Human Genome Research Institute](https://www.genome.gov) at the [National Institutes of Health](https://www.nih.gov), leading computational systems biology research at the institute.  He was also an Assistant Professor in the [School of Computing, Informatics, Decision Systems Engineering (CIDSE)](https://cidse.engineering.asu.edu) at the [Arizona State University](http://www.asu.edu) from 2004 till 2011.  Dr. Kim received B.S. and M.S. degrees in [Agriculture Engineering](http://bse.snu.ac.kr/) from the [Seoul National University](http://www.snu.ac.kr), and Ph.D. in [Electrical Engineering](https://engineering.tamu.edu/electrical/) from the [Texas A&M University](http://www.tamu.edu). He also got his post-doctoral training at the Cancer Genetics Branch of [National Human Genome Research Institute](https://www.genome.gov).
+
+Dr. Kim's research interests include: 1) mathematical modeling of genetic regulatory networks, 2) development of computational methods to analyze multitude of high throughput multi-omics data to identify disease biomarkers, and 3) computational models to diagnose patients or predict patient outcomes, for example, disease subtypes or drug response. His studies have had a large influence on the development of computational tools to study underlying mechanisms for cancer development and better understand the molecular mechanisms behind cancer biology and biological systems.
