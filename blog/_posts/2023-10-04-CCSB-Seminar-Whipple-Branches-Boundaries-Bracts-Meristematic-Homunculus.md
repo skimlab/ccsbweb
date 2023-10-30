@@ -4,12 +4,12 @@ title: "[CCSB Seminar Series] Branches, Boundaries and Bracts: in Search of the 
 speaker: Clinton Whipple, Ph.D.
 speakerurl: https://biology.byu.edu/directory/clinton-whipple
 photo: /images/talks/speakers/clinton-whipple.jpg
-date: 2023-10-03
+date: 2023-10-04
 time: 12:00pm
 in-person-venue: ELEN231
-venue: Webinar/Zoom
-webinar: https://pvpanther.zoom.us/j/96163888493?pwd=NUdRbHJ0Q2R1WG93aUZQUFBwZll6dz09&from=addon
-recording: 
+past-venue: Webinar/Zoom
+past-webinar: https://pvpanther.zoom.us/j/96163888493?pwd=NUdRbHJ0Q2R1WG93aUZQUFBwZll6dz09&from=addon
+recording: https://pvpanther.zoom.us/rec/share/jxd4TIPmLvYB_Fp0vuUQHkzi6ZlpbrfrB_zLdKYm3p49J6A0uQ7KC7JFKDHBgZab.GVIjqDv_yKzq9-zs
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
