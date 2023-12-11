@@ -9,7 +9,7 @@ published: true
 ---
 
 
-[Dr. Kim](/team/xishuang-dong) awarded a collaborative grant with his long-time collaborator, [Stephen Chan](https://www.sychanlab.pitt.edu/people-2/dr-chan/), at UPMC to use single cell RNAseq and advanced network analysis identify anti-inflammatory and anti-fibrotic effects of inhaled treprostinil in patients suffering from pulmonary hypertension (PH) due to interstitial lung disease (ILD). United Therapeutics Corporation, a biotechnology company, is providing financial support for the project through a research grant to the University of Pittsburgh.
+[Dr. Kim](/team/seungchan-kim) awarded a collaborative grant with his long-time collaborator, [Stephen Chan](https://www.sychanlab.pitt.edu/people-2/dr-chan/), at UPMC to use single cell RNAseq and advanced network analysis identify anti-inflammatory and anti-fibrotic effects of inhaled treprostinil in patients suffering from pulmonary hypertension (PH) due to interstitial lung disease (ILD). United Therapeutics Corporation, a biotechnology company, is providing financial support for the project through a research grant to the University of Pittsburgh.
 
 
 <br/>
