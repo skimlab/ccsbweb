@@ -6,9 +6,10 @@ speakerurl: https://www.binghamton.edu/ssie/people/profile.html?id=yongwang
 photo: /images/talks/speakers/yong-wang.jpg
 date: 2024-03-20
 time: 12:00pm
-venue: ECE Conference Room ELEN 3xx
+venue-cceb: CCSB Conference Room ELEN 231
+venue: ECE Conference Room ELEN 315D or Zoom
 past-webinar: https://pvpanther.zoom.us/j/95543663088?pwd=VEk5K0JmVEUzN2FIdTd5dFFpRHhKZz09&from=addon
-recording: 
+recording: https://pvpanther.zoom.us/rec/share/HIS3K7raWMNM8SnY72TVlOS2Ak9p2rVsHwQscU0Y0rm6wgOE88vEic4UC6V0MHHV.GUkMd7U7uS98XJ5v
 categories: [blog, talks]
 tags: [ccsb-seminar]
 event: CCSB-Seminar
