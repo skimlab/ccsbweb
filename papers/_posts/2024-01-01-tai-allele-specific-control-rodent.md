@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Allele-specific control of rodent and human lncRNA KMT2E-AS1 promotes hypoxic endothelial pathology in pulmonary hypertension"
-image-yet: 
+image: /images/papers/2024-01-01-tai-allele-specific-control-rodent.jpg
 authors: Tai YY, Yu Q, Tang Y, Sun W, Kelly NJ, Okawa S, Zhao J, Schwantes-An TH, Lacoux C, Torrino S, Aaraj YA, Khoury WE, Negi V, Liu M, Corey CG, Belmonte F, Vargas SO, Schwartz B, Bhat B, Chau BN, Karnes JH, Satoh T, Barndt RJ, Wu H, Parikh VN, Wang J, Zhang Y, McNamara D, Li G, Speyer G, Wang B, Shiva S, Kaufman B, Kim S, Gomez D, Mari B, Cho MH, Boueiz A, Pauciulo MW, Southgate L, Trembath RC, Sitbon O, Humbert M, Graf S, Morrell NW, Rhodes CJ, Wilkins MR, Nouraie M, Nichols WC, Desai AA, Bertero T & Chan SY
 year: 2024
 ref: Tai et. al., Science Translational Medicine 16:729, Article 2029 (2024) 
@@ -9,8 +9,8 @@ doi: 10.1126/scitranslmed.add2029
 github:
 pdf: https://www.science.org/doi/pdf/10.1126/scitranslmed.add2029
 keywords: 
-PMID: 
-PMCID: 
+PMID: 38198517
+PMCID: PMC10947529
 ---
 
 # Abstract

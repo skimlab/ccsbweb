@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Semi-supervised Single-Shot Object Detection for Table Detection in Scanned Documents"
-image-yet: /images/papers/2023-10-15-sarker-medical-data-augmentation-chatgpt.png
+image: /images/papers/2023-11-15-bello-semi-supervised-single-shot-object-detection.jpg
 authors: Bello J, Dong X, Li X
 year: 2023
 ref: Bello et. al., FTC 2023, pp. 430-441 
