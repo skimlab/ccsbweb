@@ -10,6 +10,7 @@ github:
 scholar: 
 image: /images/team/lealon-martin.jpg
 cv: /pdfs/team/lealon-martin-cv.pdf
+alumni: true
 ---
 
 
