@@ -9,7 +9,7 @@ time: 12:00pm
 venue: Zoom
 venue-inperson: CCSB Conference Room ELEN 231
 venue-ece: ECE Conference Room ELEN 315D or Zoom
-webinar: https://pvpanther.zoom.us/j/95232645350?pwd=sjhXHj8iya9zIz8sc0koZ4GcwAbUlv.1&from=addon
+past-webinar: https://pvpanther.zoom.us/j/95232645350?pwd=sjhXHj8iya9zIz8sc0koZ4GcwAbUlv.1&from=addon
 recording: 
 categories: [blog, talks]
 tags: [ccsb-seminar]
