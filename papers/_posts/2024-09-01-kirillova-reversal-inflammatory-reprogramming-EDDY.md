@@ -2,7 +2,7 @@
 layout: paper
 title: "Reversal of inflammatory reprogramming by vasodilator agents in pulmonary hypertension"
 image: /images/papers/2024-09-01-kirillova-reversal-inflammatory-reprogramming-EDDY.png
-authors: Anna Kirillova, Meena Sethuraman, Xishuang Dong, Almina Kirdar, Gil Speyer, Yassmin Al Aaraj, Annie Watson, Lily K. Schneider, Michael D. Creager, Robert Lafyatis, Satoshi Okawa, Seungchan Kim, Stephen Y. Chan
+authors: Kirillova A, Sethuraman M, Dong X, Kirdar A, Speyer G, Aaraj YA, Watson A, Schneider LK, Creager MD, Lafyatis R, Okawa S, Kim S, Chan SY
 year: 2024
 ref: Kirillova, ERJ Open Research Jan 2024, 00486-2024
 doi: 10.1183/23120541.00486-2024

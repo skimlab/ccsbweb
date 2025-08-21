@@ -1,5 +1,6 @@
 ---
 layout: member
+membership: student
 name: Lucy Nwuso
 title: Graduate Research Assistant
 affiliation: CCSB & ECE

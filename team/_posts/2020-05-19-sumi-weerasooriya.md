@@ -1,5 +1,6 @@
 ---
 layout: member
+membership: staff
 name: Sumithra Weerasooriya
 title: Research Associate
 affiliation: CCSB

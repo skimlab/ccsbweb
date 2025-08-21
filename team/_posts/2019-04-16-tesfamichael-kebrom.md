@@ -1,5 +1,6 @@
 ---
 layout: member
+membership: faculty
 name: Tesfamichael Kebrom
 title: Research Scientist
 affiliation: CCSB & CARC

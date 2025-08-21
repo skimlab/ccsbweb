@@ -1,5 +1,6 @@
 ---
 layout: member
+membership: faculty
 name: Lijun Qian
 title: Regents Professor, AT&T Endowed Professor & Director (CREDIT)
 affiliation: ECE, CREDIT & CCSB

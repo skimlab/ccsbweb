@@ -1,5 +1,6 @@
 ---
 layout: member
+membership: faculty
 name: Seungchan Kim
 title: Chief Scientist and Executive Professor & Director (CCSB)
 affiliation: ECE & CCSB

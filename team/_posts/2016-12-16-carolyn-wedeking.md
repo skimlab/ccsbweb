@@ -1,5 +1,6 @@
 ---
 layout: member
+membership: faculty
 name: Carolyn Wedeking
 title: Administrative Assistant III
 affiliation: CCSB, CREDIT & CRESSE

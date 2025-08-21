@@ -1,5 +1,6 @@
 ---
 layout: member
+membership: student
 name: Abidemi Omoloja
 title: Graduate Research Assistant
 affiliation: CCSB & ECE

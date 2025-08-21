@@ -1,0 +1,207 @@
+---
+layout: default
+---
+
+{% assign student = page %}
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="media">
+			{% if student.image %}
+			<img class="pull-left pad-right media-object" width=120 src="{{ student.image | relative_url }}">
+			{% endif %}
+			<div class="media-body titlebox">
+				<div class="bigtitle media-heading">
+					{{ student.name }}
+				</div>
+				<div class="smallhead">
+					<p>{{ student.title }}</p>
+					<p>{{ student.affiliation }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-md-3">
+		{% if student.homepage %}
+		<div class="smallhead">
+			homepage
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-file-text-o fa-fw"></i>
+			<a class="off" href="{{ student.homepage }}">{{ student.homepage }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if student.cv %}
+		<div class="smallhead">
+			CV
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-file-text-o fa-fw"></i>
+			<a class="off" href="{{ student.cv | relative_url }}">{{ student.cv | split: '/' | last }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if student.twitter %}
+		<div class="smallhead">
+			Twitter
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-twitter fa-fw"></i>
+			<a class="off" href="https://twitter.com/{{ student.twitter }}">{{ student.twitter }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if student.github %}
+		<div class="smallhead">
+			GitHub
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-github-alt fa-fw"></i>
+			<a class="off" href="https://github.com/{{ student.github }}">{{ student.github }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if student.scholar %}
+		<div class="smallhead">
+			Google Scholar
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-book fa-fw"></i>
+			<a class="off" href="http://scholar.google.com/citations?user={{ student.scholar }}">{{ student.name }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+
+		{% if student.calendar %}
+		<div class="smallhead">
+			Calendar
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-calendar fa-fw"></i>
+			<a class="off" href="{{ student.calendar }}">{{ student.title }}</a>
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+		
+		{% if student.email %}
+		{% assign emailarray = student.email | split: '@' %}
+		<div class="smallhead">
+			Email
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-inbox fa-fw"></i>
+			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+		</div>
+		<div class="bigspacer"></div>
+		{% endif %}
+	</div>
+	<div class="col-md-8">
+		<div class="post">
+			{{ content }}
+		</div>
+
+		{% assign lastname = student.name | split: ' ' | last %}
+		{% assign firstinitial = student.name | split: ' ' | first | slice: 0 %}
+		{% assign searchstring = lastname | append: ' ' | append: firstinitial %}
+
+		{% for paper in site.categories.papers %}
+		{% if paper.authors contains searchstring %}
+		{% assign papersq = true %}
+		{% endif %}
+		{% endfor %}
+
+		{% if papersq == true %}
+		<div class="bigspacer"></div>
+		<div class="head">Recent Papers</div>
+		<div class="spacer"></div>
+		{% for paper in site.categories.papers %}
+		{% if paper.authors contains searchstring %}
+		<p><a href="{{ paper.url | relative_url }}" class="off">{{ paper.title }}</a>
+		{% endif %}
+		{% endfor %}
+		{% endif %}
+
+		{% for project in site.data.projects %}
+			{% for contributor in project.contributors %}
+				{% if contributor.login == student.github %}
+					{% assign projectsq = true %}
+				{% endif %}
+			{% endfor %}
+		{% endfor %}
+
+		{% if projectsq == true %}
+		<div class="bigspacer"></div>
+		<div class="head">Projects</div>
+		<div class="spacer"></div>
+		{% for project in site.data.projects %}
+			{% assign present = false %}
+			{% for contributor in project.contributors %}
+				{% if contributor.login == student.github %}
+					{% assign present = true %}
+				{% endif %}
+			{% endfor %}
+			{% if present == true %}
+				<p><a href="{{ project.url | relative_url }}" class="off">{{ project.title }} - {{ project.description }}</a>
+			{% endif %}
+		{% endfor %}
+		{% endif %}
+
+		{% for post in site.categories.blog %}
+			{% if post.author %}
+				{% if student.name == post.author %}
+					{% assign postsq = true %}
+				{% endif %}
+			{% endif %}
+			{% if post.authors %}
+				{% for author in post.authors %}
+					{% if student.name == author %}
+						{% assign postsq = true %}
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+		{% endfor %}
+
+		{% if postsq == true %}
+			<div class="bigspacer"></div>
+			<div class="head">Posts</div>
+			<div class="spacer"></div>
+			{% for post in site.categories.blog %}
+				{% if post.author %}
+					{% if student.name == post.author %}
+						<p><a href="{{ post.url | relative_url }}" class="off">{{ post.title }}</a>
+					{% endif %}
+				{% endif %}
+				{% if post.authors %}
+					{% assign found = false %}
+					{% for author in post.authors %}
+						{% if student.name == author %}
+							{% assign found = true %}
+						{% endif %}
+					{% endfor %}
+					{% if found %}
+						<p><a href="{{ post.url | relative_url }}" class="off">{{ post.title }}</a>
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+
+	</div>
+	<div class="col-md-1"></div>
+</div>

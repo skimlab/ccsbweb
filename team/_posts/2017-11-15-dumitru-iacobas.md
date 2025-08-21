@@ -1,5 +1,6 @@
 ---
 layout: member
+membership: faculty
 name: Dumitru Andrei Iacobas
 title: Research Professor – Director Personalized Genomics Laboratory
 affiliation: CCSB

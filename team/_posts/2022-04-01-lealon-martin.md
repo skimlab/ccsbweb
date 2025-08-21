@@ -1,5 +1,6 @@
 ---
 layout: member
+membership: faculty
 name: Lealon L. Martin
 title: Associate Professor & Associate Dean (interim) of the Roy G. Perry College of Engineering
 affiliation: CHEN & CCSB

@@ -1,5 +1,6 @@
 ---
 layout: member
+membership: faculty
 name: Xishuang Dong
 title: Associate Professor
 affiliation: ECE, CCSB & CREDIT
