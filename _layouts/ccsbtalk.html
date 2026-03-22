@@ -16,18 +16,23 @@ layout: default
 		</div>
 	</div>
 
+	<div class="bigspacer"></div>
+	<div class="spacer"></div>
+
 	<div class="row">
 		<div class="col-md-1"></div>
 		<div class="col-md-7">
 			<div class="media">
 				<div class="media-body">
-					<H3>Speaker: 
+					<H3>Speaker:
+						<strong>
 						{% if page.speakerurl %}<a class="off" href="{{ page.speakerurl }}">
 							{{page.speaker}}</a>
 						{% else %}
 							{{page.speaker}}
 						{% endif %}
-					</H3>
+						</strong>
+					<H3>
 					<H4>When: <strong>{{page.time}}, {{ page.date | date: "%b %-d, %Y" }}</strong></H4>
 					<H4>Where: <strong>{{page.venue}}</strong>
 						{% if page.webinar %}
@@ -41,6 +46,14 @@ layout: default
 							<H4>Recording: [<a class="on", href="{{ page.recording }}">watch</a>]</H4>
 						{% endif %}
 					{% endif %}
+
+
+					{% if page.talkslide %}
+						{% if page.talkslide != "NA" %}
+							<H4>Talk Slides: [<a class="on", href="{{ page.talkslide }}">download</a>]</H4>
+						{% endif %}
+					{% endif %}
+
 				</div>
 			</div>
 		</div>
@@ -48,7 +61,10 @@ layout: default
 			<img class="offset" src="{{ page.photo | relative_url }}", style="width:125px;float:right;border:3px solid black;margin:10px 10px;">
 		</div>
 		<div class="col-md-1"></div>
+
+		<div class="bigspacer"></div>
 	</div>
+
 
 	<div class="row">
 		<div class="col-md-1"></div>
