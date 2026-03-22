@@ -1,0 +1,1399 @@
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/log_adapter.rb:45: warning: Logger not initialized properly
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/stevenson.rb:5: info: Jekyll::Stevenson#initialize: does not call super probably
+Configuration file: /Users/sekim/GitHub/ccsbweb/_config.yml
+            Source: /Users/sekim/GitHub/ccsbweb
+       Destination: /Users/sekim/GitHub/ccsbweb/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+/Users/sekim/.gem/ruby/3.4.1/gems/therubyracer-0.12.3/lib/v8/init.bundle: [BUG] Segmentation fault at 0x0000000000000000
+ruby 3.4.1 (2024-12-25 revision 48d4efcb85) +PRISM [arm64-darwin24]
+
+-- Crash Report log information --------------------------------------------
+   See Crash Report log file in one of the following locations:
+     * ~/Library/Logs/DiagnosticReports
+     * /Library/Logs/DiagnosticReports
+   for more details.
+Don't forget to include the above Crash Report log file in bug reports.
+
+-- Control frame information -----------------------------------------------
+c:0065 p:---- s:0353 e:000352 TOP    [FINISH]
+c:0064 p:---- s:0350 e:000349 CFUNC  :require
+c:0063 p:0054 s:0345 e:000344 BLOCK  /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/bundled_gems.rb:82
+c:0062 p:0017 s:0338 e:000337 TOP    /Users/sekim/.gem/ruby/3.4.1/gems/therubyracer-0.12.3/lib/v8.rb:4 [FINISH]
+c:0061 p:---- s:0335 e:000334 CFUNC  :require
+c:0060 p:0054 s:0330 e:000329 BLOCK  /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/bundled_gems.rb:82
+c:0059 p:0015 s:0323 e:000322 TOP    /Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/java_script/v8_context.rb:2 [FINISH]
+c:0058 p:---- s:0319 e:000318 CFUNC  :require
+c:0057 p:0054 s:0314 e:000313 BLOCK  /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/bundled_gems.rb:82
+c:0056 p:0021 s:0307 e:000306 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/java_script.rb:9
+c:0055 p:0017 s:0303 e:000302 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/java_script.rb:17
+c:0054 p:0004 s:0299 e:000298 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/loader.rb:13 [FINISH]
+c:0053 p:---- s:0293 e:000292 CFUNC  :new
+c:0052 p:0010 s:0289 e:000288 CLASS  /Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less.rb:14
+c:0051 p:0043 s:0286 e:000285 TOP    /Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less.rb:9 [FINISH]
+c:0050 p:---- s:0283 e:000282 CFUNC  :require
+c:0049 p:0054 s:0278 e:000277 BLOCK  /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/bundled_gems.rb:82
+c:0048 p:0012 s:0271 e:000270 METHOD /Users/sekim/GitHub/ccsbweb/_plugins/less-converter.rb:10
+c:0047 p:0003 s:0267 e:000266 METHOD /Users/sekim/GitHub/ccsbweb/_plugins/less-converter.rb:27
+c:0046 p:0007 s:0260 e:000259 BLOCK  /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/renderer.rb:102 [FINISH]
+c:0045 p:---- s:0254 e:000253 IFUNC 
+c:0044 p:---- s:0251 e:000250 CFUNC  :each
+c:0043 p:---- s:0248 e:000247 CFUNC  :reduce
+c:0042 p:0008 s:0243 e:000242 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/renderer.rb:100
+c:0041 p:0106 s:0238 e:000237 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/renderer.rb:84
+c:0040 p:0058 s:0232 e:000231 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/renderer.rb:63
+c:0039 p:0024 s:0228 e:000226 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/site.rb:523
+c:0038 p:0007 s:0221 e:000220 BLOCK  /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/site.rb:516 [FINISH]
+c:0037 p:---- s:0217 e:000216 CFUNC  :each
+c:0036 p:0006 s:0213 e:000212 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/site.rb:515
+c:0035 p:0032 s:0208 e:000207 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/site.rb:202
+c:0034 p:0015 s:0203 e:000202 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/site.rb:76
+c:0033 p:0004 s:0199 e:000198 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/command.rb:28
+c:0032 p:0093 s:0193 e:000192 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/commands/build.rb:65
+c:0031 p:0054 s:0183 e:000182 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/commands/build.rb:36
+c:0030 p:0015 s:0177 e:000176 BLOCK  /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/command.rb:89 [FINISH]
+c:0029 p:---- s:0173 e:000172 CFUNC  :each
+c:0028 p:0005 s:0169 e:000168 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/command.rb:89
+c:0027 p:0092 s:0159 e:000158 BLOCK  /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/commands/serve.rb:86
+c:0026 p:0008 s:0153 e:000152 BLOCK  /Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary/command.rb:220 [FINISH]
+c:0025 p:---- s:0149 e:000148 CFUNC  :each
+c:0024 p:0036 s:0145 e:000144 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary/command.rb:220
+c:0023 p:0066 s:0139 e:000138 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary/program.rb:42
+c:0022 p:0019 s:0132 e:000131 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary.rb:19
+c:0021 p:0052 s:0126 E:000600 TOP    /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/exe/jekyll:15 [FINISH]
+c:0020 p:---- s:0123 e:000122 CFUNC  :load
+c:0019 p:0098 s:0118 e:000117 METHOD /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems.rb:304
+c:0018 p:0075 s:0109 e:000108 TOP    /Users/sekim/.gem/ruby/3.4.1/bin/jekyll:25 [FINISH]
+c:0017 p:---- s:0104 e:000103 CFUNC  :load
+c:0016 p:0064 s:0099 e:000098 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli/exec.rb:61
+c:0015 p:0063 s:0093 e:000092 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli/exec.rb:24
+c:0014 p:0037 s:0088 e:000087 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli.rb:504
+c:0013 p:0054 s:0082 e:000081 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/command.rb:28
+c:0012 p:0040 s:0074 e:000073 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/invocation.rb:127
+c:0011 p:0213 s:0067 e:000066 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor.rb:538
+c:0010 p:0008 s:0054 e:000053 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli.rb:35
+c:0009 p:0044 s:0049 e:000048 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/base.rb:584
+c:0008 p:0022 s:0042 e:000041 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli.rb:29
+c:0007 p:0042 s:0037 e:000036 BLOCK  /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/exe/bundle:28
+c:0006 p:0007 s:0031 e:000030 METHOD /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/friendly_errors.rb:118
+c:0005 p:0051 s:0026 E:000318 TOP    /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/exe/bundle:20 [FINISH]
+c:0004 p:---- s:0022 e:000021 CFUNC  :load
+c:0003 p:0098 s:0017 e:000016 METHOD /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems.rb:304
+c:0002 p:0078 s:0008 E:001e90 EVAL   /Users/sekim/.gem/ruby/3.4.1/bin/bundle:25 [FINISH]
+c:0001 p:0000 s:0003 E:000c90 DUMMY  [FINISH]
+
+-- Ruby level backtrace information ----------------------------------------
+/Users/sekim/.gem/ruby/3.4.1/bin/bundle:25:in '<main>'
+/Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems.rb:304:in 'activate_and_load_bin_path'
+/Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems.rb:304:in 'load'
+/Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/exe/bundle:20:in '<top (required)>'
+/Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/friendly_errors.rb:118:in 'with_friendly_errors'
+/Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/exe/bundle:28:in 'block in <top (required)>'
+/Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli.rb:29:in 'start'
+/Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/base.rb:584:in 'start'
+/Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli.rb:35:in 'dispatch'
+/Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor.rb:538:in 'dispatch'
+/Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/invocation.rb:127:in 'invoke_command'
+/Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/command.rb:28:in 'run'
+/Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli.rb:504:in 'exec'
+/Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli/exec.rb:24:in 'run'
+/Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli/exec.rb:61:in 'kernel_load'
+/Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli/exec.rb:61:in 'load'
+/Users/sekim/.gem/ruby/3.4.1/bin/jekyll:25:in '<top (required)>'
+/Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems.rb:304:in 'activate_and_load_bin_path'
+/Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems.rb:304:in 'load'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/exe/jekyll:15:in '<top (required)>'
+/Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary.rb:19:in 'program'
+/Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary/program.rb:42:in 'go'
+/Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary/command.rb:220:in 'execute'
+/Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary/command.rb:220:in 'each'
+/Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary/command.rb:220:in 'block in execute'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/commands/serve.rb:86:in 'block (2 levels) in init_with_program'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/command.rb:89:in 'process_with_graceful_fail'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/command.rb:89:in 'each'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/command.rb:89:in 'block in process_with_graceful_fail'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/commands/build.rb:36:in 'process'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/commands/build.rb:65:in 'build'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/command.rb:28:in 'process_site'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/site.rb:76:in 'process'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/site.rb:202:in 'render'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/site.rb:515:in 'render_pages'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/site.rb:515:in 'each'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/site.rb:516:in 'block in render_pages'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/site.rb:523:in 'render_regenerated'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/renderer.rb:63:in 'run'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/renderer.rb:84:in 'render_document'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/renderer.rb:100:in 'convert'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/renderer.rb:100:in 'reduce'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/renderer.rb:100:in 'each'
+/Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/renderer.rb:102:in 'block in convert'
+/Users/sekim/GitHub/ccsbweb/_plugins/less-converter.rb:27:in 'convert'
+/Users/sekim/GitHub/ccsbweb/_plugins/less-converter.rb:10:in 'setup'
+/Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/bundled_gems.rb:82:in 'block (2 levels) in replace_require'
+/Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/bundled_gems.rb:82:in 'require'
+/Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less.rb:9:in '<top (required)>'
+/Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less.rb:14:in '<module:Less>'
+/Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less.rb:14:in 'new'
+/Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/loader.rb:13:in 'initialize'
+/Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/java_script.rb:17:in 'context_wrapper'
+/Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/java_script.rb:9:in 'default_context_wrapper'
+/Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/bundled_gems.rb:82:in 'block (2 levels) in replace_require'
+/Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/bundled_gems.rb:82:in 'require'
+/Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/java_script/v8_context.rb:2:in '<top (required)>'
+/Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/bundled_gems.rb:82:in 'block (2 levels) in replace_require'
+/Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/bundled_gems.rb:82:in 'require'
+/Users/sekim/.gem/ruby/3.4.1/gems/therubyracer-0.12.3/lib/v8.rb:4:in '<top (required)>'
+/Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/bundled_gems.rb:82:in 'block (2 levels) in replace_require'
+/Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/bundled_gems.rb:82:in 'require'
+
+-- Threading information ---------------------------------------------------
+Total ractor count: 1
+Ruby thread count for this ractor: 1
+
+-- Machine register context ------------------------------------------------
+  x0: 0x00000001246cfbc0  x1: 0x0000000000000003  x2: 0x00000000003ff800
+  x3: 0x00000001036b9d60  x4: 0x0000000a82e88000  x5: 0x0000000000000000
+  x6: 0xffffffffbfc007ff  x7: 0xfffff0003ffff800 x18: 0x0000000000000000
+ x19: 0x000000006c415630 x20: 0x0000000a8106c30d x21: 0x000000016cfd8ba0
+ x22: 0x0000000000000004 x23: 0x0000000000000000 x24: 0x000000012384e7d8
+ x25: 0x000000012384e760 x26: 0x0000000a8291b200 x27: 0x0000000000000000
+ x28: 0x0000000000000001  lr: 0x00000001246cfd10  fp: 0x000000016cfd8b80
+  sp: 0x000000016cfd8b60
+
+-- C level backtrace information -------------------------------------------
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_bugreport+0xb6c) [0x103091064]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_bug_for_fatal_signal+0x100) [0x102ece514]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(sigsegv+0x84) [0x102ff3204]
+/usr/lib/system/libsystem_platform.dylib(_sigtramp+0x38) [0x1837ad764]
+/Users/sekim/.gem/ruby/3.4.1/gems/therubyracer-0.12.3/lib/v8/init.bundle(_ZN2rr2GC4InitEv+0x3c) [0x1246cfd10]
+/Users/sekim/.gem/ruby/3.4.1/gems/therubyracer-0.12.3/lib/v8/init.bundle(Init_init+0xc) [0x1246d0a98]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(dln_load+0xec) [0x102e20a10]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_call_cfunc+0x16c) [0x103079548]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(require_internal+0x4ec) [0x102f38438]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_require_string_internal+0x58) [0x102f37884]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_f_require+0x44) [0x102f37754]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_cfunc_with_frame_+0xf0) [0x103082f70]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_symbol+0x280) [0x1030843e8]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_exec_core+0x46c8) [0x10306b28c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_exec+0x134) [0x1030659c4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(load_iseq_eval+0x224) [0x102f3a1b0]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(require_internal+0x4bc) [0x102f38408]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_require_string_internal+0x58) [0x102f37884]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_f_require+0x44) [0x102f37754]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_cfunc_with_frame_+0xf0) [0x103082f70]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_symbol+0x280) [0x1030843e8]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_exec_core+0x46c8) [0x10306b28c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_exec+0x134) [0x1030659c4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(load_iseq_eval+0x224) [0x102f3a1b0]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(require_internal+0x4bc) [0x102f38408]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_require_string_internal+0x58) [0x102f37884]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_f_require+0x44) [0x102f37754]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_cfunc_with_frame_+0xf0) [0x103082f70]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_symbol+0x280) [0x1030843e8]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_exec_core+0x46c8) [0x10306b28c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_exec+0x134) [0x1030659c4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_call0+0x368) [0x103089634]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_class_new_instance_pass_kw+0x40) [0x102f6078c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_cfunc_with_frame_+0xf0) [0x103082f70]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_exec_core+0x46c8) [0x10306b28c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_exec+0x134) [0x1030659c4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(load_iseq_eval+0x224) [0x102f3a1b0]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(require_internal+0x4bc) [0x102f38408]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_require_string_internal+0x58) [0x102f37884]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_f_require+0x44) [0x102f37754]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_cfunc_with_frame_+0xf0) [0x103082f70]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_symbol+0x280) [0x1030843e8]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_exec_core+0x46c8) [0x10306b28c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_exec+0x134) [0x1030659c4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(invoke_block_from_c_bh+0x36c) [0x10308ac8c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_yield_values+0x110) [0x10307347c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(inject_i+0x90) [0x102ebfed4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_yield_with_cfunc+0x110) [0x103063fec]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_yield+0xa8) [0x103073338]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_ary_each+0x40) [0x102e23810]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call0_body+0x35c) [0x1030882cc]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_call0+0x368) [0x103089634]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_iterate0+0x160) [0x103073d34]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_block_call+0x70) [0x103073a00]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(enum_inject+0x188) [0x102ebc760]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_cfunc_with_frame_+0xf0) [0x103082f70]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_exec_core+0x2620) [0x1030691e4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_exec+0x134) [0x1030659c4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(invoke_block_from_c_bh+0x36c) [0x10308ac8c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_yield+0xa8) [0x103073338]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_ary_each+0x40) [0x102e23810]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_cfunc_with_frame_+0xf0) [0x103082f70]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_exec_core+0x2620) [0x1030691e4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_exec+0x134) [0x1030659c4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(invoke_block_from_c_bh+0x36c) [0x10308ac8c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_yield+0xa8) [0x103073338]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_ary_each+0x40) [0x102e23810]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_cfunc_with_frame_+0xf0) [0x103082f70]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_exec_core+0x2620) [0x1030691e4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_exec+0x134) [0x1030659c4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(invoke_block_from_c_bh+0x36c) [0x10308ac8c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_yield+0xa8) [0x103073338]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_ary_each+0x40) [0x102e23810]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_cfunc_with_frame_+0xf0) [0x103082f70]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_exec_core+0x2620) [0x1030691e4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_exec+0x1b4) [0x103065a44]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(load_iseq_eval+0x224) [0x102f3a1b0]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_load_internal+0x84) [0x102f37590]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_f_load+0x8c) [0x102f3912c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_cfunc_with_frame_+0xf0) [0x103082f70]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_exec_core+0x46c8) [0x10306b28c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_exec+0x134) [0x1030659c4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(load_iseq_eval+0x224) [0x102f3a1b0]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_load_internal+0x84) [0x102f37590]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_f_load+0x8c) [0x102f3912c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_cfunc_with_frame_+0xf0) [0x103082f70]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_exec_core+0x46c8) [0x10306b28c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_exec+0x1b4) [0x103065a44]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(load_iseq_eval+0x224) [0x102f3a1b0]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_load_internal+0x84) [0x102f37590]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_f_load+0x8c) [0x102f3912c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_call_cfunc_with_frame_+0xf0) [0x103082f70]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(vm_exec_core+0x46c8) [0x10306b28c]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_vm_exec+0x134) [0x1030659c4]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(rb_ec_exec_node+0x8c) [0x102ed95b0]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(ruby_run_node+0x40) [0x102ed94d8]
+/Users/sekim/.rubies/ruby-3.4.1/bin/ruby(main+0x68) [0x102e20888]
+
+-- Other runtime information -----------------------------------------------
+
+* Loaded script: /Users/sekim/.gem/ruby/3.4.1/bin/jekyll
+
+* Loaded features:
+
+    0 enumerator.so
+    1 thread.rb
+    2 fiber.so
+    3 rational.so
+    4 complex.so
+    5 ruby2_keywords.rb
+    6 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/encdb.bundle
+    7 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/trans/transdb.bundle
+    8 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/rbconfig.rb
+    9 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/defaults.rb
+   10 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/deprecate.rb
+   11 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/errors.rb
+   12 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/target_rbconfig.rb
+   13 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/win_platform.rb
+   14 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/unknown_command_spell_checker.rb
+   15 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/exceptions.rb
+   16 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/basic_specification.rb
+   17 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/stub_specification.rb
+   18 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/platform.rb
+   19 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/specification_record.rb
+   20 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/util/list.rb
+   21 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/version.rb
+   22 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/requirement.rb
+   23 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/specification.rb
+   24 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/util.rb
+   25 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/dependency.rb
+   26 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/core_ext/kernel_gem.rb
+   27 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/monitor.bundle
+   28 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/monitor.rb
+   29 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems.rb
+   30 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/bundled_gems.rb
+   31 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/path_support.rb
+   32 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/error_highlight/version.rb
+   33 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/error_highlight/base.rb
+   34 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/error_highlight/formatter.rb
+   35 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/error_highlight/core_ext.rb
+   36 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/error_highlight.rb
+   37 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/version.rb
+   38 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/core_ext/name_error.rb
+   39 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/levenshtein.rb
+   40 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/jaro_winkler.rb
+   41 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/spell_checker.rb
+   42 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/spell_checkers/name_error_checkers/class_name_checker.rb
+   43 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/spell_checkers/name_error_checkers/variable_name_checker.rb
+   44 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/spell_checkers/name_error_checkers.rb
+   45 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/spell_checkers/method_name_checker.rb
+   46 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/spell_checkers/key_error_checker.rb
+   47 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/spell_checkers/null_checker.rb
+   48 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/tree_spell_checker.rb
+   49 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/spell_checkers/require_path_checker.rb
+   50 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/spell_checkers/pattern_key_name_checker.rb
+   51 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean/formatter.rb
+   52 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/did_you_mean.rb
+   53 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/syntax_suggest/core_ext.rb
+   54 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/bundler_version_finder.rb
+   55 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/tsort/lib/tsort.rb
+   56 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendored_tsort.rb
+   57 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/request_set/gem_dependency_api.rb
+   58 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/request_set/lockfile/parser.rb
+   59 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/request_set/lockfile/tokenizer.rb
+   60 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/request_set/lockfile.rb
+   61 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/request_set.rb
+   62 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/gem_metadata.rb
+   63 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/delegates/specification_provider.rb
+   64 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/errors.rb
+   65 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/dependency_graph/action.rb
+   66 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/dependency_graph/add_edge_no_circular.rb
+   67 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/dependency_graph/add_vertex.rb
+   68 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/dependency_graph/delete_edge.rb
+   69 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/dependency_graph/detach_vertex_named.rb
+   70 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/dependency_graph/set_payload.rb
+   71 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/dependency_graph/tag.rb
+   72 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/dependency_graph/log.rb
+   73 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/dependency_graph/vertex.rb
+   74 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/dependency_graph.rb
+   75 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/state.rb
+   76 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/modules/specification_provider.rb
+   77 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/delegates/resolution_state.rb
+   78 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/resolution.rb
+   79 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/resolver.rb
+   80 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo/modules/ui.rb
+   81 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/molinillo/lib/molinillo.rb
+   82 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendored_molinillo.rb
+   83 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/activation_request.rb
+   84 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/conflict.rb
+   85 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/dependency_request.rb
+   86 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/requirement_list.rb
+   87 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/stats.rb
+   88 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/set.rb
+   89 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/api_set.rb
+   90 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/composed_set.rb
+   91 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/best_set.rb
+   92 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/current_set.rb
+   93 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/git_set.rb
+   94 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/index_set.rb
+   95 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/installer_set.rb
+   96 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/lock_set.rb
+   97 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/vendor_set.rb
+   98 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/source_set.rb
+   99 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/specification.rb
+  100 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/spec_specification.rb
+  101 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/api_specification.rb
+  102 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/git_specification.rb
+  103 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/index_specification.rb
+  104 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/installed_specification.rb
+  105 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/local_specification.rb
+  106 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/lock_specification.rb
+  107 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver/vendor_specification.rb
+  108 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/resolver.rb
+  109 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/text.rb
+  110 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/source/git.rb
+  111 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/source/installed.rb
+  112 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/source/specific_file.rb
+  113 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/source/local.rb
+  114 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/source/lock.rb
+  115 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/source/vendor.rb
+  116 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/source.rb
+  117 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/match_metadata.rb
+  118 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/match_platform.rb
+  119 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/force_platform.rb
+  120 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/name_tuple.rb
+  121 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/rubygems_ext.rb
+  122 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/fileutils/lib/fileutils.rb
+  123 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendored_fileutils.rb
+  124 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/errors.rb
+  125 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/environment_preserver.rb
+  126 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/plugin/api.rb
+  127 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/plugin.rb
+  128 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/rubygems_integration.rb
+  129 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/version.rb
+  130 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/current_ruby.rb
+  131 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/build_metadata.rb
+  132 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler.rb
+  133 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/command.rb
+  134 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/core_ext/hash_with_indifferent_access.rb
+  135 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/error.rb
+  136 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/invocation.rb
+  137 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/nested_context.rb
+  138 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/parser/argument.rb
+  139 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/parser/arguments.rb
+  140 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/parser/option.rb
+  141 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/parser/options.rb
+  142 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/parser.rb
+  143 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/shell.rb
+  144 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/line_editor/basic.rb
+  145 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/line_editor/readline.rb
+  146 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/line_editor.rb
+  147 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/util.rb
+  148 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/base.rb
+  149 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor.rb
+  150 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendored_thor.rb
+  151 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/friendly_errors.rb
+  152 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli/common.rb
+  153 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli/install.rb
+  154 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/settings.rb
+  155 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/shared_helpers.rb
+  156 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+  157 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/pathname.rb
+  158 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli/config.rb
+  159 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli/doctor.rb
+  160 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli/plugin.rb
+  161 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli.rb
+  162 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/shell/terminal.rb
+  163 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/shell/column_printer.rb
+  164 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/shell/table_printer.rb
+  165 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/shell/wrapped_printer.rb
+  166 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/shell/basic.rb
+  167 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/thor/lib/thor/shell/color.rb
+  168 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/self_manager.rb
+  169 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/source.rb
+  170 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/source/path.rb
+  171 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/source/git.rb
+  172 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/user_interaction.rb
+  173 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/source/rubygems.rb
+  174 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/lockfile_parser.rb
+  175 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/ui.rb
+  176 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/ui/shell.rb
+  177 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/ui/rg_proxy.rb
+  178 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/cli/exec.rb
+  179 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/feature_flag.rb
+  180 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/worker.rb
+  181 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/definition.rb
+  182 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/dependency.rb
+  183 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/ruby_dsl.rb
+  184 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/dsl.rb
+  185 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/source_list.rb
+  186 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/source/metadata.rb
+  187 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/checksum.rb
+  188 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/uri_normalizer.rb
+  189 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/version.rb
+  190 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/rfc2396_parser.rb
+  191 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/rfc3986_parser.rb
+  192 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/common.rb
+  193 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/generic.rb
+  194 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/file.rb
+  195 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/ftp.rb
+  196 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/http.rb
+  197 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/https.rb
+  198 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/ldap.rb
+  199 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/ldaps.rb
+  200 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/mailto.rb
+  201 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/ws.rb
+  202 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri/wss.rb
+  203 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/site_ruby/3.4.0/rubygems/vendor/uri/lib/uri.rb
+  204 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendored_uri.rb
+  205 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/lazy_specification.rb
+  206 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendor/tsort/lib/tsort.rb
+  207 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/vendored_tsort.rb
+  208 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/spec_set.rb
+  209 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/runtime.rb
+  210 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/materialization.rb
+  211 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/index.rb
+  212 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/match_remote_metadata.rb
+  213 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/remote_specification.rb
+  214 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/stub_specification.rb
+  215 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/endpoint_specification.rb
+  216 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/ruby_version.rb
+  217 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/setup.rb
+  218 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/forwardable/impl.rb
+  219 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/forwardable.rb
+  220 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/fileutils.rb
+  221 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/date_core.bundle
+  222 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/date.rb
+  223 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/time.rb
+  224 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/English.rb
+  225 /Users/sekim/.gem/ruby/3.4.1/gems/logger-1.7.0/lib/logger/version.rb
+  226 /Users/sekim/.gem/ruby/3.4.1/gems/logger-1.7.0/lib/logger/formatter.rb
+  227 /Users/sekim/.gem/ruby/3.4.1/gems/logger-1.7.0/lib/logger/period.rb
+  228 /Users/sekim/.gem/ruby/3.4.1/gems/logger-1.7.0/lib/logger/log_device.rb
+  229 /Users/sekim/.gem/ruby/3.4.1/gems/logger-1.7.0/lib/logger/severity.rb
+  230 /Users/sekim/.gem/ruby/3.4.1/gems/logger-1.7.0/lib/logger/errors.rb
+  231 /Users/sekim/.gem/ruby/3.4.1/gems/logger-1.7.0/lib/logger.rb
+  232 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/set.rb
+  233 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+  234 /Users/sekim/.gem/ruby/3.4.1/gems/csv-3.3.5/lib/csv/fields_converter.rb
+  235 /Users/sekim/.gem/ruby/3.4.1/gems/csv-3.3.5/lib/csv/input_record_separator.rb
+  236 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/strscan/strscan.rb
+  237 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/strscan.bundle
+  238 /Users/sekim/.gem/ruby/3.4.1/gems/csv-3.3.5/lib/csv/row.rb
+  239 /Users/sekim/.gem/ruby/3.4.1/gems/csv-3.3.5/lib/csv/table.rb
+  240 /Users/sekim/.gem/ruby/3.4.1/gems/csv-3.3.5/lib/csv/parser.rb
+  241 /Users/sekim/.gem/ruby/3.4.1/gems/csv-3.3.5/lib/csv/writer.rb
+  242 /Users/sekim/.gem/ruby/3.4.1/gems/csv-3.3.5/lib/csv/version.rb
+  243 /Users/sekim/.gem/ruby/3.4.1/gems/csv-3.3.5/lib/csv/core_ext/array.rb
+  244 /Users/sekim/.gem/ruby/3.4.1/gems/csv-3.3.5/lib/csv/core_ext/string.rb
+  245 /Users/sekim/.gem/ruby/3.4.1/gems/csv-3.3.5/lib/csv.rb
+  246 /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/version.rb
+  247 /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/common.rb
+  248 /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/ext/parser.bundle
+  249 /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/ext/generator/state.rb
+  250 /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/ext/generator.bundle
+  251 /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/ext.rb
+  252 /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json.rb
+  253 /Users/sekim/.gem/ruby/3.4.1/gems/pathutil-0.16.2/lib/pathutil/helpers.rb
+  254 /Users/sekim/.gem/ruby/3.4.1/gems/forwardable-extended-2.6.0/lib/forwardable/extended/version.rb
+  255 /Users/sekim/.gem/ruby/3.4.1/gems/forwardable-extended-2.6.0/lib/forwardable/extended.rb
+  256 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/find.rb
+  257 /Users/sekim/.gem/ruby/3.4.1/gems/pathutil-0.16.2/lib/pathutil.rb
+  258 /Users/sekim/.gem/ruby/3.4.1/gems/addressable-2.8.9/lib/addressable/version.rb
+  259 /Users/sekim/.gem/ruby/3.4.1/gems/addressable-2.8.9/lib/addressable/idna/pure.rb
+  260 /Users/sekim/.gem/ruby/3.4.1/gems/addressable-2.8.9/lib/addressable/idna.rb
+  261 /Users/sekim/.gem/ruby/3.4.1/gems/public_suffix-7.0.5/lib/public_suffix/domain.rb
+  262 /Users/sekim/.gem/ruby/3.4.1/gems/public_suffix-7.0.5/lib/public_suffix/version.rb
+  263 /Users/sekim/.gem/ruby/3.4.1/gems/public_suffix-7.0.5/lib/public_suffix/errors.rb
+  264 /Users/sekim/.gem/ruby/3.4.1/gems/public_suffix-7.0.5/lib/public_suffix/rule.rb
+  265 /Users/sekim/.gem/ruby/3.4.1/gems/public_suffix-7.0.5/lib/public_suffix/list.rb
+  266 /Users/sekim/.gem/ruby/3.4.1/gems/public_suffix-7.0.5/lib/public_suffix.rb
+  267 /Users/sekim/.gem/ruby/3.4.1/gems/addressable-2.8.9/lib/addressable/uri.rb
+  268 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/versions.rb
+  269 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/exception.rb
+  270 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/syntax_error.rb
+  271 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/psych.bundle
+  272 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/omap.rb
+  273 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/set.rb
+  274 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/class_loader.rb
+  275 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/scalar_scanner.rb
+  276 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/nodes/node.rb
+  277 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/nodes/stream.rb
+  278 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/nodes/document.rb
+  279 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/nodes/sequence.rb
+  280 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/nodes/scalar.rb
+  281 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/nodes/mapping.rb
+  282 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/nodes/alias.rb
+  283 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/nodes.rb
+  284 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/streaming.rb
+  285 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/visitors/visitor.rb
+  286 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/visitors/to_ruby.rb
+  287 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/visitors/emitter.rb
+  288 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/handler.rb
+  289 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/tree_builder.rb
+  290 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/visitors/yaml_tree.rb
+  291 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/json/ruby_events.rb
+  292 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/visitors/json_tree.rb
+  293 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/visitors/depth_first.rb
+  294 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/visitors.rb
+  295 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/parser.rb
+  296 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/coder.rb
+  297 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/core_ext.rb
+  298 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/stream.rb
+  299 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/json/yaml_events.rb
+  300 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/json/tree_builder.rb
+  301 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/json/stream.rb
+  302 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych/handlers/document_stream.rb
+  303 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/psych.rb
+  304 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/yaml.rb
+  305 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/libyaml_checker.rb
+  306 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/deep.rb
+  307 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/parse/hexadecimal.rb
+  308 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/parse/sexagesimal.rb
+  309 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/parse/date.rb
+  310 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/transformation_map.rb
+  311 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/to_boolean.rb
+  312 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/to_date.rb
+  313 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/to_float.rb
+  314 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/to_integer.rb
+  315 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/to_nil.rb
+  316 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/transform/to_symbol.rb
+  317 /Users/sekim/.gem/ruby/3.4.1/gems/base64-0.3.0/lib/base64.rb
+  318 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/transform.rb
+  319 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/resolver.rb
+  320 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/psych_handler.rb
+  321 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/psych_resolver.rb
+  322 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/safe_to_ruby_visitor.rb
+  323 /Users/sekim/.gem/ruby/3.4.1/gems/safe_yaml-1.0.5/lib/safe_yaml/load.rb
+  324 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/version.rb
+  325 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/parse_tree_visitor.rb
+  326 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/lexer.rb
+  327 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/parser.rb
+  328 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/i18n.rb
+  329 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/drop.rb
+  330 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tablerowloop_drop.rb
+  331 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/forloop_drop.rb
+  332 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/extensions.rb
+  333 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/errors.rb
+  334 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/interrupts.rb
+  335 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/strainer.rb
+  336 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/expression.rb
+  337 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/context.rb
+  338 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/parser_switching.rb
+  339 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tag.rb
+  340 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/block.rb
+  341 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/block_body.rb
+  342 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/document.rb
+  343 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/variable.rb
+  344 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/variable_lookup.rb
+  345 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/range_lookup.rb
+  346 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/file_system.rb
+  347 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/resource_limits.rb
+  348 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/template.rb
+  349 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/cgi/core.rb
+  350 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/cgi/escape.bundle
+  351 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/cgi/util.rb
+  352 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/cgi/cookie.rb
+  353 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/cgi.rb
+  354 /Users/sekim/.gem/ruby/3.4.1/gems/bigdecimal-4.0.1/lib/bigdecimal.bundle
+  355 /Users/sekim/.gem/ruby/3.4.1/gems/bigdecimal-4.0.1/lib/bigdecimal.rb
+  356 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/standardfilters.rb
+  357 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/condition.rb
+  358 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/utils.rb
+  359 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tokenizer.rb
+  360 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/parse_context.rb
+  361 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/assign.rb
+  362 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/break.rb
+  363 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/capture.rb
+  364 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/case.rb
+  365 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/comment.rb
+  366 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/continue.rb
+  367 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/cycle.rb
+  368 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/decrement.rb
+  369 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/for.rb
+  370 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/if.rb
+  371 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/ifchanged.rb
+  372 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/include.rb
+  373 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/increment.rb
+  374 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/raw.rb
+  375 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/table_row.rb
+  376 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid/tags/unless.rb
+  377 /Users/sekim/.gem/ruby/3.4.1/gems/liquid-4.0.4/lib/liquid.rb
+  378 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/version.rb
+  379 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/element.rb
+  380 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/error.rb
+  381 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser.rb
+  382 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/utils.rb
+  383 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/utils/configurable.rb
+  384 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/converter.rb
+  385 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/options.rb
+  386 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/document.rb
+  387 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown.rb
+  388 /Users/sekim/.gem/ruby/3.4.1/gems/colorator-1.1.0/lib/colorator/core_ext.rb
+  389 /Users/sekim/.gem/ruby/3.4.1/gems/colorator-1.1.0/lib/colorator.rb
+  390 /Users/sekim/.gem/ruby/3.4.1/gems/concurrent-ruby-1.3.6/lib/concurrent-ruby/concurrent/constants.rb
+  391 /Users/sekim/.gem/ruby/3.4.1/gems/concurrent-ruby-1.3.6/lib/concurrent-ruby/concurrent/utility/engine.rb
+  392 /Users/sekim/.gem/ruby/3.4.1/gems/concurrent-ruby-1.3.6/lib/concurrent-ruby/concurrent/collection/map/non_concurrent_map_backend.rb
+  393 /Users/sekim/.gem/ruby/3.4.1/gems/concurrent-ruby-1.3.6/lib/concurrent-ruby/concurrent/collection/map/mri_map_backend.rb
+  394 /Users/sekim/.gem/ruby/3.4.1/gems/concurrent-ruby-1.3.6/lib/concurrent-ruby/concurrent/map.rb
+  395 /Users/sekim/.gem/ruby/3.4.1/gems/concurrent-ruby-1.3.6/lib/concurrent-ruby/concurrent/thread_safe/util.rb
+  396 /Users/sekim/.gem/ruby/3.4.1/gems/concurrent-ruby-1.3.6/lib/concurrent-ruby/concurrent/hash.rb
+  397 /Users/sekim/.gem/ruby/3.4.1/gems/i18n-1.14.8/lib/i18n/version.rb
+  398 /Users/sekim/.gem/ruby/3.4.1/gems/i18n-1.14.8/lib/i18n/utils.rb
+  399 /Users/sekim/.gem/ruby/3.4.1/gems/i18n-1.14.8/lib/i18n/exceptions.rb
+  400 /Users/sekim/.gem/ruby/3.4.1/gems/i18n-1.14.8/lib/i18n/interpolate/ruby.rb
+  401 /Users/sekim/.gem/ruby/3.4.1/gems/i18n-1.14.8/lib/i18n.rb
+  402 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/plugin.rb
+  403 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/converter.rb
+  404 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/generator.rb
+  405 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/command.rb
+  406 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/liquid_extensions.rb
+  407 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/filters/date_filters.rb
+  408 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/filters/grouping_filters.rb
+  409 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/filters/url_filters.rb
+  410 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/filters.rb
+  411 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/external.rb
+  412 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/log_adapter.rb
+  413 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/stevenson.rb
+  414 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/drops/drop.rb
+  415 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/drops/document_drop.rb
+  416 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/commands/build.rb
+  417 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/commands/clean.rb
+  418 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/commands/doctor.rb
+  419 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/commands/help.rb
+  420 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/erb/version.rb
+  421 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/erb/compiler.rb
+  422 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/erb/def_method.rb
+  423 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/erb/escape.bundle
+  424 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/erb/util.rb
+  425 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/erb.rb
+  426 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/commands/new.rb
+  427 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/commands/new_theme.rb
+  428 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/commands/serve.rb
+  429 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/converters/identity.rb
+  430 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/converters/markdown.rb
+  431 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/base.rb
+  432 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/blank_line.rb
+  433 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/eob.rb
+  434 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/extensions.rb
+  435 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/horizontal_rule.rb
+  436 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/list.rb
+  437 /Users/sekim/.gem/ruby/3.4.1/gems/rexml-3.4.4/lib/rexml/parseexception.rb
+  438 /Users/sekim/.gem/ruby/3.4.1/gems/rexml-3.4.4/lib/rexml/undefinednamespaceexception.rb
+  439 /Users/sekim/.gem/ruby/3.4.1/gems/rexml-3.4.4/lib/rexml/security.rb
+  440 /Users/sekim/.gem/ruby/3.4.1/gems/rexml-3.4.4/lib/rexml/encoding.rb
+  441 /Users/sekim/.gem/ruby/3.4.1/gems/rexml-3.4.4/lib/rexml/source.rb
+  442 /Users/sekim/.gem/ruby/3.4.1/gems/rexml-3.4.4/lib/rexml/parsers/baseparser.rb
+  443 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/utils/entities.rb
+  444 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/html.rb
+  445 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/utils/html.rb
+  446 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/html.rb
+  447 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/paragraph.rb
+  448 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/block_boundary.rb
+  449 /Users/sekim/.gem/ruby/3.4.1/gems/rexml-3.4.4/lib/rexml/xmltokens.rb
+  450 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/header.rb
+  451 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/blockquote.rb
+  452 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/table.rb
+  453 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/codeblock.rb
+  454 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/escaped_chars.rb
+  455 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/link.rb
+  456 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/footnote.rb
+  457 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/html_entity.rb
+  458 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/line_break.rb
+  459 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/typographic_symbol.rb
+  460 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/autolink.rb
+  461 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/codespan.rb
+  462 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/emphasis.rb
+  463 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/smart_quotes.rb
+  464 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/math.rb
+  465 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown/abbreviation.rb
+  466 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-2.5.2/lib/kramdown/parser/kramdown.rb
+  467 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/converters/smartypants.rb
+  468 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/converters/markdown/kramdown_parser.rb
+  469 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/drops/collection_drop.rb
+  470 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/drops/excerpt_drop.rb
+  471 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/drops/jekyll_drop.rb
+  472 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/drops/site_drop.rb
+  473 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/drops/static_file_drop.rb
+  474 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/drops/unified_payload_drop.rb
+  475 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/drops/url_drop.rb
+  476 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/tags/highlight.rb
+  477 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/tags/include.rb
+  478 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/tags/link.rb
+  479 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/tags/post_url.rb
+  480 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-sass-converter-2.2.0/lib/jekyll-sass-converter/version.rb
+  481 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/version.rb
+  482 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+  483 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/compat.rb
+  484 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/platform.rb
+  485 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/data_converter.rb
+  486 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/types.rb
+  487 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/library_path.rb
+  488 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/dynamic_library.rb
+  489 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/library.rb
+  490 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/errno.rb
+  491 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/abstract_memory.rb
+  492 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/pointer.rb
+  493 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/memorypointer.rb
+  494 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/struct_layout.rb
+  495 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/struct_layout_builder.rb
+  496 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/struct_by_reference.rb
+  497 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/struct.rb
+  498 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/union.rb
+  499 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/managedstruct.rb
+  500 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/callback.rb
+  501 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/io.rb
+  502 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/autopointer.rb
+  503 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/variadic.rb
+  504 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/enum.rb
+  505 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/version.rb
+  506 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/function.rb
+  507 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi/ffi.rb
+  508 /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/ffi.rb
+  509 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/native/sass_value.rb
+  510 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/native/sass_input_style.rb
+  511 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/native/sass_output_style.rb
+  512 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/native/string_list.rb
+  513 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/native/native_context_api.rb
+  514 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/native/native_functions_api.rb
+  515 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/native/sass2scss_api.rb
+  516 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/native.rb
+  517 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/import_handler.rb
+  518 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/importer.rb
+  519 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/version.rb
+  520 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/rfc2396_parser.rb
+  521 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/rfc3986_parser.rb
+  522 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/common.rb
+  523 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/generic.rb
+  524 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/file.rb
+  525 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/ftp.rb
+  526 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/http.rb
+  527 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/https.rb
+  528 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/ldap.rb
+  529 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/ldaps.rb
+  530 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/mailto.rb
+  531 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/ws.rb
+  532 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri/wss.rb
+  533 /Users/sekim/.gem/ruby/3.4.1/gems/uri-1.1.1/lib/uri.rb
+  534 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/util.rb
+  535 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/delegate.rb
+  536 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/util/normalized_map.rb
+  537 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script.rb
+  538 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value.rb
+  539 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value/bool.rb
+  540 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value/number.rb
+  541 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value/color.rb
+  542 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value/string.rb
+  543 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value/list.rb
+  544 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value/map.rb
+  545 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/functions.rb
+  546 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value_conversion.rb
+  547 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value_conversion/base.rb
+  548 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value_conversion/string.rb
+  549 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value_conversion/number.rb
+  550 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value_conversion/color.rb
+  551 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value_conversion/map.rb
+  552 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value_conversion/list.rb
+  553 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/script/value_conversion/bool.rb
+  554 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/functions_handler.rb
+  555 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/dependency.rb
+  556 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/error.rb
+  557 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/engine.rb
+  558 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/sass_2_scss.rb
+  559 /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc.rb
+  560 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/utils.rb
+  561 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/convertible.rb
+  562 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/page.rb
+  563 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-sass-converter-2.2.0/lib/jekyll/source_map_page.rb
+  564 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/hooks.rb
+  565 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-sass-converter-2.2.0/lib/jekyll/converters/scss.rb
+  566 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-sass-converter-2.2.0/lib/jekyll/converters/sass.rb
+  567 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-sass-converter-2.2.0/lib/jekyll-sass-converter.rb
+  568 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll.rb
+  569 /Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary/version.rb
+  570 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/optparse.rb
+  571 /Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary.rb
+  572 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/plugin_manager.rb
+  573 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/plugin/events.rb
+  574 /Users/sekim/.gem/ruby/3.4.1/gems/bundler-4.0.8/lib/bundler/plugin/index.rb
+  575 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/deprecator.rb
+  576 /Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary/command.rb
+  577 /Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary/program.rb
+  578 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/version.rb
+  579 /Users/sekim/.gem/ruby/3.4.1/gems/mercenary-0.3.6/lib/mercenary/option.rb
+  580 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/configuration.rb
+  581 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/site.rb
+  582 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/digest/version.rb
+  583 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/digest.bundle
+  584 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/digest/loader.rb
+  585 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/digest.rb
+  586 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/cache.rb
+  587 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/reader.rb
+  588 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/regenerator.rb
+  589 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/liquid_renderer/file.rb
+  590 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/liquid_renderer/table.rb
+  591 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/liquid_renderer.rb
+  592 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/frontmatter_defaults.rb
+  593 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/digest/sha2.bundle
+  594 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/digest/sha2/loader.rb
+  595 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/digest/sha2.rb
+  596 /Users/sekim/GitHub/ccsbweb/_plugins/breadcrumb-array-filter.rb
+  597 /Users/sekim/GitHub/ccsbweb/_plugins/eq.rb
+  598 /Users/sekim/GitHub/ccsbweb/_plugins/eqinline.rb
+  599 /Users/sekim/GitHub/ccsbweb/_plugins/less-converter.rb
+  600 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/open-uri.rb
+  601 /Users/sekim/GitHub/ccsbweb/_plugins/trackback.rb
+  602 /Users/sekim/GitHub/ccsbweb/_plugins/tweet.rb
+  603 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/socket.bundle
+  604 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/socket.rb
+  605 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/timeout.rb
+  606 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/io/wait.bundle
+  607 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/net/protocol.rb
+  608 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/random/formatter.rb
+  609 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/securerandom.rb
+  610 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/resolv.rb
+  611 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/zlib.bundle
+  612 /Users/sekim/.gem/ruby/3.4.1/gems/net-http-0.9.1/lib/net/http/exceptions.rb
+  613 /Users/sekim/.gem/ruby/3.4.1/gems/net-http-0.9.1/lib/net/http/header.rb
+  614 /Users/sekim/.gem/ruby/3.4.1/gems/net-http-0.9.1/lib/net/http/generic_request.rb
+  615 /Users/sekim/.gem/ruby/3.4.1/gems/net-http-0.9.1/lib/net/http/request.rb
+  616 /Users/sekim/.gem/ruby/3.4.1/gems/net-http-0.9.1/lib/net/http/requests.rb
+  617 /Users/sekim/.gem/ruby/3.4.1/gems/net-http-0.9.1/lib/net/http/response.rb
+  618 /Users/sekim/.gem/ruby/3.4.1/gems/net-http-0.9.1/lib/net/http/responses.rb
+  619 /Users/sekim/.gem/ruby/3.4.1/gems/net-http-0.9.1/lib/net/http/proxy_delta.rb
+  620 /Users/sekim/.gem/ruby/3.4.1/gems/net-http-0.9.1/lib/net/http.rb
+  621 /Users/sekim/.gem/ruby/3.4.1/gems/ostruct-0.6.3/lib/ostruct.rb
+  622 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-twitter-plugin-2.1.0/lib/jekyll-twitter-plugin.rb
+  623 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/readers/layout_reader.rb
+  624 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/entry_filter.rb
+  625 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/path_manager.rb
+  626 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/layout.rb
+  627 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/document.rb
+  628 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16le.bundle
+  629 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16be.bundle
+  630 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/collection.rb
+  631 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/readers/post_reader.rb
+  632 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/excerpt.rb
+  633 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/publisher.rb
+  634 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/readers/page_reader.rb
+  635 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/readers/static_file_reader.rb
+  636 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/static_file.rb
+  637 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/readers/data_reader.rb
+  638 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/readers/collection_reader.rb
+  639 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/readers/theme_assets_reader.rb
+  640 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/renderer.rb
+  641 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-parser-gfm-1.1.0/lib/kramdown/parser/gfm/options.rb
+  642 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-parser-gfm-1.1.0/lib/kramdown/parser/gfm.rb
+  643 /Users/sekim/.gem/ruby/3.4.1/gems/kramdown-parser-gfm-1.1.0/lib/kramdown-parser-gfm.rb
+  644 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/unicode_normalize/tables.rb
+  645 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/unicode_normalize/normalize.rb
+  646 /Users/sekim/.gem/ruby/3.4.1/gems/jekyll-4.0.1/lib/jekyll/url.rb
+  647 /Users/sekim/.gem/ruby/3.4.1/gems/execjs-2.10.0/lib/execjs/version.rb
+  648 /Users/sekim/.gem/ruby/3.4.1/gems/execjs-2.10.0/lib/execjs/module.rb
+  649 /Users/sekim/.gem/ruby/3.4.1/gems/execjs-2.10.0/lib/execjs/runtime.rb
+  650 /Users/sekim/.gem/ruby/3.4.1/gems/execjs-2.10.0/lib/execjs/disabled_runtime.rb
+  651 /Users/sekim/.gem/ruby/3.4.1/gems/execjs-2.10.0/lib/execjs/duktape_runtime.rb
+  652 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+  653 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/tmpdir.rb
+  654 /Users/sekim/.gem/ruby/3.4.1/gems/execjs-2.10.0/lib/execjs/external_runtime.rb
+  655 /Users/sekim/.gem/ruby/3.4.1/gems/execjs-2.10.0/lib/execjs/ruby_rhino_runtime.rb
+  656 /Users/sekim/.gem/ruby/3.4.1/gems/execjs-2.10.0/lib/execjs/mini_racer_runtime.rb
+  657 /Users/sekim/.gem/ruby/3.4.1/gems/execjs-2.10.0/lib/execjs/graaljs_runtime.rb
+  658 /Users/sekim/.gem/ruby/3.4.1/gems/execjs-2.10.0/lib/execjs/runtimes.rb
+  659 /Users/sekim/.gem/ruby/3.4.1/gems/execjs-2.10.0/lib/execjs.rb
+  660 /Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/defaults.rb
+  661 /Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/errors.rb
+  662 /Users/sekim/.gem/ruby/3.4.1/gems/commonjs-0.2.7/lib/commonjs/version.rb
+  663 /Users/sekim/.gem/ruby/3.4.1/gems/commonjs-0.2.7/lib/commonjs.rb
+  664 /Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/loader.rb
+  665 /Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/parser.rb
+  666 /Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/version.rb
+  667 /Users/sekim/.gem/ruby/3.4.1/gems/less-2.6.0/lib/less/java_script.rb
+  668 /Users/sekim/.gem/ruby/3.4.1/gems/therubyracer-0.12.3/lib/v8/version.rb
+  669 /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/weakref.rb
+  670 /Users/sekim/.gem/ruby/3.4.1/gems/therubyracer-0.12.3/lib/v8/weak.rb
+
+* Process memory map:
+
+102e20000-1031f0000 r-x /Users/sekim/.rubies/ruby-3.4.1/bin/ruby
+1031f0000-103200000 r-- /Users/sekim/.rubies/ruby-3.4.1/bin/ruby
+103200000-103204000 rw- /Users/sekim/.rubies/ruby-3.4.1/bin/ruby
+103204000-103214000 rw- /Users/sekim/.rubies/ruby-3.4.1/bin/ruby
+103214000-103334000 r-- /Users/sekim/.rubies/ruby-3.4.1/bin/ruby
+103334000-10333c000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+10333c000-103344000 r-- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+103344000-103348000 r-- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+103348000-103388000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+103388000-10338c000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+10338c000-103390000 r-x /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+103390000-1033a0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/encdb.bundle
+1033b0000-1033c0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/encdb.bundle
+1033c0000-1033c4000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/encdb.bundle
+1033c4000-1033c8000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/encdb.bundle
+1033c8000-1033cc000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/encdb.bundle
+1033cc000-1033d0000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/encdb.bundle
+1033d0000-1033e0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/trans/transdb.bundle
+1033e0000-1033e4000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/trans/transdb.bundle
+1033e4000-1033e8000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/trans/transdb.bundle
+1033e8000-1033ec000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/trans/transdb.bundle
+1033ec000-1033f0000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/trans/transdb.bundle
+1033f0000-103400000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/monitor.bundle
+103400000-103404000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/monitor.bundle
+103404000-103408000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/monitor.bundle
+103408000-10340c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/monitor.bundle
+10340c000-103410000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/monitor.bundle
+103410000-103420000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/strscan.bundle
+103420000-103424000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/strscan.bundle
+103424000-103428000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/strscan.bundle
+103428000-10342c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/strscan.bundle
+10342c000-103430000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/strscan.bundle
+103430000-103440000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/psych.bundle
+103440000-103444000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/psych.bundle
+103444000-103448000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/psych.bundle
+103448000-10344c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/psych.bundle
+10344c000-103450000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/psych.bundle
+103450000-103460000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/cgi/escape.bundle
+103460000-103464000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/cgi/escape.bundle
+103464000-103468000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/cgi/escape.bundle
+103468000-10346c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/cgi/escape.bundle
+10346c000-103470000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/cgi/escape.bundle
+103470000-103480000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/erb/escape.bundle
+103480000-103484000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/erb/escape.bundle
+103484000-103488000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/erb/escape.bundle
+103488000-10348c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/erb/escape.bundle
+10348c000-103490000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/erb/escape.bundle
+103490000-1034a0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/digest.bundle
+1034a0000-1034a4000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/digest.bundle
+1034a4000-1034a8000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/digest.bundle
+1034a8000-1034ac000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/digest.bundle
+1034ac000-1034b0000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/digest.bundle
+1034b0000-1034c0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/digest/sha2.bundle
+1034c0000-1034c4000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/digest/sha2.bundle
+1034c4000-1034c8000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/digest/sha2.bundle
+1034c8000-1034cc000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/digest/sha2.bundle
+1034cc000-1034d0000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/digest/sha2.bundle
+1034d0000-1034e0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/io/wait.bundle
+1034e0000-1034e4000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/io/wait.bundle
+1034e4000-1034e8000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/io/wait.bundle
+1034e8000-1034ec000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/io/wait.bundle
+1034ec000-1034f0000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/io/wait.bundle
+1034f0000-103500000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16le.bundle
+103500000-103504000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16le.bundle
+103504000-103508000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16le.bundle
+103508000-10350c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16le.bundle
+10350c000-103510000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16le.bundle
+103510000-103570000 --- /usr/lib/dyld
+103570000-1036b4000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16be.bundle
+1036b4000-1036f4000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16be.bundle
+1036f4000-1036f8000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16be.bundle
+1036f8000-103700000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16be.bundle
+103700000-103704000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16be.bundle
+103704000-103784000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16be.bundle
+103790000-1037a0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16be.bundle
+1037a0000-1037a4000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16be.bundle
+1037a4000-1037a8000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16be.bundle
+1037a8000-1037ac000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16be.bundle
+1037ac000-1037b0000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/enc/utf_16be.bundle
+1037b4000-1039e0000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1039e0000-1039e4000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1039e4000-103de4000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+103de4000-103de8000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+103de8000-107dec000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+107dec000-1091ec000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1091ec000-1111ec000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1111ec000-1191ec000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1191ec000-1211ec000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1211ec000-1211f0000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1211f0000-121294000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121294000-121298000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121298000-12133c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+12133c000-121340000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121340000-1213e4000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1213e4000-1213e8000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1213e8000-12148c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+12148c000-121490000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121490000-121534000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121534000-121538000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121538000-1215dc000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1215dc000-1215e0000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1215e0000-121684000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121684000-121688000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121688000-12172c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+12172c000-121730000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121730000-1217d4000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1217d4000-1217d8000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1217d8000-12187c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+12187c000-121880000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121880000-121924000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121924000-121928000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121928000-1219cc000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1219cc000-1219d0000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1219d0000-121a74000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121a74000-121a78000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121a78000-121b1c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121b1c000-121b20000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121b20000-121bc4000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121bc4000-121bc8000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121bc8000-121c6c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121c6c000-121c70000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121c70000-121d14000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121d14000-121d18000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121d18000-121dbc000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121dbc000-121dc0000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121dc0000-121e64000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121e64000-121e68000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121e68000-121f0c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121f0c000-121f10000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121f10000-121fb4000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121fb4000-121fb8000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+121fb8000-12205c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+12205c000-122060000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+122060000-122104000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+122104000-122108000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+122108000-1221ac000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1221ac000-1221b0000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1221b0000-122254000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+122254000-122258000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+122258000-1222fc000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1222fc000-122300000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+122300000-1223a4000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1223a4000-1223a8000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1223a8000-12244c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+12244c000-122450000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+122450000-1224f4000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1224f4000-1224f8000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1224f8000-12259c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+12259c000-1225a0000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1225a0000-122644000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+122644000-122648000 --- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+122648000-1226ec000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+1226f0000-122700000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+122700000-122704000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+122704000-122708000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+122708000-12270c000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+12270c000-122710000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/etc.bundle
+122710000-122720000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122730000-122740000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122750000-122760000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122770000-122780000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122790000-1227a0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+1227b0000-1227c0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+1227d0000-1227e0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+1227f0000-122800000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122810000-122820000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122830000-122840000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122850000-122860000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122870000-122880000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122890000-1228a0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+1228b0000-1228c0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+1228d0000-1228e0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+1228f0000-122900000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122910000-122920000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122930000-122940000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122950000-122960000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122970000-122980000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122990000-1229a0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+1229a0000-1229b0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+1229c0000-1229d0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+1229e0000-1229f0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122a00000-122a10000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122a20000-122a30000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122a40000-122a50000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122a60000-122a70000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122a80000-122a90000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122aa0000-122ab0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122ac0000-122ad0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122ae0000-122af0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122b00000-122b10000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122b20000-122b30000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122b40000-122b50000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122b50000-122b58000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122b58000-122b5c000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122b5c000-122b60000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122b60000-122b64000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/pathname.bundle
+122b70000-122b80000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122b90000-122ba0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122bb0000-122bc0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122bd0000-122be0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122bf0000-122c00000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122c10000-122c20000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122c30000-122c40000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122c50000-122c60000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122c70000-122c80000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122c90000-122ca0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122cb0000-122cc0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122cd0000-122ce0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122cf0000-122d00000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122d10000-122d20000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122d30000-122d40000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122d50000-122d60000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122d70000-122d80000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122d90000-122da0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122db0000-122dc0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122dd0000-122de0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122df0000-122e00000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122e10000-122e20000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122e30000-122e40000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122e50000-122e60000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122e70000-122e80000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122e90000-122ea0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122eb0000-122ec0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122ed0000-122ee0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122ef0000-122f00000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122f10000-122f20000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122f30000-122f40000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122f50000-122f60000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122f70000-122f80000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122f90000-122fa0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122fa0000-122fa8000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122fa8000-122fac000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122fac000-122fb0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122fb0000-122fb4000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/stringio.bundle
+122fc0000-122fd0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/date_core.bundle
+122fe8000-12301c000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/date_core.bundle
+12301c000-123020000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/date_core.bundle
+123020000-123024000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/date_core.bundle
+123024000-123030000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/date_core.bundle
+123030000-12303c000 r-x /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/ext/parser.bundle
+12303c000-123040000 r-- /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/ext/parser.bundle
+123040000-123044000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/ext/parser.bundle
+123044000-123048000 r-- /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/ext/parser.bundle
+123048000-123054000 r-x /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/ext/generator.bundle
+123054000-123058000 r-- /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/ext/generator.bundle
+123058000-12305c000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/ext/generator.bundle
+12305c000-123060000 r-- /Users/sekim/.gem/ruby/3.4.1/gems/json-2.19.2/lib/json/ext/generator.bundle
+123070000-123080000 rw- /opt/homebrew/Cellar/libyaml/0.2.5/lib/libyaml-0.2.dylib
+123090000-1230a0000 rw- /opt/homebrew/Cellar/libyaml/0.2.5/lib/libyaml-0.2.dylib
+1230b0000-1230c0000 rw- /opt/homebrew/Cellar/libyaml/0.2.5/lib/libyaml-0.2.dylib
+1230c0000-1230d0000 rw- /opt/homebrew/Cellar/libyaml/0.2.5/lib/libyaml-0.2.dylib
+1230d0000-1230e8000 r-x /opt/homebrew/Cellar/libyaml/0.2.5/lib/libyaml-0.2.dylib
+1230e8000-1230ec000 r-- /opt/homebrew/Cellar/libyaml/0.2.5/lib/libyaml-0.2.dylib
+1230ec000-1230f4000 r-- /opt/homebrew/Cellar/libyaml/0.2.5/lib/libyaml-0.2.dylib
+123100000-123110000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/bigdecimal-4.0.1/lib/bigdecimal.bundle
+123120000-123130000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/bigdecimal-4.0.1/lib/bigdecimal.bundle
+123140000-123150000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/bigdecimal-4.0.1/lib/bigdecimal.bundle
+123160000-123170000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/bigdecimal-4.0.1/lib/bigdecimal.bundle
+123174000-123188000 r-x /Users/sekim/.gem/ruby/3.4.1/gems/bigdecimal-4.0.1/lib/bigdecimal.bundle
+123188000-12318c000 r-- /Users/sekim/.gem/ruby/3.4.1/gems/bigdecimal-4.0.1/lib/bigdecimal.bundle
+12318c000-123190000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/bigdecimal-4.0.1/lib/bigdecimal.bundle
+123190000-123198000 r-- /Users/sekim/.gem/ruby/3.4.1/gems/bigdecimal-4.0.1/lib/bigdecimal.bundle
+1231a0000-1231b0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+1231c0000-1231d0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+1231e0000-1231f0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123200000-123210000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123220000-123230000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123240000-123250000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123260000-123270000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123280000-123290000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+1232a0000-1232b0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+1232c0000-1232d0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+1232e0000-1232f0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123300000-123310000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123320000-123330000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123340000-123350000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123360000-123370000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123380000-123390000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+1233a0000-1233b0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+1233c0000-1233d0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+1233e0000-1233f0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123400000-123410000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123420000-123430000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123440000-123450000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123454000-12347c000 r-x /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+12347c000-123480000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+123480000-123498000 r-- /Users/sekim/.gem/ruby/3.4.1/gems/ffi-1.17.3-arm64-darwin/lib/3.4/ffi_c.bundle
+1234a0000-1234b0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/socket.bundle
+1234c0000-1234d0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/socket.bundle
+1234e0000-1234f0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/socket.bundle
+123500000-123510000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/socket.bundle
+12352c000-123550000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/socket.bundle
+123550000-123554000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/socket.bundle
+123554000-123558000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/socket.bundle
+123558000-123568000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/socket.bundle
+123570000-123580000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/zlib.bundle
+123590000-1235a0000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/zlib.bundle
+1235a0000-1235ac000 r-x /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/zlib.bundle
+1235ac000-1235b0000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/zlib.bundle
+1235b0000-1235b4000 rw- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/zlib.bundle
+1235b4000-1235bc000 r-- /Users/sekim/.rubies/ruby-3.4.1/lib/ruby/3.4.0/arm64-darwin24/zlib.bundle
+1235c0000-1235d0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1235e0000-1235f0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123600000-123610000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123620000-123630000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123640000-123650000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123660000-123670000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123680000-123690000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1236a0000-1236b0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1236c0000-1236d0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1236e0000-1236f0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123700000-123710000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123720000-123730000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123740000-123750000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123760000-123770000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123780000-123790000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1237a0000-1237b0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1237c0000-1237d0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1237e0000-1237f0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123800000-123810000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123820000-123830000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123840000-123850000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123860000-123870000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123880000-123890000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1238a0000-1238b0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1238c0000-1238d0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1238e0000-1238f0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123900000-123910000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123920000-123930000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123940000-123950000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123960000-123970000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123980000-123990000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1239a0000-1239b0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1239c0000-1239d0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1239e0000-1239f0000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123a00000-123a10000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123a20000-123a30000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123a40000-123a50000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123a60000-123a70000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123a80000-123a90000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123a98000-123d08000 r-x /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123d08000-123d1c000 r-- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123d1c000-123d20000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123d20000-123d24000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+123d24000-12409c000 r-- /Users/sekim/.gem/ruby/3.4.1/gems/sassc-2.4.0/lib/sassc/libsass.bundle
+1240a0000-1240b0000 rw- /usr/lib/system/libsystem_platform.dylib
+1240c0000-1240d0000 rw- /usr/lib/system/libsystem_platform.dylib
+1240e0000-1240f0000 rw- /usr/lib/system/libsystem_platform.dylib
+124100000-124110000 rw- /usr/lib/system/libsystem_platform.dylib
+124120000-124130000 rw- /usr/lib/system/libsystem_platform.dylib
+124140000-124150000 rw- /usr/lib/system/libsystem_platform.dylib
+124160000-124170000 rw- /usr/lib/system/libsystem_platform.dylib
+124180000-124190000 rw- /usr/lib/system/libsystem_platform.dylib
+1241a0000-1241b0000 rw- /usr/lib/system/libsystem_platform.dylib
+1241c0000-1241d0000 rw- /usr/lib/system/libsystem_platform.dylib
+1241e0000-1241f0000 rw- /usr/lib/system/libsystem_platform.dylib
+124200000-124210000 rw- /usr/lib/system/libsystem_platform.dylib
+124220000-124230000 rw- /usr/lib/system/libsystem_platform.dylib
+124240000-124250000 rw- /usr/lib/system/libsystem_platform.dylib
+124260000-124270000 rw- /usr/lib/system/libsystem_platform.dylib
+124280000-124290000 rw- /usr/lib/system/libsystem_platform.dylib
+1242a0000-1242b0000 rw- /usr/lib/system/libsystem_platform.dylib
+1242c0000-1242d0000 rw- /usr/lib/system/libsystem_platform.dylib
+1242d0000-1242e0000 rw- /usr/lib/system/libsystem_platform.dylib
+1242f0000-124300000 rw- /usr/lib/system/libsystem_platform.dylib
+124310000-124320000 rw- /usr/lib/system/libsystem_platform.dylib
+124330000-124340000 rw- /usr/lib/system/libsystem_platform.dylib
+124350000-124360000 rw- /usr/lib/system/libsystem_platform.dylib
+124370000-124380000 rw- /usr/lib/system/libsystem_platform.dylib
+124390000-1243a0000 rw- /usr/lib/system/libsystem_platform.dylib
+1243b0000-1243c0000 rw- /usr/lib/system/libsystem_platform.dylib
+1243d0000-1243e0000 rw- /usr/lib/system/libsystem_platform.dylib
+1243f0000-124400000 rw- /usr/lib/system/libsystem_platform.dylib
+124410000-124420000 rw- /usr/lib/system/libsystem_platform.dylib
+124430000-124440000 rw- /usr/lib/system/libsystem_platform.dylib
+124450000-124460000 rw- /usr/lib/system/libsystem_platform.dylib
+124470000-124480000 rw- /usr/lib/system/libsystem_platform.dylib
+124490000-1244a0000 rw- /usr/lib/system/libsystem_platform.dylib
+1244b0000-1244c0000 rw- /usr/lib/system/libsystem_platform.dylib
+1244d0000-1244e0000 rw- /usr/lib/system/libsystem_platform.dylib
+1244f0000-124500000 rw- /usr/lib/system/libsystem_platform.dylib
+124510000-124520000 rw- /usr/lib/system/libsystem_platform.dylib
+124530000-124540000 rw- /usr/lib/system/libsystem_platform.dylib
+124550000-124560000 rw- /usr/lib/system/libsystem_platform.dylib
+124570000-124580000 rw- /usr/lib/system/libsystem_platform.dylib
+124590000-1245a0000 rw- /usr/lib/system/libsystem_platform.dylib
+1245b0000-1245c0000 rw- /usr/lib/system/libsystem_platform.dylib
+1245d0000-1245e0000 rw- /usr/lib/system/libsystem_platform.dylib
+1245f0000-124600000 rw- /usr/lib/system/libsystem_platform.dylib
+124610000-124620000 rw- /usr/lib/system/libsystem_platform.dylib
+124630000-124640000 rw- /usr/lib/system/libsystem_platform.dylib
+124640000-1246a4000 r-- /usr/lib/system/libsystem_platform.dylib
+1246c0000-1246f0000 r-x /Users/sekim/.gem/ruby/3.4.1/gems/therubyracer-0.12.3/lib/v8/init.bundle
+1246f0000-1246f4000 r-- /Users/sekim/.gem/ruby/3.4.1/gems/therubyracer-0.12.3/lib/v8/init.bundle
+1246f4000-1246f8000 rw- /Users/sekim/.gem/ruby/3.4.1/gems/therubyracer-0.12.3/lib/v8/init.bundle
+1246f8000-124740000 r-- /Users/sekim/.gem/ruby/3.4.1/gems/therubyracer-0.12.3/lib/v8/init.bundle
+124740000-124c44000 r-- /Users/sekim/.rubies/ruby-3.4.1/bin/ruby
+124c44000-125148000 r-- /Users/sekim/.rubies/ruby-3.4.1/bin/ruby
+14b600000-14b604000 rw-
+168fe0000-16c7e4000 ---
+16c7e4000-16cfe0000 rw-
+16cfe0000-16cfe4000 ---
+16cfe4000-16d06c000 rw-
+180000000-1e8000000 r--
+1e8000000-1e8e3c000 r--
+1e8e3c000-1eb050000 r--
+1eb050000-1ec000000 r--
+1ec000000-1ed050000 r--
+1ed050000-1ee000000 rw-
+1ee000000-1ef7b8000 r--
+1ef7b8000-1ef7dc000 r--
+1ef7dc000-1f0f78000 rw-
+1f0f78000-1f89c4000 r--
+1f89c4000-1fa000000 r--
+1fa000000-292000000 r--
+292000000-2930f0000 r--
+2930f0000-295d18000 r--
+295d18000-296000000 r--
+296000000-29c000000 r--
+29c000000-29c1fc000 r--
+29c1fc000-29c200000 r--
+29c200000-29dbd0000 rw-
+29dbd0000-2a350c000 r--
+2a350c000-2a4000000 r--
+2a4000000-2cc000000 r--
+2cc000000-2cd81c000 r--
+2cd81c000-2cd8d8000 r--
+2cd8d8000-2ce000000 r--
+2ce000000-2cfa74000 r--
+2cfa74000-2cfb7c000 rw-
+2cfb7c000-2cfeb0000 r--
+2cfeb0000-2d0000000 r--
+2d0000000-300000000 r--
+528000000-528400000 rw-
+528400000-528800000 rw-
+782000000-a80800000 ---
+a80800000-a80c00000 rw-
+a80c00000-a81000000 rw-
+a81000000-a81400000 rw-
+a81400000-a81800000 rw-
+a81800000-a81c00000 rw-
+a81c00000-a82000000 rw-
+a82000000-a82400000 rw-
+a82400000-a82800000 rw-
+a82800000-a82c00000 rw-
+a82c00000-a83000000 rw-
+a83000000-a83400000 rw-
+a83400000-a83800000 rw-
+a83800000-a83c00000 rw-
+a83c00000-a84000000 rw-
+a84000000-a84400000 rw-
+a84400000-d82000000 ---
+fc0000000-1000000000 ---
+1000000000-7000000000 ---
+[IMPORTANT]
+Don't forget to include the Crash Report log file under
+DiagnosticReports directory in bug reports.
+

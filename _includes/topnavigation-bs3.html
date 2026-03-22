@@ -1,0 +1,35 @@
+<div id="header">
+	<nav class="navbar navbar-default navbar-static-top" role="navigation">	 
+		<div class="container">	
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-element" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				{% if page.categories.first != 'home' %}					
+				<a class="navbar-brand" href="{{ '/' | relative_url }}">
+				<img src="{{ '/images/ccsb-pvamu-logo.png' | relative_url }}" style="height:40px" title="CCSB@PVAMU" alt="CCSB@PVAMU" align="left"></a>
+				{% else %}
+				<a class="navbar-brand" href="http://www.pvamu.edu">
+				<img src="{{ '/images/pvamu-logo.svg' | relative_url }}" style="height:32px" title="The Prairie View A&M University" alt="PVAMU"></a>
+				{% endif %}
+			</div>
+			<div class="collapse navbar-collapse" id="navbar-collapse-element">
+				<ul class="nav navbar-nav navbar-right">
+					{% for item in site.data.navigation %}
+						{% if page.url == item.link %}
+							<li class="active">
+						{% else %}
+							<li>
+						{% endif %}
+							<a href="{{ item.link | relative_url }}">{{ item.name }}</a>
+							</li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</nav>	
+</div>
+

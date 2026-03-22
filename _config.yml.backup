@@ -7,17 +7,6 @@ markdown: kramdown
 permalink: /:categories/:title/
 future: true
 
-# 1. ADD SASS CONFIGURATION
-# This is crucial now that you've deleted the LESS plugin.
-sass:
-  sass_dir: css      # Or 'css' if that's where your partials live
-  style: compressed    # Optional: Minifies your CSS for the live site
-  load_paths:
-    - css
-    - _sass
-    - /Users/sekim/.gem/ruby/3.4.1/gems/bootstrap-5.3.8/assets/stylesheets
-    - /Users/sekim/.gem/ruby/3.4.1/gems/font-awesome-sass-6.7.2/assets/stylesheets
-
 kramdown:
   extensions:
    - tables
@@ -58,12 +47,6 @@ exclude:
   - "vendor/bundle/*"
   - "Gemfile"
   - "Gemfile.lock"
-  - "migrate_less_to_sass.sh" # Add this to keep your site clean
 
-# 2. UPDATE PLUGINS LIST
 plugins: 
   - jekyll-twitter-plugin
-  - jekyll-feed           # Good practice for lab news/updates
-  - jekyll-sass-converter # Required for your new .scss files
-  - bootstrap             # <-- Add this
-  - font-awesome-sass     # <-- Add this
