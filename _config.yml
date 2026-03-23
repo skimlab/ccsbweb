@@ -14,9 +14,8 @@ sass:
   style: compressed    # Optional: Minifies your CSS for the live site
   load_paths:
     - css
-    - _sass
-    - /Users/sekim/.gem/ruby/3.4.1/gems/bootstrap-5.3.8/assets/stylesheets
-    - /Users/sekim/.gem/ruby/3.4.1/gems/font-awesome-sass-6.7.2/assets/stylesheets
+    - css/bootstrap-5.3.8/assets/stylesheets
+    - css/font-awesome-sass-6.7.2/assets/stylesheets
 
 kramdown:
   extensions:
