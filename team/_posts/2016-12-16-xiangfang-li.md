@@ -1,6 +1,6 @@
 ---
 layout: member
-membership: faculty
+membership: associate-faculty
 name: Xiangfang Li
 title: Associate Professor
 affiliation: ECE, CREDIT & CCSB

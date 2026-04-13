@@ -45,6 +45,45 @@ categories:
 
 
 
+<div class="row">
+	<div class="col-md-12">
+		<div class="title">
+			Associate Members
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+{% for member in site.categories.team reversed %}
+    <!-- ASSOCIATE MEMBERS -->
+	{% if member.membership == "associate-faculty" and member.alumni != true and member.retired != true %}
+    	{% cycle 'add rows': '<div class="row">', '', '' %}
+		<div class="col-md-4 memberbox">
+			<div class="media">
+  				<a class="pull-left" href="{{ member.url | prepend:site.baseurl }}">
+    					<img width=160 class="media-object" src="{{ member.image | prepend:site.baseurl }}">
+  				</a>
+ 			 	<div class="media-body">
+    					<div class="head media-heading">
+						<a href="{{ member.url | prepend:site.baseurl }}" class="off">
+							{{ member.name }}
+						</a>
+					</div>
+    					<p class="note">{{ member.title }}</p>
+    					<p class="note">{{ member.affiliation }}</p>
+  				</div>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="bigspacer"></div>
+        	</div>
+    	{% cycle 'close rows': '', '', '</div>' %}
+    	{% endif %}
+{% endfor %}
+
+
+
+
 
 <div class="row">
 	<div class="col-md-12">
@@ -109,7 +148,7 @@ categories:
 
 {% for member in site.categories.team reversed %}
     <!-- FORMER MEMBERS -->
-	{% if member.membership == "faculty" and member.alumni == true and member.retired != true %}
+	{% if member.alumni == true and member.retired != true and member.membership != "student" %}
     	{% cycle 'add rows': '<div class="row">', '', '' %}
 		<div class="col-md-4 memberbox">
 			<div class="media">
