@@ -21,19 +21,48 @@ Dr. Kim's research interests include: 1) mathematical modeling of genetic regula
 
 **Current projects**
 
-1.	Molecular and Genetic Analysis of Axillary Bud Dormancy and Outgrowth in Sorghum and Maize 
+- Unraveling Reduced Tillering in Drought-Tolerant Stay-Green Sorghum for Enhanced Crop Resilience 
+  - USDA-NIFA (12/2025 - 12/2028)
+  - Tesfamichael Kebrom (PI); Role: co-PI
+
+- PRISE: Sequential Targeting of Alzheimer's Disease by Novel Gamma-Secretase Modulator and Fyn Kinase Inhibitor
+  - TAMUS (10/2025 - 05/2027)
+  - Seungchan Kim (PI)
+
+- RISE-Grad: Machine Learning-Based Identification of Differentially Methylated Regions in Single-Cell RNA Sequencing Data
+  - PVAMU R&I (09/2025 - 08/2026) 
+  - Seungchan Kim (PI)
+
+- RISE-Undergrad: Training in Illumina NextSeq High-Throughput Sequencing and Analysis Pipeline at PVAMU
+  - PVAMU R&I (09/2025 - 08/2026) 
+  - Seungchan Kim (PI)
+
+- Center for Cardiopulmonary Vascular-Brain Research (CCVBR)
+  - American Heart Association via University of Pittsburgh (04/2024 - 03/2028)
+  - Seungchan Kim (site PI); Stephen Chan (UPitts, Primary PI)
+
+- Single cell RNA sequencing and network analysis to identify anti-inflammatory and anti-fibrotic effects of Tyvaso in WSPH Group 3 pulmonary hypertension
+  - UnitedTherapeutics via University of Pittsburgh (01/2024 - 11/2026)
+  - Seungchan Kim (site PI); Stephen Chan (UPitts, Primary PI)
+
+- Increasing Future AI-Precision Nutrition Research Workforce to Promote Nutrition and Health
+  - NIH/NIMHD (09/2023 - 04/2028)
+  - Seungchan Kim (MPD, contact PI), Janet Antwi (MPD, PVAMU), Salma Musaad (MPD, BMC/CNRC)
+
+- Molecular and Genetic Analysis of Axillary Bud Dormancy and Outgrowth in Sorghum and Maize 
     to Identify Shoot Branching Genes 
     [[more info]]({{ site.baseurl }}/blog/Kebrom-USDA-NIFA-CBG-grant/) |
     [[more info 2]](https://portal.nifa.usda.gov/web/crisprojectpages/1028531-molecular-and-genetic-analysis-of-axillary-bud-dormancy-and-outgrowth-in-sorghum-and-maize-to-identify-shoot-branching-genes.html)
-  - USDA-NIFA (05/2022 – 04/2025) 
+  - USDA-NIFA (05/2022 – 04/2025) [NCE]
   - Tesfamichael Kebrom (PI); Role: co-PI 
 
-2.	Engineering Methanotrophy for Carbon Capture and Utilization
+**Recently Completed Projects**
+- Engineering Methanotrophy for Carbon Capture and Utilization
     [[more info]]({{ site.baseurl }}/blog/Martin-Engineering-Methanotrophy-Sandia/)
   - NTESS/Sandia Lab (01/14/2022 – 09/30/2024)
   - Seungchan Kim (PI)
 
-3.	GET-PHIT: The PHIT Workforce Development Program: Creating a diverse and inclusive 
+- GET-PHIT: The PHIT Workforce Development Program: Creating a diverse and inclusive 
     health information technology (IT) workforce in Texas
     [[more info]]({{ site.baseurl }}/blog/Kim-GET-PHIT-PVAMU/) |
     [[more info 2]](https://www.pvamu.edu/get-phit) |
@@ -41,20 +70,20 @@ Dr. Kim's research interests include: 1) mathematical modeling of genetic regula
   - Office of National Coordinator for HIT (ONC) via UT Health Science Center Houston (09/21/2021 – 09/20/2022)
   - Eric Boerwinkle (PI); Role - co-I (PVAMU sub PI)
 
-4.	Physiological and Molecular Characterization of Tillering, Internode Elongation, and 
+- Physiological and Molecular Characterization of Tillering, Internode Elongation, and 
     Stunting in the Tiller Inhibition (tin) Mutant Wheat
     [[more info]]({{ site.baseurl }}/blog/Kebrom-USDA-NIFA-Funding/) |
     [[more info 2]](https://cris.nifa.usda.gov/cgi-bin/starfinder/0?path=fastlink1.txt&id=anon&pass=&search=R=91389&format=WEBFMT6NT)
   - USDA-NIFA (01/2021 - 12/2022)
   - Tesfamichael Kebrom (PI); Role: co-PI
 
-5.	Development of Classifiers for Novel Bladder Cancer Subtypes
+- Development of Classifiers for Novel Bladder Cancer Subtypes
     [[more info]]({{ site.baseurl }}/blog/DoD-CDMRP-TTSA-Biomarker/)
   - DOD/CDMRP (07/2019 - 06/2023)
   - Woonyoung Choi & Seungchan Kim (MPI); Role: MPI
 
 
-6.	Noncoding RNA Biomarkers for Noninvasive and Early Detection of Pancreatic Cancer
+- Noncoding RNA Biomarkers for Noninvasive and Early Detection of Pancreatic Cancer
     [[more info]](https://reporter.nih.gov/search/uR5JOYG6-U-5UDkS3vlarQ/project-details/10246989)
   - NIH/NCI via City of Hope (09/2017 - 07/2023)
   - Ajay Goel & Dan von Hoff (MPI); Role: co-I (PVAMU sub PI)
