@@ -1,0 +1,23 @@
+name: Build & Deploy CCSB Website
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build site with Jekyll
+        run: |
+          bundle install
+          bundle exec jekyll build
+
+      - name: Sync to Web Root
+        run: |
+          sudo rsync -av --delete _site/ /var/www/html/
