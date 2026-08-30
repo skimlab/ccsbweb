@@ -20,4 +20,4 @@ jobs:
 
       - name: Sync to Web Root
         run: |
-          sudo rsync -av --delete _site/ /var/www/html/
+          rsync -av --delete _site/ /var/www/html/
