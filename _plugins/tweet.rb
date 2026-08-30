@@ -14,19 +14,15 @@ module Jekyll
 		end
 		def render(context)
 		
-			parsed = Liquid::Template.parse(@markup).render context
-			url = parsed.split(/ /).first
+			parsed = Liquid::Template.parse(@markup).render(context)
+			url = (parsed.split(/ /).first || "").strip
 			if url =~ /^\//
-				url = "http://bedford.io" + url
+				url = "https://ccsb.pvamu.edu" + url
 			end				
-			text = parsed.split(/ /).drop(1).join(' ')
-			html = ""
-			url.gsub!(/ /, '%20')
-			text.gsub!(/ /, '%20')
-			html += "<i class=\"fa fa-twitter fa-fw\"></i> "
-            html += "<a class=\"off\" href=\"http://twitter.com/share?url=#{url}&text=#{text}\" target=\"_blank\">"
-            html += "tweet"
-            html += "</a>" 
+			text = (parsed.split(/ /).drop(1).join(' ') || "").strip
+			url_encoded = url.gsub(/ /, '%20')
+			text_encoded = text.gsub(/ /, '%20')
+			html = "<i class=\"fa fa-twitter fa-fw\"></i> <a class=\"off\" href=\"https://twitter.com/share?url=#{url_encoded}&text=#{text_encoded}\" target=\"_blank\">tweet</a>"
 			html 
 			
 		end

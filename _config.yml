@@ -59,10 +59,8 @@ exclude:
   - "Gemfile.lock"
   - "migrate_less_to_sass.sh" # Add this to keep your site clean
 
-# 2. UPDATE PLUGINS LIST
 plugins: 
   - jekyll-twitter-plugin
   - jekyll-feed           # Good practice for lab news/updates
   - jekyll-sass-converter # Required for your new .scss files
-  - bootstrap             # <-- Add this
-  - font-awesome-sass     # <-- Add this
+
