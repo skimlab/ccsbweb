@@ -20,6 +20,13 @@ zoom_url: "https://pvpanther.zoom.us/j/98038578074?pwd=ABHJ2XmoJwFCPw2rta24dpVyS
 
 ## Previous Seminars
 
-**2019** [ [Fall]({{ site.baseurl }}/talks/old/talks-2019-fall/) ] ; **2020** [ [Spring]({{ site.baseurl }}/talks/old/talks-2020-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2020-fall/) ] ; **2021** [ [Spring]({{ site.baseurl }}/talks/old/talks-2021-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2021-fall/) ] ; **2022** [ [Spring]({{ site.baseurl }}/talks/old/talks-2022-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2022-fall/) ] ; **2023** [ [Spring]({{ site.baseurl }}/talks/old/talks-2023-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2023-fall/) ]
+**2019** [ [Fall]({{ site.baseurl }}/talks/old/talks-2019-fall/) ] ; 
+**2020** [ [Spring]({{ site.baseurl }}/talks/old/talks-2020-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2020-fall/) ] ; 
+**2021** [ [Spring]({{ site.baseurl }}/talks/old/talks-2021-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2021-fall/) ] ; 
+**2022** [ [Spring]({{ site.baseurl }}/talks/old/talks-2022-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2022-fall/) ] ; 
+**2023** [ [Spring]({{ site.baseurl }}/talks/old/talks-2023-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2023-fall/) ]
 
-**2024** [ [Spring]({{ site.baseurl }}/talks/old/talks-2024-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2024-fall/) ] ; **2025** [ [Spring]({{ site.baseurl }}/talks/old/talks-2025-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2025-fall/) ] ; **2026** [ [Spring]({{ site.baseurl }}/talks/old/talks-2026-spring/) \| Current ]
+
+**2024** [ [Spring]({{ site.baseurl }}/talks/old/talks-2024-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2024-fall/) ] ; 
+**2025** [ [Spring]({{ site.baseurl }}/talks/old/talks-2025-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2025-fall/) ] ; 
+**2026** [ [Spring]({{ site.baseurl }}/talks/old/talks-2026-spring/) \| Current ]
