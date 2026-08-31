@@ -7,9 +7,7 @@ semester: Fall 2026
 zoom_url: "https://pvpanther.zoom.us/j/98038578074?pwd=ABHJ2XmoJwFCPw2rta24dpVySbmieK.1&from=addon"
 ---
 
-<div class="head">Schedule for Fall 2026</div>
-
-<div class="spacer"></div>
+## Schedule for Fall 2026
 
 | Date | Speaker | Title |
 | :--- | :--- | :--- |
@@ -20,25 +18,8 @@ zoom_url: "https://pvpanther.zoom.us/j/98038578074?pwd=ABHJ2XmoJwFCPw2rta24dpVyS
 | Nov. 04, 2026 | [Victoria Mgbemena, Ph.D.](https://ccsb.pvamu.edu/team/victoria-mgbemena/), Associate Professor, [Department of Biology](https://www.pvamu.edu/bcas/departments/biology/), [Marvin D. and June Samuel Brailsford College of Arts and Sciences](https://www.pvamu.edu/bcas/), [Prairie View A&M University](https://www.pvamu.edu) | TBD |
 | Nov. 18, 2026 | [Kazeem Olanrewaju](https://www.pvamu.edu/cheg/cheg-faculty-olanrewaju/), Ph.D., Associate Professor, [Chemical Engineering Department](https://www.pvamu.edu/cheg), [Roy G. Perry College of Engineering](https://www.pvamu.edu/engineering/), [Prairie View A&M University](https://www.pvamu.edu) | TBD |
 
-<div class="spacer"></div>
-<div class="spacer"></div>
+## Previous Seminars
 
-<div class="head">
-	Previous Seminars
+**2019** [ [Fall]({{ site.baseurl }}/talks/old/talks-2019-fall/) ] ; **2020** [ [Spring]({{ site.baseurl }}/talks/old/talks-2020-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2020-fall/) ] ; **2021** [ [Spring]({{ site.baseurl }}/talks/old/talks-2021-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2021-fall/) ] ; **2022** [ [Spring]({{ site.baseurl }}/talks/old/talks-2022-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2022-fall/) ] ; **2023** [ [Spring]({{ site.baseurl }}/talks/old/talks-2023-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2023-fall/) ]
 
-	<div class="spacer"></div>
-	<div class="smallhead" style="margin-left: 20px;">
-		<p>
-			<strong>2019</strong> [ <a href="{{ site.baseurl }}/talks/old/talks-2019-fall/">Fall</a> ] ;
-			<strong>2020</strong> [ <a href="{{ site.baseurl }}/talks/old/talks-2020-spring/">Spring</a> | <a href="{{ site.baseurl }}/talks/old/talks-2020-fall/">Fall</a> ] ; 
-			<strong>2021</strong> [ <a href="{{ site.baseurl }}/talks/old/talks-2021-spring/">Spring</a> | <a href="{{ site.baseurl }}/talks/old/talks-2021-fall/">Fall</a> ] ;
-			<strong>2022</strong> [ <a href="{{ site.baseurl }}/talks/old/talks-2022-spring/">Spring</a> | <a href="{{ site.baseurl }}/talks/old/talks-2022-fall/">Fall</a> ] ; 
-			<strong>2023</strong> [ <a href="{{ site.baseurl }}/talks/old/talks-2023-spring/">Spring</a> | <a href="{{ site.baseurl }}/talks/old/talks-2023-fall/">Fall</a> ]
-		</p>
-		<p>
-			<strong>2024</strong> [ <a href="{{ site.baseurl }}/talks/old/talks-2024-spring/">Spring</a> | <a href="{{ site.baseurl }}/talks/old/talks-2024-fall/">Fall</a> ] ;
-			<strong>2025</strong> [ <a href="{{ site.baseurl }}/talks/old/talks-2025-spring/">Spring</a> | <a href="{{ site.baseurl }}/talks/old/talks-2025-fall/">Fall</a> ] ;
-			<strong>2026</strong> [ <a href="{{ site.baseurl }}/talks/old/talks-2026-spring/">Spring</a> | Current ]
-		</p>
-	</div>
-</div>
+**2024** [ [Spring]({{ site.baseurl }}/talks/old/talks-2024-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2024-fall/) ] ; **2025** [ [Spring]({{ site.baseurl }}/talks/old/talks-2025-spring/) \| [Fall]({{ site.baseurl }}/talks/old/talks-2025-fall/) ] ; **2026** [ [Spring]({{ site.baseurl }}/talks/old/talks-2026-spring/) \| Current ]

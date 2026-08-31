@@ -342,14 +342,27 @@ blockquote {
 }
 
 .seminar-schedule {
+	h2, h3 {
+		@extend .head;
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+
 	table {
 		width: 90%;
+		margin-bottom: 20px;
 		th:nth-child(1), td:nth-child(1) {
 			width: 15%;
 		}
 		th:nth-child(2), td:nth-child(2) {
 			width: 40%;
 		}
+	}
+
+	p {
+		@extend .smallhead;
+		margin-left: 20px;
+		margin-bottom: 15px;
 	}
 }
 
