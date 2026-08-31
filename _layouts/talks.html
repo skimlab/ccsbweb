@@ -1,0 +1,91 @@
+---
+layout: default
+---
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="title">
+			CCSB Biweekly Seminar Series
+		</div>
+		<div class="spacer"></div>
+		<div class="smallhead">
+			<p>CCSB Biweekly Seminar Series is to promote interdisciplinary research across PVAMU campus and beyond, hosted by CRI <a href="{{ site.baseurl }}/">Center for Computational Systems Biology</a>.   We alternate between CCSB researchers and external speakers.  <strong>We use a hybrid format, between in-person meet and virtual meet (Zoom) based on speaker's preference</strong>.  When we meet in person, we will meet in CCSB Conference Room (ELEN 231).  <a href="{% post_url /team/2016-12-15-seungchan-kim %}">Dr. Seungchan Kim</a> is the organizer for the seminar series.  Please <a href="mailto:sekim@pvamu.edu?subject=Suggestion for CCSB Seminars">contact him</a> if you have any suggestion, including speakers.</p>
+			
+			<div class="spacer"></div>
+			<div style="margin-left: 15px">
+				<ul>
+					<li><strong>Day | Time</strong>: Wednesdays | 12pm - 1:00pm</li>
+					<li><strong>Place</strong>:
+						<p>
+							{% if page.zoom_url %}
+							<a href="{{ page.zoom_url }}">Join Zoom Meeting</a> for a virtual meet</p>
+							{% else %}
+							<a href="https://pvpanther.zoom.us/j/98038578074?pwd=ABHJ2XmoJwFCPw2rta24dpVySbmieK.1&from=addon">Join Zoom Meeting</a> for a virtual meet</p>
+							{% endif %}
+						<p>CCSB Conference Room (#231 in New ELEN bldg) for in-person meet</p>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+
+		<div class="seminar-schedule">
+			{{ content }}
+		</div>
+
+	</div>
+</div>	
+
+
+<div class="bigspacer"></div>
+
+
+<div class="row">
+	<div class="col-md-12">
+		<div class="title">
+			Recent Talks
+		</div>	
+	</div>
+</div>	
+
+<div class="bigspacer"></div>
+
+{% for talk in site.categories.talks %}
+{% unless talk.draft %}
+
+	{% for member in site.categories.team %}
+		{% if member.title == talk.speaker %}
+			{% assign speaker = member %}
+		{% endif %}
+	{% endfor %}
+
+    {% cycle 'add rows': '<div class="row">', '', '' %}
+		<div class="col-md-4 talkbox">
+			<div class="smallhead">
+				<a href="{{ talk.url | relative_url }}" class="off">{{ talk.title }}</a>
+			</div>
+			<div class="smallspacer"></div>
+      {% if talk.venue %}
+			<div class="note">
+				{{ talk.event }} at {{ talk.venue }}
+			</div>
+      {% else %}
+      <div class="note">
+				{{ talk.event }}
+			</div>
+      {% endif %}
+			<div class="smallspacer"></div>
+			<div class="smallnote">
+				{{ talk.date | date: "%-d %b %Y" }}
+				by <a class="off" href="{{ speaker.url | relative_url }}">{{ talk.speaker }}</a>
+			</div>
+			<div class="bigspacer"></div>
+			<div class="spacer"></div>
+        </div>
+    {% cycle 'close rows': '', '', '</div>' %}
+{% endunless %}
+{% endfor %}
+{% cycle 'close rows': '', '</div>', '</div>' %}

@@ -341,6 +341,18 @@ blockquote {
 	min-height: 100px;
 }
 
+.seminar-schedule {
+	table {
+		width: 90%;
+		th:nth-child(1), td:nth-child(1) {
+			width: 15%;
+		}
+		th:nth-child(2), td:nth-child(2) {
+			width: 40%;
+		}
+	}
+}
+
 .titlebox {
 	min-width: 300px;
 }
