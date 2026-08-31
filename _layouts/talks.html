@@ -12,20 +12,27 @@ layout: default
 			<p>CCSB Biweekly Seminar Series is to promote interdisciplinary research across PVAMU campus and beyond, hosted by CRI <a href="{{ site.baseurl }}/">Center for Computational Systems Biology</a>.   We alternate between CCSB researchers and external speakers.  <strong>We use a hybrid format, between in-person meet and virtual meet (Zoom) based on speaker's preference</strong>.  When we meet in person, we will meet in CCSB Conference Room (ELEN 231).  <a href="{% post_url /team/2016-12-15-seungchan-kim %}">Dr. Seungchan Kim</a> is the organizer for the seminar series.  Please <a href="mailto:sekim@pvamu.edu?subject=Suggestion for CCSB Seminars">contact him</a> if you have any suggestion, including speakers.</p>
 			
 			<div class="spacer"></div>
-			<div style="margin-left: 15px">
-				<ul>
-					<li><strong>Day | Time</strong>: Wednesdays | 12pm - 1:00pm</li>
-					<li><strong>Place</strong>:
-						<p>
-							{% if page.zoom_url %}
-							<a href="{{ page.zoom_url }}">Join Zoom Meeting</a> for a virtual meet</p>
-							{% else %}
-							<a href="https://pvpanther.zoom.us/j/98038578074?pwd=ABHJ2XmoJwFCPw2rta24dpVySbmieK.1&from=addon">Join Zoom Meeting</a> for a virtual meet</p>
-							{% endif %}
-						<p>CCSB Conference Room (#231 in New ELEN bldg) for in-person meet</p>
-					</li>
-				</ul>
-			</div>
+			<table class="seminar-info-table">
+				<tbody>
+					<tr>
+						<td><strong>Day | Time</strong></td>
+						<td>Wednesdays | 12:00pm - 1:00pm</td>
+					</tr>
+					<tr>
+						<td><strong>Place</strong></td>
+						<td>
+							<div>
+								{% if page.zoom_url %}
+								<a href="{{ page.zoom_url }}">Join Zoom Meeting</a> for a virtual meet
+								{% else %}
+								<a href="https://pvpanther.zoom.us/j/98038578074?pwd=ABHJ2XmoJwFCPw2rta24dpVySbmieK.1&from=addon">Join Zoom Meeting</a> for a virtual meet
+								{% endif %}
+							</div>
+							<div>CCSB Conference Room (#231 in New ELEN bldg) for in-person meet</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 
 		</div>
 

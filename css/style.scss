@@ -366,6 +366,22 @@ blockquote {
 	}
 }
 
+.seminar-info-table {
+	width: auto;
+	max-width: 90%;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	td {
+		padding: 6px 12px;
+		vertical-align: top;
+	}
+	td:first-child {
+		font-weight: 500;
+		white-space: nowrap;
+		width: 130px;
+	}
+}
+
 .titlebox {
 	min-width: 300px;
 }
