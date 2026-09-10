@@ -4,7 +4,7 @@
 	  		{% for page in site.categories.papers limit:4 %}
 	  		<li>
 	  			<a href="{{ site.baseurl }}{{ page.url }}">
-		    		<img src="{{ page.image | relative_url }}" style="width: 400px; margin:0 auto">
+		    		<img src="{{ page.image | relative_url }}" class="img-fluid" style="max-width: 400px; width: 100%; height: auto; margin:0 auto">
 		    		<p class="flex-caption">{{ page.ref }}</p>
 		    	</a>
 	 		</li>

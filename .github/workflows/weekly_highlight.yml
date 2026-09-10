@@ -1,0 +1,40 @@
+name: Weekly Center Highlight Update
+
+on:
+  schedule:
+    # Runs every Monday at 13:00 UTC (8:00 AM CST / 9:00 AM CDT)
+    - cron: '0 13 * * 1'
+  workflow_dispatch:
+
+jobs:
+  update-highlight:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Generate Weekly Highlight
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python3 _scripts/generate_weekly_highlight.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/highlight.yml
+          if git diff --staged --quiet; then
+            echo "No changes to commit. Highlight is up to date."
+          else
+            git commit -m "Auto-update weekly center highlight"
+            git push origin master
+          fi
