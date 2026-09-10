@@ -179,12 +179,14 @@ def generate_fallback_summary(recent_blogs, recent_papers) -> str:
     ]
 
     if top_grant_or_blog:
+        author_name = top_grant_or_blog.get('author') or 'center researchers'
         parts.append(
-            f"Recent highlights include milestone funding and research initiatives such as '{top_grant_or_blog['title']}'."
+            f"Recent highlights include milestone funding and research initiatives led by **{author_name}** such as '{top_grant_or_blog['title']}'."
         )
     if top_paper:
+        author_name = top_paper.get('author') or 'faculty'
         parts.append(
-            f"Concurrently, center researchers published new findings in '{top_paper['title']}', underscoring CCSB's ongoing contributions to scientific discovery and student training."
+            f"Concurrently, **{author_name}** published new findings in '{top_paper['title']}', underscoring CCSB's ongoing contributions to scientific discovery and student training."
         )
 
     return " ".join(parts)
@@ -255,7 +257,7 @@ def main():
         "recent breakthroughs, and active scientific directions.\n\n"
         "Guidelines:\n"
         "- Exactly one cohesive paragraph.\n"
-        "- Highlight key researchers and breakthroughs naturally.\n"
+        "- Bold and highlight the names of all researchers, faculty, PIs, and authors mentioned using markdown bold syntax (e.g., **Dr. Md Hossain Shuvo**, **Dr. Victoria Mgbemena**, **Dr. Tesfamichael Kebrom**, **Dr. Seungchan Kim**).\n"
         "- Maintain an academic yet accessible, proud tone.\n"
         "- Do NOT include headers, bullet points, introductory phrases (like 'Here is a summary'), or quotation marks.\n\n"
         f"Context:\n{context_text}"

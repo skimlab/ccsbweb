@@ -36,10 +36,13 @@ categories:
 					{{ site.data.highlight.period }}
 				</span>
 				{% endif %}
+			<style>
+				.highlight-summary p { margin-bottom: 0; font-weight: 300; }
+				.highlight-summary strong { font-weight: 600; color: #4F2683; }
+			</style>
+			<div class="mb-0 text-dark highlight-summary" style="font-size: 0.98rem; line-height: 1.6; font-weight: 300;">
+				{{ site.data.highlight.summary | markdownify }}
 			</div>
-			<p class="mb-0 text-dark" style="font-size: 0.98rem; line-height: 1.6; font-weight: 300;">
-				{{ site.data.highlight.summary }}
-			</p>
 			{% if site.data.highlight.recent_highlights %}
 			<div class="mt-3 pt-3 border-top d-flex flex-wrap align-items-center" style="gap: 6px;">
 				<span class="text-muted small fw-bold me-1" style="font-size: 0.78rem;">
