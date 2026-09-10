@@ -17,7 +17,58 @@ import urllib.error
 BASE_DIR = Path(__file__).resolve().parent.parent
 BLOG_DIR = BASE_DIR / "blog" / "_posts"
 PAPERS_DIR = BASE_DIR / "papers" / "_posts"
+TEAM_DIR = BASE_DIR / "team" / "_posts"
 OUTPUT_FILE = BASE_DIR / "_data" / "highlight.yml"
+
+
+def load_team_members():
+    """Load team members and their slug URLs from team/_posts/."""
+    members = {}
+    if not TEAM_DIR.exists():
+        return members
+    for p in TEAM_DIR.glob("*.md"):
+        try:
+            content = p.read_text(encoding="utf-8")
+            m = re.search(r"^name:\s*(.+)$", content, re.MULTILINE)
+            if m:
+                name = m.group(1).strip().strip('"').strip("'")
+                slug = re.sub(r"^\d{4}-\d{2}-\d{2}-", "", p.stem)
+                members[name] = slug
+        except Exception:
+            continue
+    return members
+
+
+def linkify_personnel(text: str, team_members: dict) -> str:
+    """Link personnel names in text to their CCSB profile pages."""
+    tokens = re.split(r'(\[[^\]]+\]\([^)]+\))', text)
+    sorted_members = sorted(team_members.items(), key=lambda x: len(x[0]), reverse=True)
+
+    for i in range(len(tokens)):
+        # Skip if already a markdown link
+        if tokens[i].startswith("[") and "](" in tokens[i]:
+            continue
+
+        for full_name, slug in sorted_members:
+            parts = full_name.split()
+            first_name = parts[0]
+            last_name = parts[-1]
+            url = f"/team/{slug}/"
+
+            name_pattern = (
+                rf'(?:Dr\.\s+)?{re.escape(first_name)}(?:\s+[A-Za-z]\.?)?\s+(?:[A-Za-z]+\s+)?{re.escape(last_name)}'
+                rf'|Dr\.\s+{re.escape(last_name)}'
+                rf'|{re.escape(full_name)}'
+            )
+            pattern = rf'(?:\*\*)?\b((?:{name_pattern})(?:[’\']s)?)\b(?:\*\*)?'
+
+            def repl(m):
+                raw = m.group(1).strip("*")
+                return f"[**{raw}**]({url})"
+
+            tokens[i] = re.sub(pattern, repl, tokens[i])
+
+    return "".join(tokens)
 
 
 def parse_post(file_path: Path):
@@ -272,11 +323,16 @@ def main():
     else:
         print("No GEMINI_API_KEY found in environment.")
 
+    team_members = load_team_members()
+
     if not summary:
         print("Using fallback summary...")
         summary = generate_fallback_summary(recent_blogs, recent_papers)
 
-    print("\nGenerated Summary:")
+    # Linkify all personnel mentions to their CCSB profile pages
+    summary = linkify_personnel(summary, team_members)
+
+    print("\nGenerated Summary (with links):")
     print(summary)
     print()
 
