@@ -4,140 +4,112 @@ layout: default
 
 {% assign member = page %}
 
-<div class="row">
+<!-- Hero Header -->
+<div class="row mb-5">
 	<div class="col-md-12">
-		<div class="media">
+		<div class="d-flex align-items-center gap-4" style="gap: 1.5rem !important;">
 			{% if member.image %}
-			<img class="pull-left pad-right media-object" width=120 src="{{ member.image | relative_url }}">
+			<a href="{{ member.url | relative_url }}" style="flex-shrink: 0;">
+				<img src="{{ member.image | relative_url }}"
+				     alt="{{ member.name }}"
+				     style="width: 120px; height: 120px; object-fit: cover; object-position: top center; border-radius: 12px; border: 2px solid #cbd5e1; box-shadow: 0 4px 12px rgba(79,38,131,0.10);">
+			</a>
 			{% endif %}
-			<div class="media-body titlebox">
-				<div class="title media-heading">
+			<div>
+				<h1 style="color: #4F2683; font-weight: 700; font-size: 2rem; margin-bottom: 0.25rem; line-height: 1.2;">
 					{{ member.name }}
-				</div>
-				<div class="smallhead">
-					<p>{{ member.title }}</p>
-					<p>{{ member.affiliation }}</p>
+				</h1>
+				{% if member.title %}
+				<p class="text-muted mb-1" style="font-size: 1.05rem;">{{ member.title }}</p>
+				{% endif %}
+				{% if member.affiliation %}
+				<p class="text-secondary small mb-2">
+					<i class="fa-solid fa-building me-1 opacity-75"></i>{{ member.affiliation }}
+				</p>
+				{% endif %}
+				<!-- Quick links row -->
+				<div class="d-flex flex-wrap mt-2" style="gap: 0.5rem;">
+					{% if member.email %}
+					{% assign emailarray = member.email | split: '@' %}
+					<span class="badge rounded-pill border text-secondary fw-normal px-3 py-2" style="font-size: 0.82rem; background: #f8f9fa;">
+						<i class="fa-solid fa-envelope me-1"></i>{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
+					</span>
+					{% endif %}
+					{% if member.homepage %}
+					<a href="{{ member.homepage }}" class="badge rounded-pill border text-secondary fw-normal px-3 py-2 text-decoration-none" style="font-size: 0.82rem; background: #f8f9fa;">
+						<i class="fa-solid fa-house me-1"></i>Homepage
+					</a>
+					{% endif %}
+					{% if member.scholar %}
+					<a href="http://scholar.google.com/citations?user={{ member.scholar }}" class="badge rounded-pill border text-secondary fw-normal px-3 py-2 text-decoration-none" style="font-size: 0.82rem; background: #f8f9fa;">
+						<i class="fa-solid fa-graduation-cap me-1"></i>Google Scholar
+					</a>
+					{% endif %}
+					{% if member.github %}
+					<a href="https://github.com/{{ member.github }}" class="badge rounded-pill border text-secondary fw-normal px-3 py-2 text-decoration-none" style="font-size: 0.82rem; background: #f8f9fa;">
+						<i class="fa-brands fa-github me-1"></i>{{ member.github }}
+					</a>
+					{% endif %}
+					{% if member.twitter %}
+					<a href="https://twitter.com/{{ member.twitter }}" class="badge rounded-pill border text-secondary fw-normal px-3 py-2 text-decoration-none" style="font-size: 0.82rem; background: #f8f9fa;">
+						<i class="fa-brands fa-twitter me-1"></i>{{ member.twitter }}
+					</a>
+					{% endif %}
+					{% if member.cv %}
+					<a href="{{ member.cv | relative_url }}" class="badge rounded-pill border fw-normal px-3 py-2 text-decoration-none" style="font-size: 0.82rem; background: #4F2683; color: #ffffff; border-color: #4F2683 !important;">
+						<i class="fa-solid fa-file-pdf me-1"></i>CV
+					</a>
+					{% endif %}
 				</div>
 			</div>
 		</div>
+		<hr style="border-top: 2px solid #4F2683; margin-top: 1.5rem; margin-bottom: 0;">
 	</div>
 </div>
 
-<div class="bigspacer"></div>
-
+<!-- Body: Bio + Sidebar -->
 <div class="row">
-	<div class="col-md-3">
-		{% if member.homepage %}
-		<div class="smallhead">
-			homepage
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-file-text-o fa-fw"></i>
-			<a class="off" href="{{ member.homepage }}">{{ member.homepage }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
+	<div class="col-md-8 col-lg-9">
 
-		{% if member.cv %}
-		<div class="smallhead">
-			CV
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-file-text-o fa-fw"></i>
-			<a class="off" href="{{ member.cv | relative_url }}">{{ member.cv | split: '/' | last }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-
-		{% if member.twitter %}
-		<div class="smallhead">
-			Twitter
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-twitter fa-fw"></i>
-			<a class="off" href="https://twitter.com/{{ member.twitter }}">{{ member.twitter }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-
-		{% if member.github %}
-		<div class="smallhead">
-			GitHub
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-github-alt fa-fw"></i>
-			<a class="off" href="https://github.com/{{ member.github }}">{{ member.github }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-
-		{% if member.scholar %}
-		<div class="smallhead">
-			Google Scholar
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-book fa-fw"></i>
-			<a class="off" href="http://scholar.google.com/citations?user={{ member.scholar }}">{{ member.name }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-
-		{% if member.calendar %}
-		<div class="smallhead">
-			Calendar
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-calendar fa-fw"></i>
-			<a class="off" href="{{ member.calendar }}">{{ member.title }}</a>
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-		
-		{% if member.email %}
-		{% assign emailarray = member.email | split: '@' %}
-		<div class="smallhead">
-			Email
-		</div>
-		<div class="pad-left note">
-			<div class="smallspacer"></div>
-			<i class="fa fa-inbox fa-fw"></i>
-			{{ emailarray.first }}<span style="display:none">obfuscate</span>@{{ emailarray.last }}
-		</div>
-		<div class="bigspacer"></div>
-		{% endif %}
-	</div>
-	<div class="col-md-8">
-		<div class="post">
+		<!-- Bio content from markdown -->
+		{% if content and content != "" %}
+		<div class="post mb-4">
 			{{ content }}
 		</div>
+		{% endif %}
 
+		<!-- Recent Papers -->
 		{% assign lastname = member.name | split: ' ' | last %}
 		{% assign firstinitial = member.name | split: ' ' | first | slice: 0 %}
 		{% assign searchstring = lastname | append: ' ' | append: firstinitial %}
 
+		{% assign papersq = false %}
 		{% for paper in site.categories.papers %}
-		{% if paper.authors contains searchstring %}
-		{% assign papersq = true %}
-		{% endif %}
+			{% if paper.authors contains searchstring %}
+				{% assign papersq = true %}
+			{% endif %}
 		{% endfor %}
 
-		{% if papersq == true %}
-		<div class="bigspacer"></div>
-		<div class="head">Recent Papers</div>
-		<div class="spacer"></div>
-		{% for paper in site.categories.papers %}
-		{% if paper.authors contains searchstring %}
-		<p><a href="{{ paper.url | relative_url }}" class="off">{{ paper.title }}</a>
-		{% endif %}
-		{% endfor %}
+		{% if papersq %}
+		<div class="mb-5" style="scroll-margin-top: 70px;">
+			<div class="d-flex align-items-baseline justify-content-between pb-2 mb-3" style="border-bottom: 2px solid #4F2683;">
+				<h2 class="head mb-0" style="color: #4F2683; font-weight: 500; font-size: 1.4rem;">Recent Papers</h2>
+			</div>
+			<ul class="list-unstyled mb-0">
+				{% for paper in site.categories.papers %}
+					{% if paper.authors contains searchstring %}
+					<li class="mb-2">
+						<a href="{{ paper.url | relative_url }}" class="off" style="font-size: 0.95rem;">{{ paper.title }}</a>
+						{% if paper.ref %}<span class="text-muted small d-block ms-0">{{ paper.ref }}</span>{% endif %}
+					</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
 		{% endif %}
 
+		<!-- Projects -->
+		{% assign projectsq = false %}
 		{% for project in site.data.projects %}
 			{% for contributor in project.contributors %}
 				{% if contributor.login == member.github %}
@@ -146,28 +118,34 @@ layout: default
 			{% endfor %}
 		{% endfor %}
 
-		{% if projectsq == true %}
-		<div class="bigspacer"></div>
-		<div class="head">Projects</div>
-		<div class="spacer"></div>
-		{% for project in site.data.projects %}
-			{% assign present = false %}
-			{% for contributor in project.contributors %}
-				{% if contributor.login == member.github %}
-					{% assign present = true %}
-				{% endif %}
-			{% endfor %}
-			{% if present == true %}
-				<p><a href="{{ project.url | relative_url }}" class="off">{{ project.title }} - {{ project.description }}</a>
-			{% endif %}
-		{% endfor %}
+		{% if projectsq %}
+		<div class="mb-5">
+			<div class="d-flex align-items-baseline justify-content-between pb-2 mb-3" style="border-bottom: 2px solid #4F2683;">
+				<h2 class="head mb-0" style="color: #4F2683; font-weight: 500; font-size: 1.4rem;">Projects</h2>
+			</div>
+			<ul class="list-unstyled mb-0">
+				{% for project in site.data.projects %}
+					{% assign present = false %}
+					{% for contributor in project.contributors %}
+						{% if contributor.login == member.github %}
+							{% assign present = true %}
+						{% endif %}
+					{% endfor %}
+					{% if present %}
+					<li class="mb-2">
+						<a href="{{ project.url | relative_url }}" class="off" style="font-size: 0.95rem;">{{ project.title }} &mdash; {{ project.description }}</a>
+					</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
 		{% endif %}
 
+		<!-- Blog Posts -->
+		{% assign postsq = false %}
 		{% for post in site.categories.blog %}
-			{% if post.author %}
-				{% if member.name == post.author %}
-					{% assign postsq = true %}
-				{% endif %}
+			{% if post.author and member.name == post.author %}
+				{% assign postsq = true %}
 			{% endif %}
 			{% if post.authors %}
 				{% for author in post.authors %}
@@ -178,30 +156,53 @@ layout: default
 			{% endif %}
 		{% endfor %}
 
-		{% if postsq == true %}
-			<div class="bigspacer"></div>
-			<div class="head">Posts</div>
-			<div class="spacer"></div>
-			{% for post in site.categories.blog %}
-				{% if post.author %}
-					{% if member.name == post.author %}
-						<p><a href="{{ post.url | relative_url }}" class="off">{{ post.title }}</a>
+		{% if postsq %}
+		<div class="mb-5">
+			<div class="d-flex align-items-baseline justify-content-between pb-2 mb-3" style="border-bottom: 2px solid #4F2683;">
+				<h2 class="head mb-0" style="color: #4F2683; font-weight: 500; font-size: 1.4rem;">Posts</h2>
+			</div>
+			<ul class="list-unstyled mb-0">
+				{% for post in site.categories.blog %}
+					{% assign show = false %}
+					{% if post.author and member.name == post.author %}
+						{% assign show = true %}
 					{% endif %}
-				{% endif %}
-				{% if post.authors %}
-					{% assign found = false %}
-					{% for author in post.authors %}
-						{% if member.name == author %}
-							{% assign found = true %}
-						{% endif %}
-					{% endfor %}
-					{% if found %}
-						<p><a href="{{ post.url | relative_url }}" class="off">{{ post.title }}</a>
+					{% if post.authors %}
+						{% for author in post.authors %}
+							{% if member.name == author %}
+								{% assign show = true %}
+							{% endif %}
+						{% endfor %}
 					{% endif %}
-				{% endif %}
-			{% endfor %}
+					{% if show %}
+					<li class="mb-2">
+						<a href="{{ post.url | relative_url }}" class="off" style="font-size: 0.95rem;">{{ post.title }}</a>
+						<span class="text-muted small d-block">{{ post.date | date: "%-d %b %Y" }}</span>
+					</li>
+					{% endif %}
+				{% endfor %}
+			</ul>
+		</div>
 		{% endif %}
 
 	</div>
-	<div class="col-md-1"></div>
+
+	<!-- Sidebar: secondary links / calendar -->
+	<div class="col-md-4 col-lg-3">
+		{% if member.calendar %}
+		<div class="card border-0 rounded-3 p-3 mb-4" style="background: #f8f4ff; border: 1px solid #e8dff5 !important;">
+			<p class="small text-muted mb-2 fw-semibold text-uppercase" style="letter-spacing: 0.5px; font-size: 0.75rem;">Schedule</p>
+			<a href="{{ member.calendar }}" class="text-decoration-none" style="color: #4F2683; font-size: 0.9rem;">
+				<i class="fa-solid fa-calendar-days me-2"></i>View Calendar
+			</a>
+		</div>
+		{% endif %}
+
+		<!-- Back link -->
+		<div class="mt-2">
+			<a href="{{ '/team/' | relative_url }}" class="btn btn-sm btn-outline-secondary" style="border-radius: 16px; font-size: 0.82rem;">
+				<i class="fa-solid fa-arrow-left me-1"></i>Back to Team
+			</a>
+		</div>
+	</div>
 </div>

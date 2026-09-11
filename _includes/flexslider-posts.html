@@ -1,14 +1,48 @@
-<div>
-	<div class="flexslider" style="text-align: center; vertical-align: middle">
-		<ul class="slides">
-	  		{% for page in site.categories.papers limit:4 %}
-	  		<li>
-	  			<a href="{{ site.baseurl }}{{ page.url }}">
-		    		<img src="{{ page.image | relative_url }}" class="img-fluid" style="max-width: 400px; width: 100%; height: auto; margin:0 auto">
-		    		<p class="flex-caption">{{ page.ref }}</p>
-		    	</a>
-	 		</li>
-	  		{% endfor %}
-		</ul>
+<div id="paperCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+	<!-- Slides -->
+	<div class="carousel-inner" style="border-radius: 12px; border: 2px solid #cbd5e1; box-shadow: 0 4px 16px rgba(79,38,131,0.10); overflow: hidden; padding: 18px 18px 12px 18px; background: #fff;">
+		{% for page in site.categories.papers limit:4 %}
+		<div class="carousel-item{% if forloop.first %} active{% endif %}">
+			<a href="{{ site.baseurl }}{{ page.url }}">
+				<img src="{{ page.image | relative_url }}"
+				     class="d-block w-100"
+				     alt="{{ page.title }}"
+				     style="max-height: 320px; object-fit: contain; background: #fff;">
+			</a>
+			{% if page.ref %}
+			<div class="carousel-caption-below" style="margin-top: 8px;">
+				{{ page.ref }}
+			</div>
+			{% endif %}
+		</div>
+		{% endfor %}
 	</div>
+
+	<!-- Prev / Next controls -->
+	<button class="carousel-control-prev ccsb-carousel-btn" type="button"
+	        data-bs-target="#paperCarousel" data-bs-slide="prev"
+	        style="left: -3.5rem;">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	</button>
+	<button class="carousel-control-next ccsb-carousel-btn" type="button"
+	        data-bs-target="#paperCarousel" data-bs-slide="next"
+	        style="right: -3.5rem;">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	</button>
+
+	<!-- Dot indicators -->
+	<div class="carousel-indicators ccsb-carousel-indicators">
+		{% for page in site.categories.papers limit:4 %}
+		<button type="button"
+		        data-bs-target="#paperCarousel"
+		        data-bs-slide-to="{{ forloop.index0 }}"
+		        {% if forloop.first %}class="active" aria-current="true"{% endif %}
+		        aria-label="Slide {{ forloop.index }}">
+		</button>
+		{% endfor %}
+	</div>
+
 </div>

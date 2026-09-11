@@ -45,6 +45,37 @@ a {
   }
 }
 
+a.btn {
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
+// Blog view mode switcher toggle buttons
+.btn-view-toggle {
+  color: #4F2683 !important;
+  border-color: #4F2683 !important;
+  background-color: #ffffff !important;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    color: #ffffff !important;
+    background-color: #6332a4 !important;
+    border-color: #6332a4 !important;
+    text-decoration: none !important;
+  }
+
+  &.active {
+    color: #ffffff !important;
+    background-color: #4F2683 !important;
+    border-color: #4F2683 !important;
+  }
+}
+
 
 
 // h1, .h1 { font-size: floor($font-size-base * 2.40); } /* ~34px */
@@ -337,31 +368,134 @@ blockquote {
 
 }
 
+// Team Member Cards
+.member-card {
+	border: 2px solid #cbd5e1;
+	border-radius: 12px;
+	overflow: hidden;
+	background-color: #ffffff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+	transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+	text-align: center;
+	padding: 1.5rem 1.15rem 1.25rem;
+
+	&:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 10px 20px rgba(79, 38, 131, 0.12);
+		border-color: #4F2683;
+
+		.member-name {
+			color: #6332a4;
+		}
+
+		.member-photo {
+			border-color: #4F2683;
+		}
+	}
+
+	.member-photo-wrap {
+		margin-bottom: 1rem;
+		display: inline-block;
+	}
+
+	.member-photo {
+		width: 180px;
+		height: 180px;
+		max-width: 100%;
+		aspect-ratio: 1 / 1;
+		object-fit: cover;
+		object-position: top center;
+		display: block;
+		margin: 0 auto;
+		border-radius: 10px;
+		border: 2px solid #f1f5f9;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+		background-color: #f8f9fa;
+		transition: border-color 0.2s ease;
+	}
+
+	.member-name {
+		color: #4F2683;
+		font-weight: 600;
+		font-size: 1.05rem;
+		line-height: 1.35;
+		text-decoration: none;
+		transition: color 0.15s ease;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
 .talkbox {
 	min-height: 100px;
 }
 
 .seminar-schedule {
 	h2, h3 {
-		@extend .head;
-		margin-top: 25px;
-		margin-bottom: 10px;
+		color: #4F2683;
+		font-weight: 500;
+		font-size: 1.5rem;
+		padding-bottom: 0.5rem;
+		margin-top: 2rem;
+		margin-bottom: 1.25rem;
+		border-bottom: 2px solid #4F2683;
 	}
 
 	table {
-		width: 90%;
-		margin-bottom: 20px;
+		width: 100% !important;
+		margin-bottom: 2rem;
+		border-collapse: separate;
+		border-spacing: 0;
+		border-radius: 8px;
+		overflow: hidden;
+		border: 1px solid #e2e8f0;
+		box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+		background-color: #ffffff;
+
+		thead th {
+			background-color: #4F2683;
+			color: #ffffff;
+			font-weight: 600;
+			font-size: 0.88rem;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+			padding: 12px 18px;
+			border: none;
+			vertical-align: middle;
+		}
+
+		tbody td {
+			padding: 14px 18px;
+			vertical-align: middle;
+			border-bottom: 1px solid #f1f5f9;
+			font-size: 0.95rem;
+		}
+
+		tbody tr:last-child td {
+			border-bottom: none;
+		}
+
+		tbody tr:hover td {
+			background-color: #faf7fd;
+		}
+
 		th:nth-child(1), td:nth-child(1) {
-			width: 15%;
+			width: 1%;
+			white-space: nowrap;
 		}
 		th:nth-child(2), td:nth-child(2) {
-			width: 40%;
+			width: 32%;
+			line-height: 1.5;
+		}
+		th:nth-child(3), td:nth-child(3) {
+			width: auto;
+			line-height: 1.5;
 		}
 	}
 
 	p {
-		@extend .smallhead;
-		margin-left: 20px;
 		margin-bottom: 15px;
 	}
 }
@@ -459,3 +593,69 @@ blockquote {
     opacity: 0;
   }
 }
+
+// Lab cards hover
+.lab-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(79, 38, 131, 0.12) !important;
+  border-color: #4F2683 !important;
+}
+
+// ── Bootstrap Carousel — PVAMU overrides ──────────────────────────────────────
+
+// Prev/Next: circular PVAMU purple buttons outside the slide boundary
+.ccsb-carousel-btn {
+  width: 36px;
+  height: 36px;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+  background-color: #4F2683 !important;
+  border-radius: 50% !important;
+  opacity: 0.85;
+  transition: opacity 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    opacity: 1;
+    background-color: #3a1a63 !important;
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+// Dot indicators — PVAMU purple
+.ccsb-carousel-indicators {
+  position: static;
+  margin-top: 0.6rem;
+  margin-bottom: 0;
+
+  button {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #cbd5e1;
+    border: none;
+    opacity: 1;
+    transition: background-color 0.2s ease;
+
+    &.active {
+      background-color: #4F2683;
+    }
+  }
+}
+
+// Caption rendered below the image (not overlaid)
+.carousel-caption-below {
+  font-size: 0.78rem;
+  color: #64748b;
+  text-align: center;
+  padding: 0.45rem 0.5rem 0.1rem;
+  line-height: 1.4;
+}
+
+

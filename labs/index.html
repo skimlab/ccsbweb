@@ -6,103 +6,93 @@ categories:
 category: labs
 ---
 
+<!-- Page Header -->
+<div class="row mb-4">
+	<div class="col-md-12">
+		<h1 style="color: #4F2683; font-weight: 700; font-size: 2rem; margin-bottom: 0.25rem;">Labs</h1>
+		<p class="text-muted mb-0">Research laboratories at the Center for Computational Systems Biology</p>
+		<hr style="border-top: 2px solid #4F2683; margin-top: 1rem; margin-bottom: 0;">
+	</div>
+</div>
 
+{% assign labs_list = site.categories.labs %}
+{% assign labs_count = labs_list | size %}
 
-<div class="post-list">
-    
-    {% for post in site.categories.labs limit: 8 %}
-    
-    <div class="blog-post">
-        <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-10">
-                <div class="media">
-                    <div class="media-body">
-                        {% if post.link %}
-                        <div class="title media-heading">
-                            <a href="{{ post.link}}" class="off">{{ post.title }}</a>
-                        </div>
-                        {% else %}
-                        <div class="title media-heading">{{ post.title }}
-                        </div>
-                         {% endif %}
-                        <p>
-                        <div class="smallhead">
-                            {% if post.author %}
-                            Director:  <a class="off" href="
-                                {% for member in site.categories.team %}
-                                {% if member.name == post.author %}
-                                {{ member.url | prepend:site.baseurl }}
-                                {% endif %}
-                                {% endfor %}
-                                ">
-                                {{ post.author }}
-                            </a>
-                            {% endif %}
-                            {% if post.authors %}
-                            by
-                            <a class="off" href="
-                                {% for member in site.categories.team %}
-                                {% if member.name == post.authors.first %}
-                                {{ member.url | prepend:site.baseurl }}
-                                {% endif %}
-                                {% endfor %}
-                                ">
-                                {{ post.authors.first }}
-                            </a>
-                            and
-                            <a class="off" href="
-                                {% for member in site.categories.team %}
-                                {% if member.name == post.authors.last %}
-                                {{ member.url | prepend:site.baseurl }}
-                                {% endif %}
-                                {% endfor %}
-                                ">
-                                {{ post.authors.last }}
-                            </a>
-                            {% endif %}
-                        </div>
+{% if labs_count == 0 %}
+<p class="text-muted">No labs found.</p>
+{% else %}
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-1"></div>
-        </div>
+<div class="row g-4">
+{% for post in labs_list %}
+<div class="col-lg-6 mb-4">
+	<div class="card h-100 lab-card-hover" style="border: 2px solid #cbd5e1; border-radius: 12px; overflow: hidden; transition: box-shadow 0.2s, border-color 0.2s, transform 0.2s;">
+		<div class="card-body p-4">
 
-        
-        <div class="spacer"></div>
-        
-    
-    
-    
+			<!-- Lab title -->
+			<h2 style="color: #4F2683; font-weight: 600; font-size: 1.25rem; margin-bottom: 0.5rem;">
+				{% if post.link %}
+				<a href="{{ post.link }}" class="off">{{ post.title }}</a>
+				{% else %}
+				<a href="{{ post.url | relative_url }}" class="off">{{ post.title }}</a>
+				{% endif %}
+			</h2>
 
-    
-    <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-            {% if post.image %}
-            {% if post.link %}
-            <a href="{{ post.link }}">
-                <img class="offset" src="{{ post.image | prepend:site.baseurl }}">
-                    </a>
-            {% else %}
-            <img class="offset" src="{{ post.image | prepend:site.baseurl }}">
-                {% endif %}
-                {% endif %}
-                <div class="post">
-                    <font size="4">
-                    {{ post.content }}
-                    </font>
-                </div>
-                </div>
-        <div class="col-md-1"></div>
-    </div>
-    
-    <div class="bigspacer"></div>
-    <div class="spacer"></div>
-    </div>
-    
-    
-    {% endfor %}
-    <div class="title media-heading">
+			<!-- Director / authors -->
+			{% if post.author %}
+			<p class="text-muted small mb-3">
+				<i class="fa-solid fa-user me-1 opacity-75"></i>Director:
+				{% assign director_url = "" %}
+				{% for member in site.categories.team %}
+					{% if member.name == post.author %}
+						{% assign director_url = member.url | relative_url %}
+					{% endif %}
+				{% endfor %}
+				{% if director_url != "" %}
+				<a class="off" href="{{ director_url }}">{{ post.author }}</a>
+				{% else %}
+				{{ post.author }}
+				{% endif %}
+			</p>
+			{% endif %}
+			{% if post.authors %}
+			<p class="text-muted small mb-3">
+				<i class="fa-solid fa-users me-1 opacity-75"></i>
+				{% for author_name in post.authors %}
+					{% assign author_url = "" %}
+					{% for member in site.categories.team %}
+						{% if member.name == author_name %}
+							{% assign author_url = member.url | relative_url %}
+						{% endif %}
+					{% endfor %}
+					{% if author_url != "" %}
+					<a class="off" href="{{ author_url }}">{{ author_name }}</a>{% unless forloop.last %}, {% endunless %}
+					{% else %}
+					{{ author_name }}{% unless forloop.last %}, {% endunless %}
+					{% endif %}
+				{% endfor %}
+			</p>
+			{% endif %}
 
+			<!-- Description excerpt -->
+			<div class="text-secondary" style="font-size: 0.93rem; line-height: 1.65;">
+				{{ post.content | strip_html | truncatewords: 60 }}
+			</div>
+
+		</div>
+		<div class="card-footer bg-transparent px-4 pb-3 pt-0" style="border-top: none;">
+			{% if post.link %}
+			<a href="{{ post.link }}" class="btn btn-sm btn-outline-secondary" style="border-radius: 16px; font-size: 0.82rem; border-color: #4F2683; color: #4F2683;">
+				<i class="fa-solid fa-arrow-up-right-from-square me-1"></i>Visit Lab Site
+			</a>
+			{% else %}
+			<a href="{{ post.url | relative_url }}" class="btn btn-sm btn-outline-secondary" style="border-radius: 16px; font-size: 0.82rem; border-color: #4F2683; color: #4F2683;">
+				<i class="fa-solid fa-arrow-right me-1"></i>Learn More
+			</a>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% endfor %}
+</div>
+
+{% endif %}

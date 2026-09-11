@@ -5,212 +5,295 @@ categories:
  - team
 ---
 
-<div class="row">
+{% assign count_current = 0 %}
+{% assign count_associate = 0 %}
+{% assign count_students = 0 %}
+{% assign count_former_members = 0 %}
+{% assign count_former_students = 0 %}
+
+{% for member in site.categories.team %}
+  {% if member.retired != true %}
+    {% if member.alumni != true %}
+      {% if member.membership == "faculty" %}
+        {% assign count_current = count_current | plus: 1 %}
+      {% elsif member.membership == "associate-faculty" %}
+        {% assign count_associate = count_associate | plus: 1 %}
+      {% elsif member.membership == "student" %}
+        {% assign count_students = count_students | plus: 1 %}
+      {% endif %}
+    {% else %}
+      {% if member.membership == "student" %}
+        {% assign count_former_students = count_former_students | plus: 1 %}
+      {% else %}
+        {% assign count_former_members = count_former_members | plus: 1 %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+<!-- Quick Jump Navigation -->
+<div class="row mb-4">
 	<div class="col-md-12">
-		<div class="title">
+		<div class="d-flex flex-wrap align-items-center justify-content-center" style="gap: 8px; padding-bottom: 15px; border-bottom: 1px solid #e9ecef;">
+			<span class="text-muted small fw-bold me-2" style="font-size: 0.85rem;">
+				<i class="fa-solid fa-users me-1"></i> Jump to:
+			</span>
+			{% if count_current > 0 %}
+			<a href="#current-members" class="btn btn-sm btn-outline-secondary py-1 px-2 font-monospace" style="font-size: 0.8rem; border-radius: 16px;">
+				Current Members
+			</a>
+			{% endif %}
+			{% if count_associate > 0 %}
+			<a href="#associate-members" class="btn btn-sm btn-outline-secondary py-1 px-2 font-monospace" style="font-size: 0.8rem; border-radius: 16px;">
+				Associate Members
+			</a>
+			{% endif %}
+			{% if count_students > 0 %}
+			<a href="#current-students" class="btn btn-sm btn-outline-secondary py-1 px-2 font-monospace" style="font-size: 0.8rem; border-radius: 16px;">
+				Current Students
+			</a>
+			{% endif %}
+			{% if count_former_members > 0 %}
+			<a href="#former-members" class="btn btn-sm btn-outline-secondary py-1 px-2 font-monospace" style="font-size: 0.8rem; border-radius: 16px;">
+				Former Members
+			</a>
+			{% endif %}
+			{% if count_former_students > 0 %}
+			<a href="#former-students" class="btn btn-sm btn-outline-secondary py-1 px-2 font-monospace" style="font-size: 0.8rem; border-radius: 16px;">
+				Former Students
+			</a>
+			{% endif %}
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<!-- CURRENT MEMBERS -->
+{% if count_current > 0 %}
+<div id="current-members" class="team-section mb-5" style="scroll-margin-top: 70px;">
+	<div class="d-flex align-items-baseline justify-content-between pb-2 mb-4" style="border-bottom: 2px solid #4F2683;">
+		<h2 class="head mb-0" style="color: #4F2683; font-weight: 500; font-size: 1.6rem;">
 			Current Members
-		</div>
+		</h2>
+		<span class="badge bg-light text-secondary border font-monospace" style="font-size: 0.78rem; font-weight: normal;">
+			{{ count_current }} {% if count_current == 1 %}member{% else %}members{% endif %}
+		</span>
 	</div>
-</div>
 
-<div class="bigspacer"></div>
-
-{% for member in site.categories.team reversed %}
-    <!-- CURRENT MEMBERS -->
-	{% if member.membership == "faculty" and member.alumni != true and member.retired != true %}
-    	{% cycle 'add rows': '<div class="row">', '', '' %}
-		<div class="col-md-4 memberbox">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url | prepend:site.baseurl }}">
-    					<img width=160 class="media-object" src="{{ member.image | prepend:site.baseurl }}">
-  				</a>
- 			 	<div class="media-body">
-    					<div class="head media-heading">
-						<a href="{{ member.url | prepend:site.baseurl }}" class="off">
+	<div class="row g-4 g-lg-5">
+		{% for member in site.categories.team reversed %}
+			{% if member.membership == "faculty" and member.alumni != true and member.retired != true %}
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="member-card h-100 d-flex flex-column align-items-center">
+					<a href="{{ member.url | relative_url }}" class="member-photo-wrap">
+						{% if member.image %}
+							<img class="member-photo" src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+						{% else %}
+							<img class="member-photo" src="{{ '/images/team/no-body.png' | relative_url }}" alt="{{ member.name }}">
+						{% endif %}
+					</a>
+					<div class="d-flex flex-column flex-grow-1 w-100">
+						<a href="{{ member.url | relative_url }}" class="member-name mb-1">
 							{{ member.name }}
 						</a>
+						{% if member.title %}
+						<p class="text-muted small mb-2 lh-sm">{{ member.title }}</p>
+						{% endif %}
+						{% if member.affiliation %}
+						<p class="text-secondary small fw-medium mt-auto mb-0">
+							<i class="fa-solid fa-building me-1 opacity-75"></i>{{ member.affiliation }}
+						</p>
+						{% endif %}
 					</div>
-    					<p class="note">{{ member.title }}</p>
-    					<p class="note">{{ member.affiliation }}</p>
-  				</div>
+				</div>
 			</div>
-			<div class="bigspacer"></div>
-			<div class="bigspacer"></div>
-        	</div>
-    	{% cycle 'close rows': '', '', '</div>' %}
-    	{% endif %}
-{% endfor %}
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
+{% endif %}
 
-
-
-
-
-<div class="row">
-	<div class="col-md-12">
-		<div class="title">
+<!-- ASSOCIATE MEMBERS -->
+{% if count_associate > 0 %}
+<div id="associate-members" class="team-section mb-5" style="scroll-margin-top: 70px;">
+	<div class="d-flex align-items-baseline justify-content-between pb-2 mb-4" style="border-bottom: 2px solid #4F2683;">
+		<h2 class="head mb-0" style="color: #4F2683; font-weight: 500; font-size: 1.6rem;">
 			Associate Members
-		</div>
+		</h2>
+		<span class="badge bg-light text-secondary border font-monospace" style="font-size: 0.78rem; font-weight: normal;">
+			{{ count_associate }} {% if count_associate == 1 %}member{% else %}members{% endif %}
+		</span>
 	</div>
-</div>
 
-<div class="bigspacer"></div>
-
-{% for member in site.categories.team reversed %}
-    <!-- ASSOCIATE MEMBERS -->
-	{% if member.membership == "associate-faculty" and member.alumni != true and member.retired != true %}
-    	{% cycle 'add rows': '<div class="row">', '', '' %}
-		<div class="col-md-4 memberbox">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url | prepend:site.baseurl }}">
-    					<img width=160 class="media-object" src="{{ member.image | prepend:site.baseurl }}">
-  				</a>
- 			 	<div class="media-body">
-    					<div class="head media-heading">
-						<a href="{{ member.url | prepend:site.baseurl }}" class="off">
+	<div class="row g-4 g-lg-5">
+		{% for member in site.categories.team reversed %}
+			{% if member.membership == "associate-faculty" and member.alumni != true and member.retired != true %}
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="member-card h-100 d-flex flex-column align-items-center">
+					<a href="{{ member.url | relative_url }}" class="member-photo-wrap">
+						{% if member.image %}
+							<img class="member-photo" src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+						{% else %}
+							<img class="member-photo" src="{{ '/images/team/no-body.png' | relative_url }}" alt="{{ member.name }}">
+						{% endif %}
+					</a>
+					<div class="d-flex flex-column flex-grow-1 w-100">
+						<a href="{{ member.url | relative_url }}" class="member-name mb-1">
 							{{ member.name }}
 						</a>
+						{% if member.title %}
+						<p class="text-muted small mb-2 lh-sm">{{ member.title }}</p>
+						{% endif %}
+						{% if member.affiliation %}
+						<p class="text-secondary small fw-medium mt-auto mb-0">
+							<i class="fa-solid fa-building me-1 opacity-75"></i>{{ member.affiliation }}
+						</p>
+						{% endif %}
 					</div>
-    					<p class="note">{{ member.title }}</p>
-    					<p class="note">{{ member.affiliation }}</p>
-  				</div>
+				</div>
 			</div>
-			<div class="bigspacer"></div>
-			<div class="bigspacer"></div>
-        	</div>
-    	{% cycle 'close rows': '', '', '</div>' %}
-    	{% endif %}
-{% endfor %}
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
+{% endif %}
 
-
-
-
-
-<div class="row">
-	<div class="col-md-12">
-		<div class="title">
+<!-- CURRENT STUDENTS -->
+{% if count_students > 0 %}
+<div id="current-students" class="team-section mb-5" style="scroll-margin-top: 70px;">
+	<div class="d-flex align-items-baseline justify-content-between pb-2 mb-4" style="border-bottom: 2px solid #4F2683;">
+		<h2 class="head mb-0" style="color: #4F2683; font-weight: 500; font-size: 1.6rem;">
 			Current Students
-		</div>
+		</h2>
+		<span class="badge bg-light text-secondary border font-monospace" style="font-size: 0.78rem; font-weight: normal;">
+			{{ count_students }} {% if count_students == 1 %}student{% else %}students{% endif %}
+		</span>
 	</div>
-</div>
 
-<div class="bigspacer"></div>
-
-
-{% for member in site.categories.team reversed %}
-    <!-- CURRENT STUDENTS -->
-	{% if member.membership == "student" and member.alumni != true and member.retired != true %}
-    	{% cycle 'add rows': '<div class="row">', '', '' %}
-		<div class="col-md-4 memberbox">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url | prepend:site.baseurl }}">
-    					<img width=160 class="media-object" src="{{ member.image | prepend:site.baseurl }}">
-  				</a>
- 			 	<div class="media-body">
-    					<div class="head media-heading">
-						<a href="{{ member.url | prepend:site.baseurl }}" class="off">
+	<div class="row g-4 g-lg-5">
+		{% for member in site.categories.team reversed %}
+			{% if member.membership == "student" and member.alumni != true and member.retired != true %}
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="member-card h-100 d-flex flex-column align-items-center">
+					<a href="{{ member.url | relative_url }}" class="member-photo-wrap">
+						{% if member.image %}
+							<img class="member-photo" src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+						{% else %}
+							<img class="member-photo" src="{{ '/images/team/no-body.png' | relative_url }}" alt="{{ member.name }}">
+						{% endif %}
+					</a>
+					<div class="d-flex flex-column flex-grow-1 w-100">
+						<a href="{{ member.url | relative_url }}" class="member-name mb-1">
 							{{ member.name }}
 						</a>
+						{% if member.title %}
+						<p class="text-muted small mb-2 lh-sm">{{ member.title }}</p>
+						{% endif %}
+						{% if member.affiliation %}
+						<p class="text-secondary small fw-medium mt-auto mb-0">
+							<i class="fa-solid fa-building me-1 opacity-75"></i>{{ member.affiliation }}
+						</p>
+						{% endif %}
 					</div>
-    					<p class="note">{{ member.title }}</p>
-    					<p class="note">{{ member.affiliation }}</p>
-  				</div>
+				</div>
 			</div>
-			<div class="bigspacer"></div>
-			<div class="bigspacer"></div>
-        	</div>
-    	{% cycle 'close rows': '', '', '</div>' %}
-    	{% endif %}
-{% endfor %}
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
+{% endif %}
 
-
-
-
-
-
-
-<div><hr></div>
-
-
-
-
-
-<div class="row">
-	<div class="col-md-12">
-		<div class="title">
+<!-- FORMER MEMBERS -->
+{% if count_former_members > 0 %}
+<div id="former-members" class="team-section mb-5" style="scroll-margin-top: 70px;">
+	<div class="d-flex align-items-baseline justify-content-between pb-2 mb-4" style="border-bottom: 2px solid #4F2683;">
+		<h2 class="head mb-0" style="color: #4F2683; font-weight: 500; font-size: 1.6rem;">
 			Former Members
-		</div>
+		</h2>
+		<span class="badge bg-light text-secondary border font-monospace" style="font-size: 0.78rem; font-weight: normal;">
+			{{ count_former_members }} {% if count_former_members == 1 %}member{% else %}members{% endif %}
+		</span>
 	</div>
-</div>
 
-<div class="bigspacer"></div>
-
-
-
-{% for member in site.categories.team reversed %}
-    <!-- FORMER MEMBERS -->
-	{% if member.alumni == true and member.retired != true and member.membership != "student" %}
-    	{% cycle 'add rows': '<div class="row">', '', '' %}
-		<div class="col-md-4 memberbox">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url | prepend:site.baseurl }}">
-    					<img width=160 class="media-object" src="{{ member.image | prepend:site.baseurl }}">
-  				</a>
- 			 	<div class="media-body">
-    					<div class="head media-heading">
-						<a href="{{ member.url | prepend:site.baseurl }}" class="off">
+	<div class="row g-4 g-lg-5">
+		{% for member in site.categories.team reversed %}
+			{% if member.alumni == true and member.retired != true and member.membership != "student" %}
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="member-card h-100 d-flex flex-column align-items-center">
+					<a href="{{ member.url | relative_url }}" class="member-photo-wrap">
+						{% if member.image %}
+							<img class="member-photo" src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+						{% else %}
+							<img class="member-photo" src="{{ '/images/team/no-body.png' | relative_url }}" alt="{{ member.name }}">
+						{% endif %}
+					</a>
+					<div class="d-flex flex-column flex-grow-1 w-100">
+						<a href="{{ member.url | relative_url }}" class="member-name mb-1">
 							{{ member.name }}
 						</a>
+						{% if member.title %}
+						<p class="text-muted small mb-2 lh-sm">{{ member.title }}</p>
+						{% endif %}
+						{% if member.affiliation %}
+						<p class="text-secondary small fw-medium mt-auto mb-0">
+							<i class="fa-solid fa-building me-1 opacity-75"></i>{{ member.affiliation }}
+						</p>
+						{% endif %}
 					</div>
-    					<p class="note">{{ member.title }}</p>
-    					<p class="note">{{ member.affiliation }}</p>
-  				</div>
+				</div>
 			</div>
-			<div class="bigspacer"></div>
-			<div class="bigspacer"></div>
-        	</div>
-    	{% cycle 'close rows': '', '', '</div>' %}
-    	{% endif %}
-{% endfor %}
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
+{% endif %}
 
-
-
-
-<div class="row">
-	<div class="col-md-12">
-		<div class="title">
+<!-- FORMER STUDENTS -->
+{% if count_former_students > 0 %}
+<div id="former-students" class="team-section mb-5" style="scroll-margin-top: 70px;">
+	<div class="d-flex align-items-baseline justify-content-between pb-2 mb-4" style="border-bottom: 2px solid #4F2683;">
+		<h2 class="head mb-0" style="color: #4F2683; font-weight: 500; font-size: 1.6rem;">
 			Former Students
-		</div>
+		</h2>
+		<span class="badge bg-light text-secondary border font-monospace" style="font-size: 0.78rem; font-weight: normal;">
+			{{ count_former_students }} {% if count_former_students == 1 %}student{% else %}students{% endif %}
+		</span>
 	</div>
-</div>
 
-<div class="bigspacer"></div>
-
-
-{% for member in site.categories.team reversed %}
-    <!-- FORMER STUDENTS -->
-	{% if member.membership == "student" and member.alumni == true and member.retired != true %}
-    	{% cycle 'add rows': '<div class="row">', '', '' %}
-		<div class="col-md-4 memberbox">
-			<div class="media">
-  				<a class="pull-left" href="{{ member.url | prepend:site.baseurl }}">
-    					<img width=160 class="media-object" src="{{ member.image | prepend:site.baseurl }}">
-  				</a>
- 			 	<div class="media-body">
-    					<div class="head media-heading">
-						<a href="{{ member.url | prepend:site.baseurl }}" class="off">
+	<div class="row g-4 g-lg-5">
+		{% for member in site.categories.team reversed %}
+			{% if member.membership == "student" and member.alumni == true and member.retired != true %}
+			<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+				<div class="member-card h-100 d-flex flex-column align-items-center">
+					<a href="{{ member.url | relative_url }}" class="member-photo-wrap">
+						{% if member.image %}
+							<img class="member-photo" src="{{ member.image | relative_url }}" alt="{{ member.name }}">
+						{% else %}
+							<img class="member-photo" src="{{ '/images/team/no-body.png' | relative_url }}" alt="{{ member.name }}">
+						{% endif %}
+					</a>
+					<div class="d-flex flex-column flex-grow-1 w-100">
+						<a href="{{ member.url | relative_url }}" class="member-name mb-1">
 							{{ member.name }}
 						</a>
+						{% if member.title %}
+						<p class="text-muted small mb-2 lh-sm">{{ member.title }}</p>
+						{% endif %}
+						{% if member.affiliation %}
+						<p class="text-secondary small fw-medium mt-auto mb-0">
+							<i class="fa-solid fa-building me-1 opacity-75"></i>{{ member.affiliation }}
+						</p>
+						{% endif %}
 					</div>
-    					<p class="note">{{ member.title }}</p>
-    					<p class="note">{{ member.affiliation }}</p>
-  				</div>
+				</div>
 			</div>
-			<div class="bigspacer"></div>
-			<div class="bigspacer"></div>
-        	</div>
-    	{% cycle 'close rows': '', '', '</div>' %}
-    	{% endif %}
-{% endfor %}
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
+{% endif %}
+
 
 
 

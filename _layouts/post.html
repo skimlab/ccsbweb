@@ -2,80 +2,91 @@
 layout: default
 ---
 
-<div class="blog-post">
-	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
-			<div class="media">
-				<div class="media-body">
-					<div class="title media-heading">
-						<a href="{{ page.url | prepend:site.baseurl }}" class="off">{{ page.title }}</a>
-					</div>
-					<p>
-					<div class="smallhead">
-						{{ page.date | date: "%-d %b %Y" }}
+<div class="row mb-5">
+	<div class="col-lg-9 col-xl-8 mx-auto">
+		<article class="blog-post mb-5">
+			<div class="card shadow-sm border" style="border-radius: 8px; border-left: 5px solid #4F2683 !important;">
+				<div class="card-body p-4">
+					<!-- Header / Metadata -->
+					<div class="d-flex flex-wrap align-items-center justify-content-between pb-2 mb-3 border-bottom gap-2">
+						<span class="badge bg-light text-secondary border font-monospace py-1 px-2" style="font-size: 0.8rem; font-weight: normal;">
+							<i class="fa-regular fa-calendar me-1" style="color: #4F2683;"></i> {{ page.date | date: "%-d %b %Y" }}
+						</span>
+						
 						{% if page.author %}
-						by <a class="off" href="
-							{% for member in site.categories.team %}
-								{% if member.name == page.author %}
-									{{ member.url | prepend:site.baseurl }}
-								{% endif %}
-							{% endfor %}
-						">
-						{{ page.author }}
-						</a>
+						{%- assign author_url = nil -%}
+						{%- for member in site.categories.team -%}
+						  {%- if member.name == page.author -%}
+						    {%- assign author_url = member.url | relative_url -%}
+						  {%- endif -%}
+						{%- endfor -%}
+						<span class="text-muted small">by 
+							{% if author_url %}<a class="off text-secondary fw-semibold" href="{{ author_url }}">{{ page.author }}</a>{% else %}<span class="text-secondary fw-semibold">{{ page.author }}</span>{% endif %}
+						</span>
 						{% endif %}
+
 						{% if page.authors %}
-						by
-						<a class="off" href="
-							{% for member in site.categories.team %}
-								{% if member.name == page.authors.first %}
-									{{ member.url | prepend:site.baseurl }}
-								{% endif %}
-							{% endfor %}
-						">
-						{{ page.authors.first }}
-						</a>
-						and
-						<a class="off" href="
-							{% for member in site.categories.team %}
-								{% if member.name == page.authors.last %}
-									{{ member.url | prepend:site.baseurl }}
-								{% endif %}
-							{% endfor %}
-						">
-						{{ page.authors.last }}
-						</a>
+						{%- assign author1_url = nil -%}
+						{%- assign author2_url = nil -%}
+						{%- for member in site.categories.team -%}
+						  {%- if member.name == page.authors.first -%}
+						    {%- assign author1_url = member.url | relative_url -%}
+						  {%- endif -%}
+						  {%- if member.name == page.authors.last -%}
+						    {%- assign author2_url = member.url | relative_url -%}
+						  {%- endif -%}
+						{%- endfor -%}
+						<span class="text-muted small">by 
+							{% if author1_url %}<a class="off text-secondary fw-semibold" href="{{ author1_url }}">{{ page.authors.first }}</a>{% else %}<span class="text-secondary fw-semibold">{{ page.authors.first }}</span>{% endif %}
+							and 
+							{% if author2_url %}<a class="off text-secondary fw-semibold" href="{{ author2_url }}">{{ page.authors.last }}</a>{% else %}<span class="text-secondary fw-semibold">{{ page.authors.last }}</span>{% endif %}
+						</span>
 						{% endif %}
+					</div>
+
+					<!-- Title -->
+					<h1 class="h3 mb-3" style="color: #212529; font-weight: 500; line-height: 1.35;">
+						{{ page.title }}
+					</h1>
+
+					<!-- Tags (if any) -->
+					{% if page.tags %}
+					<div class="d-flex flex-wrap gap-1 mb-3">
+						{% for tag in page.tags %}
+						<span class="badge bg-light text-muted border" style="font-size: 0.7rem; font-weight: normal;">
+							{{ tag }}
+						</span>
+						{% endfor %}
+					</div>
+					{% endif %}
+
+					<!-- Post Content with optional image -->
+					<div class="post post-content clearfix" style="line-height: 1.75; font-size: 1.02rem; color: #334155;">
+						{% if page.image %}
+						<div class="float-md-end ms-md-3 mb-3 text-center">
+							{% if page.link %}
+							<a href="{{ page.link | relative_url }}" target="_blank" rel="noopener noreferrer">
+								<img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid rounded border shadow-xs" style="max-width: 280px; max-height: 260px; object-fit: cover;">
+							</a>
+							{% else %}
+							<img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid rounded border shadow-xs" style="max-width: 280px; max-height: 260px; object-fit: cover;">
+							{% endif %}
+						</div>
+						{% endif %}
+						{{ content }}
 					</div>
 				</div>
+
+				<!-- Footer / Navigation Links -->
+				<div class="card-footer bg-light border-top py-2 px-4 d-flex justify-content-between align-items-center">
+					<a href="{{ '/blog/' | relative_url }}" class="btn btn-sm btn-outline-secondary py-1 px-3" style="font-size: 0.8rem; border-radius: 14px;">
+						<i class="fa-solid fa-arrow-left me-1"></i> All Blog Posts
+					</a>
+					<a href="{{ '/blog/timeline/' | relative_url }}" class="text-muted small text-decoration-none">
+						<i class="fa-solid fa-clock-rotate-left me-1"></i> View Timeline
+					</a>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-1"></div>
+		</article>
 	</div>
-
-	<div class="bigspacer"></div>
-
-	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
-			{% if page.image %}
-			{% if page.link %}
-			<a href="{{ page.link }}">
-				<img class="offset" src="{{ page.image | prepend:site.baseurl }}">
-			</a>
-			{% else %}
-			<img class="offset" src="{{ page.image | prepend:site.baseurl }}">
-			{% endif %}
-			{% endif %}
-			<div class="post">
-				{{ content }}
-			</div>
-		</div>
-		<div class="col-md-1"></div>
-	</div>
-
-	<div class="bigspacer"></div>
-	<div class="spacer"></div>
-
 </div>

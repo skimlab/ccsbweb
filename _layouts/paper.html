@@ -2,88 +2,99 @@
 layout: default
 ---
 
-<div class="row">
+<!-- Hero Header -->
+<div class="row mb-4">
 	<div class="col-md-12">
-		<div class="media">
-			{% if page.image %}
-			<img width=128 class="pull-left pad-right media-object" src="{{ page.image | prepend:site.baseurl }}">
+
+
+		<h1 style="color: #4F2683; font-weight: 700; font-size: 1.75rem; line-height: 1.3; margin-bottom: 0.5rem;">
+			{{ page.title }}
+		</h1>
+		{% if page.authors %}
+		<p class="mb-1" style="font-size: 1rem; color: #374151;">{{ page.authors }}</p>
+		{% endif %}
+		{% if page.ref %}
+		<p class="text-muted small mb-3">{{ page.ref }}</p>
+		{% endif %}
+
+		<!-- Action badges -->
+		<div class="d-flex flex-wrap mt-2" style="gap: 0.5rem;">
+			{% if page.pdf %}
+			<a href="{{ page.pdf | prepend:site.baseurl }}" class="badge rounded-pill border fw-normal px-3 py-2 text-decoration-none"
+			   style="font-size: 0.82rem; background: #4F2683; color: #ffffff; border-color: #4F2683 !important;">
+				<i class="fa-solid fa-file-pdf me-1"></i>PDF
+			</a>
 			{% endif %}
-			<div class="media-body titlebox">
-				<div class="title media-heading">
-					{{ page.title }}
-				</div>
-				<p>
-				<div class="smallhead">
-					{{ page.authors }}
-					{{ page.year }}.
-					<em>{{ page.journal }}</em>
-				</div>
-			</div>
+			{% if page.doi %}
+			<a href="http://dx.doi.org/{{ page.doi }}" class="badge rounded-pill border text-secondary fw-normal px-3 py-2 text-decoration-none"
+			   style="font-size: 0.82rem; background: #f8f9fa;">
+				<i class="fa-solid fa-arrow-up-right-from-square me-1"></i>DOI: {{ page.doi }}
+			</a>
+			{% endif %}
+			{% if page.PMID %}
+			<a href="https://pubmed.ncbi.nlm.nih.gov/{{ page.PMID }}" class="badge rounded-pill border text-secondary fw-normal px-3 py-2 text-decoration-none"
+			   style="font-size: 0.82rem; background: #f8f9fa;">
+				<i class="fa-solid fa-magnifying-glass me-1"></i>PubMed
+			</a>
+			{% endif %}
+			{% if page.github %}
+			<a href="{{ page.github }}" class="badge rounded-pill border text-secondary fw-normal px-3 py-2 text-decoration-none"
+			   style="font-size: 0.82rem; background: #f8f9fa;">
+				<i class="fa-brands fa-github me-1"></i>{{ page.github | remove: 'https://github.com/' | remove: 'http://github.com/' }}
+			</a>
+			{% endif %}
+			{% if page.supplement %}
+			<a href="{{ page.supplement | prepend:site.baseurl }}" class="badge rounded-pill border text-secondary fw-normal px-3 py-2 text-decoration-none"
+			   style="font-size: 0.82rem; background: #f8f9fa;">
+				<i class="fa-solid fa-paperclip me-1"></i>Supplement
+			</a>
+			{% endif %}
 		</div>
+
+		<hr style="border-top: 2px solid #4F2683; margin-top: 1.5rem; margin-bottom: 0;">
 	</div>
 </div>
 
-<div class="bigspacer"></div>
-
+<!-- Content + Sidebar -->
 <div class="row">
-	<div class="col-md-3">
-		<div class="bigspacer"></div>
-		<div class="glyphbox note">
-			{% if page.pdf %}
-			<div class="smallhead">
-				PDF
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-file-text-o fa-fw"></i>
-				<!-- 
-					<a class="off" href="{{ page.pdf | prepend:site.baseurl }}">{{ page.pdf | split: '/' | last }}</a>
-				-->
-					<a class="off" href="{{ page.pdf | prepend:site.baseurl }}">
-						<i class="fa fa-download"></i>
-					</a>				
-			</div>
-			<div class="bigspacer"></div>
-			{% endif %}
-			{% if page.supplement %}
-			<div class="smallhead">
-				Supplement
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-paperclip fa-fw"></i>
-				<a class="off" href="{{ page.supplement | prepend:site.baseurl }}">{{ page.supplement | split: '/' | last }}</a>
-			</div>
-			<div class="bigspacer"></div>
-			{% endif %}
-			{% if page.doi %}
-			<div class="smallhead">
-				DOI
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-external-link fa-fw"></i>
-				<a class="off" href="http://dx.doi.org/{{ page.doi }}">{{ page.doi }}</a>
-			</div>
-			<div class="bigspacer"></div>
-			{% endif %}
-			{% if page.github %}
-			<div class="smallhead">
-				GitHub
-			</div>
-			<div class="pad-left note">
-				<div class="smallspacer"></div>
-				<i class="fa fa-github-alt fa-fw"></i>
-				<a class="off" href="{{ page.github }}">{{ page.github | remove: 'http://github.com/' | remove: 'https://github.com/' }}</a>
-			</div>
-			<div class="bigspacer"></div>
-			{% endif %}
-		</div>
-	</div>
-	<div class="col-md-8">
+	<div class="col-md-8 col-lg-9">
+		{% if content and content != "" %}
 		<div class="post">
 			{{ content }}
 		</div>
+		{% endif %}
 	</div>
-	<div class="col-md-1"></div>
+
+	<!-- Sidebar -->
+	<div class="col-md-4 col-lg-3">
+		{% if page.image %}
+		<div class="mb-4">
+			<img src="{{ page.image | relative_url }}" alt="{{ page.title }}"
+			     style="width: 100%; border-radius: 10px; border: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(79,38,131,0.08);">
+		</div>
+		{% endif %}
+
+		{% if page.keywords %}
+		<div class="card border-0 rounded-3 p-3 mb-4" style="background: #f8f4ff; border: 1px solid #e8dff5 !important;">
+			<p class="small text-muted mb-2 fw-semibold text-uppercase" style="letter-spacing: 0.5px; font-size: 0.75rem;">Keywords</p>
+			<p class="small mb-0" style="color: #374151; line-height: 1.6;">{{ page.keywords }}</p>
+		</div>
+		{% endif %}
+
+
+		{% if page.PMCID %}
+		<div class="mb-3">
+			<p class="small text-muted mb-1 fw-semibold text-uppercase" style="letter-spacing: 0.5px; font-size: 0.75rem;">PMC</p>
+			<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/{{ page.PMCID }}" class="text-decoration-none small" style="color: #4F2683;">
+				{{ page.PMCID }}
+			</a>
+		</div>
+		{% endif %}
+
+		<div class="mt-2">
+			<a href="{{ '/papers/' | relative_url }}" class="btn btn-sm btn-outline-secondary" style="border-radius: 16px; font-size: 0.82rem;">
+				<i class="fa-solid fa-arrow-left me-1"></i>Back to Papers
+			</a>
+		</div>
+	</div>
 </div>

@@ -4,39 +4,43 @@ layout: default
 
 <div class="row">
 	<div class="col-md-12">
-		<div class="title">
+		<h1 class="title mb-3" style="color: #4F2683; font-weight: 400;">
 			CCSB Biweekly Seminar Series
-		</div>
-		<div class="spacer"></div>
+		</h1>
 		<div class="smallhead">
-			<p>CCSB Biweekly Seminar Series is to promote interdisciplinary research across PVAMU campus and beyond, hosted by CRI <a href="{{ site.baseurl }}/">Center for Computational Systems Biology</a>.   We alternate between CCSB researchers and external speakers.  <strong>We use a hybrid format, between in-person meet and virtual meet (Zoom) based on speaker's preference</strong>.  When we meet in person, we will meet in CCSB Conference Room (ELEN 231).  <a href="{% post_url /team/2016-12-15-seungchan-kim %}">Dr. Seungchan Kim</a> is the organizer for the seminar series.  Please <a href="mailto:sekim@pvamu.edu?subject=Suggestion for CCSB Seminars">contact him</a> if you have any suggestion, including speakers.</p>
+			<p>CCSB Biweekly Seminar Series promotes interdisciplinary research across PVAMU campus and beyond, hosted by the CRI <a href="{{ site.baseurl }}/">Center for Computational Systems Biology</a>. We alternate between CCSB researchers and external speakers. <strong>We use a hybrid format, between in-person meet and virtual meet (Zoom) based on speaker's preference</strong>. When we meet in person, we will meet in CCSB Conference Room (ELEN 231). <a href="{% post_url /team/2016-12-15-seungchan-kim %}">Dr. Seungchan Kim</a> is the organizer for the seminar series. Please <a href="mailto:sekim@pvamu.edu?subject=Suggestion for CCSB Seminars">contact him</a> if you have any suggestions, including speakers.</p>
 			
 			<div class="spacer"></div>
-			<table class="seminar-info-table">
-				<tbody>
-					<tr>
-						<td><strong>Day | Time</strong></td>
-						<td>Wednesdays | 12:00pm - 1:00pm</td>
-					</tr>
-					<tr>
-						<td><strong>Place</strong></td>
-						<td>
-							<div>
-								{% if page.zoom_url %}
-								<a href="{{ page.zoom_url }}">Join Zoom Meeting</a> for a virtual meet
-								{% else %}
-								<a href="https://pvpanther.zoom.us/j/98038578074?pwd=ABHJ2XmoJwFCPw2rta24dpVySbmieK.1&from=addon">Join Zoom Meeting</a> for a virtual meet
-								{% endif %}
-							</div>
-							<div>CCSB Conference Room (#231 in New ELEN bldg) for in-person meet</div>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+
+			<!-- Modernized Seminar Info Box -->
+			<div class="card p-3 shadow-sm border mb-4" style="background-color: #fafbfc; border-left: 5px solid #4F2683 !important; border-radius: 8px;">
+				<div class="row g-2 align-items-center">
+					<div class="col-sm-2 col-md-2">
+						<strong class="text-secondary" style="font-size: 0.88rem;">
+							<i class="fa-regular fa-clock me-1" style="color: #4F2683;"></i> Day | Time
+						</strong>
+					</div>
+					<div class="col-sm-10 col-md-10" style="font-size: 0.95rem;">
+						Wednesdays | 12:00pm &ndash; 1:00pm (CST)
+					</div>
+					<div class="col-sm-2 col-md-2">
+						<strong class="text-secondary" style="font-size: 0.88rem;">
+							<i class="fa-solid fa-location-dot me-1" style="color: #4F2683;"></i> Location
+						</strong>
+					</div>
+					<div class="col-sm-10 col-md-10" style="font-size: 0.95rem;">
+						<div>CCSB Conference Room (#231 in New ELEN Bldg) for in-person</div>
+						<div class="mt-1">
+							<a href="{{ page.zoom_url | default: 'https://pvpanther.zoom.us/j/98038578074?pwd=ABHJ2XmoJwFCPw2rta24dpVySbmieK.1&from=addon' }}" class="btn btn-sm btn-outline-primary py-0 px-2" style="border-color: #4F2683; color: #4F2683; font-size: 0.8rem; border-radius: 12px;">
+								<i class="fa-solid fa-video me-1"></i> Join Zoom Meeting
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</div>
 
-		<div class="spacer"></div>
 		<div class="spacer"></div>
 
 		<div class="seminar-schedule">
@@ -46,53 +50,89 @@ layout: default
 	</div>
 </div>	
 
-
 <div class="bigspacer"></div>
+<hr class="my-5" style="border-top: 1px solid #e2e8f0;">
 
+<!-- TALKS ARCHIVE GROUPED BY YEAR -->
+{% assign talks_by_year = site.categories.talks | group_by_exp: "talk", "talk.date | date: '%Y'" %}
 
-<div class="row">
+<div class="row mb-4">
 	<div class="col-md-12">
-		<div class="title">
-			Recent Talks
-		</div>	
+		<div class="d-flex flex-wrap align-items-center justify-content-between pb-3 border-bottom gap-2">
+			<div>
+				<h2 class="head mb-0" style="color: #4F2683; font-weight: 500; font-size: 1.8rem;">
+					All Seminars &amp; Talks Archive
+				</h2>
+			</div>
+			<!-- Jump to Year Navigation -->
+			<div class="d-flex flex-wrap align-items-center gap-1">
+				<span class="text-muted small fw-bold me-1" style="font-size: 0.82rem;">
+					<i class="fa-solid fa-calendar me-1"></i> Jump to Year:
+				</span>
+				{% for group in talks_by_year %}
+					{% if group.name != "" and group.name != nil %}
+					<a href="#talks-year-{{ group.name }}" class="btn btn-sm btn-outline-secondary py-1 px-2 font-monospace" style="font-size: 0.78rem; border-radius: 14px;">
+						{{ group.name }}
+					</a>
+					{% endif %}
+				{% endfor %}
+			</div>
+		</div>
 	</div>
-</div>	
+</div>
 
 <div class="bigspacer"></div>
 
-{% for talk in site.categories.talks %}
-{% unless talk.draft %}
+{% for group in talks_by_year %}
+	{% if group.name != "" and group.name != nil %}
+	<div id="talks-year-{{ group.name }}" class="year-section mb-5" style="scroll-margin-top: 70px;">
+		<div class="d-flex align-items-baseline justify-content-between pb-2 mb-3" style="border-bottom: 2px solid #4F2683;">
+			<h3 class="head mb-0" style="color: #4F2683; font-weight: 500; font-size: 1.5rem;">
+				{{ group.name }}
+			</h3>
+			<span class="badge bg-light text-secondary border font-monospace" style="font-size: 0.78rem; font-weight: normal;">
+				{{ group.items.size }} {% if group.items.size == 1 %}talk{% else %}talks{% endif %}
+			</span>
+		</div>
 
-	{% for member in site.categories.team %}
-		{% if member.title == talk.speaker %}
-			{% assign speaker = member %}
-		{% endif %}
-	{% endfor %}
-
-    {% cycle 'add rows': '<div class="row">', '', '' %}
-		<div class="col-md-4 talkbox">
-			<div class="smallhead">
-				<a href="{{ talk.url | relative_url }}" class="off">{{ talk.title }}</a>
+		<div class="row">
+			{% for talk in group.items %}
+			{% unless talk.draft %}
+			<div class="col-md-4 talkbox mb-4">
+				<div class="d-flex justify-content-between h-100">
+					<div class="flex-grow-1 pe-2">
+						<div class="smallhead">
+							<a href="{{ talk.url | relative_url }}" class="off">{{ talk.title }}</a>
+						</div>
+						<div class="smallspacer"></div>
+						<div class="note text-muted mb-1">
+							{% if talk.venue %}
+								<i class="fa-solid fa-location-dot text-secondary me-1" style="font-size: 0.75rem;"></i>{{ talk.event }} at {{ talk.venue }}
+							{% else %}
+								<i class="fa-solid fa-bullhorn text-secondary me-1" style="font-size: 0.75rem;"></i>{{ talk.event }}
+							{% endif %}
+						</div>
+						<div class="smallnote text-muted">
+							<span>{{ talk.date | date: "%-d %b %Y" }}</span>
+							{% if talk.speaker %}
+							{%- assign speaker_url = nil -%}
+							{%- for member in site.categories.team -%}
+							  {%- if member.name == talk.speaker -%}
+							    {%- assign speaker_url = member.url | relative_url -%}
+							  {%- endif -%}
+							{%- endfor -%}
+							<span class="ms-1">by
+								{% if speaker_url %}<a class="off text-secondary fw-normal" href="{{ speaker_url }}">{{ talk.speaker }}</a>{% else %}<span class="text-secondary fw-normal">{{ talk.speaker }}</span>{% endif %}
+							</span>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+				<div class="bigspacer"></div>
 			</div>
-			<div class="smallspacer"></div>
-      {% if talk.venue %}
-			<div class="note">
-				{{ talk.event }} at {{ talk.venue }}
-			</div>
-      {% else %}
-      <div class="note">
-				{{ talk.event }}
-			</div>
-      {% endif %}
-			<div class="smallspacer"></div>
-			<div class="smallnote">
-				{{ talk.date | date: "%-d %b %Y" }}
-				by <a class="off" href="{{ speaker.url | relative_url }}">{{ talk.speaker }}</a>
-			</div>
-			<div class="bigspacer"></div>
-			<div class="spacer"></div>
-        </div>
-    {% cycle 'close rows': '', '', '</div>' %}
-{% endunless %}
+			{% endunless %}
+			{% endfor %}
+		</div>
+	</div>
+	{% endif %}
 {% endfor %}
-{% cycle 'close rows': '', '</div>', '</div>' %}

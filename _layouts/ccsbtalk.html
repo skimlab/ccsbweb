@@ -2,81 +2,95 @@
 layout: default
 ---
 
-<div class="blog-talk">
-	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
-			<div class="media">
-				<div class="media-body">
-					<div class="title media-heading">
-						<a href="{{ page.url | relative_url }}" class="off">{{ page.title }}</a>
-					</div>
-				</div>
-			</div>
-		</div>
+<!-- Hero Header -->
+<div class="row mb-4">
+	<div class="col-md-12">
+		<h1 style="color: #4F2683; font-weight: 700; font-size: 1.75rem; line-height: 1.3; margin-bottom: 0.5rem;">
+			{{ page.title }}
+		</h1>
+		<hr style="border-top: 2px solid #4F2683; margin-top: 1rem; margin-bottom: 0;">
 	</div>
+</div>
 
-	<div class="bigspacer"></div>
-	<div class="spacer"></div>
+<div class="row">
+	<!-- Main info column -->
+	<div class="col-md-8 col-lg-9">
 
-	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-7">
-			<div class="media">
-				<div class="media-body">
-					<H3>Speaker:
-						<strong>
-						{% if page.speakerurl %}<a class="off" href="{{ page.speakerurl }}">
-							{{page.speaker}}</a>
-						{% else %}
-							{{page.speaker}}
-						{% endif %}
-						</strong>
-					<H3>
-					<H4>When: <strong>{{page.time}}, {{ page.date | date: "%b %-d, %Y" }}</strong></H4>
-					<H4>Where: <strong>{{page.venue}}</strong>
-						{% if page.webinar %}
-						[ <a class="off", href="{{ page.webinar }}">Join Meeting</a> ]
-						{% endif %}
-					</H4>
-					{% if page.recording %}
-						{% if page.recording == "NA" %}
-							<H4>Recording: <em>Per the speaker's request or inadvertently, the talk was not recorded.</em></H4>
-						{% else %}
-							<H4>Recording: [<a class="on", href="{{ page.recording }}">watch</a>]</H4>
-						{% endif %}
+		<!-- Speaker card -->
+		<div class="d-flex align-items-center gap-3 mb-4" style="gap: 1rem !important;">
+			{% if page.photo %}
+			<img src="{{ page.photo | relative_url }}" alt="{{ page.speaker }}"
+			     style="width: 90px; height: 90px; object-fit: cover; object-position: top center; border-radius: 10px; border: 2px solid #cbd5e1; box-shadow: 0 2px 8px rgba(79,38,131,0.10); flex-shrink: 0;">
+			{% endif %}
+			<div>
+				<p class="text-muted mb-1" style="font-size: 0.78rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;">Speaker</p>
+				<p class="mb-1" style="font-size: 1.1rem; font-weight: 600; color: #1e293b;">
+					{% if page.speakerurl %}
+					<a href="{{ page.speakerurl }}" class="off">{{ page.speaker }}</a>
+					{% else %}
+					{{ page.speaker }}
 					{% endif %}
-
-
-					{% if page.talkslide %}
-						{% if page.talkslide != "NA" %}
-							<H4>Talk Slides: [<a class="on", href="{{ page.talkslide }}">download</a>]</H4>
-						{% endif %}
-					{% endif %}
-
-				</div>
+				</p>
+				{% if page.speakertitle %}<p class="text-muted small mb-0">{{ page.speakertitle }}</p>{% endif %}
 			</div>
 		</div>
-		<div class="col-md-3">
-			<img class="offset" src="{{ page.photo | relative_url }}", style="width:125px;float:right;border:3px solid black;margin:10px 10px;">
-		</div>
-		<div class="col-md-1"></div>
 
-		<div class="bigspacer"></div>
+		<!-- Meta pills row -->
+		<div class="d-flex flex-wrap mb-4" style="gap: 0.5rem;">
+			<span class="badge rounded-pill border text-secondary fw-normal px-3 py-2" style="font-size: 0.82rem; background: #f8f9fa;">
+				<i class="fa-solid fa-calendar me-1"></i>{{ page.date | date: "%B %-d, %Y" }}{% if page.time %}, {{ page.time }}{% endif %}
+			</span>
+			{% if page.venue %}
+			<span class="badge rounded-pill border text-secondary fw-normal px-3 py-2" style="font-size: 0.82rem; background: #f8f9fa;">
+				<i class="fa-solid fa-location-dot me-1"></i>{{ page.venue }}
+			</span>
+			{% endif %}
+			{% if page.webinar %}
+			<a href="{{ page.webinar }}" class="badge rounded-pill border fw-normal px-3 py-2 text-decoration-none"
+			   style="font-size: 0.82rem; background: #4F2683; color: #ffffff; border-color: #4F2683 !important;">
+				<i class="fa-solid fa-video me-1"></i>Join Meeting
+			</a>
+			{% endif %}
+			{% if page.recording %}
+				{% if page.recording != "NA" %}
+				<a href="{{ page.recording }}" class="badge rounded-pill border text-secondary fw-normal px-3 py-2 text-decoration-none"
+				   style="font-size: 0.82rem; background: #f8f9fa;">
+					<i class="fa-solid fa-circle-play me-1"></i>Watch Recording
+				</a>
+				{% endif %}
+			{% endif %}
+			{% if page.talkslide %}
+				{% if page.talkslide != "NA" %}
+				<a href="{{ page.talkslide }}" class="badge rounded-pill border text-secondary fw-normal px-3 py-2 text-decoration-none"
+				   style="font-size: 0.82rem; background: #f8f9fa;">
+					<i class="fa-solid fa-display me-1"></i>Slides
+				</a>
+				{% endif %}
+			{% endif %}
+		</div>
+
+		{% if page.recording == "NA" %}
+		<div class="alert alert-light border mb-4" style="font-size: 0.88rem; color: #64748b;">
+			<i class="fa-solid fa-triangle-exclamation me-1"></i>
+			Per the speaker's request or inadvertently, this talk was not recorded.
+		</div>
+		{% endif %}
+
+		<!-- Abstract / body content -->
+		{% if content and content != "" %}
+		<div class="post">
+			{{ content }}
+		</div>
+		{% endif %}
+
 	</div>
 
-
-	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
-			<div class="post">
-				{{ content }}
-			</div>
+	<!-- Sidebar -->
+	<div class="col-md-4 col-lg-3">
+		<div class="mt-2">
+			<a href="{{ '/talks/' | relative_url }}" class="btn btn-sm btn-outline-secondary" style="border-radius: 16px; font-size: 0.82rem;">
+				<i class="fa-solid fa-arrow-left me-1"></i>Back to Talks
+			</a>
 		</div>
-		<div class="col-md-1"></div>
 	</div>
-
-	<div class="bigspacer"></div>
-	<div class="spacer"></div>
-
 </div>
