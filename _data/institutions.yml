@@ -1,0 +1,224 @@
+"Arizona State University":
+  city: "Tempe"
+  state: "AZ"
+  country: "USA"
+  lat: 33.4242
+  lng: -111.9281
+
+"Baylor College of Medicine":
+  city: "Houston"
+  state: "TX"
+  country: "USA"
+  lat: 29.7107
+  lng: -95.3948
+
+"Binghamton University, State University of New York":
+  city: "Binghamton"
+  state: "NY"
+  country: "USA"
+  lat: 42.0886
+  lng: -75.9699
+
+"Brigham Young University":
+  city: "Provo"
+  state: "UT"
+  country: "USA"
+  lat: 40.2518
+  lng: -111.6493
+
+"Brigham and Women's Hospital / Harvard Medical School":
+  city: "Boston"
+  state: "MA"
+  country: "USA"
+  lat: 42.3361
+  lng: -71.1065
+
+"Cold Spring Harbor Laboratory":
+  city: "Cold Spring Harbor"
+  state: "NY"
+  country: "USA"
+  lat: 40.8598
+  lng: -73.4682
+
+"Columbus State University":
+  city: "Columbus"
+  state: "GA"
+  country: "USA"
+  lat: 32.4998
+  lng: -84.9427
+
+"General Sir John Kotelawala Defence University":
+  city: "Ratmalana"
+  state: "Western Province"
+  country: "Sri Lanka"
+  lat: 6.8198
+  lng: 79.8879
+
+"Johns Hopkins University":
+  city: "Baltimore"
+  state: "MD"
+  country: "USA"
+  lat: 39.3299
+  lng: -76.6205
+
+"Microsoft":
+  city: "Redmond"
+  state: "WA"
+  country: "USA"
+  lat: 47.6423
+  lng: -122.1369
+
+"Oklahoma State University":
+  city: "Stillwater"
+  state: "OK"
+  country: "USA"
+  lat: 36.1265
+  lng: -97.0734
+
+"Prairie View A&M University":
+  city: "Prairie View"
+  state: "TX"
+  country: "USA"
+  lat: 30.0931
+  lng: -95.989
+
+"Princeton University":
+  city: "Princeton"
+  state: "NJ"
+  country: "USA"
+  lat: 40.344
+  lng: -74.6514
+
+"Purdue University":
+  city: "West Lafayette"
+  state: "IN"
+  country: "USA"
+  lat: 40.4237
+  lng: -86.9212
+
+"Sandia National Laboratories":
+  city: "Livermore"
+  state: "CA"
+  country: "USA"
+  lat: 37.6749
+  lng: -121.7068
+
+"Stanford University":
+  city: "Stanford"
+  state: "CA"
+  country: "USA"
+  lat: 37.4275
+  lng: -122.1697
+
+"TGen (Translational Genomics Research Institute)":
+  city: "Phoenix"
+  state: "AZ"
+  country: "USA"
+  lat: 33.4533
+  lng: -112.0664
+
+"Texas A&M University":
+  city: "College Station"
+  state: "TX"
+  country: "USA"
+  lat: 30.6187
+  lng: -96.3365
+
+"Texas A&M University Rangel College of Pharmacy":
+  city: "Kingsville"
+  state: "TX"
+  country: "USA"
+  lat: 27.5259
+  lng: -97.8814
+
+"Texas Tech University":
+  city: "Lubbock"
+  state: "TX"
+  country: "USA"
+  lat: 33.5843
+  lng: -101.8783
+
+"The University of Texas MD Anderson Cancer Center":
+  city: "Houston"
+  state: "TX"
+  country: "USA"
+  lat: 29.7071
+  lng: -95.397
+
+"UPMC / University of Pittsburgh School of Medicine":
+  city: "Pittsburgh"
+  state: "PA"
+  country: "USA"
+  lat: 40.443
+  lng: -79.9602
+
+"US Environmental Protection Agency Region 6":
+  city: "Dallas"
+  state: "TX"
+  country: "USA"
+  lat: 32.7844
+  lng: -96.7997
+
+"USC Institute of Translational Genomics":
+  city: "Los Angeles"
+  state: "CA"
+  country: "USA"
+  lat: 34.0625
+  lng: -118.2045
+
+"USDA-ARS Dale Bumpers National Rice Research Center":
+  city: "Stuttgart"
+  state: "AR"
+  country: "USA"
+  lat: 34.4695
+  lng: -91.4154
+
+"University of Alabama":
+  city: "Tuscaloosa"
+  state: "AL"
+  country: "USA"
+  lat: 33.214
+  lng: -87.5391
+
+"University of Central Florida":
+  city: "Orlando"
+  state: "FL"
+  country: "USA"
+  lat: 28.6024
+  lng: -81.2001
+
+"University of Houston":
+  city: "Houston"
+  state: "TX"
+  country: "USA"
+  lat: 29.7199
+  lng: -95.3422
+
+"University of Pittsburgh":
+  city: "Pittsburgh"
+  state: "PA"
+  country: "USA"
+  lat: 40.4444
+  lng: -79.9608
+
+"University of Texas at Arlington":
+  city: "Arlington"
+  state: "TX"
+  country: "USA"
+  lat: 32.7292
+  lng: -97.1131
+
+"University of Texas at Dallas":
+  city: "Richardson"
+  state: "TX"
+  country: "USA"
+  lat: 32.9857
+  lng: -96.7501
+
+"University of Texas at San Antonio":
+  city: "San Antonio"
+  state: "TX"
+  country: "USA"
+  lat: 29.5828
+  lng: -98.6198
+

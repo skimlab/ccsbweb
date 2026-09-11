@@ -1,0 +1,1266 @@
+---
+layout: default
+title: CCSB Seminar Speaker Locations Map
+categories:
+  - talks
+permalink: /talks/map/
+---
+
+<!-- Leaflet & MarkerCluster CSS (vendored locally) -->
+<link rel="stylesheet" href="/assets/vendor/leaflet/leaflet.css" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/MarkerCluster.css" />
+<link rel="stylesheet" href="/assets/vendor/leaflet/MarkerCluster.Default.css" />
+
+<style>
+  :root {
+    --ccsb-purple: #4F2683;
+    --ccsb-purple-dark: #371861;
+    --ccsb-gold: #CFB87C;
+    --ccsb-gold-dark: #b5984f;
+    --ccsb-upcoming: #D97706;
+    --ccsb-upcoming-bg: #FEF3C7;
+  }
+
+  .map-hero {
+    background: linear-gradient(135deg, #fafbfc 0%, #f1f5f9 100%);
+    border: 1px solid #e2e8f0;
+    border-left: 6px solid var(--ccsb-purple);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #speakers-map {
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    border: 1px solid #cbd5e1;
+    z-index: 1;
+    background: #f8fafc;
+  }
+
+  /* Custom Leaflet Pin Styling */
+  .custom-pin {
+    background: transparent !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .custom-pin svg {
+    filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.35));
+    transition: transform 0.15s ease-in-out;
+  }
+  .custom-pin:hover svg {
+    transform: scale(1.15) translateY(-3px);
+  }
+
+  /* Pulse animation for upcoming pins */
+  @keyframes pin-pulse {
+    0% { transform: scale(0.9); opacity: 0.9; }
+    50% { transform: scale(1.25); opacity: 0.3; }
+    100% { transform: scale(0.9); opacity: 0.9; }
+  }
+
+  .upcoming-pulse-ring {
+    animation: pin-pulse 1.8s infinite ease-in-out;
+    transform-origin: center;
+  }
+
+  /* Custom Leaflet Marker Cluster Styling */
+  .marker-cluster-small, .marker-cluster-medium, .marker-cluster-large {
+    background-color: rgba(79, 38, 131, 0.25) !important;
+  }
+  .marker-cluster-small div, .marker-cluster-medium div, .marker-cluster-large div {
+    background-color: var(--ccsb-purple) !important;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 0.85rem;
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  .marker-cluster.has-upcoming {
+    background-color: rgba(217, 119, 6, 0.35) !important;
+  }
+  .marker-cluster.has-upcoming div {
+    background-color: var(--ccsb-upcoming) !important;
+  }
+
+  /* Filter Controls */
+  .filter-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  }
+
+  .btn-preset {
+    font-size: 0.82rem;
+    border-radius: 20px;
+    padding: 0.3rem 0.85rem;
+    font-weight: 500;
+    transition: all 0.15s ease-in-out;
+  }
+  .btn-preset.active {
+    background-color: var(--ccsb-purple) !important;
+    border-color: var(--ccsb-purple) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 6px rgba(79, 38, 131, 0.35);
+  }
+
+  .btn-preset-upcoming {
+    border-color: var(--ccsb-upcoming) !important;
+    color: var(--ccsb-upcoming) !important;
+  }
+  .btn-preset-upcoming.active {
+    background-color: var(--ccsb-upcoming) !important;
+    border-color: var(--ccsb-upcoming) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 6px rgba(217, 119, 6, 0.35);
+  }
+
+  .btn-year-chip {
+    font-size: 0.8rem;
+    border-radius: 16px;
+    padding: 0.22rem 0.65rem;
+    font-family: monospace;
+    font-weight: 600;
+    transition: all 0.15s ease-in-out;
+  }
+  .btn-year-chip.active {
+    background-color: var(--ccsb-purple) !important;
+    border-color: var(--ccsb-purple) !important;
+    color: #ffffff !important;
+  }
+
+  /* Popup styling */
+  .leaflet-popup-content-wrapper {
+    border-radius: 10px;
+    padding: 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  }
+  .leaflet-popup-content {
+    margin: 0;
+    line-height: 1.4;
+    min-width: 270px;
+    max-width: 340px;
+    max-height: 380px;
+    overflow-y: auto;
+  }
+  .popup-header {
+    background: #f8fafc;
+    border-bottom: 2px solid var(--ccsb-purple);
+    padding: 0.75rem 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .popup-body {
+    padding: 0.75rem 1rem;
+  }
+  .popup-talk-item {
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 0.65rem;
+    margin-bottom: 0.65rem;
+  }
+  .popup-talk-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  /* Map Legend */
+  .map-legend {
+    background: rgba(255, 255, 255, 0.96);
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
+  .legend-dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  /* Roster Cards */
+  .roster-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    background: #ffffff;
+  }
+  .roster-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border-color: #cbd5e1;
+  }
+  .roster-card.upcoming-card {
+    border-left: 4px solid var(--ccsb-upcoming);
+    background: #fffdfa;
+  }
+
+  /* Stat Badge Button Trigger */
+  .btn-stat-trigger {
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+    background: #ffffff;
+    color: #1e293b;
+    cursor: pointer;
+    font-size: 0.82rem;
+    font-weight: 500;
+    transition: all 0.18s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    line-height: normal;
+  }
+  .btn-stat-trigger:hover {
+    background: #f8fafc;
+    border-color: var(--ccsb-purple);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(79, 38, 131, 0.15) !important;
+  }
+  .btn-stat-trigger.active-stat {
+    background: #f1f5f9;
+    border-color: var(--ccsb-purple);
+    box-shadow: inset 0 0 0 1px var(--ccsb-purple);
+  }
+
+  /* View Switcher */
+  .btn-view-toggle {
+    font-size: 0.84rem;
+    color: #475569;
+    border: none;
+    transition: all 0.2s ease-in-out;
+  }
+  .btn-view-toggle:hover {
+    color: var(--ccsb-purple);
+  }
+  .btn-view-toggle.active {
+    background-color: var(--ccsb-purple) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 6px rgba(79, 38, 131, 0.35);
+  }
+
+  /* Institutions Bar Plot */
+  .inst-bar-item {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 0.85rem 1.1rem;
+    transition: all 0.18s ease-in-out;
+  }
+  .inst-bar-item:hover {
+    border-color: #cbd5e1;
+    background: #fafbfc;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  }
+  .inst-bar-track {
+    background-color: #f1f5f9;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+  }
+  .inst-bar-fill {
+    height: 100%;
+    border-radius: 6px;
+    background: linear-gradient(90deg, var(--ccsb-purple) 0%, var(--ccsb-purple-dark) 100%);
+    transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .inst-bar-fill.has-upcoming-bar {
+    background: linear-gradient(90deg, #D97706 0%, #B45309 100%);
+  }
+  .inst-rank-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    color: #475569;
+    font-weight: 700;
+    font-size: 0.78rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .inst-rank-1 {
+    background: #FEF3C7;
+    color: #B45309;
+    box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.25);
+  }
+  .inst-rank-2 {
+    background: #EDE9FE;
+    color: var(--ccsb-purple);
+  }
+  .inst-rank-3 {
+    background: #E0E7FF;
+    color: #3730A3;
+  }
+</style>
+
+<!-- Header & Breadcrumbs -->
+<div class="row">
+  <div class="col-md-12">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+      <a href="{{ '/talks/' | relative_url }}" class="btn btn-sm btn-outline-secondary" style="border-radius: 20px; font-size: 0.8rem;">
+        <i class="fa-solid fa-arrow-left me-1"></i>Back to Seminar Schedule
+      </a>
+      <span class="text-muted small">
+        <i class="fa-solid fa-earth-americas me-1" style="color: var(--ccsb-purple);"></i>Geographic Reach
+      </span>
+    </div>
+
+    <div class="map-hero">
+      <h1 class="h3 mb-2" style="color: var(--ccsb-purple); font-weight: 700;">
+        CCSB Seminar Speaker Locations Map
+      </h1>
+      <p class="text-secondary mb-3" style="font-size: 0.95rem;">
+        Explore the national and global network of distinguished speakers and collaborating scholars who have presented at the
+        <a href="{{ '/' | relative_url }}" style="color: var(--ccsb-purple); font-weight: 600;">Center for Computational Systems Biology</a>.
+      </p>
+
+      <!-- Stat Badges -->
+      <div class="d-flex flex-wrap gap-2 align-items-center">
+        <span class="badge bg-white text-dark border px-3 py-2 shadow-xs" style="font-size: 0.82rem;">
+          <i class="fa-solid fa-microphone me-1" style="color: var(--ccsb-purple);"></i>
+          <strong id="stat-total-talks">106</strong> Total Seminars
+        </span>
+        <button type="button" class="badge btn-stat-trigger px-3 py-2 shadow-xs" id="btn-stat-institutions" title="Click to view Institutions &amp; Centers ranking and bar plot" style="font-size: 0.82rem;">
+          <i class="fa-solid fa-ranking-star me-1" style="color: var(--ccsb-purple);"></i>
+          <strong id="stat-institutions">30</strong> Institutions &amp; Centers <i class="fa-solid fa-arrow-trend-up ms-1 text-muted" style="font-size: 0.72rem;"></i>
+        </button>
+        <span class="badge bg-white text-dark border px-3 py-2 shadow-xs" style="font-size: 0.82rem;">
+          <i class="fa-solid fa-calendar-days me-1" style="color: var(--ccsb-purple);"></i>
+          <strong>2019 &ndash; 2026</strong>
+        </span>
+        <span class="badge px-3 py-2 shadow-xs" style="background-color: var(--ccsb-upcoming-bg); color: var(--ccsb-upcoming); border: 1px solid rgba(217,119,6,0.3); font-size: 0.82rem;">
+          <i class="fa-regular fa-clock me-1"></i>
+          <strong id="stat-upcoming">5</strong> Upcoming Seminars
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Controls: Presets, Specific Year Multi-Select & Search -->
+<div class="filter-card">
+  <div class="row g-3 align-items-center">
+    <!-- Preset Groups -->
+    <div class="col-12">
+      <div class="d-flex flex-wrap align-items-center gap-2">
+        <span class="text-secondary small fw-bold me-1" style="font-size: 0.82rem;">
+          <i class="fa-solid fa-layer-group me-1" style="color: var(--ccsb-purple);"></i>Filter Presets:
+        </span>
+        <button type="button" class="btn btn-sm btn-outline-secondary btn-preset active" data-preset="all">
+          All Years (2019–2026)
+        </button>
+        <button type="button" class="btn btn-sm btn-outline-warning btn-preset btn-preset-upcoming" data-preset="upcoming">
+          <i class="fa-solid fa-star me-1"></i>Upcoming Only
+        </button>
+        <button type="button" class="btn btn-sm btn-outline-secondary btn-preset" data-preset="current">
+          Current (2026)
+        </button>
+        <button type="button" class="btn btn-sm btn-outline-secondary btn-preset" data-preset="1-year-back">
+          1-Year Back (2025)
+        </button>
+        <button type="button" class="btn btn-sm btn-outline-secondary btn-preset" data-preset="2-years-back">
+          2-Years Back (2024)
+        </button>
+        <button type="button" class="btn btn-sm btn-outline-secondary btn-preset" data-preset="rest">
+          Earlier (2019–2023)
+        </button>
+      </div>
+    </div>
+
+    <!-- Specific Year Multi-Select -->
+    <div class="col-md-7 col-lg-8">
+      <div class="d-flex flex-wrap align-items-center gap-1">
+        <span class="text-secondary small fw-bold me-2" style="font-size: 0.8rem;">
+          <i class="fa-solid fa-calendar me-1" style="color: var(--ccsb-purple);"></i>Select Specific Years:
+        </span>
+        <div id="year-chips-container" class="d-flex flex-wrap gap-1">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Input -->
+    <div class="col-md-5 col-lg-4">
+      <div class="input-group input-group-sm">
+        <span class="input-group-text bg-light text-muted border-end-0">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+        <input type="text" id="speaker-search-input" class="form-control border-start-0" placeholder="Search speaker, institution, city...">
+        <button class="btn btn-outline-secondary" type="button" id="clear-search-btn" title="Clear search">
+          <i class="fa-solid fa-times"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Active Results Summary & Reset -->
+  <div class="d-flex justify-content-between align-items-center mt-3 pt-2 border-top">
+    <div class="small text-secondary" id="active-filter-summary">
+      Showing <strong>106</strong> seminars across <strong>30</strong> locations
+    </div>
+    <div>
+      <button type="button" class="btn btn-link btn-sm text-decoration-none p-0 text-muted" id="reset-all-filters-btn" style="font-size: 0.8rem;">
+        <i class="fa-solid fa-rotate-left me-1"></i>Reset Filters &amp; Zoom
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- View Switcher & Display Options Toolbar -->
+<div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2" id="view-switcher-toolbar">
+  <div class="btn-group shadow-xs p-1 bg-light rounded-pill border" role="group" id="view-mode-switcher">
+    <button type="button" class="btn btn-sm rounded-pill px-3 py-1 fw-semibold active btn-view-toggle" id="btn-view-map" data-view="map">
+      <i class="fa-solid fa-map-location-dot me-1"></i> Map View
+    </button>
+    <button type="button" class="btn btn-sm rounded-pill px-3 py-1 fw-semibold btn-view-toggle" id="btn-view-chart" data-view="chart">
+      <i class="fa-solid fa-chart-column me-1"></i> Institutions &amp; Centers Ranking
+    </button>
+  </div>
+
+  <div class="d-flex align-items-center gap-2" id="chart-sub-controls" style="display: none;">
+    <span class="small text-muted fw-semibold me-1"><i class="fa-solid fa-sliders me-1"></i>Display:</span>
+    <div class="btn-group btn-group-sm" role="group">
+      <button type="button" class="btn btn-outline-secondary active btn-chart-display-mode" data-mode="bars" title="Horizontal Bar Plot">
+        <i class="fa-solid fa-bars-progress me-1"></i> Bar Plot
+      </button>
+      <button type="button" class="btn btn-outline-secondary btn-chart-display-mode" data-mode="table" title="Detailed Ranking Table">
+        <i class="fa-solid fa-table me-1"></i> Table View
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Map View Container -->
+<div id="view-container-map" class="position-relative mb-4">
+  <div id="speakers-map"></div>
+</div>
+
+<!-- Institutions & Centers Bar Plot / Table Container -->
+<div id="view-container-chart" class="mb-4" style="display: none;">
+  <div class="card shadow-sm border-0" style="border-radius: 12px; overflow: hidden; border: 1px solid #e2e8f0 !important;">
+    <div class="card-header bg-white py-3 px-4 border-bottom d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div>
+        <h3 class="h6 mb-0 fw-bold" style="color: var(--ccsb-purple);">
+          <i class="fa-solid fa-chart-column me-2"></i>Institutions &amp; Centers by Speaker Count
+        </h3>
+        <div class="text-muted small mt-1" id="chart-subtitle">
+          Displaying institutions in descending order of seminar presentations (filtered)
+        </div>
+      </div>
+      <div class="badge bg-light text-secondary border px-3 py-1.5 font-monospace" id="chart-institution-count-badge" style="font-size: 0.78rem;">
+        30 Institutions
+      </div>
+    </div>
+    
+    <div class="card-body p-3 p-md-4">
+      <!-- Bar Plot View -->
+      <div id="institution-bar-plot" class="d-flex flex-column gap-3">
+        <!-- Rendered dynamically via JS -->
+      </div>
+
+      <!-- Table View -->
+      <div id="institution-table-view" class="table-responsive" style="display: none;">
+        <table class="table table-hover align-middle mb-0">
+          <thead class="table-light">
+            <tr style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px;">
+              <th style="width: 50px;" class="text-center">#</th>
+              <th>Institution / Center</th>
+              <th>Location</th>
+              <th class="text-center" style="width: 140px;">Seminars</th>
+              <th class="text-center" style="width: 140px;">Speakers</th>
+              <th class="text-end" style="width: 190px;">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="institution-table-body">
+            <!-- Rendered dynamically via JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Speaker Directory Roster (Synced with filter) -->
+<div class="row mb-5">
+  <div class="col-12">
+    <div class="d-flex justify-content-between align-items-center pb-2 mb-3 border-bottom">
+      <h2 class="h5 mb-0" style="color: var(--ccsb-purple); font-weight: 600;">
+        <i class="fa-solid fa-list-ul me-2"></i>Matching Seminar Speakers (<span id="roster-count">106</span>)
+      </h2>
+      <div class="text-muted small">
+        Click on any location on the map or locate a speaker below
+      </div>
+    </div>
+
+    <div id="speaker-roster" class="row g-3">
+      <!-- Populated dynamically via JS -->
+    </div>
+  </div>
+</div>
+
+<!-- Embed Speaker Data directly from _data/seminar_speakers.json -->
+<script id="seminar-speakers-data" type="application/json">
+{{ site.data.seminar_speakers | jsonify }}
+</script>
+
+<!-- Leaflet & MarkerCluster JS (vendored locally) -->
+<script src="/assets/vendor/leaflet/leaflet.js"></script>
+<script src="/assets/vendor/leaflet/leaflet.markercluster.js"></script>
+
+<script>
+(function () {
+  function initSpeakerMap() {
+    const rawDataElement = document.getElementById("seminar-speakers-data");
+    const mapContainer = document.getElementById("speakers-map");
+    if (!rawDataElement || !mapContainer) return;
+
+    // Check Leaflet loaded
+    if (typeof L === "undefined") {
+      console.error("Leaflet library not loaded yet.");
+      setTimeout(initSpeakerMap, 200);
+      return;
+    }
+
+    let allSpeakers = [];
+    try {
+      allSpeakers = JSON.parse(rawDataElement.textContent);
+    } catch (e) {
+      console.error("Failed to parse seminar speakers data:", e);
+      return;
+    }
+
+    // Available years
+    const availableYears = Array.from(new Set(allSpeakers.map(s => s.year))).sort((a, b) => b - a);
+    let selectedYears = new Set(availableYears);
+    let filterUpcomingOnly = false;
+    let searchQuery = "";
+    let currentView = "map"; // "map" or "chart"
+    let chartDisplayMode = "bars"; // "bars" or "table"
+
+    // Initialize Leaflet Map
+    const map = L.map("speakers-map", {
+      center: [38.5, -96.5],
+      zoom: 4,
+      minZoom: 2,
+      maxZoom: 18,
+      scrollWheelZoom: true
+    });
+
+    // Clean CartoDB Positron tiles
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: "abcd",
+      maxZoom: 20
+    }).addTo(map);
+
+    // Invalidate size after map attaches
+    setTimeout(function() {
+      map.invalidateSize();
+    }, 250);
+
+    // Custom Map Legend
+    const legend = L.control({ position: "bottomleft" });
+    legend.onAdd = function () {
+      const div = L.DomUtil.create("div", "map-legend");
+      div.innerHTML = `
+        <div class="fw-bold mb-1" style="color: var(--ccsb-purple);">Map Legend</div>
+        <div class="d-flex align-items-center mb-1">
+          <span class="legend-dot" style="background: #4F2683;"></span>
+          <span>Past Seminar</span>
+        </div>
+        <div class="d-flex align-items-center mb-1">
+          <span class="legend-dot" style="background: #D97706; box-shadow: 0 0 0 3px rgba(217,119,6,0.3);"></span>
+          <span class="fw-bold" style="color: #B45309;">Upcoming Seminar</span>
+        </div>
+        <div class="d-flex align-items-center">
+          <span class="legend-dot" style="background: rgba(79, 38, 131, 0.4); border: 2px solid #4F2683;"></span>
+          <span>Clustered Institutions (click to expand)</span>
+        </div>
+      `;
+      return div;
+    };
+    legend.addTo(map);
+
+    // Marker Cluster Group or Fallback FeatureGroup
+    let markersGroup;
+    if (typeof L.markerClusterGroup === "function") {
+      markersGroup = L.markerClusterGroup({
+        maxClusterRadius: 40,
+        spiderfyOnMaxZoom: true,
+        showCoverageOnHover: false,
+        zoomToBoundsOnClick: true,
+        iconCreateFunction: function(cluster) {
+          const markers = cluster.getAllChildMarkers();
+          const hasUpcoming = markers.some(m => m.options.hasUpcoming);
+          const count = markers.length;
+          let c = ' marker-cluster-';
+          if (count < 10) c += 'small';
+          else if (count < 30) c += 'medium';
+          else c += 'large';
+
+          if (hasUpcoming) c += ' has-upcoming';
+
+          return new L.DivIcon({
+            html: '<div title="' + count + ' nearby institutions (click to expand)"><span>' + count + '</span></div>',
+            className: 'marker-cluster' + c,
+            iconSize: new L.Point(40, 40)
+          });
+        }
+      });
+    } else {
+      markersGroup = L.featureGroup();
+    }
+    map.addLayer(markersGroup);
+
+    // Generate Year Multi-Select Chips
+    const yearChipsContainer = document.getElementById("year-chips-container");
+    if (yearChipsContainer) {
+      yearChipsContainer.innerHTML = "";
+      availableYears.forEach(year => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "btn btn-sm btn-outline-secondary btn-year-chip active";
+        btn.textContent = year;
+        btn.dataset.year = year;
+        btn.addEventListener("click", function () {
+          const wasUpcoming = filterUpcomingOnly;
+          filterUpcomingOnly = false;
+
+          if (wasUpcoming) {
+            // If coming from Upcoming Only, select specifically this clicked year
+            selectedYears = new Set([year]);
+            document.querySelectorAll(".btn-year-chip").forEach(c => {
+              if (parseInt(c.dataset.year) === year) c.classList.add("active");
+              else c.classList.remove("active");
+            });
+          } else {
+            // Normal multi-select toggle
+            if (selectedYears.has(year)) {
+              if (selectedYears.size > 1) {
+                selectedYears.delete(year);
+                btn.classList.remove("active");
+              }
+            } else {
+              selectedYears.add(year);
+              btn.classList.add("active");
+            }
+          }
+
+          document.querySelectorAll(".btn-preset").forEach(b => b.classList.remove("active"));
+          applyFilters();
+        });
+        yearChipsContainer.appendChild(btn);
+      });
+    }
+
+    // Helper: Pin SVG icon
+    function createPinIcon(isUpcoming) {
+      const pinColor = isUpcoming ? "#D97706" : "#4F2683";
+      const ringStroke = isUpcoming ? "#F59E0B" : "none";
+      const pulseElement = isUpcoming 
+        ? `<circle cx="15" cy="15" r="14" fill="none" stroke="${ringStroke}" stroke-width="2" opacity="0.6" class="upcoming-pulse-ring"/>` 
+        : "";
+
+      const svg = `
+        <svg width="30" height="42" viewBox="0 0 30 42" xmlns="http://www.w3.org/2000/svg">
+          ${pulseElement}
+          <path d="M 15,2 C 7.8,2 2,7.8 2,15 C 2,24.5 15,40 15,40 C 15,40 28,24.5 28,15 C 28,7.8 22.2,2 15,2 Z" fill="${pinColor}" stroke="#ffffff" stroke-width="1.5"/>
+          <circle cx="15" cy="15" r="6" fill="#ffffff"/>
+          <circle cx="15" cy="15" r="3" fill="${pinColor}"/>
+        </svg>
+      `;
+
+      return L.divIcon({
+        className: 'custom-pin',
+        html: svg,
+        iconSize: [30, 42],
+        iconAnchor: [15, 40],
+        popupAnchor: [0, -38]
+      });
+    }
+
+    // Apply Filters & Render Markers
+    function applyFilters() {
+      markersGroup.clearLayers();
+
+      const filtered = allSpeakers.filter(s => {
+        if (filterUpcomingOnly && s.status !== "upcoming") return false;
+        if (!selectedYears.has(s.year)) return false;
+        if (searchQuery) {
+          const q = searchQuery.toLowerCase();
+          const text = (s.speaker + " " + s.institution + " " + s.title + " " + s.city + " " + s.state + " " + (s.affiliation_detail || "")).toLowerCase();
+          if (!text.includes(q)) return false;
+        }
+        return true;
+      });
+
+      // Group talks by coordinates
+      const locationsMap = new Map();
+      filtered.forEach(item => {
+        const coordKey = `${item.lat.toFixed(4)},${item.lng.toFixed(4)}`;
+        if (!locationsMap.has(coordKey)) {
+          locationsMap.set(coordKey, {
+            institution: item.institution,
+            city: item.city,
+            state: item.state,
+            country: item.country,
+            lat: item.lat,
+            lng: item.lng,
+            talks: []
+          });
+        }
+        locationsMap.get(coordKey).talks.push(item);
+      });
+
+      // Build markers
+      const markerList = [];
+      locationsMap.forEach((loc, key) => {
+        const hasUpcoming = loc.talks.some(t => t.status === "upcoming");
+        const icon = createPinIcon(hasUpcoming);
+
+        const marker = L.marker([loc.lat, loc.lng], {
+          icon: icon,
+          hasUpcoming: hasUpcoming,
+          title: `${loc.institution} (${loc.talks.length} talks)`
+        });
+
+        // Popup HTML
+        let popupHtml = `
+          <div class="popup-header">
+            <div class="fw-bold" style="color: var(--ccsb-purple); font-size: 0.95rem;">${loc.institution}</div>
+            <div class="text-muted small"><i class="fa-solid fa-location-dot me-1"></i>${loc.city}${loc.state ? ', ' + loc.state : ''}, ${loc.country} &bull; ${loc.talks.length} ${loc.talks.length === 1 ? 'Seminar' : 'Seminars'}</div>
+          </div>
+          <div class="popup-body">
+        `;
+
+        loc.talks.forEach(t => {
+          const isUp = t.status === "upcoming";
+          const badge = isUp 
+            ? `<span class="badge px-2 py-1 mb-1" style="background: var(--ccsb-upcoming-bg); color: var(--ccsb-upcoming); border: 1px solid rgba(217,119,6,0.4); font-size: 0.72rem;"><i class="fa-regular fa-clock me-1"></i>Upcoming: ${t.date}</span>`
+            : `<span class="badge bg-light text-secondary border px-2 py-0.5 mb-1" style="font-size: 0.72rem;">${t.date}</span>`;
+
+          const photoHtml = t.photo 
+            ? `<img src="${t.photo}" alt="${t.speaker}" style="width: 42px; height: 42px; object-fit: cover; border-radius: 6px; border: 1px solid #cbd5e1; flex-shrink: 0;" onerror="this.style.display='none'">`
+            : `<div style="width: 42px; height: 42px; background: #f1f5f9; border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #64748b;"><i class="fa-solid fa-user"></i></div>`;
+
+          popupHtml += `
+            <div class="popup-talk-item">
+              <div class="d-flex gap-2 align-items-start">
+                ${photoHtml}
+                <div class="flex-grow-1" style="min-width: 0;">
+                  <div class="d-flex align-items-center gap-1">${badge}</div>
+                  <div class="fw-bold text-dark" style="font-size: 0.86rem; line-height: 1.2;">${t.speaker}</div>
+                  ${t.affiliation_detail && t.affiliation_detail !== t.speaker ? `<div class="text-secondary" style="font-size: 0.75rem; line-height: 1.25; margin-top: 2px;">${t.affiliation_detail}</div>` : ''}
+                  <div class="small mt-1 text-truncate" style="font-size: 0.8rem;">
+                    <a href="${t.url}" style="color: var(--ccsb-purple); font-weight: 500;" title="${t.title}">${t.title}</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+
+        popupHtml += `</div>`;
+        marker.bindPopup(popupHtml);
+        markerList.push(marker);
+      });
+
+      markersGroup.addLayers(markerList);
+
+      // Fit map bounds if markers exist
+      if (markerList.length > 0 && currentView === "map") {
+        const groupBounds = L.featureGroup(markerList).getBounds();
+        if (groupBounds.isValid()) {
+          map.fitBounds(groupBounds.pad(0.15));
+        }
+      }
+
+      // Update counters
+      const activeSummary = document.getElementById("active-filter-summary");
+      const rosterCount = document.getElementById("roster-count");
+      const statInstitutions = document.getElementById("stat-institutions");
+      if (activeSummary) {
+        activeSummary.innerHTML = `Showing <strong>${filtered.length}</strong> seminars across <strong>${locationsMap.size}</strong> locations`;
+      }
+      if (rosterCount) {
+        rosterCount.textContent = filtered.length;
+      }
+      if (statInstitutions) {
+        statInstitutions.textContent = locationsMap.size;
+      }
+
+      renderInstitutionBreakdown(filtered);
+      renderRoster(filtered);
+    }
+
+    // Render Roster Listing below Map
+    function renderRoster(talks) {
+      const container = document.getElementById("speaker-roster");
+      if (!container) return;
+
+      if (talks.length === 0) {
+        container.innerHTML = `
+          <div class="col-12 text-center py-5 text-muted">
+            <i class="fa-solid fa-filter-circle-xmark fa-2x mb-2 text-secondary"></i>
+            <p class="mb-0">No seminars match your current filter selection. Try resetting filters.</p>
+          </div>
+        `;
+        return;
+      }
+
+      let html = "";
+      talks.forEach(t => {
+        const isUp = t.status === "upcoming";
+        const cardClass = isUp ? "roster-card upcoming-card" : "roster-card";
+        const badge = isUp 
+          ? `<span class="badge px-2 py-1" style="background: var(--ccsb-upcoming-bg); color: var(--ccsb-upcoming); border: 1px solid rgba(217,119,6,0.3); font-size: 0.75rem;"><i class="fa-regular fa-clock me-1"></i>Upcoming &bull; ${t.date}</span>`
+          : `<span class="badge bg-light text-secondary border px-2 py-1" style="font-size: 0.75rem;"><i class="fa-solid fa-calendar me-1"></i>${t.date}</span>`;
+
+        const avatar = t.photo 
+          ? `<img src="${t.photo}" alt="${t.speaker}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 8px; border: 1px solid #cbd5e1; flex-shrink: 0;" onerror="this.style.display='none'">`
+          : `<div style="width: 50px; height: 50px; background: #e2e8f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #475569;"><i class="fa-solid fa-user fa-lg"></i></div>`;
+
+        html += `
+          <div class="col-md-6 col-lg-4">
+            <div class="${cardClass} p-3 h-100 d-flex flex-column justify-content-between">
+              <div>
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  ${badge}
+                  <span class="badge bg-white text-muted border font-monospace" style="font-size: 0.72rem;">${t.semester}</span>
+                </div>
+                <div class="d-flex gap-2 align-items-start mb-2">
+                  ${avatar}
+                  <div>
+                    <div class="fw-bold text-dark" style="font-size: 0.95rem;">${t.speaker}</div>
+                    <div class="small text-muted" style="font-size: 0.82rem;">
+                      <i class="fa-solid fa-building-columns me-1" style="color: var(--ccsb-purple);"></i>${t.institution}
+                    </div>
+                    ${t.affiliation_detail && t.affiliation_detail !== t.speaker ? `<div class="text-secondary" style="font-size: 0.76rem; line-height: 1.25; margin-top: 1px;">${t.affiliation_detail}</div>` : ''}
+                    <div class="small text-secondary mt-1" style="font-size: 0.78rem;">
+                      <i class="fa-solid fa-location-dot me-1"></i>${t.city}${t.state ? ', ' + t.state : ''}
+                    </div>
+                  </div>
+                </div>
+                <p class="mb-0 text-dark small" style="font-size: 0.85rem; line-height: 1.4;">
+                  <a href="${t.url}" style="color: #1e293b; font-weight: 500;" class="text-decoration-none hover-underline">
+                    ${t.title}
+                  </a>
+                </p>
+              </div>
+              <div class="mt-3 pt-2 border-top d-flex justify-content-between align-items-center">
+                <a href="${t.url}" class="btn btn-sm btn-outline-primary py-0 px-2" style="font-size: 0.78rem; border-color: var(--ccsb-purple); color: var(--ccsb-purple); border-radius: 12px;">
+                  Talk Details &rarr;
+                </a>
+                <button type="button" class="btn btn-sm btn-light border py-0 px-2 btn-zoom-to-pin" data-lat="${t.lat}" data-lng="${t.lng}" style="font-size: 0.78rem; border-radius: 12px;">
+                  <i class="fa-solid fa-map-pin me-1" style="color: var(--ccsb-purple);"></i>Locate
+                </button>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+
+      container.innerHTML = html;
+
+      // Locate buttons
+      container.querySelectorAll(".btn-zoom-to-pin").forEach(btn => {
+        btn.addEventListener("click", function () {
+          const lat = parseFloat(this.dataset.lat);
+          const lng = parseFloat(this.dataset.lng);
+          map.setView([lat, lng], 13, { animate: true });
+          window.scrollTo({ top: document.getElementById("speakers-map").offsetTop - 80, behavior: 'smooth' });
+        });
+      });
+    }
+
+    // Switch between Map and Ranking Chart views
+    function switchView(viewName) {
+      currentView = viewName;
+      const mapContainer = document.getElementById("view-container-map");
+      const chartContainer = document.getElementById("view-container-chart");
+      const chartSubControls = document.getElementById("chart-sub-controls");
+      const btnMap = document.getElementById("btn-view-map");
+      const btnChart = document.getElementById("btn-view-chart");
+      const btnStatInst = document.getElementById("btn-stat-institutions");
+
+      if (viewName === "chart") {
+        if (mapContainer) mapContainer.style.display = "none";
+        if (chartContainer) chartContainer.style.display = "block";
+        if (chartSubControls) chartSubControls.style.setProperty("display", "flex", "important");
+        if (btnMap) btnMap.classList.remove("active");
+        if (btnChart) btnChart.classList.add("active");
+        if (btnStatInst) btnStatInst.classList.add("active-stat");
+      } else {
+        if (mapContainer) mapContainer.style.display = "block";
+        if (chartContainer) chartContainer.style.display = "none";
+        if (chartSubControls) chartSubControls.style.setProperty("display", "none", "important");
+        if (btnMap) btnMap.classList.add("active");
+        if (btnChart) btnChart.classList.remove("active");
+        if (btnStatInst) btnStatInst.classList.remove("active-stat");
+        setTimeout(() => {
+          map.invalidateSize();
+          if (markersGroup && markersGroup.getLayers().length > 0) {
+            const groupBounds = markersGroup.getBounds();
+            if (groupBounds.isValid()) {
+              map.fitBounds(groupBounds.pad(0.15));
+            }
+          }
+        }, 150);
+      }
+    }
+
+    // Render Institution Ranking & Bar Plot
+    function renderInstitutionBreakdown(filtered) {
+      const barContainer = document.getElementById("institution-bar-plot");
+      const tableBody = document.getElementById("institution-table-body");
+      const chartCountBadge = document.getElementById("chart-institution-count-badge");
+      const chartSubtitle = document.getElementById("chart-subtitle");
+
+      // Group filtered talks by institution name
+      const instMap = new Map();
+      filtered.forEach(item => {
+        const instName = item.institution;
+        if (!instMap.has(instName)) {
+          instMap.set(instName, {
+            name: instName,
+            city: item.city,
+            state: item.state,
+            country: item.country,
+            lat: item.lat,
+            lng: item.lng,
+            talks: [],
+            speakers: new Set(),
+            hasUpcoming: false
+          });
+        }
+        const rec = instMap.get(instName);
+        rec.talks.push(item);
+        rec.speakers.add(item.speaker);
+        if (item.status === "upcoming") {
+          rec.hasUpcoming = true;
+        }
+      });
+
+      const institutions = Array.from(instMap.values());
+      institutions.sort((a, b) => b.talks.length - a.talks.length || b.speakers.size - a.speakers.size || a.name.localeCompare(b.name));
+
+      if (chartCountBadge) {
+        chartCountBadge.textContent = `${institutions.length} Institutions`;
+      }
+      if (chartSubtitle) {
+        chartSubtitle.textContent = `Displaying ${institutions.length} institutions in descending order of seminar presentations (${filtered.length} total seminars)`;
+      }
+
+      if (institutions.length === 0) {
+        if (barContainer) {
+          barContainer.innerHTML = `
+            <div class="text-center py-5 text-muted">
+              <i class="fa-solid fa-chart-bar fa-2x mb-2 text-secondary"></i>
+              <p class="mb-0">No institutions match your current filter criteria.</p>
+            </div>
+          `;
+        }
+        if (tableBody) {
+          tableBody.innerHTML = `<tr><td colspan="6" class="text-center py-4 text-muted">No institutions match the filter.</td></tr>`;
+        }
+        return;
+      }
+
+      const maxTalks = institutions[0].talks.length;
+
+      // Render Bar Plot
+      if (barContainer) {
+        let barHtml = "";
+        institutions.forEach((inst, index) => {
+          const rank = index + 1;
+          const rankClass = rank === 1 ? "inst-rank-1" : rank === 2 ? "inst-rank-2" : rank === 3 ? "inst-rank-3" : "";
+          const pct = Math.max(7, Math.round((inst.talks.length / maxTalks) * 100));
+          const fillClass = inst.hasUpcoming ? "inst-bar-fill has-upcoming-bar" : "inst-bar-fill";
+          const upcomingBadge = inst.hasUpcoming 
+            ? `<span class="badge ms-2" style="background:#FEF3C7; color:#D97706; font-size:0.72rem; border:1px solid rgba(217,119,6,0.3);"><i class="fa-regular fa-clock me-1"></i>Upcoming</span>` 
+            : "";
+
+          barHtml += `
+            <div class="inst-bar-item">
+              <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="inst-rank-badge ${rankClass}">#${rank}</div>
+                  <div>
+                    <div class="fw-bold text-dark" style="font-size: 0.95rem;">
+                      ${inst.name} ${upcomingBadge}
+                    </div>
+                    <div class="text-muted small" style="font-size: 0.8rem;">
+                      <i class="fa-solid fa-location-dot me-1"></i>${inst.city}${inst.state ? ', ' + inst.state : ''}, ${inst.country}
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex align-items-center gap-2">
+                  <span class="badge bg-light text-dark border font-monospace px-2 py-1" style="font-size: 0.78rem;">
+                    <strong style="color: var(--ccsb-purple); font-size: 0.86rem;">${inst.talks.length}</strong> ${inst.talks.length === 1 ? 'Seminar' : 'Seminars'}
+                  </span>
+                  <span class="badge bg-white text-secondary border font-monospace px-2 py-1" style="font-size: 0.76rem;">
+                    ${inst.speakers.size} ${inst.speakers.size === 1 ? 'Speaker' : 'Speakers'}
+                  </span>
+                  <div class="btn-group btn-group-sm ms-1">
+                    <button type="button" class="btn btn-outline-secondary py-0 px-2 btn-inst-map" data-lat="${inst.lat}" data-lng="${inst.lng}" data-inst="${inst.name}" title="View on map" style="font-size: 0.75rem; border-radius: 14px 0 0 14px;">
+                      <i class="fa-solid fa-map-location-dot me-1" style="color: var(--ccsb-purple);"></i>Map
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary py-0 px-2 btn-inst-filter" data-inst="${inst.name}" title="Filter matching talks roster" style="font-size: 0.75rem; border-radius: 0 14px 14px 0;">
+                      <i class="fa-solid fa-filter me-1 text-secondary"></i>Roster
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="inst-bar-track">
+                <div class="${fillClass}" style="width: ${pct}%;"></div>
+              </div>
+            </div>
+          `;
+        });
+        barContainer.innerHTML = barHtml;
+      }
+
+      // Render Table View
+      if (tableBody) {
+        let tableHtml = "";
+        institutions.forEach((inst, index) => {
+          const rank = index + 1;
+          const rankClass = rank === 1 ? "inst-rank-1" : rank === 2 ? "inst-rank-2" : rank === 3 ? "inst-rank-3" : "";
+          const upcomingBadge = inst.hasUpcoming 
+            ? `<span class="badge ms-1" style="background:#FEF3C7; color:#D97706; font-size:0.7rem; border:1px solid rgba(217,119,6,0.3);">Upcoming</span>` 
+            : "";
+
+          tableHtml += `
+            <tr>
+              <td class="text-center"><div class="inst-rank-badge ${rankClass} mx-auto" style="width:24px; height:24px; font-size:0.75rem;">${rank}</div></td>
+              <td>
+                <div class="fw-bold" style="color: #1e293b; font-size: 0.9rem;">${inst.name} ${upcomingBadge}</div>
+              </td>
+              <td class="text-muted small">
+                <i class="fa-solid fa-location-dot me-1"></i>${inst.city}${inst.state ? ', ' + inst.state : ''}, ${inst.country}
+              </td>
+              <td class="text-center">
+                <span class="badge bg-light text-dark border font-monospace fw-bold" style="color: var(--ccsb-purple) !important; font-size: 0.82rem;">${inst.talks.length}</span>
+              </td>
+              <td class="text-center">
+                <span class="badge bg-white text-secondary border font-monospace" style="font-size: 0.8rem;">${inst.speakers.size}</span>
+              </td>
+              <td class="text-end">
+                <button type="button" class="btn btn-sm btn-outline-primary py-0 px-2 btn-inst-map me-1" data-lat="${inst.lat}" data-lng="${inst.lng}" data-inst="${inst.name}" style="font-size: 0.75rem; border-radius: 12px; border-color: var(--ccsb-purple); color: var(--ccsb-purple);">
+                  <i class="fa-solid fa-map-location-dot me-1"></i>Map
+                </button>
+                <button type="button" class="btn btn-sm btn-light border py-0 px-2 btn-inst-filter" data-inst="${inst.name}" style="font-size: 0.75rem; border-radius: 12px;">
+                  <i class="fa-solid fa-filter me-1 text-secondary"></i>Roster
+                </button>
+              </td>
+            </tr>
+          `;
+        });
+        tableBody.innerHTML = tableHtml;
+      }
+
+      // Wire Map & Filter action buttons
+      document.querySelectorAll(".btn-inst-map").forEach(btn => {
+        btn.addEventListener("click", function() {
+          const lat = parseFloat(this.dataset.lat);
+          const lng = parseFloat(this.dataset.lng);
+          switchView("map");
+          map.setView([lat, lng], 13, { animate: true });
+          setTimeout(() => {
+            markersGroup.eachLayer(layer => {
+              if (layer.getLatLng && Math.abs(layer.getLatLng().lat - lat) < 0.001 && Math.abs(layer.getLatLng().lng - lng) < 0.001) {
+                if (layer.openPopup) layer.openPopup();
+              }
+            });
+          }, 250);
+          const mapEl = document.getElementById("view-switcher-toolbar");
+          if (mapEl) window.scrollTo({ top: mapEl.offsetTop - 70, behavior: "smooth" });
+        });
+      });
+
+      document.querySelectorAll(".btn-inst-filter").forEach(btn => {
+        btn.addEventListener("click", function() {
+          const instName = this.dataset.inst;
+          const searchInput = document.getElementById("speaker-search-input");
+          if (searchInput) {
+            searchInput.value = instName;
+            searchQuery = instName;
+            applyFilters();
+            const rosterHeading = document.getElementById("speaker-roster");
+            if (rosterHeading) {
+              window.scrollTo({ top: rosterHeading.offsetTop - 120, behavior: "smooth" });
+            }
+          }
+        });
+      });
+    }
+
+    // View Switcher Buttons
+    const btnViewMap = document.getElementById("btn-view-map");
+    const btnViewChart = document.getElementById("btn-view-chart");
+    const btnStatInstitutions = document.getElementById("btn-stat-institutions");
+
+    if (btnViewMap) {
+      btnViewMap.addEventListener("click", () => switchView("map"));
+    }
+    if (btnViewChart) {
+      btnViewChart.addEventListener("click", () => switchView("chart"));
+    }
+    if (btnStatInstitutions) {
+      btnStatInstitutions.addEventListener("click", () => {
+        switchView("chart");
+        const toolbar = document.getElementById("view-switcher-toolbar");
+        if (toolbar) {
+          window.scrollTo({ top: toolbar.offsetTop - 70, behavior: "smooth" });
+        }
+      });
+    }
+
+    // Chart Display Mode Toggle (Bars vs Table)
+    document.querySelectorAll(".btn-chart-display-mode").forEach(btn => {
+      btn.addEventListener("click", function () {
+        document.querySelectorAll(".btn-chart-display-mode").forEach(b => b.classList.remove("active"));
+        this.classList.add("active");
+        const mode = this.dataset.mode;
+        const barPlotEl = document.getElementById("institution-bar-plot");
+        const tableViewEl = document.getElementById("institution-table-view");
+        if (mode === "table") {
+          if (barPlotEl) barPlotEl.style.display = "none";
+          if (tableViewEl) tableViewEl.style.display = "block";
+        } else {
+          if (barPlotEl) barPlotEl.style.display = "flex";
+          if (tableViewEl) tableViewEl.style.display = "none";
+        }
+      });
+    });
+    document.querySelectorAll(".btn-preset").forEach(btn => {
+      btn.addEventListener("click", function () {
+        document.querySelectorAll(".btn-preset").forEach(b => b.classList.remove("active"));
+        this.classList.add("active");
+        const preset = this.dataset.preset;
+
+        filterUpcomingOnly = false;
+        const allYearChips = document.querySelectorAll(".btn-year-chip");
+
+        if (preset === "all") {
+          selectedYears = new Set(availableYears);
+          allYearChips.forEach(c => c.classList.add("active"));
+        } else if (preset === "upcoming") {
+          filterUpcomingOnly = true;
+          selectedYears = new Set([2026]);
+          allYearChips.forEach(c => {
+            if (c.dataset.year === "2026") c.classList.add("active");
+            else c.classList.remove("active");
+          });
+        } else if (preset === "current") {
+          selectedYears = new Set([2026]);
+          allYearChips.forEach(c => {
+            if (c.dataset.year === "2026") c.classList.add("active");
+            else c.classList.remove("active");
+          });
+        } else if (preset === "1-year-back") {
+          selectedYears = new Set([2025]);
+          allYearChips.forEach(c => {
+            if (c.dataset.year === "2025") c.classList.add("active");
+            else c.classList.remove("active");
+          });
+        } else if (preset === "2-years-back") {
+          selectedYears = new Set([2024]);
+          allYearChips.forEach(c => {
+            if (c.dataset.year === "2024") c.classList.add("active");
+            else c.classList.remove("active");
+          });
+        } else if (preset === "rest") {
+          const earlier = availableYears.filter(y => y <= 2023);
+          selectedYears = new Set(earlier);
+          allYearChips.forEach(c => {
+            if (parseInt(c.dataset.year) <= 2023) c.classList.add("active");
+            else c.classList.remove("active");
+          });
+        }
+
+        applyFilters();
+      });
+    });
+
+    // Search Input
+    const searchInput = document.getElementById("speaker-search-input");
+    if (searchInput) {
+      searchInput.addEventListener("input", function () {
+        searchQuery = this.value.trim();
+        applyFilters();
+      });
+    }
+
+    const clearBtn = document.getElementById("clear-search-btn");
+    if (clearBtn) {
+      clearBtn.addEventListener("click", function () {
+        if (searchInput) {
+          searchInput.value = "";
+          searchQuery = "";
+          applyFilters();
+        }
+      });
+    }
+
+    // Reset Filters
+    const resetBtn = document.getElementById("reset-all-filters-btn");
+    if (resetBtn) {
+      resetBtn.addEventListener("click", function () {
+        filterUpcomingOnly = false;
+        searchQuery = "";
+        if (searchInput) searchInput.value = "";
+        selectedYears = new Set(availableYears);
+        document.querySelectorAll(".btn-year-chip").forEach(c => c.classList.add("active"));
+        document.querySelectorAll(".btn-preset").forEach(b => b.classList.remove("active"));
+        const allPreset = document.querySelector('.btn-preset[data-preset="all"]');
+        if (allPreset) allPreset.classList.add("active");
+        applyFilters();
+      });
+    }
+
+    // URL Query Parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const presetParam = urlParams.get("preset");
+    const yearParam = urlParams.get("year") || urlParams.get("years");
+
+    if (presetParam) {
+      const targetPreset = document.querySelector(`.btn-preset[data-preset="${presetParam}"]`);
+      if (targetPreset) targetPreset.click();
+      else applyFilters();
+    } else if (yearParam) {
+      const yrList = yearParam.split(",").map(y => parseInt(y.trim())).filter(y => !isNaN(y));
+      if (yrList.length > 0) {
+        selectedYears = new Set(yrList);
+        filterUpcomingOnly = false;
+        document.querySelectorAll(".btn-preset").forEach(b => b.classList.remove("active"));
+        document.querySelectorAll(".btn-year-chip").forEach(c => {
+          if (selectedYears.has(parseInt(c.dataset.year))) c.classList.add("active");
+          else c.classList.remove("active");
+        });
+      }
+      applyFilters();
+    } else {
+      applyFilters();
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initSpeakerMap);
+  } else {
+    initSpeakerMap();
+  }
+})();
+</script>
