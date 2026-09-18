@@ -12,6 +12,12 @@ future: true
 sass:
   sass_dir: css      # Or 'css' if that's where your partials live
   style: compressed    # Optional: Minifies your CSS for the live site
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - color-functions
+    - global-builtin
+    - if-function
   load_paths:
     - css
     - css/bootstrap-5.3.8/assets/stylesheets
