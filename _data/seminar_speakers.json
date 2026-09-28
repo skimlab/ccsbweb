@@ -72,21 +72,21 @@
     "status": "upcoming"
   },
   {
-    "id": "talk-2026-09-23",
-    "speaker": "Yulyu Yeh, Ph.D.",
+    "id": "talk-2026-09-30",
+    "speaker": "Yulyu Yeh",
     "institution": "Prairie View A&M University",
-    "affiliation_detail": "Yulyu Yeh, Ph.D., Assistant Professor of Health, School of Public and Allied Health, Prairie View A&M University",
+    "affiliation_detail": "[Yulyu Yeh, Ph.D.](https://scholar.google.com/citations?user=bG9PUoAAAAAJ&hl=en), Assistant Professor of Health, [School of Public and Allied Health](https://www.pvamu.edu/spah/), [Prairie View A&M University](https://www.pvamu.edu)",
     "city": "Prairie View",
     "state": "TX",
     "country": "USA",
     "lat": 30.0931,
     "lng": -95.989,
-    "date": "2026-09-23",
+    "date": "2026-09-30",
     "year": 2026,
     "semester": "Fall 2026",
-    "title": "Upcoming CCSB Seminar (Yulyu Yeh, Ph.D.)",
-    "url": "/talks/",
-    "photo": "",
+    "title": "Building Community Capacity for Cancer Prevention Through Family Health History and Community Health Workers",
+    "url": "/blog/talks/CCSB-Seminar-Yeh-Building-Community-Capacity-Cancer-Prevention/",
+    "photo": "/images/talks/speakers/yulyu-yeh.jpg",
     "status": "upcoming"
   },
   {

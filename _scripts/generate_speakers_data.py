@@ -443,6 +443,20 @@ def main():
             speaker_name = extract_speaker_name(speaker_info)
             speaker_name = re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", speaker_name).strip()
             
+            # Store in table_records so Step 3 can leverage full speaker affiliation and links
+            table_records[clean_date] = {
+                "raw_speaker": speaker_info,
+                "title": re.sub(r"<[^>]+>", "", title_info).strip(),
+                "links": re.findall(r"href=[\"']?([^\"' >]+)", speaker_info) + re.findall(r"\[[^\]]+\]\(([^\)]+)\)", speaker_info),
+                "semester": "Fall 2026",
+                "file": "talks/index.md"
+            }
+
+            # If there's already a published blog post for this date, let Step 3 handle it with rich metadata
+            matching_posts = glob.glob(os.path.join(posts_dir, f"{clean_date}-*Seminar*.md"))
+            if matching_posts:
+                continue
+            
             inst_name = detect_institution(speaker_info)
             inst_meta = INSTITUTIONS.get(inst_name, INSTITUTIONS["Prairie View A&M University"])
             
