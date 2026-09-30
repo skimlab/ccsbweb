@@ -4,7 +4,7 @@ title: CCSB@PVAMU / talks
 categories: 
  - talks
 semester: Fall 2026
-zoom_url: "https://pvpanther.zoom.us/j/98038578074?pwd=ABHJ2XmoJwFCPw2rta24dpVySbmieK.1&from=addon"
+zoom_url: "https://pvpanther.zoom.us/j/82727435994?pwd=vYILMYMzQMO76js6WqcM19cWjF3aDp.1"
 ---
 
 <!-- CCSB Speaker Map Thumbnail Feature Card -->
