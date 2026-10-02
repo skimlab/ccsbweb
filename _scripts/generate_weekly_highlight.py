@@ -106,7 +106,7 @@ def parse_post(file_path: Path):
             pass
 
     title = metadata.get("title", file_path.stem)
-    author = metadata.get("author") or metadata.get("authors", "")
+    author = metadata.get("author") or metadata.get("authors", "") or metadata.get("speaker", "")
 
     # Clean up body text for summary context (first 600 characters)
     clean_body = re.sub(r"!\[.*?\]\(.*?\)", "", body_text)
@@ -160,8 +160,8 @@ def get_recent_entries():
 def call_gemini(prompt: str, api_key: str) -> str:
     """Call Google Gemini API using standard urllib."""
     models_to_try = [
+        "gemini-3.8-flash",
         "gemini-2.5-flash",
-        "gemini-1.5-flash",
     ]
 
     for model in models_to_try:
@@ -270,7 +270,9 @@ def make_label(item, item_type: str) -> str:
         elif "RISE" in title:
             return f"RISE Grant ({author})"
         elif "Seminar" in title:
-            return f"Seminar: {author}"
+            return f"Seminar: {author}" if author else "CCSB Seminar"
+        elif "DTMBIO" in title:
+            return "DTMBIO Talk (Yeluri)"
         short_title = title.split(":")[0] if ":" in title else title
         if len(short_title) > 32:
             short_title = short_title[:30].rsplit(" ", 1)[0] + "..."
