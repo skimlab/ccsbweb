@@ -54,7 +54,7 @@
     "status": "upcoming"
   },
   {
-    "id": "talk-2026-10-07",
+    "id": "talk-2026-10-14",
     "speaker": "Tesfamichael Kebrom, Ph.D.",
     "institution": "Prairie View A&M University",
     "affiliation_detail": "Tesfamichael Kebrom, Ph.D., Research Scientist, CCSB/CARC, College of Agriculture, Food, and Natural Resources, Prairie View A&M University",
@@ -63,7 +63,7 @@
     "country": "USA",
     "lat": 30.0931,
     "lng": -95.989,
-    "date": "2026-10-07",
+    "date": "2026-10-14",
     "year": 2026,
     "semester": "Fall 2026",
     "title": "Upcoming CCSB Seminar (Tesfamichael Kebrom, Ph.D.)",
@@ -87,7 +87,7 @@
     "title": "Building Community Capacity for Cancer Prevention Through Family Health History and Community Health Workers",
     "url": "/blog/talks/CCSB-Seminar-Yeh-Building-Community-Capacity-Cancer-Prevention/",
     "photo": "/images/talks/speakers/yulyu-yeh.jpg",
-    "status": "upcoming"
+    "status": "past"
   },
   {
     "id": "talk-2026-04-22",

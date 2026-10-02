@@ -433,7 +433,7 @@ def main():
     # 2. Add upcoming/current semester from talks/index.md (Fall 2026)
     if os.path.exists(current_talks_file):
         idx_content = open(current_talks_file).read()
-        table_rows = re.findall(r"\|\s*\*\*([^\*]+)\*\*\s*\|\s*([^\|]+)\s*\|\s*([^\|]+)\s*\|", idx_content)
+        table_rows = re.findall(r"\|\s*\*\*([^\*]+)\*\*(?:[^\|]*)\|\s*([^\|]+)\s*\|\s*([^\|]+)\s*\|", idx_content)
         for r in table_rows:
             date_str = r[0].strip()
             speaker_info = r[1].strip()
