@@ -68,7 +68,14 @@ def linkify_personnel(text: str, team_members: dict) -> str:
 
             tokens[i] = re.sub(pattern, repl, tokens[i])
 
-    return "".join(tokens)
+    result = "".join(tokens)
+    # Sanitize any unbalanced bold markers
+    if result.count("**") % 2 != 0:
+        # Remove stray lone double asterisks that have no pair
+        result = re.sub(r'(\b\w+)\*\*(?!\*)', r'\1', result)
+        if result.count("**") % 2 != 0:
+            result = re.sub(r'(?<!\*)\*\*(?!\*)', '', result)
+    return result
 
 
 def parse_post(file_path: Path):
@@ -220,6 +227,22 @@ def call_gemini(prompt: str, api_key: str) -> str:
     return ""
 
 
+def format_author_list(author_str: str) -> str:
+    """Format author list with individual bold tags and proper conjunctions."""
+    if not author_str:
+        return ""
+    authors = [a.strip() for a in author_str.split(",") if a.strip()]
+    if not authors:
+        return ""
+    bold_authors = [f"**{a}**" for a in authors]
+    if len(bold_authors) == 1:
+        return bold_authors[0]
+    elif len(bold_authors) == 2:
+        return f"{bold_authors[0]} and {bold_authors[1]}"
+    else:
+        return f"{', '.join(bold_authors[:-1])}, and {bold_authors[-1]}"
+
+
 def generate_fallback_summary(recent_blogs, recent_papers) -> str:
     """Deterministic fallback if API key is not provided or network is offline."""
     top_grant_or_blog = recent_blogs[0] if recent_blogs else None
@@ -231,13 +254,15 @@ def generate_fallback_summary(recent_blogs, recent_papers) -> str:
 
     if top_grant_or_blog:
         author_name = top_grant_or_blog.get('author') or 'center researchers'
+        formatted_authors = format_author_list(author_name)
         parts.append(
-            f"Recent highlights include milestone funding and research initiatives led by **{author_name}** such as '{top_grant_or_blog['title']}'."
+            f"Recent highlights include milestone funding and research initiatives led by {formatted_authors} such as '{top_grant_or_blog['title']}'."
         )
     if top_paper:
         author_name = top_paper.get('author') or 'faculty'
+        formatted_authors = format_author_list(author_name)
         parts.append(
-            f"Concurrently, **{author_name}** published new findings in '{top_paper['title']}', underscoring CCSB's ongoing contributions to scientific discovery and student training."
+            f"Concurrently, {formatted_authors} published new findings in '{top_paper['title']}', underscoring CCSB's ongoing contributions to scientific discovery and student training."
         )
 
     return " ".join(parts)
