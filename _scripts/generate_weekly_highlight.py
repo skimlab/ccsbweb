@@ -244,25 +244,28 @@ def format_author_list(author_str: str) -> str:
 
 
 def generate_fallback_summary(recent_blogs, recent_papers) -> str:
-    """Deterministic fallback if API key is not provided or network is offline."""
-    top_grant_or_blog = recent_blogs[0] if recent_blogs else None
-    top_paper = recent_papers[0] if recent_papers else None
-
+    """Deterministic fallback ensuring all explore highlights are mentioned."""
     parts = [
         "The Center for Computational Systems Biology (CCSB) at Prairie View A&M University continues to advance high-impact research at the intersection of computational sciences, genomics, and artificial intelligence."
     ]
 
-    if top_grant_or_blog:
-        author_name = top_grant_or_blog.get('author') or 'center researchers'
+    for b in recent_blogs[:2]:
+        author_name = b.get('author') or 'center researchers'
+        formatted_authors = format_author_list(author_name)
+        if "Seminar" in b["title"]:
+            parts.append(
+                f"The CCSB Seminar Series recently featured {formatted_authors} for '{b['title']}'."
+            )
+        else:
+            parts.append(
+                f"Recent announcements highlight {formatted_authors} for '{b['title']}'."
+            )
+
+    for p in recent_papers[:2]:
+        author_name = p.get('author') or 'faculty'
         formatted_authors = format_author_list(author_name)
         parts.append(
-            f"Recent highlights include milestone funding and research initiatives led by {formatted_authors} such as '{top_grant_or_blog['title']}'."
-        )
-    if top_paper:
-        author_name = top_paper.get('author') or 'faculty'
-        formatted_authors = format_author_list(author_name)
-        parts.append(
-            f"Concurrently, {formatted_authors} published new findings in '{top_paper['title']}', underscoring CCSB's ongoing contributions to scientific discovery and student training."
+            f"Concurrently, {formatted_authors} published new findings in '{p['title']}', underscoring CCSB's ongoing contributions to scientific discovery and student training."
         )
 
     return " ".join(parts)
@@ -336,6 +339,7 @@ def main():
         "Guidelines:\n"
         "- Exactly one cohesive paragraph.\n"
         "- Bold and highlight the names of all researchers, faculty, PIs, and authors mentioned using markdown bold syntax (e.g., **Dr. Md Hossain Shuvo**, **Dr. Victoria Mgbemena**, **Dr. Tesfamichael Kebrom**, **Dr. Seungchan Kim**).\n"
+        "- Explicitly incorporate and mention each of the featured announcements and publications provided in the context below so all explored items are represented.\n"
         "- Maintain an academic yet accessible, proud tone.\n"
         "- Do NOT include headers, bullet points, introductory phrases (like 'Here is a summary'), or quotation marks.\n\n"
         f"Context:\n{context_text}"
