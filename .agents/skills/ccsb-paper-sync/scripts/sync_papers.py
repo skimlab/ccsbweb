@@ -1,0 +1,1 @@
+../../../_scripts/sync_papers.py

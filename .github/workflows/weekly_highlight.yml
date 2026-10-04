@@ -1,6 +1,14 @@
-name: Weekly Center Highlight Update
+name: Center Highlight Update
 
 on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - '_data/highlight.yml'
+      - '.gitignore'
+      - 'README.md'
+      - '.github/workflows/weekly_paper_sync.yml'
   schedule:
     # Runs every Monday at 13:00 UTC (8:00 AM CST / 9:00 AM CDT)
     - cron: '0 13 * * 1'

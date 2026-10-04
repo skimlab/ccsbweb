@@ -1,10 +1,10 @@
 ---
 layout: paper
 title: "EquiRank: Improved protein-protein interface quality estimation using protein language-model-informed equivariant graph neural networks"
-image: /images/papers/2024-12-15-shuvo-equirank-improved-ppi.jpg
+image: /images/papers/2025-01-02-shuvo-equirank-improved-ppi.jpg
 authors: Shuvo MH, Bhattacharya D
-year: 2024
-ref: Shuvo, Compu. and Struct. Biotech, Dec 2024, vol. 27, 160-170
+year: 2025
+ref: Shuvo & Bhattacharya, Computational and Structural Biotechnology Journal, vol. 27, pp. 160-170, 2025 | | https://doi.org/10.1016/j.csbj.2024.12.015.
 doi: 10.1016/j.csbj.2024.12.015
 github: https://github.com/mhshuvo1/EquiRank
 pdf: https://www.csbj.org/action/showPdf?pii=S2001-0370%2824%2900438-0

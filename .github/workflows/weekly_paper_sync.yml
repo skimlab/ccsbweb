@@ -1,0 +1,63 @@
+name: Weekly Paper Sync
+
+on:
+  schedule:
+    # Runs every Thursday at 14:00 UTC (9:00 AM CST / 10:00 AM CDT)
+    - cron: '0 14 * * 4'
+  workflow_dispatch:
+    inputs:
+      year:
+        description: 'Publication year to sync (leave blank for current year)'
+        required: false
+        default: ''
+        type: string
+
+jobs:
+  sync-papers:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install Pillow pyyaml
+
+      - name: Run Paper Discovery & Sync
+        run: |
+          if [ -n "${{ inputs.year }}" ]; then
+            python3 _scripts/sync_papers.py sync --year ${{ inputs.year }}
+          else
+            python3 _scripts/sync_papers.py sync
+          fi
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Verify Jekyll Build
+        run: |
+          bundle exec jekyll build
+
+      - name: Commit and Push Changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add papers/_posts/ images/papers/
+          if git diff --staged --quiet; then
+            echo "No new papers found. Site is up to date."
+          else
+            git commit -m "Auto-sync new publications by CCSB members [skip ci]"
+            git push origin master
+          fi

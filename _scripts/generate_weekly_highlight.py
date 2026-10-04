@@ -308,6 +308,12 @@ def make_label(item, item_type: str) -> str:
 
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="CCSB Weekly Highlight Generator")
+    parser.add_argument("--dry-run", action="store_true", help="Print highlight without saving to file")
+    parser.add_argument("--summary", type=str, default="", help="Use custom summary text instead of calling API/fallback")
+    args = parser.parse_args()
+
     print("CCSB Weekly Highlight Generator")
     print("--------------------------------")
 
@@ -348,7 +354,10 @@ def main():
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
     summary = ""
 
-    if api_key:
+    if args.summary:
+        print("Using provided custom summary...")
+        summary = args.summary
+    elif api_key:
         print("Calling Gemini API...")
         summary = call_gemini(prompt, api_key)
     else:
@@ -397,9 +406,14 @@ def main():
 
     yaml_content = "\n".join(yaml_lines) + "\n"
 
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_FILE.write_text(yaml_content, encoding="utf-8")
-    print(f"Saved highlight to {OUTPUT_FILE}")
+    if args.dry_run:
+        print("[Dry-Run] Highlight preview generated successfully (no files modified).")
+        print("\n--- YAML Output Preview ---")
+        print(yaml_content)
+    else:
+        OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+        OUTPUT_FILE.write_text(yaml_content, encoding="utf-8")
+        print(f"Saved highlight to {OUTPUT_FILE}")
 
 
 if __name__ == "__main__":

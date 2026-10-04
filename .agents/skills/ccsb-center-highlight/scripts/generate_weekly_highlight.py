@@ -1,0 +1,1 @@
+../../../_scripts/generate_weekly_highlight.py
