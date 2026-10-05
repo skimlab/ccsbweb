@@ -38,6 +38,9 @@ Dr. Kim's research interests include: 1) mathematical modeling of genetic regula
   - Seungchan Kim (PI)
 
 - Center for Cardiopulmonary Vascular-Brain Research (CCVBR)
+    [[more info]]({{ site.baseurl }}/blog/Kim-AHA-SFRN-CCVBR-grant/) |
+    [[more info 2]](https://professional.heart.org/en/research-programs/research-impact/strategic-networks/sfrn-on-inflammation-in-cardiac-and-neurovascular-disease) |
+    [[more info 3]](https://dom.pitt.edu/vmi-and-aging-institute-researchers-to-collaborate-as-part-of-new-aha-sfrn-research-center/)
   - American Heart Association via University of Pittsburgh (04/2024 - 03/2028)
   - Seungchan Kim (site PI); Stephen Chan (UPitts, Primary PI)
 
