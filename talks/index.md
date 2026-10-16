@@ -61,7 +61,7 @@ zoom_url: "https://pvpanther.zoom.us/j/82727435994?pwd=vYILMYMzQMO76js6WqcM19cWj
 						106 Seminars
 					</span>
 					<span class="badge" style="background-color: #FEF3C7; color: #D97706; border: 1px solid rgba(217,119,6,0.3); font-size: 0.72rem;">
-						<i class="fa-regular fa-clock me-1"></i> 4 Upcoming
+						<i class="fa-regular fa-clock me-1"></i> 3 Upcoming
 					</span>
 				</div>
 			</div>
@@ -95,7 +95,7 @@ zoom_url: "https://pvpanther.zoom.us/j/82727435994?pwd=vYILMYMzQMO76js6WqcM19cWj
 | :--- | :--- | :--- |
 | **Sept. 30, 2026** | [Yulyu Yeh, Ph.D.](https://scholar.google.com/citations?user=bG9PUoAAAAAJ&hl=en), Assistant Professor of Health, [School of Public and Allied Health](https://www.pvamu.edu/spah/), [Prairie View A&M University](https://www.pvamu.edu) | [Building Community Capacity for Cancer Prevention Through Family Health History and Community Health Workers]({{ site.baseurl }}/blog/talks/CCSB-Seminar-Yeh-Building-Community-Capacity-Cancer-Prevention/) |
 | **Oct. 14, 2026** | [Sowmya Poosapati, Ph.D.](https://scholar.google.com/citations?user=Kzem7Y8AAAAJ&hl=en), Research Specialist, [CARC](https://www.pvamu.edu/cafnr/homepage-2/research/), [College of Agriculture, Food, and Natural Resources](https://www.pvamu.edu/cafnr/), [Prairie View A&M University](https://www.pvamu.edu) | [Harnessing plant potential and cutting-edge technologies for improved crop traits]({{ site.baseurl }}/blog/talks/CCSB-Seminar-Poosapati-Harnessing-Plant-Potential/) |
-| **Oct. 21, 2026** | [Niki Hayatbini, Ph.D.](https://nikihayat.github.io/), NIH T32 Postdoctoral Fellow, [AIPrN](https://www.pvamu.edu/aiprn/), [Prairie View A&M University](https://www.pvamu.edu) | <span class="badge bg-light text-secondary border font-monospace" style="font-weight: normal;">TBD</span> |
+| **Oct. 21, 2026** | [Niki Hayatbini, Ph.D.](https://nikihayat.github.io/), NIH T32 Postdoctoral Fellow, [AIPrN](https://www.pvamu.edu/aiprn/), [Prairie View A&M University](https://www.pvamu.edu) | [Examining the role of cognitive flexibility and distress tolerance in relation to orthorexia nervosa symptoms]({{ site.baseurl }}/blog/talks/CCSB-Seminar-Hayatbini-Cognitive-Flexibility-Distress-Tolerance/) |
 | **Nov. 04, 2026** | [Lujun Zhai](https://ccsb.pvamu.edu/team/lujun-zhai/), Ph.D., Assistant Research Professor, [CCSB](https://ccsb.pvamu.edu/), [Electrical and Computer Engineering Department](https://www.pvamu.edu/ece/), [Prairie View A&M University](https://www.pvamu.edu/) | <span class="badge bg-light text-secondary border font-monospace" style="font-weight: normal;">TBD</span> |
 | **Nov. 18, 2026** | [Kazeem Olanrewaju](https://www.pvamu.edu/cheg/cheg-faculty-olanrewaju/), Ph.D., Associate Professor, [Chemical Engineering Department](https://www.pvamu.edu/cheg), [Roy G. Perry College of Engineering](https://www.pvamu.edu/engineering/), [Prairie View A&M University](https://www.pvamu.edu) | <span class="badge bg-light text-secondary border font-monospace" style="font-weight: normal;">TBD</span> |
 

@@ -37,9 +37,9 @@
   },
   {
     "id": "talk-2026-10-21",
-    "speaker": "Niki Hayatbini, Ph.D.",
+    "speaker": "Niki Hayatbini",
     "institution": "Prairie View A&M University",
-    "affiliation_detail": "Niki Hayatbini, Ph.D., NIH T32 Postdoctoral Fellow, AIPrN, Prairie View A&M University",
+    "affiliation_detail": "[Niki Hayatbini, Ph.D.](https://nikihayat.github.io/), NIH T32 Postdoctoral Fellow, [AIPrN](https://www.pvamu.edu/aiprn/), [Prairie View A&M University](https://www.pvamu.edu)",
     "city": "Prairie View",
     "state": "TX",
     "country": "USA",
@@ -48,9 +48,9 @@
     "date": "2026-10-21",
     "year": 2026,
     "semester": "Fall 2026",
-    "title": "Upcoming CCSB Seminar (Niki Hayatbini, Ph.D.)",
-    "url": "/talks/",
-    "photo": "",
+    "title": "Examining the role of cognitive flexibility and distress tolerance in relation to orthorexia nervosa symptoms",
+    "url": "/blog/talks/CCSB-Seminar-Hayatbini-Cognitive-Flexibility-Distress-Tolerance/",
+    "photo": "/images/talks/speakers/niki-hayatbini.jpg",
     "status": "upcoming"
   },
   {
@@ -69,7 +69,7 @@
     "title": "Harnessing plant potential and cutting-edge technologies for improved crop traits",
     "url": "/blog/talks/CCSB-Seminar-Poosapati-Harnessing-Plant-Potential/",
     "photo": "/images/talks/speakers/sowmya-poosapati.jpg",
-    "status": "upcoming"
+    "status": "past"
   },
   {
     "id": "talk-2026-09-30",
