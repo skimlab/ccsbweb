@@ -58,7 +58,7 @@ zoom_url: "https://pvpanther.zoom.us/j/82727435994?pwd=vYILMYMzQMO76js6WqcM19cWj
 				</span>
 				<div class="d-flex align-items-center gap-2">
 					<span class="badge bg-light text-secondary border font-monospace" style="font-size: 0.72rem;">
-						106 Seminars
+						107 Seminars
 					</span>
 					<span class="badge" style="background-color: #FEF3C7; color: #D97706; border: 1px solid rgba(217,119,6,0.3); font-size: 0.72rem;">
 						<i class="fa-regular fa-clock me-1"></i> 3 Upcoming
@@ -98,6 +98,7 @@ zoom_url: "https://pvpanther.zoom.us/j/82727435994?pwd=vYILMYMzQMO76js6WqcM19cWj
 | **Oct. 21, 2026** | [Niki Hayatbini, Ph.D.](https://nikihayat.github.io/), NIH T32 Postdoctoral Fellow, [AIPrN](https://www.pvamu.edu/aiprn/), [Prairie View A&M University](https://www.pvamu.edu) | [Examining the role of cognitive flexibility and distress tolerance in relation to orthorexia nervosa symptoms]({{ site.baseurl }}/blog/talks/CCSB-Seminar-Hayatbini-Cognitive-Flexibility-Distress-Tolerance/) |
 | **Nov. 04, 2026** | [Lujun Zhai](https://ccsb.pvamu.edu/team/lujun-zhai/), Ph.D., Assistant Research Professor, [CCSB](https://ccsb.pvamu.edu/), [Electrical and Computer Engineering Department](https://www.pvamu.edu/ece/), [Prairie View A&M University](https://www.pvamu.edu/) | <span class="badge bg-light text-secondary border font-monospace" style="font-weight: normal;">TBD</span> |
 | **Nov. 18, 2026** | [Kazeem Olanrewaju](https://www.pvamu.edu/cheg/cheg-faculty-olanrewaju/), Ph.D., Associate Professor, [Chemical Engineering Department](https://www.pvamu.edu/cheg), [Roy G. Perry College of Engineering](https://www.pvamu.edu/engineering/), [Prairie View A&M University](https://www.pvamu.edu) | <span class="badge bg-light text-secondary border font-monospace" style="font-weight: normal;">TBD</span> |
+| **Dec. 02, 2026** | [Chaodong Wu](https://nutrition.tamu.edu/people/wu-chaodong/), M.D., Ph.D., Professor and Presidential Impact Fellow, [Department of Nutrition](https://nutrition.tamu.edu/), [Texas A&M University](https://www.tamu.edu) | <span class="badge bg-light text-secondary border font-monospace" style="font-weight: normal;">TBD</span> |
 
 ## Previous Seminars
 

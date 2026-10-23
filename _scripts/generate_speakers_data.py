@@ -382,8 +382,10 @@ def extract_speaker_name(speaker_raw):
     if not parts:
         return s
     name = parts[0]
-    if len(parts) > 1 and any(d in parts[1] for d in ["Ph.D.", "MD", "M.D.", "DVM", "Ph.D"]):
-        name += ", " + parts[1]
+    idx = 1
+    while idx < len(parts) and any(d in parts[idx] for d in ["Ph.D.", "MD", "M.D.", "DVM", "Ph.D"]):
+        name += ", " + parts[idx]
+        idx += 1
     return name
 
 def get_semester(year, month):
@@ -440,8 +442,8 @@ def main():
             title_info = r[2].strip()
             
             clean_date = parse_date_str(date_str, "2026")
-            speaker_name = extract_speaker_name(speaker_info)
-            speaker_name = re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", speaker_name).strip()
+            speaker_text_clean = re.sub(r"\[([^\]]+)\]\([^\)]+\)", r"\1", speaker_info)
+            speaker_name = extract_speaker_name(speaker_text_clean)
             
             # Store in table_records so Step 3 can leverage full speaker affiliation and links
             table_records[clean_date] = {

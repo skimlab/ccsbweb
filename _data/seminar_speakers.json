@@ -1,5 +1,23 @@
 [
   {
+    "id": "talk-2026-12-02",
+    "speaker": "Chaodong Wu, M.D., Ph.D.",
+    "institution": "Texas A&M University",
+    "affiliation_detail": "Chaodong Wu, M.D., Ph.D., Professor and Presidential Impact Fellow, Department of Nutrition, Texas A&M University",
+    "city": "College Station",
+    "state": "TX",
+    "country": "USA",
+    "lat": 30.6187,
+    "lng": -96.3365,
+    "date": "2026-12-02",
+    "year": 2026,
+    "semester": "Fall 2026",
+    "title": "Upcoming CCSB Seminar (Chaodong Wu, M.D., Ph.D.)",
+    "url": "/talks/",
+    "photo": "",
+    "status": "upcoming"
+  },
+  {
     "id": "talk-2026-11-18",
     "speaker": "Kazeem Olanrewaju, Ph.D.",
     "institution": "Prairie View A&M University",
@@ -51,7 +69,7 @@
     "title": "Examining the role of cognitive flexibility and distress tolerance in relation to orthorexia nervosa symptoms",
     "url": "/blog/talks/CCSB-Seminar-Hayatbini-Cognitive-Flexibility-Distress-Tolerance/",
     "photo": "/images/talks/speakers/niki-hayatbini.jpg",
-    "status": "upcoming"
+    "status": "past"
   },
   {
     "id": "talk-2026-10-14",
