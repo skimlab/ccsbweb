@@ -1,9 +1,9 @@
 [
   {
     "id": "talk-2026-12-02",
-    "speaker": "Chaodong Wu, M.D., Ph.D.",
+    "speaker": "Chaodong Wu",
     "institution": "Texas A&M University",
-    "affiliation_detail": "Chaodong Wu, M.D., Ph.D., Professor and Presidential Impact Fellow, Department of Nutrition, Texas A&M University",
+    "affiliation_detail": "[Chaodong Wu](https://nutrition.tamu.edu/people/wu-chaodong/), M.D., Ph.D., Professor and Presidential Impact Fellow, [Department of Nutrition](https://nutrition.tamu.edu/), [Texas A&M University](https://www.tamu.edu)",
     "city": "College Station",
     "state": "TX",
     "country": "USA",
@@ -12,9 +12,9 @@
     "date": "2026-12-02",
     "year": 2026,
     "semester": "Fall 2026",
-    "title": "Upcoming CCSB Seminar (Chaodong Wu, M.D., Ph.D.)",
-    "url": "/talks/",
-    "photo": "",
+    "title": "Gut Microbiota Metabolite and Metabolic Diseases",
+    "url": "/blog/talks/CCSB-Seminar-Wu-Gut-Microbiota-Metabolite-Metabolic-Diseases/",
+    "photo": "/images/talks/speakers/chaodong-wu.jpg",
     "status": "upcoming"
   },
   {
