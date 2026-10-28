@@ -37,9 +37,9 @@
   },
   {
     "id": "talk-2026-11-04",
-    "speaker": "Lujun Zhai, Ph.D.",
+    "speaker": "Lujun Zhai",
     "institution": "Prairie View A&M University",
-    "affiliation_detail": "Lujun Zhai, Ph.D., Assistant Research Professor, CCSB, Electrical and Computer Engineering Department, Prairie View A&M University",
+    "affiliation_detail": "[Lujun Zhai](https://ccsb.pvamu.edu/team/lujun-zhai/), Ph.D., Assistant Research Professor, [CCSB](https://ccsb.pvamu.edu/), [Electrical and Computer Engineering Department](https://www.pvamu.edu/ece/), [Prairie View A&M University](https://www.pvamu.edu/)",
     "city": "Prairie View",
     "state": "TX",
     "country": "USA",
@@ -48,9 +48,9 @@
     "date": "2026-11-04",
     "year": 2026,
     "semester": "Fall 2026",
-    "title": "Upcoming CCSB Seminar (Lujun Zhai, Ph.D.)",
-    "url": "/talks/",
-    "photo": "",
+    "title": "Auto Chip: From RTL Generation to Physical Optimization and Verification",
+    "url": "/blog/talks/CCSB-Seminar-Zhai-Auto-Chip-RTL-Generation/",
+    "photo": "/images/talks/speakers/lujun-zhai.jpg",
     "status": "upcoming"
   },
   {
