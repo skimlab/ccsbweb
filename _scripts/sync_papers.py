@@ -563,8 +563,12 @@ def run_sync(target_year=None):
 def verify_build():
     """Runs bundle exec jekyll build to verify site compilation."""
     print("Verifying site build with Jekyll...")
+    env = os.environ.copy()
+    ruby_bin = "/Users/sekim/.rubies/ruby-3.4.1/bin"
+    if os.path.exists(ruby_bin) and ruby_bin not in env.get("PATH", ""):
+        env["PATH"] = f"{ruby_bin}:{env.get('PATH', '')}"
     try:
-        res = subprocess.run(["bundle", "exec", "jekyll", "build"], cwd=REPO_ROOT, capture_output=True, text=True, check=True)
+        res = subprocess.run(["bundle", "exec", "jekyll", "build"], cwd=REPO_ROOT, capture_output=True, text=True, check=True, env=env)
         print("Jekyll build succeeded without errors.")
         return True
     except subprocess.CalledProcessError as e:
