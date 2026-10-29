@@ -12,6 +12,7 @@ scholar:
 image: /images/team/abidemi-omoloja.jpg
 cv: /pdfs/team/abidemi-omoloja-cv.pdf
 alumni: true
+duration: "2022 – 2023"
 ---
 
 Abidemi Omoloja is a PhD student, studying Electrical Engineering in Prairie View A&M University, pursuing multidisciplinary research in biomedical data analysis, artificial intelligence, and machine learning. She completed her bachelor’s degree in Computer science from Ajayi Crowther University, Master’s degree in Computer Science, and MBA from Texas Southern University.

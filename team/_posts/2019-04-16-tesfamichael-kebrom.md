@@ -11,6 +11,7 @@ github:
 scholar: 
 image: /images/team/tesfamichael-kebrom.jpg
 cv: /pdfs/team/tesfamichael-kebrom-cv.pdf
+duration: "2019 – Present"
 ---
 
 

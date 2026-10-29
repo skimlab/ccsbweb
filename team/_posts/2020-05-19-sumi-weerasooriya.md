@@ -12,6 +12,7 @@ scholar:
 image: /images/team/sumi-weerasooriya.jpg
 cv: /pdfs/team/sumi-weerasooriya-cv.pdf
 alumni: true
+duration: "2020 – 2022"
 ---
 
 

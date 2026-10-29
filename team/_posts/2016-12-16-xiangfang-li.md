@@ -9,6 +9,7 @@ email: xili@pvamu.edu
 twitter: 
 github: 
 image: /images/team/xiangfang-li.jpg
+duration: "2016 – Present"
 ---
 
 

@@ -11,6 +11,7 @@ github: ThanmayeeYeluri
 scholar: 
 image: /images/team/thanmayee-yeluri.jpg
 cv: /pdfs/team/thanmayee-yeluri-cv.pdf
+duration: "2024 – Present"
 ---
 
 Thanmayee Yeluri is a dedicated Graduate Research Assistant at Prairie View A&M University, working under the supervision of Dr. Noushin Ghaffari and Dr. Seungchan Kim. She specializes in bioinformatics, machine learning, and epigenomics, with a strong focus on analyzing DNA methylation patterns and gene regulation using computational approaches. Her research applies advanced neural network models to study differentially methylated regions (DMRs) across various species, particularly in non-model organisms. Thanmayee has also worked on precision agriculture projects, IoT-based environmental monitoring systems, and autonomous agricultural robotics, utilizing her expertise in data analytics and predictive modeling.

@@ -11,6 +11,7 @@ github:
 scholar: 
 image: /images/team/victoria-mgbemena.jpg
 cv: /pdfs/team/victoria-mgbemena-cv.pdf
+duration: "2022 – Present"
 ---
 
 
