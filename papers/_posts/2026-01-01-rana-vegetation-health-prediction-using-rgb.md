@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Vegetation Health Prediction Using RGB Images From UAV With Deep Learning"
-image: /images/papers/2026-01-01-rana-vegetation-health-prediction-using-rgb.jpg
+image: 
 authors: Masud Rana, Ram Ray, Xishuang Dong, Lijun Qian
 year: 2026
 ref: Masud Rana et al., IEEE Access, 2026 | | https://doi.org/10.1109/access.2026.3685190

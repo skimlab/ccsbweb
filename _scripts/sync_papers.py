@@ -472,11 +472,19 @@ def create_paper_post(paper_data, thumbnail_img_path=None):
 
     post_filename = f"{slug}.md"
     post_filepath = os.path.join(PAPERS_POSTS_DIR, post_filename)
-    img_filename = f"{slug}.jpg"
-    img_filepath = os.path.join(IMAGES_PAPERS_DIR, img_filename)
 
-    # Format thumbnail
-    create_standard_thumbnail(thumbnail_img_path, img_filepath, title=title, authors=authors, venue=venue)
+    # Format thumbnail only if an actual image/figure is provided
+    img_filepath = None
+    if thumbnail_img_path and os.path.exists(thumbnail_img_path):
+        img_filename = f"{slug}.jpg"
+        target_img_path = os.path.join(IMAGES_PAPERS_DIR, img_filename)
+        if create_standard_thumbnail(thumbnail_img_path, target_img_path, title=title, authors=authors, venue=venue):
+            img_filepath = target_img_path
+            img_line = f"image: /images/papers/{img_filename}"
+        else:
+            img_line = "image: "
+    else:
+        img_line = "image: "
 
     # Build reference citation string
     author_lead = authors.split(",")[0] if authors else "Author"
@@ -496,7 +504,7 @@ def create_paper_post(paper_data, thumbnail_img_path=None):
     content = f"""---
 layout: paper
 title: "{title}"
-image: /images/papers/{img_filename}
+{img_line}
 authors: {authors}
 year: {year}
 ref: {ref}
@@ -517,7 +525,10 @@ PMCID: {pmcid}
         f.write(content)
 
     print(f"Successfully created post: {post_filepath}")
-    print(f"Standardized thumbnail: {img_filepath}")
+    if img_filepath:
+        print(f"Standardized thumbnail: {img_filepath}")
+    else:
+        print("No thumbnail included (no image available).")
     return post_filepath, img_filepath
 
 

@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "A Comprehensive Review of Design and Implementation of Hardware Accelerators"
-image: /images/papers/2026-01-01-etokebe-comprehensive-review-design-and-implementation.jpg
+image: 
 authors: Akanimo Etokebe, Lujun Zhai, Suxia Cui
 year: 2026
 ref: Akanimo Etokebe et al., IEEE Access, 2026 | | https://doi.org/10.1109/access.2026.3676247

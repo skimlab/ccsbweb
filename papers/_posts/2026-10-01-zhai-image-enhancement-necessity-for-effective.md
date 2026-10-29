@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Image enhancement: A necessity for effective underwater object detection?"
-image: /images/papers/2026-10-01-zhai-image-enhancement-necessity-for-effective.jpg
+image: 
 authors: Lujun Zhai, Ye Zhu, Olga Russakovsky, Suxia Cui
 year: 2026
 ref: Lujun Zhai et al., Engineering Applications of Artificial Intelligence, 2026 | | https://doi.org/10.1016/j.engappai.2026.115599

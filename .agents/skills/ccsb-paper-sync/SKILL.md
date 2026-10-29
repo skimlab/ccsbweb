@@ -24,10 +24,10 @@ This skill automates discovering newly published papers co-authored by current C
 4. **Mandatory Approval for Antigravity Agent**:
    - **When running as an Antigravity agent, the agent MUST ALWAYS ask for user approval before creating posts or thumbnail files.**
    - Never write to `papers/_posts/` or `images/papers/` until the user has reviewed the candidate list and explicitly approved the additions.
-5. **Standardized Thumbnails**:
-   - All thumbnail images must be strictly saved to `images/papers/` with an exact 3:2 landscape aspect ratio (`1200×805` px) on a clean white background.
-   - For open-access papers, extract key figures from the PDF.
-   - For paywalled or figure-less papers, synthesize an academic methodology diagram using `generate_image` or the built-in Pillow card renderer.
+5. **Thumbnails**:
+   - Only include a thumbnail if an actual figure or highlight image from the paper is available (e.g., extracted from an open-access PDF or provided by authors).
+   - If a thumbnail image is available, standardize it to `images/papers/` with an exact 3:2 landscape aspect ratio (`1200×805` px) on a clean white background.
+   - **Where there is no thumbnail or highlight image available for a paper, do NOT include one**: leave `image:` empty in frontmatter, and do NOT generate or synthesize placeholder/title cards.
 6. **Validation**:
    - Always run `bundle exec jekyll build` after adding posts to verify zero build errors.
 
@@ -69,9 +69,10 @@ When invoked on a schedule or by user prompt:
    - **WAIT for explicit user confirmation before creating any files.**
 3. **Generate Posts & Thumbnails (Only Upon User Approval)**:
    - For each approved paper:
-     - Check if open-access PDF figures can be extracted, or synthesize a clean 1200×805 architecture diagram using `generate_image`.
+     - Check if an actual figure or highlight image from the paper is available (e.g. extracted from an open-access PDF).
+     - If available, format it to 1200×805 px and save to `images/papers/`.
+     - If NO thumbnail/figure is available, do NOT synthesize or create placeholder cards; leave `image:` empty in frontmatter.
      - Write the Jekyll post in `papers/_posts/` following the site schema.
-     - Save the standardized thumbnail in `images/papers/` at `1200×805` (3:2 landscape).
 4. **Verify Site Build**:
    Run `bundle exec jekyll build` to ensure no build errors or broken references.
 5. **Summarize Additions**:

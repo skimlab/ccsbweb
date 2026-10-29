@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "An Empirical Study on Underwater Image Enhancement for Robust Instance Segmentation"
-image: /images/papers/2026-01-01-zhai-empirical-study-underwater-image-enhancement.jpg
+image: 
 authors: Lujun Zhai, Clivano J. Rolle, Suxia Cui
 year: 2026
 ref: Lujun Zhai et al., Communications in Computer and Information Science, 2026 | | https://doi.org/10.1007/978-3-032-22202-2_37

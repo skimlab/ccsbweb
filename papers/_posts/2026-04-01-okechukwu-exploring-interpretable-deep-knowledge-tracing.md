@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Exploring Interpretable Deep Knowledge Tracing Through Integrating SHAP with LLMs"
-image: /images/papers/2026-04-01-okechukwu-exploring-interpretable-deep-knowledge-tracing.jpg
+image: 
 authors: Uchechukwu Melody Okechukwu, Lin Li, Lijun Qian, Xishuang Dong
 year: 2026
 ref: Uchechukwu Melody Okechukwu et al., 2026 7th International Conference on Artificial Intelligence, Robotics, and Control (AIRC), 2026 | | https://doi.org/10.1109/airc69745.2026.11631408

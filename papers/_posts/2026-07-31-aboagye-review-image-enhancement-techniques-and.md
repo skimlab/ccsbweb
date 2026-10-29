@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Review of Image Enhancement Techniques and FPGA-Based Hardware Implementations"
-image: /images/papers/2026-07-31-aboagye-review-image-enhancement-techniques-and.jpg
+image: 
 authors: Samuel O. Aboagye, Lujun Zhai, Suxia Cui
 year: 2026
 ref: Samuel O. Aboagye et al., Journal of Circuits, Systems and Computers, 2026 | | https://doi.org/10.1142/s0218126626502518

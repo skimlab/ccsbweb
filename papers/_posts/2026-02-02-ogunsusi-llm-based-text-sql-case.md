@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "LLM-based Text-to-SQL: A Case Study of Geospatial Information Retrieval"
-image: /images/papers/2026-02-02-ogunsusi-llm-based-text-sql-case.jpg
+image: 
 authors: Temitayo Olamilekan Ogunsusi, Jose Angel Nguema Azeme Mangue, Weishan Bai, Xinyue Ye, Lijun Qian, Xishuang Dong
 year: 2026
 ref: Temitayo Olamilekan Ogunsusi et al., 2026 IEEE 20th International Conference on Semantic Computing (ICSC), 2026 | | https://doi.org/10.1109/icsc67292.2026.00075

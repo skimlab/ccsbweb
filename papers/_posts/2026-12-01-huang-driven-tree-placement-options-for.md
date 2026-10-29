@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "AI-driven tree placement options for heat mitigation in residential yards"
-image: /images/papers/2026-12-01-huang-driven-tree-placement-options-for.jpg
+image: 
 authors: Tianchen Huang, Xinyue Ye, Wei Zhai, Xishuang Dong, Cuiling Liu, Shoujia Li, Wenjing Gong
 year: 2026
 ref: Tianchen Huang et al., Building and Environment, 2026 | | https://doi.org/10.1016/j.buildenv.2026.115301

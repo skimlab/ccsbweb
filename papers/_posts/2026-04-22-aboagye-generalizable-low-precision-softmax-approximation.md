@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "A Generalizable Low-Precision Softmax Approximation for Small-FPGA Deployment of Vision Transformers"
-image: /images/papers/2026-04-22-aboagye-generalizable-low-precision-softmax-approximation.jpg
+image: 
 authors: Samuel Aboagye, Lujun Zhai, Suxia Cui
 year: 2026
 ref: Samuel Aboagye et al., Electronics, 2026 | | https://doi.org/10.3390/electronics15091774

@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "IntelliTradeAI: A Tri-Signal Fusion Framework for Explainable AI-Powered Financial Market Prediction"
-image: /images/papers/2026-02-20-edgar-intellitradeai-tri-signal-fusion-framework.jpg
+image: 
 authors: Danario Edgar, Noushin Ghaffari, Justin Foreman, Md Hossain Shuvo
 year: 2026
 ref: Danario Edgar et al., IEEE SoutheastCon 2026, 2026 | | https://doi.org/10.1109/southeastcon63549.2026.11476323
