@@ -1,8 +1,10 @@
+{% assign highlighted_papers = site.categories.papers | where_exp: "item", "item.image and item.image != empty and item.image != false" %}
+
 <div id="paperCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
 
 	<!-- Slides -->
 	<div class="carousel-inner" style="border-radius: 12px; border: 2px solid #cbd5e1; box-shadow: 0 4px 16px rgba(79,38,131,0.10); overflow: hidden; padding: 18px 18px 12px 18px; background: #fff;">
-		{% for page in site.categories.papers limit:4 %}
+		{% for page in highlighted_papers limit:4 %}
 		<div class="carousel-item{% if forloop.first %} active{% endif %}">
 			<a href="{{ site.baseurl }}{{ page.url }}">
 				<img src="{{ page.image | relative_url }}"
@@ -35,7 +37,7 @@
 
 	<!-- Dot indicators -->
 	<div class="carousel-indicators ccsb-carousel-indicators">
-		{% for page in site.categories.papers limit:4 %}
+		{% for page in highlighted_papers limit:4 %}
 		<button type="button"
 		        data-bs-target="#paperCarousel"
 		        data-bs-slide-to="{{ forloop.index0 }}"

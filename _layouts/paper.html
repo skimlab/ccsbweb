@@ -67,7 +67,7 @@ layout: default
 
 	<!-- Sidebar -->
 	<div class="col-md-4 col-lg-3">
-		{% if page.image %}
+		{% if page.image and page.image != "" and page.image != empty %}
 		<div class="mb-4">
 			<img src="{{ page.image | relative_url }}" alt="{{ page.title }}"
 			     style="width: 100%; border-radius: 10px; border: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(79,38,131,0.08);">
