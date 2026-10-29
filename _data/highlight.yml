@@ -2,7 +2,7 @@
 updated_at: "2026-10-28"
 period: "Week of October 26, 2026"
 summary: >
-  The Center for Computational Systems Biology (CCSB) at Prairie View A&M University continues to drive multidisciplinary discovery across artificial intelligence, genomics, and metabolic health. In upcoming CCSB Seminar Series presentations, [**Dr. Lujun Zhai**](/team/lujun-zhai/) will discuss AI-assisted RTL generation and physical design automation for electronic design automation (EDA), while **Dr. Chaodong Wu** from Texas A&M University will explore the therapeutic potential of gut microbiota metabolites in metabolic disease. In recent publications, [**Thanmayee Yeluri**](/team/thanmayee-yeluri/) and [**Dr. Seungchan Kim**](/team/seungchan-kim/) introduced a multimodal machine learning framework incorporating cell-specific regulatory features for single-cell DNA methylation prediction. In agricultural biosciences, [**Dr. Tesfamichael H. Kebrom**](/team/tesfamichael-kebrom/) and collaborators demonstrated how seed size critically impacts manure phytotoxicity bioassays, reflecting CCSB’s sustained leadership in impactful research and student training.
+  The Center for Computational Systems Biology (CCSB) at Prairie View A&M University continues to advance multidisciplinary discovery spanning artificial intelligence, genomics, and computational engineering. As part of the upcoming CCSB Seminar Series, [**Dr. Lujun Zhai**](/team/lujun-zhai/) will present on AI-assisted RTL generation and physical design automation for electronic design automation (EDA), while **Dr. Chaodong Wu** of Texas A&M University will share insights into the therapeutic potential of gut microbiota metabolites. In recent publications, [**Dr. Xishuang Dong**](/team/xishuang-dong/) and collaborators introduced AI-driven environmental modeling frameworks in *Building and Environment*, while [**Thanmayee Yeluri**](/team/thanmayee-yeluri/) and [**Dr. Seungchan Kim**](/team/seungchan-kim/) established a multimodal machine learning framework incorporating cell-specific regulatory features for single-cell DNA methylation prediction.
 recent_highlights:
   - title: "[CCSB Seminar Series] Gut Microbiota Metabolite and Metabolic Diseases"
     label: "Seminar: Chaodong Wu"
@@ -14,13 +14,13 @@ recent_highlights:
     url: "/blog/CCSB-Seminar-Zhai-Auto-Chip-RTL-Generation/"
     type: "blog"
     date: "2026-11-04"
+  - title: "AI-driven tree placement options for heat mitigation in residential yards"
+    label: "Paper: AI-driven tree placement... (Huang)"
+    url: "/papers/huang-driven-tree-placement-options-for/"
+    type: "paper"
+    date: "2026-12-01"
   - title: "Multimodal Machine Learning with Cell-Specific Regulatory Features for Single-Cell DNA Methylation Prediction"
     label: "Paper: Multimodal Machine Learning... (Yeluri)"
     url: "/papers/yeluri-multimodal-ml-dna-methylation/"
     type: "paper"
     date: "2026-10-06"
-  - title: "Seed size influences the germination outcome of manure phytotoxicity bioassays"
-    label: "Paper: Seed size influences the... (Kebrom)"
-    url: "/papers/kebrom-seed-size-influences/"
-    type: "paper"
-    date: "2026-09-01"
