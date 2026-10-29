@@ -10,6 +10,7 @@ twitter:
 github: 
 image: /images/team/dumitru-iacobas.jpg
 cv: /pdfs/team/dumitru-iacobas-cv.pdf
+duration: "2017 – 2023"
 alumni: true
 ---
 

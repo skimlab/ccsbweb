@@ -12,6 +12,7 @@ scholar:
 image: /images/team/md-hossain-shuvo.jpg
 cv: /pdfs/team/md-hossain-shuvo-cv.pdf
 homepage: https://mdhossainshuvo.github.io
+duration: "2024 – Present"
 ---
 
 

@@ -12,6 +12,7 @@ scholar:
 image: /images/team/lujun-zhai.jpg
 cv: /pdfs/team/lujun-zhai-cv.pdf
 homepage: 
+duration: "2026 – Present"
 ---
 
 

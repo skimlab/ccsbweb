@@ -23,8 +23,13 @@ layout: default
 				<p class="text-muted mb-1" style="font-size: 1.05rem;">{{ member.title }}</p>
 				{% endif %}
 				{% if member.affiliation %}
-				<p class="text-secondary small mb-2">
+				<p class="text-secondary small mb-1">
 					<i class="fa-solid fa-building me-1 opacity-75"></i>{{ member.affiliation }}
+				</p>
+				{% endif %}
+				{% if member.duration %}
+				<p class="text-secondary small mb-2">
+					<i class="fa-regular fa-calendar-check me-1 opacity-75"></i>CCSB Membership: {{ member.duration }}
 				</p>
 				{% endif %}
 				<!-- Quick links row -->
@@ -189,6 +194,15 @@ layout: default
 
 	<!-- Sidebar: secondary links / calendar -->
 	<div class="col-md-4 col-lg-3">
+		{% if member.duration %}
+		<div class="card border-0 rounded-3 p-3 mb-4" style="background: #f8f4ff; border: 1px solid #e8dff5 !important;">
+			<p class="small text-muted mb-1 fw-semibold text-uppercase" style="letter-spacing: 0.5px; font-size: 0.75rem;">CCSB Membership</p>
+			<p class="small mb-0 fw-medium" style="color: #4F2683; font-size: 0.95rem;">
+				<i class="fa-regular fa-calendar-check me-1"></i>{{ member.duration }}
+			</p>
+		</div>
+		{% endif %}
+
 		{% if member.calendar %}
 		<div class="card border-0 rounded-3 p-3 mb-4" style="background: #f8f4ff; border: 1px solid #e8dff5 !important;">
 			<p class="small text-muted mb-2 fw-semibold text-uppercase" style="letter-spacing: 0.5px; font-size: 0.75rem;">Schedule</p>
