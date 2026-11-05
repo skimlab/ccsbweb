@@ -91,14 +91,52 @@ zoom_url: "https://pvpanther.zoom.us/j/82727435994?pwd=vYILMYMzQMO76js6WqcM19cWj
 
 <h2 class="mb-3" style="color: #4F2683; font-weight: 600;">Schedule for Fall 2026</h2>
 
-| Date | Speaker | Title |
-| :--- | :--- | :--- |
-| **Sept. 30, 2026** | [Yulyu Yeh, Ph.D.](https://scholar.google.com/citations?user=bG9PUoAAAAAJ&hl=en), Assistant Professor of Health, [School of Public and Allied Health](https://www.pvamu.edu/spah/), [Prairie View A&M University](https://www.pvamu.edu) | [Building Community Capacity for Cancer Prevention Through Family Health History and Community Health Workers]({{ site.baseurl }}/blog/talks/CCSB-Seminar-Yeh-Building-Community-Capacity-Cancer-Prevention/) |
-| **Oct. 14, 2026** | [Sowmya Poosapati, Ph.D.](https://scholar.google.com/citations?user=Kzem7Y8AAAAJ&hl=en), Research Specialist, [CARC](https://www.pvamu.edu/cafnr/homepage-2/research/), [College of Agriculture, Food, and Natural Resources](https://www.pvamu.edu/cafnr/), [Prairie View A&M University](https://www.pvamu.edu) | [Harnessing plant potential and cutting-edge technologies for improved crop traits]({{ site.baseurl }}/blog/talks/CCSB-Seminar-Poosapati-Harnessing-Plant-Potential/) |
-| **Oct. 21, 2026** | [Niki Hayatbini, Ph.D.](https://nikihayat.github.io/), NIH T32 Postdoctoral Fellow, [AIPrN](https://www.pvamu.edu/aiprn/), [Prairie View A&M University](https://www.pvamu.edu) | [Examining the role of cognitive flexibility and distress tolerance in relation to orthorexia nervosa symptoms]({{ site.baseurl }}/blog/talks/CCSB-Seminar-Hayatbini-Cognitive-Flexibility-Distress-Tolerance/) |
-| **Nov. 04, 2026** | [Lujun Zhai](https://ccsb.pvamu.edu/team/lujun-zhai/), Ph.D., Assistant Research Professor, [CCSB](https://ccsb.pvamu.edu/), [Electrical and Computer Engineering Department](https://www.pvamu.edu/ece/), [Prairie View A&M University](https://www.pvamu.edu/) | [Auto Chip: From RTL Generation to Physical Optimization and Verification]({{ site.baseurl }}/blog/talks/CCSB-Seminar-Zhai-Auto-Chip-RTL-Generation/) <a href="https://pvpanther.zoom.us/rec/share/iLoSA4K2M3HpkMFm2NQ2eTFanf5kFQw4UX4OyAw6N7YBxUC0fdJCoMroii8IF9Rm.RmqMb13UJIzzwQnp" class="badge badge-watch" target="_blank"><i class="fa-solid fa-circle-play me-1"></i>Watch</a> |
-| **Nov. 18, 2026** | [Kazeem Olanrewaju](https://www.pvamu.edu/cheg/cheg-faculty-olanrewaju/), Ph.D., Associate Professor, [Chemical Engineering Department](https://www.pvamu.edu/cheg), [Roy G. Perry College of Engineering](https://www.pvamu.edu/engineering/), [Prairie View A&M University](https://www.pvamu.edu) | <span class="badge bg-light text-secondary border font-monospace" style="font-weight: normal;">TBD</span> |
-| **Dec. 02, 2026** | [Chaodong Wu](https://nutrition.tamu.edu/people/wu-chaodong/), M.D., Ph.D., Professor and Presidential Impact Fellow, [Department of Nutrition](https://nutrition.tamu.edu/), [Texas A&M University](https://www.tamu.edu) | [Gut Microbiota Metabolite and Metabolic Diseases]({{ site.baseurl }}/blog/talks/CCSB-Seminar-Wu-Gut-Microbiota-Metabolite-Metabolic-Diseases/) |
+<table class="table" style="table-layout: fixed; width: 100%;">
+<colgroup>
+  <col style="width: 14%;">
+  <col style="width: 35%;">
+  <col style="width: 51%;">
+</colgroup>
+<thead>
+<tr>
+  <th style="width: 14%;">Date</th>
+  <th style="width: 35%;">Speaker</th>
+  <th style="width: 51%;">Title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Sept. 30, 2026</strong></td>
+  <td><a href="https://scholar.google.com/citations?user=bG9PUoAAAAAJ&hl=en"><strong>Yulyu Yeh</strong></a>, Ph.D., Assistant Professor of Health, <a href="https://www.pvamu.edu/spah/">School of Public and Allied Health</a>, <a href="https://www.pvamu.edu">Prairie View A&amp;M University</a></td>
+  <td><a href="{{ site.baseurl }}/blog/talks/CCSB-Seminar-Yeh-Building-Community-Capacity-Cancer-Prevention/">Building Community Capacity for Cancer Prevention Through Family Health History and Community Health Workers</a></td>
+</tr>
+<tr>
+  <td><strong>Oct. 14, 2026</strong></td>
+  <td><a href="https://scholar.google.com/citations?user=Kzem7Y8AAAAJ&hl=en"><strong>Sowmya Poosapati</strong></a>, Ph.D., Research Specialist, <a href="https://www.pvamu.edu/cafnr/homepage-2/research/">CARC</a>, <a href="https://www.pvamu.edu/cafnr/">College of Agriculture, Food, and Natural Resources</a>, <a href="https://www.pvamu.edu">Prairie View A&amp;M University</a></td>
+  <td><a href="{{ site.baseurl }}/blog/talks/CCSB-Seminar-Poosapati-Harnessing-Plant-Potential/">Harnessing plant potential and cutting-edge technologies for improved crop traits</a></td>
+</tr>
+<tr>
+  <td><strong>Oct. 21, 2026</strong></td>
+  <td><a href="https://nikihayat.github.io/"><strong>Niki Hayatbini</strong></a>, Ph.D., NIH T32 Postdoctoral Fellow, <a href="https://www.pvamu.edu/aiprn/">AIPrN</a>, <a href="https://www.pvamu.edu">Prairie View A&amp;M University</a></td>
+  <td><a href="{{ site.baseurl }}/blog/talks/CCSB-Seminar-Hayatbini-Cognitive-Flexibility-Distress-Tolerance/">Examining the role of cognitive flexibility and distress tolerance in relation to orthorexia nervosa symptoms</a></td>
+</tr>
+<tr>
+  <td><strong>Nov. 04, 2026</strong></td>
+  <td><a href="https://ccsb.pvamu.edu/team/lujun-zhai/"><strong>Lujun Zhai</strong></a>, Ph.D., Assistant Research Professor, <a href="https://ccsb.pvamu.edu/">CCSB</a>, <a href="https://www.pvamu.edu/ece/">Electrical and Computer Engineering Department</a>, <a href="https://www.pvamu.edu/">Prairie View A&amp;M University</a></td>
+  <td><a href="{{ site.baseurl }}/blog/talks/CCSB-Seminar-Zhai-Auto-Chip-RTL-Generation/">Auto Chip: From RTL Generation to Physical Optimization and Verification</a> <a href="https://pvpanther.zoom.us/rec/share/iLoSA4K2M3HpkMFm2NQ2eTFanf5kFQw4UX4OyAw6N7YBxUC0fdJCoMroii8IF9Rm.RmqMb13UJIzzwQnp" class="badge badge-watch ms-2" target="_blank" style="background-color: #FEF2F2 !important; color: #DC2626 !important; border: 1px solid rgba(220,38,38,0.35) !important; font-size: 0.75rem !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; gap: 4px !important; vertical-align: middle !important; padding: 2px 7px !important; border-radius: 6px !important;"><i class="fa-solid fa-circle-play" style="color: #DC2626 !important; font-size: 0.75rem !important;"></i>Watch</a></td>
+</tr>
+<tr>
+  <td><strong>Nov. 18, 2026</strong></td>
+  <td><a href="https://www.pvamu.edu/cheg/cheg-faculty-olanrewaju/"><strong>Kazeem Olanrewaju</strong></a>, Ph.D., Associate Professor, <a href="https://www.pvamu.edu/cheg">Chemical Engineering Department</a>, <a href="https://www.pvamu.edu/engineering/">Roy G. Perry College of Engineering</a>, <a href="https://www.pvamu.edu">Prairie View A&amp;M University</a></td>
+  <td><span class="badge bg-light text-secondary border font-monospace" style="font-weight: normal;">TBD</span></td>
+</tr>
+<tr>
+  <td><strong>Dec. 02, 2026</strong></td>
+  <td><a href="https://nutrition.tamu.edu/people/wu-chaodong/"><strong>Chaodong Wu</strong></a>, M.D., Ph.D., Professor and Presidential Impact Fellow, <a href="https://nutrition.tamu.edu/">Department of Nutrition</a>, <a href="https://www.tamu.edu">Texas A&amp;M University</a></td>
+  <td><a href="{{ site.baseurl }}/blog/talks/CCSB-Seminar-Wu-Gut-Microbiota-Metabolite-Metabolic-Diseases/">Gut Microbiota Metabolite and Metabolic Diseases</a></td>
+</tr>
+</tbody>
+</table>
 
 ## Previous Seminars
 
