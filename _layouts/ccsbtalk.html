@@ -45,27 +45,53 @@ layout: default
 				<i class="fa-solid fa-location-dot me-1"></i>{{ page.venue }}
 			</span>
 			{% endif %}
-			{% if page.webinar %}
-			<a href="{{ page.webinar }}" class="badge rounded-pill border fw-normal px-3 py-2 text-decoration-none"
-			   style="font-size: 0.82rem; background: #4F2683; color: #ffffff; border-color: #4F2683 !important;">
-				<i class="fa-solid fa-video me-1"></i>Join Meeting
-			</a>
+
+			{% assign zoom_url = page.webinar | default: page.past-webinar %}
+			{% assign has_recording = false %}
+			{% if page.recording and page.recording != "" and page.recording != "NA" %}
+				{% assign has_recording = true %}
 			{% endif %}
-			{% if page.recording %}
-				{% if page.recording != "NA" %}
-				<a href="{{ page.recording }}" class="badge rounded-pill border text-secondary fw-normal px-3 py-2 text-decoration-none"
-				   style="font-size: 0.82rem; background: #f8f9fa;">
+
+			{% assign talk_date = page.date | date: "%Y%m%d" | plus: 0 %}
+			{% assign today_date = 'now' | date: "%Y%m%d" | plus: 0 %}
+			{% assign current_time = 'now' | date: "%H%M" | plus: 0 %}
+
+			{% assign is_complete = false %}
+			{% if has_recording or page.past-webinar %}
+				{% assign is_complete = true %}
+			{% elsif talk_date < today_date %}
+				{% assign is_complete = true %}
+			{% elsif talk_date == today_date and current_time >= 1300 %}
+				{% assign is_complete = true %}
+			{% endif %}
+
+			{% if is_complete %}
+				{% if has_recording %}
+				<a href="{{ page.recording }}" class="badge rounded-pill border fw-normal px-3 py-2 text-decoration-none"
+				   style="font-size: 0.82rem; background: #4F2683; color: #ffffff; border-color: #4F2683 !important;">
 					<i class="fa-solid fa-circle-play me-1"></i>Watch Recording
 				</a>
+				{% elsif zoom_url %}
+				<span class="badge rounded-pill border text-muted fw-normal px-3 py-2"
+				      style="font-size: 0.82rem; background: #f1f5f9; cursor: not-allowed;"
+				      title="The live Zoom meeting has concluded and no recording is available.">
+					<i class="fa-solid fa-video-slash me-1"></i>Zoom Link Deactivated
+				</span>
 				{% endif %}
-			{% endif %}
-			{% if page.talkslide %}
-				{% if page.talkslide != "NA" %}
-				<a href="{{ page.talkslide }}" class="badge rounded-pill border text-secondary fw-normal px-3 py-2 text-decoration-none"
-				   style="font-size: 0.82rem; background: #f8f9fa;">
-					<i class="fa-solid fa-display me-1"></i>Slides
+			{% else %}
+				{% if zoom_url %}
+				<a href="{{ zoom_url }}" class="badge rounded-pill border fw-normal px-3 py-2 text-decoration-none"
+				   style="font-size: 0.82rem; background: #4F2683; color: #ffffff; border-color: #4F2683 !important;">
+					<i class="fa-solid fa-video me-1"></i>Join Meeting
 				</a>
 				{% endif %}
+			{% endif %}
+
+			{% if page.talkslide and page.talkslide != "" and page.talkslide != "NA" %}
+			<a href="{{ page.talkslide }}" class="badge rounded-pill border text-secondary fw-normal px-3 py-2 text-decoration-none"
+			   style="font-size: 0.82rem; background: #f8f9fa;">
+				<i class="fa-solid fa-display me-1"></i>Slides
+			</a>
 			{% endif %}
 		</div>
 
